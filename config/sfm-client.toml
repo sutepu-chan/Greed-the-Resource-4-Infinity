@@ -1,0 +1,19 @@
+
+["General Category"]
+	#Allow multiple rule windows to be visible at once
+	allowMultipleRuleWindows = false
+	#Show the helper labels on rule drawers
+	showRuleDrawerLabels = true
+	#Always snap movement to grid
+	alwaysSnapMovementToGrid = false
+	#Disable element out-of-bounds check when repositioning elements
+	allowElementsOutOfBounds = false
+	#Use regular expressions when matching items during search queries
+	enableRegexSearch = false
+	#Hide the reminder text on the manager background
+	hideManagerInstructions = false
+	#Prevent closing the manager gui with the inventory button
+	preventClosingManagerWithInventoryButton = true
+	#Enable display of debug information
+	enableDebugMode = false
+
