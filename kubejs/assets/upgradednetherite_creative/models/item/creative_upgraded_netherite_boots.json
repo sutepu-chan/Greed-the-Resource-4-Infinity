@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "upgradednetherite_creative:items/armor/boots/layer_0"
+    }
+}

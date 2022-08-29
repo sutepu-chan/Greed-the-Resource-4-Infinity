@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "upgradednetherite_creative:items/tools/infinity_bow/pull_2"
+    }
+}

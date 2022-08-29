@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "custommachinery:machine/neutronium_collector/neutronium_collector",
+            "y": 180
+        },
+        "facing=south": {
+            "model": "custommachinery:machine/neutronium_collector/neutronium_collector"
+        },
+        "facing=west": {
+            "model": "custommachinery:machine/neutronium_collector/neutronium_collector",
+            "y": 90
+        },
+        "facing=east": {
+            "model": "custommachinery:machine/neutronium_collector/neutronium_collector",
+            "y": 270
+        }
+    }
+}
