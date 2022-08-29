@@ -1,0 +1,255 @@
+[general]
+	#The Application ID of the Discord App to use. Replace this with your client id from the discord dashboard to change the name of the app
+	applicationID = 1013364932227633232
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen
+	configScreen = false
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 16
+
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Entering GR4I"
+	#The second line of text under the app name
+	state = "Launching"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[init.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[init.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Main Menu"
+	#The second line of text under the app name
+	state = "%player% currently AFK"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[main_menu.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[main_menu.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Server List"
+	#The second line of text under the app name
+	state = "Looking for Servers"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[server_list.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[server_list.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = false
+	#The first line of text under the app name
+	description = "%player% is looking for a Realm"
+	#The second line of text under the app name
+	state = "Browsing Realms"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	buttons = []
+
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Joing Game"
+	#The second line of text under the app name
+	state = "%player% is joining"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[join_game.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[join_game.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Singleplayer"
+	#The second line of text under the app name
+	state = "Lonely"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[single_player.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[single_player.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Multiplayer"
+	#The second line of text under the app name
+	state = "On %servername% with %players% players"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[multi_player.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[multi_player.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = false
+	#The first line of text under the app name
+	description = "Playing on %realmname%"
+	#The second line of text under the app name
+	state = "Playing on a Realm"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	buttons = []
+
+[generic]
+	#The first line of text under the app name
+	description = "Greed the Resource 4 - Infinity %mcver%"
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "gr4i"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Greed the Resource 4 - Infinity %mcver%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "curse"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods"
+
+	[[generic.buttons]]
+		label = "GR4I CF"
+		url = "https://www.curseforge.com/minecraft/modpacks/greed-the-resource-4-infinity"
+
+	[[generic.buttons]]
+		label = "Discord"
+		url = "https://www.discord.gg/pvb4XfYg94"
+
+
+[dimension_overrides]
+	enabled = false
+
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "%player% is in The Overworld"
+		state = ""
+		largeImageKey = "overworld"
+		largeImageText = "In the Overworld"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "%player% is in The Nether"
+		state = ""
+		largeImageKey = "nether"
+		largeImageText = "In the Nether"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "%player% is in The End"
+		state = ""
+		largeImageKey = "end"
+		largeImageText = "In the End"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+

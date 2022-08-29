@@ -1,0 +1,140 @@
+
+["Global Options"]
+	"Blocks Retain Tank Contents" = true
+["World Generation"]
+	#Set to FALSE to prevent 'Thermal Series' Apatite from generating.
+	Apatite = true
+	#Set to FALSE to prevent 'Thermal Series' Cinnabar from generating.
+	Cinnabar = true
+	#Set to FALSE to prevent 'Thermal Series' Niter from generating.
+	Niter = true
+	#Set to FALSE to prevent 'Thermal Series' Sulfur from generating.
+	Sulfur = true
+	#Set to FALSE to prevent 'Thermal Series' Copper from generating.
+	Copper = false
+	#Set to FALSE to prevent 'Thermal Series' Tin from generating.
+	Tin = false
+	#Set to FALSE to prevent 'Thermal Series' Lead from generating.
+	Lead = false
+	#Set to FALSE to prevent 'Thermal Series' Silver from generating.
+	Silver = false
+	#Set to FALSE to prevent 'Thermal Series' Nickel from generating.
+	Nickel = false
+	#Set to FALSE to prevent 'Thermal Series' Oil Sands from generating.
+	Oil = true
+
+[Villagers]
+	#If TRUE, trades will be added to various Villagers.
+	"Enable Villager Trades" = false
+	#If TRUE, trades will be added to the Wandering Trader.
+	"Enable Wandering Trader Trades" = false
+
+[Dynamos]
+
+	[Dynamos.Stirling]
+		#This sets the base power generation (RF/t) for the Stirling Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+	[Dynamos.Compression]
+		#This sets the base power generation (RF/t) for the Compression Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+	[Dynamos.Magmatic]
+		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+	[Dynamos.Numismatic]
+		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+	[Dynamos.Lapidary]
+		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+	[Dynamos.Disenchantment]
+		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+	[Dynamos.Gourmand]
+		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
+		#Range: 10 ~ 200
+		"Base Power" = 40
+
+[Machines]
+
+	[Machines.Furnace]
+		#This sets the base power consumption (RF/t) for the Redstone Furnace.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Sawmill]
+		#This sets the base power consumption (RF/t) for the Sawmill.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Pulverizer]
+		#This sets the base power consumption (RF/t) for the Pulverizer.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Smelter]
+		#This sets the base power consumption (RF/t) for the Induction Smelter.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Insolator]
+		#This sets the base power consumption (RF/t) for the Phytogenic Insolator.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Centrifuge]
+		#This sets the base power consumption (RF/t) for the Centrifugal Separator.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Press]
+		#This sets the base power consumption (RF/t) for the Multiservo Press.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Crucible]
+		#This sets the base power consumption (RF/t) for the Magma Crucible.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Chiller]
+		#This sets the base power consumption (RF/t) for the Blast Chiller.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Refinery]
+		#This sets the base power consumption (RF/t) for the Fractionating Still.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Pyrolyzer]
+		#This sets the base power consumption (RF/t) for the Pyrolyzer.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Bottler]
+		#This sets the base power consumption (RF/t) for the Fluid Encapsulator.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Brewer]
+		#This sets the base power consumption (RF/t) for the Alchemical Imbuer.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+
+	[Machines.Crafter]
+		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
+		#Range: 1 ~ 200
+		"Base Power" = 100
+

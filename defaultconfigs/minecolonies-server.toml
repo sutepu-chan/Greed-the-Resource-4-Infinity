@@ -1,0 +1,8 @@
+[commands]   
+	canplayerusertpcommand = true                                       
+	canplayerusehometpcommand = true
+	canplayerusekillcitizenscommand = true
+
+[permissions]
+		enablecolonyprotection = true
+		turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
