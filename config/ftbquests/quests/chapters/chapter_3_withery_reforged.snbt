@@ -1,0 +1,457 @@
+{
+	id: "64D5C30BB2A928F2"
+	group: "2DDEDFB13E9FB842"
+	order_index: 2
+	filename: "chapter_3_withery_reforged"
+	title: "Chapter 3: Wizards and Witches"
+	icon: "eidolon:unholy_symbol"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -2.0d
+			y: -2.0d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "eidolon:textures/particle/sacred_sign.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "eidolon:textures/particle/soul_sign.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			image: "eidolon:textures/particle/moonlight_ritual.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			width: 1.25d
+			height: 1.25d
+			rotation: 0.0d
+			image: "eidolon:textures/particle/warp_ritual.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 0.1428571428571459d
+			y: -4.166666666666671d
+			width: 2.5d
+			height: 2.5d
+			rotation: 0.0d
+			image: "eidolon:textures/particle/blood_sign.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Welcome to the world of witches"
+			x: -2.0d
+			y: -1.0d
+			description: [
+				"To continue, you need to get these two items for recipes."
+				"Lead dust and iron dust can be obtained with the crushing ritual from Occultism."
+			]
+			dependencies: ["5F86A4685735039E"]
+			id: "25C86B5828A300B7"
+			tasks: [
+				{
+					id: "17C07D603C40752B"
+					type: "item"
+					item: "eidolon:enchanted_ash"
+				}
+				{
+					id: "2B81B0BEB52528C2"
+					type: "item"
+					item: "eidolon:pewter_blend"
+				}
+				{
+					id: "3D7B5D8D0A297F46"
+					type: "item"
+					item: "eidolon:pewter_ingot"
+				}
+			]
+			rewards: [{
+				id: "15F88E9076EBDBE4"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Eidolon rituals"
+			x: 0.0d
+			y: -1.5d
+			description: [
+				"Soul shard is an important item in eidolon. To get this item, you need to set up a ritual set up with a brazier and two stone hands. Place the brazier in the middle and stone hands nearby."
+				"More rare items may require more stone hands."
+			]
+			dependencies: ["25C86B5828A300B7"]
+			id: "30DD42F1BEE28C3D"
+			tasks: [
+				{
+					id: "715CFA37A74C3173"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+				{
+					id: "59B225EA31F20F89"
+					type: "item"
+					item: "eidolon:stone_hand"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "20F0F4B68998C1FE"
+				type: "item"
+				item: "minecraft:zombie_spawn_egg"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: [
+				"To get soul shard, put two restone dust onto the stone hand and a bone meal onto the brazier. Also, bring a zombie to the ritual nearby. Enchanted ash can be served as an invisible barrier to undead creatures when placed on ground. They cannot pass through the line."
+				"To start the ritual, light up the brazier with flint and steel."
+				"{image:kubejs:textures/quest/chapter3/chapter3_soul_shard.png width:176 height:100 align:1}"
+			]
+			dependencies: ["30DD42F1BEE28C3D"]
+			id: "626AB0E2805EDE70"
+			tasks: [{
+				id: "1ACF58F3E3C8397B"
+				type: "item"
+				item: "eidolon:soul_shard"
+			}]
+			rewards: [{
+				id: "4A073BD67EA7C70F"
+				type: "item"
+				item: "minecraft:zombie_spawn_egg"
+				count: 8
+			}]
+		}
+		{
+			title: "Summoning zombie by yourself"
+			x: 4.0d
+			y: -1.5d
+			description: [
+				"You can also summon zombies by ritual. However, you need one more block to hold ingredients. Necrotic focus is also required in many other recipes."
+				"{image:kubejs:textures/quest/chapter3/chapter3_summon_zombie.png width:176 height:100 align:1}"
+			]
+			dependencies: ["626AB0E2805EDE70"]
+			id: "7AE4F0304AB1771C"
+			tasks: [{
+				id: "4E09980844E7D2CC"
+				type: "item"
+				item: "eidolon:necrotic_focus"
+			}]
+			rewards: [{
+				id: "1DD6BD23F505E9A1"
+				type: "item"
+				item: "alltheores:ore_tin"
+				count: 4
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Get a crucible. Crucible is a must-need item for witches, isn't it?"
+				"Crucible has to be set up on top of campfire (or any other heat source). Inset a bucket of water into the crucible by RC. If you have set up correctly, you will see water boiling in the crucible."
+				"{image:kubejs:textures/quest/chapter3/chapter3_eidolon_crucible.png width:176 height:100 align:1}"
+			]
+			dependencies: ["25C86B5828A300B7"]
+			id: "6CE8B398817576BF"
+			tasks: [{
+				id: "28EA65440153891D"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+			rewards: [{
+				id: "2F6BA84DC6366FBB"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			description: ["Magic workbench is the crafting workbench for Eidolon. You need this in a lot of recipes."]
+			dependencies: ["25C86B5828A300B7"]
+			id: "401B3DDA136367F5"
+			tasks: [{
+				id: "5EE28BAA23E7D787"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+			rewards: [{
+				id: "304A5BE028C71168"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 24
+			}]
+		}
+		{
+			title: "Eidolon altar"
+			icon: "eidolon:straw_effigy"
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"Eidolon altar is required to perform mystical signs. You still can't perform any signs now but it will be good if you set up first, as it takes a long time to obtain the pray and signs, which has to be done daily."
+				"Tier of altar depends on the items on table. The table can be in any shape. Higher tier altar table will provide higher efficacy of paryers and sacrifices. Check Eidolon guide book for more information."
+				"{image:kubejs:textures/quest/chapter3/chapter3_eidolon_basic_altar.png width:176 height:100 align:1}"
+			]
+			dependencies: ["25C86B5828A300B7"]
+			id: "120B4F4E21296310"
+			tasks: [
+				{
+					id: "505ACB9F96C83C1C"
+					type: "item"
+					item: "eidolon:wooden_altar"
+					count: 6L
+				}
+				{
+					id: "53F925C0CDBF9026"
+					type: "item"
+					item: "minecraft:crimson_fungus"
+				}
+				{
+					id: "6CF89643BC1E6DC2"
+					type: "item"
+					item: "minecraft:zombie_head"
+				}
+				{
+					id: "1A032684C651A234"
+					type: "item"
+					item: "eidolon:straw_effigy"
+				}
+				{
+					id: "41FD8D0C05DABE7D"
+					type: "item"
+					item: "minecraft:torch"
+				}
+				{
+					id: "2F164366972ECB5C"
+					type: "item"
+					item: "minecraft:flower_pot"
+				}
+			]
+			rewards: [{
+				id: "7BBE37C31CC87567"
+				type: "item"
+				item: "minecraft:clay"
+				count: 8
+			}]
+		}
+		{
+			title: "Eidolon advanced altar"
+			icon: "eidolon:unholy_effigy"
+			x: 0.0d
+			y: -4.5d
+			description: [
+				"This is the higher possible tier altar. This can only be obtained in Eidolon late game."
+				"{image:kubejs:textures/quest/chapter3/chapter3_eidolon_advance_altar.png width:176 height:100 align:1}"
+			]
+			dependencies: ["120B4F4E21296310"]
+			id: "1EC8C21ECF137025"
+			tasks: [
+				{
+					id: "0F7B0C1B8817A7B6"
+					type: "item"
+					item: "eidolon:unholy_effigy"
+				}
+				{
+					id: "14F6869B83896990"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+				{
+					id: "64CBE59119CCE740"
+					type: "item"
+					item: "minecraft:wither_rose"
+				}
+				{
+					id: "575070C079808394"
+					type: "item"
+					item: "eidolon:candle"
+				}
+				{
+					id: "00845B94BEE814EA"
+					type: "item"
+					item: "eidolon:goblet"
+				}
+			]
+			rewards: [{
+				id: "41A96A7D03926119"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 24
+			}]
+		}
+		{
+			title: "From wicked sign to soul sign"
+			x: 2.0d
+			y: -3.0d
+			description: [
+				"The next step is to obtain the mystical signs. Throw your Eidolon book to witch and cleric villager respectively."
+				"The two signs obtained are wicked sign and sacred sign. Open your book, and click the wicked sign for 3 times to carry out dark prayer at your altar. If success, a thunder sound appears."
+				"You can only do one dark prayer successfully in a day. After doing for several days, you will get a new sign - blood sign."
+				"Similarly, carry out the sacrifice animal prayer once a day and you will obtain soul sign, which is needed in the next step."
+				"Check the eidolon guide book for more information."
+			]
+			dependencies: ["120B4F4E21296310"]
+			id: "00D0460FD782C856"
+			tasks: [{
+				id: "125B86DB04512A54"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1E916E7B6640ED69"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			description: ["Carry out the Touch of Darkness pary towards Pewtar Inlay. The pary will turn it into unholy symbol."]
+			dependencies: ["00D0460FD782C856"]
+			id: "6558721433B3EFAA"
+			tasks: [
+				{
+					id: "75471CA844728BF4"
+					type: "item"
+					item: "eidolon:pewter_inlay"
+				}
+				{
+					id: "6CAD04EEB2231BD6"
+					type: "item"
+					item: "eidolon:unholy_symbol"
+				}
+			]
+			rewards: [{
+				id: "4BE7DC5D19C0A78B"
+				type: "item"
+				item: "alltheores:ore_lead"
+				count: 4
+			}]
+		}
+		{
+			title: "Compact Crafting"
+			x: 6.0d
+			y: -1.0d
+			description: [
+				"Compact crafting is a new crafting method that requires you to build multiblock structure and it will eventually shrink into other items. These 3 items are the basic components of compact crafting."
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 4."
+			]
+			dependencies: [
+				"401B3DDA136367F5"
+				"0062E29C9DDC8BDF"
+				"7AE4F0304AB1771C"
+				"6558721433B3EFAA"
+			]
+			id: "75F4D6E263EEDA5E"
+			tasks: [
+				{
+					id: "2B17839891C440AC"
+					type: "item"
+					item: "compactcrafting:base"
+					count: 2L
+				}
+				{
+					id: "01A45C6D5F91BAE5"
+					type: "item"
+					item: "compactcrafting:projector_dish"
+					count: 2L
+				}
+				{
+					id: "5E73030269FC1678"
+					type: "item"
+					item: "compactcrafting:field_projector"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "27FA56335E2F93FE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 8
+				}
+				{
+					id: "6F47C7E08766ED79"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["6CE8B398817576BF"]
+			id: "0062E29C9DDC8BDF"
+			tasks: [{
+				id: "107C361294E20447"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+				count: 2L
+			}]
+			rewards: [{
+				id: "76FEF4A518AE8970"
+				type: "item"
+				item: "eidolon:soul_shard"
+				count: 2
+			}]
+		}
+	]
+}

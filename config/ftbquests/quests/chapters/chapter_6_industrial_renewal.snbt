@@ -1,0 +1,1439 @@
+{
+	id: "69803DE08B982FA6"
+	group: "2DDEDFB13E9FB842"
+	order_index: 5
+	filename: "chapter_6_industrial_renewal"
+	title: "Chapter 6: Industrial Renewal"
+	icon: "industrialforegoing:machine_frame_supreme"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 10.5d
+			y: -8.5d
+			width: 20.0d
+			height: 15.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter6/chapter6_mekanism_flowchart.png"
+			hover: ["A complete flow chart for Mekanism ore processing system."]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter6/chapter6_x3.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.5d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter6/chapter6_x4.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 16.0d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter6/chapter6_x5.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: -2.5d
+			y: -3.5d
+			description: ["Get a blast chiller and some Fe elements. You need these to get the pity machine frame of Industrial Foregoing."]
+			dependencies: ["716CE0FA1AA28D0D"]
+			id: "155532F02A4FDF0B"
+			tasks: [
+				{
+					id: "1283814D27D41B9E"
+					type: "item"
+					item: {
+						id: "thermal:machine_chiller"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								RSControl: {
+									RSThreshold: 0b
+									RSMode: 0b
+								}
+								Xfer: {
+									XferOut: 0b
+									XferIn: 0b
+								}
+								EnergySend: 200
+								Energy: 0
+								EnergyMax: 50000
+								EnergyRecv: 200
+								Sides: [B;
+									0b
+									0b
+									0b
+									0b
+									0b
+									0b
+								]
+							}
+						}
+					}
+				}
+				{
+					id: "7820FB249251CC83"
+					type: "item"
+					item: "chemlib:element_iron"
+				}
+			]
+			rewards: [
+				{
+					id: "5B3A1F865BD53268"
+					type: "item"
+					item: "thermal:chiller_ingot_cast"
+				}
+				{
+					id: "0F76F74849746B4B"
+					type: "item"
+					item: "thermal:chiller_ball_cast"
+				}
+				{
+					id: "4C9900B94BA47659"
+					type: "item"
+					item: "thermal:chiller_rod_cast"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			description: ["You also need some destabilize redstone for pity machine frame. Destabilize redstone is obtained from putting redstone dust, redstone blocks, into magma crucible. Transfer the liquid destablized redstone into the blast chiller using fluid pipes."]
+			dependencies: ["155532F02A4FDF0B"]
+			id: "513A028D467E33A1"
+			tasks: [{
+				id: "4832FD43F088AF88"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "1AE91A285948BCCC"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						Properties: { }
+						BlockEntityTag: {
+							RSControl: {
+								RSThreshold: 0b
+								RSMode: 0b
+							}
+							Xfer: {
+								XferOut: 1b
+								XferIn: 0b
+							}
+							TankInv: [{
+								FluidName: "thermal:redstone"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 32000
+							}]
+							AmountOut: 1000
+							Sides: [B;
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+							]
+							AmountIn: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			description: [
+				"Remember the Ti element you get before? It is needed now to get the fluid extractor."
+				"Fluid extractor is used for obtaining latex, which is the fundamental material to produce plastics of Industrial Foregoing."
+				"Place the fluid extractor in front of a tree log. It will start slowing extracting latex from tree logs. Note that the log will disappear after some time."
+				"Fluid extractor can run without power, but in a slower extraction rate."
+				"{image:kubejs:textures/quest/chapter6/chapter6_fluid_extractor.png width:176 height:100 align:1}"
+			]
+			dependencies: ["513A028D467E33A1"]
+			id: "01CF190392177E44"
+			tasks: [{
+				id: "7D6755EF84F23CE8"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+			rewards: [{
+				id: "304A95DBF72E460C"
+				type: "item"
+				item: "industrialforegoing:latex_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			description: [
+				"Prepare the chemical compounds prepared and craft a latex processing unit."
+				"This machine can process the latex into tiny dry rubber when water is piped."
+				"Note that this machine requires power."
+				"{image:kubejs:textures/quest/chapter6/chapter6_latex_process.png width:176 height:100 align:1}"
+			]
+			dependencies: ["513A028D467E33A1"]
+			id: "2681BD255AFF8019"
+			tasks: [{
+				id: "6176DB9F879A96E9"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+			rewards: [{
+				id: "0EBE2A83E8E4FABE"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "Plastic"
+			x: -2.5d
+			y: 2.5d
+			description: [
+				"Use the tiny dry rubber to get dry rubber. After that, simply put the dry rubber into furnace will get you plastics."
+				"Plastics from Industrial Foregoing is much more simpler than that of Pneumaticcraft!"
+			]
+			dependencies: [
+				"2681BD255AFF8019"
+				"01CF190392177E44"
+			]
+			id: "10AACA1FF7128328"
+			tasks: [
+				{
+					id: "7B684585E1B2AC56"
+					type: "item"
+					item: "industrialforegoing:tinydryrubber"
+				}
+				{
+					id: "419CE1E5DAB623F0"
+					type: "item"
+					item: "industrialforegoing:dryrubber"
+				}
+				{
+					id: "66ECC9440440957C"
+					type: "item"
+					item: "industrialforegoing:plastic"
+				}
+			]
+			rewards: [{
+				id: "62F6DF92D2DF59DB"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			description: [
+				"With the rubber crafted, try to get a water condensor. Water condensor will generate water from nearby water source block, which make the latex processing unit easier to run. It will generate water faster with more water source block nearby."
+				"{image:kubejs:textures/quest/chapter6/chapter6_water_condensor.png width:176 height:100 align:1}"
+			]
+			dependencies: [
+				"10AACA1FF7128328"
+				"2681BD255AFF8019"
+			]
+			id: "599752926EB617D3"
+			tasks: [{
+				id: "2909E656ED60997F"
+				type: "item"
+				item: "industrialforegoing:water_condensator"
+			}]
+			rewards: [
+				{
+					id: "4798B0BDC1D588D7"
+					type: "item"
+					item: {
+						id: "industrialforegoing:efficiency_addon_1"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.9f
+							}
+						}
+					}
+				}
+				{
+					id: "3A35845414D93C57"
+					type: "item"
+					item: {
+						id: "industrialforegoing:processing_addon_1"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Processing: 2.0f
+							}
+						}
+					}
+				}
+				{
+					id: "35BF792642DF8737"
+					type: "item"
+					item: {
+						id: "industrialforegoing:speed_addon_1"
+						Count: 1b
+						tag: {
+							TitaniumAugment: {
+								Speed: 2.0f
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 2.5d
+			description: ["Dissolution chamber is required to craft most of the items in Industrial Foregoing."]
+			dependencies: ["01CF190392177E44"]
+			id: "1B3F617390356A21"
+			tasks: [{
+				id: "740BD9E9DD7E6DC9"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "0C361A9AC225C553"
+				type: "item"
+				item: "pneumaticcraft:large_tank"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			description: ["Get a simple machine frame. Pump some latex generated into dissolution chamber to start the dissolution process."]
+			dependencies: ["1B3F617390356A21"]
+			id: "18CBD7BF65CB6516"
+			tasks: [{
+				id: "3E2C39222B2A2832"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+			rewards: [{
+				id: "1DE83563FD0C77F9"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 8
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.5d
+			description: [
+				"For higher tier machine frame, you need some liquid pink slime. Liquid pink slime is needed, which is obtained from mob slaughter factory."
+				"Simply place the mob slaughter factory in front of spawners and supply it with power. It will kill the mobs and generate liquid pink slime and liquid meat. The working area of the machine depends on the range addon added. The working area can be shown by clicking the \"Show working area\" at the bottom right corner."
+				"Note that slaughtering non-hostile mobs will generate more liquid pink slime than hostile mobs."
+			]
+			dependencies: ["18CBD7BF65CB6516"]
+			id: "7ED477A8FEF39E2E"
+			tasks: [{
+				id: "2B8334C8C39EF7DC"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+			rewards: [{
+				id: "0B333E333591B44A"
+				type: "item"
+				item: "minecraft:soul_soil"
+				count: 20
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			description: ["Import the pink slime into the dissolution chamber, and get a advance machine frame."]
+			dependencies: ["7ED477A8FEF39E2E"]
+			id: "0DA5529FA7E4B404"
+			tasks: [{
+				id: "2D1227E7321C3779"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+			rewards: [
+				{
+					id: "161D839B4FA55C33"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "21E0754A6F5443AE"
+					type: "item"
+					item: "enderstorage:ender_tank"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 6.5d
+			description: [
+				"With the advance machine frame, you can finally get the most expansive gas - ether gas."
+				"Setting up the machines will be a little bit annoying, because you need to deal with wither."
+			]
+			dependencies: ["0DA5529FA7E4B404"]
+			id: "1DB44F36AE9208D2"
+			tasks: [
+				{
+					id: "28426F2A599EC270"
+					type: "item"
+					item: "industrialforegoing:fluid_laser_base"
+				}
+				{
+					id: "15E4FD4122489A2B"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+				{
+					id: "5506DE449CF06D4D"
+					type: "item"
+					item: "industrialforegoing:laser_lens10"
+				}
+			]
+			rewards: [{
+				id: "1CD6BBBEBDA50A0D"
+				type: "item"
+				item: "industrialforegoing:laser_lens15"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.5d
+			description: [
+				"Here is the way of dealing with wither."
+				"Stasis chamber is able to freeze the mobs in a 3x3x3 area above the machine. Clicking the \"Show working area\" button allows you to see the working area."
+				"Wither can also be freezed with this machine. However, when wither is freezed, it cannot be killed. The wither can only be damaged until 1 heart."
+			]
+			dependencies: ["1DB44F36AE9208D2"]
+			id: "2660556EF9BC8407"
+			tasks: [{
+				id: "7F11211A368ED9B1"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+			rewards: [{
+				id: "7353E92B5AFB3D4B"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						Properties: {
+							BaseMod: 4.0f
+						}
+						BlockEntityTag: {
+							RSControl: {
+								RSThreshold: 0b
+								RSMode: 0b
+							}
+							Xfer: {
+								XferOut: 1b
+								XferIn: 0b
+							}
+							EnergySend: 4000
+							Energy: 4000000
+							EnergyMax: 1000000
+							AmountOut: 4000
+							Augments: [{
+								id: "thermal:upgrade_augment_3"
+								Count: 1b
+							}]
+							EnergyRecv: 4000
+							Sides: [B;
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+							]
+							AmountIn: 4000
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Setting up ether gas generator!"
+			x: -1.0d
+			y: 8.5d
+			description: [
+				"The machines is pretty hard to obtain in this mobpack. But anyway, you have overcome those crafting recipes and reach here."
+				"Setting up stasis chamber is not difficult. Set up your machines as shown below. Summon a wither between the liquid laser base and laser drill. The distance between liquid laser base and laser drill has to be 2 blocks."
+				"{image:kubejs:textures/quest/chapter6/chapter6_stasis_chamber.png width:176 height:100 align:1}"
+			]
+			dependencies: [
+				"2660556EF9BC8407"
+				"1DB44F36AE9208D2"
+			]
+			id: "184CE942556436DB"
+			tasks: [{
+				id: "4C741F906817DF8C"
+				type: "item"
+				item: "industrialforegoing:ether_gas_bucket"
+			}]
+			rewards: [{
+				id: "67DEC38817638564"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			description: ["With the wither gas, craft the supreme machine frame. This allows you to craft more powerful machines, such as mob crusher."]
+			dependencies: ["184CE942556436DB"]
+			id: "183E8C291E50A1A2"
+			tasks: [{
+				id: "4AE22F05B7DB0CDF"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+			rewards: [{
+				id: "26092F7F74450011"
+				type: "item"
+				item: "minecraft:ancient_debris"
+				count: 4
+			}]
+		}
+		{
+			title: "Wither Prison"
+			x: -5.5d
+			y: 6.5d
+			description: [
+				"Although the stasis chamber can freeze the wither, it is still pretty dangerous when dealing with it. I suggest that you should set up a 'wither cage' for it, using reinforced obsidian."
+				"{image:kubejs:textures/quest/chapter6/chapter6_wither_cage.png width:176 height:100 align:1}"
+			]
+			dependencies: ["2660556EF9BC8407"]
+			id: "4DC87FB69890444B"
+			tasks: [
+				{
+					id: "7D243054476B3DB1"
+					type: "item"
+					item: "witherproofed:reinforced_alloy"
+					count: 8L
+				}
+				{
+					id: "0AE4510959E02654"
+					type: "item"
+					item: "witherproofed:heavy_reinforced_obsidian"
+				}
+			]
+			rewards: [{
+				id: "0D5C2D0E43C96C9C"
+				type: "item"
+				item: "minecraft:nether_star"
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			description: [
+				"With your supreme machine frame, it's time to start Mekanism, a nostalgic technology mod."
+				"The progress of Mekanism has been changed. Remember to check your quest book."
+				"To start Mekanism, you need to have a combiner."
+			]
+			dependencies: ["183E8C291E50A1A2"]
+			id: "2A1276A1DA8A2549"
+			tasks: [{
+				id: "77F2ACF5E743D827"
+				type: "item"
+				item: {
+					id: "mekanism:combiner"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0623E13C1550AD30"
+				type: "item"
+				item: "farmersdelight:carrot_crate"
+				count: 24
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["Use your combiner, combine two steel ingots to a osmium ingot. A steel casing will be obtained finally."]
+			dependencies: ["2A1276A1DA8A2549"]
+			id: "35BF9F36CCBB2893"
+			tasks: [{
+				id: "757FDC65CB146136"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+			rewards: [{
+				id: "0B77D390B428081C"
+				type: "item"
+				item: "enderioalloys:item_alloy_ingot_dark_steel"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			description: ["With your steel casing, get an enrichment chamber. Enrichment chamber can be used to get enriched redstone and enriched diamond. It can also be used to get refined obsidian also."]
+			dependencies: ["35BF9F36CCBB2893"]
+			id: "5CD3DF38B074F0C1"
+			tasks: [{
+				id: "0C533A495CDD0F39"
+				type: "item"
+				item: {
+					id: "mekanism:enrichment_chamber"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "5A322E224658216E"
+				type: "item"
+				item: "enderioalloys:item_material_pulsating_crystal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			description: ["Enrichment chamber will turn redstone dust and diamond into enriched redstone and enriched diamond respectively."]
+			dependencies: ["5CD3DF38B074F0C1"]
+			id: "00A70DD1E69A3BE2"
+			tasks: [{
+				id: "4C7E65CDD5EEBB34"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [{
+				id: "6747F1E7E6E091DE"
+				type: "item"
+				item: "industrialforegoing:plastic"
+				count: 2
+			}]
+		}
+		{
+			title: "Upgraded smelter!"
+			x: 5.5d
+			y: 0.5d
+			subtitle: "Tier 2"
+			description: [
+				"After getting the metallurgic infuser, the core machine in Mekanism, you should start constructing your ore-tripling system. This is crucial in your process that you can only generate resources in more later game."
+				"To start constructing the tripling system, you are probably thinking is there a better furnace that can process melting process faster, and here it is."
+			]
+			hide_dependency_lines: true
+			dependencies: ["00A70DD1E69A3BE2"]
+			id: "2CB3CFB5B27B8D92"
+			tasks: [{
+				id: "6F6B6C277ECFB6C5"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+			rewards: [{
+				id: "58C6652B8A710C1B"
+				type: "item"
+				item: "mekanism:enriched_redstone"
+				count: 16
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			description: ["For ore tripling, you will need a lot of oxygen gas. The only way to obtain the oxygen gas is through electrolytic separactor. Craft one and pump water. You will get oxygen soon."]
+			dependencies: ["2CB3CFB5B27B8D92"]
+			id: "4BA8AF303BC164A3"
+			tasks: [{
+				id: "5E68C2FA5703335E"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+			rewards: [{
+				id: "73A0CA11E46AFCEE"
+				type: "item"
+				item: "mekanism:enriched_diamond"
+				count: 8
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.5d
+			description: ["Excess gas can be stored inside a chemical tank. Higher tier chemical tank allows you to store more gas."]
+			dependencies: ["4BA8AF303BC164A3"]
+			id: "628DE2E758EA822E"
+			tasks: [{
+				id: "793DD78635C4734E"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+			rewards: [{
+				id: "716C8E793C8B5B68"
+				type: "item"
+				item: "mekanism:elite_chemical_tank"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			description: ["After some oxygen, craft a purification chamber and pump the gas into the machine."]
+			dependencies: ["4BA8AF303BC164A3"]
+			id: "69C4DF21B34008BE"
+			tasks: [{
+				id: "6CF8763D0DFD420F"
+				type: "item"
+				item: "mekanism:purification_chamber"
+			}]
+			rewards: [{
+				id: "37DDC124A10BEB90"
+				type: "item"
+				item: {
+					id: "mekanism:portable_teleporter"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "1000000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.5d
+			description: [
+				"Putting ores into purification chamber will get you ore clumps, which can be turned into dirty ore dust by a crusher."
+				"You have to convert the dirty ore dust into ore dust by a enrichment chamber before putting it into the energized smelter."
+				"Now you have finished getting the required machine for ore tripling. Just simply put them together and supply with power, and your system is workable."
+				"Try your first ore tripling process with some ores!"
+				"{image:kubejs:textures/quest/chapter6/chapter6_tripling.png width:176 height:100 align:1}"
+			]
+			dependencies: ["69C4DF21B34008BE"]
+			id: "3250A54150DFD436"
+			tasks: [{
+				id: "7AC6991A0325D5BF"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+			rewards: [{
+				id: "2A3596D9826E3699"
+				type: "item"
+				item: "mekanism:electric_pump"
+				count: 2
+			}]
+		}
+		{
+			title: "Ore quadrapling system"
+			x: 10.5d
+			y: 0.5d
+			subtitle: "Tier 3"
+			description: [
+				"Now, we are going to set up the ore-quadraple system. Don't panic! You don't have to clear the ore-triple system before and set up the whole thing again. The quadraple system is just adding some machines based on the ore-triple system."
+				"First of all, for quadrapling the ores, you will need a lot of hydrogen chloride. There are two ways to obtain the HCl. Choose any one route to complete the quest."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3250A54150DFD436"]
+			id: "72ACAD5162AA76DD"
+			tasks: [{
+				id: "0BC2FD2694A280F0"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "51128E8F3658806E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "1st way - Salt Blocks"
+			x: 10.5d
+			y: 2.5d
+			description: [
+				"The first way is through salt blocks, which can be found near river or near the sea."
+				"This way is relatively faster than the another way, but this uses a large amount of salt which makes it nearly impossible to have a steady supply of HCl."
+			]
+			dependencies: ["72ACAD5162AA76DD"]
+			id: "46FF7450E600264C"
+			tasks: [
+				{
+					id: "1219988DA327D4CA"
+					type: "item"
+					item: "mekanism:block_salt"
+				}
+				{
+					id: "2AB7B1457815294A"
+					type: "item"
+					item: "mekanism:salt"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "64A3F178DDFF539C"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 10.5d
+			y: 6.5d
+			description: [
+				"[Salt]"
+				"Put the salt (You can't put the block directly) at the bottom slot of the interface.The salt will convert into hydrogen chloride."
+				""
+				"[Evaporation Tower]"
+				"Pump the hydrogen chloride into the injection chamber, and all the preparation has been finished."
+				""
+				"To set up the system, you just have to connect the chemical injection chamber to your ore tripling system."
+				""
+				"[Arrangement]"
+				"Chemical Injection Chamber -> Purification Chamber -> Crusher -> Purification Chamber -> Energized Smelter"
+			]
+			dependencies: [
+				"46FF7450E600264C"
+				"2CC3205B4245DCF4"
+			]
+			dependency_requirement: "one_completed"
+			id: "7068AB1E502E5273"
+			tasks: [{
+				id: "562A46B00B02CE8B"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_injection_chamber"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0EFD6CC793B03E35"
+				type: "item"
+				item: {
+					id: "mekanism:elite_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "64000000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "2nd way - Evaporation Tower"
+			x: 13.0d
+			y: 0.5d
+			description: [
+				"The second way is through evaporation tower. Evaporation tower can produce brine (concentrated Sodium Chloride / conc. NaCl) from water. "
+				"In this way, you need more machines but this way provides a steady supply of HCl at a cheaper cost."
+				"{image:kubejs:textures/quest/chapter6/chapter6_evaporation_tower.png width:176 height:100 align:1}"
+			]
+			dependencies: ["72ACAD5162AA76DD"]
+			id: "5F554BD7B443677A"
+			tasks: [
+				{
+					id: "628982EBC384AB5D"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+					count: 37L
+				}
+				{
+					id: "21AC8F656B30911D"
+					type: "item"
+					item: "mekanism:thermal_evaporation_valve"
+					count: 2L
+				}
+				{
+					id: "47F8188BC9D8494E"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+			]
+			rewards: [{
+				id: "503994EE94A33378"
+				type: "item"
+				item: "thermal:bronze_ingot"
+				count: 18
+			}]
+		}
+		{
+			x: 13.0d
+			y: 2.5d
+			description: [
+				"As mentioned, you need some water and turn it into brine by evaporation tower."
+				"You definitely could use the water condensor as your water source. But why not try another way of water source?"
+				"Aqueous accumulator from Thermal Series provides a cheap and fast way in getting water when compared to water condensor (without addons) when surrounded between at least 2 water source block, which makes it a perfect and easy water source."
+			]
+			dependencies: ["5F554BD7B443677A"]
+			id: "2C54F6171DF33452"
+			tasks: [{
+				id: "721EFB5CC5E6FA0B"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+			rewards: [{
+				id: "11291C0365977941"
+				type: "item"
+				item: "mekanism:elite_fluid_tank"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 4.5d
+			description: ["The production of brine requires heat. Higher temperature will have a higher production rate of brine. It will definitely better if the evaporation tower is set in desert. However, you can also produce heat by resistive heaters. Supply power to the heaters and connect them to the tower by thermodynamic conductor. The temperature of the tower will gradually rise."]
+			dependencies: ["2C54F6171DF33452"]
+			id: "187204F4008445F5"
+			tasks: [{
+				id: "67E3ED0BE15D215D"
+				type: "item"
+				item: "mekanism:resistive_heater"
+			}]
+			rewards: [{
+				id: "1BAF272C27200A76"
+				type: "item"
+				item: "mekanism:ultimate_thermodynamic_conductor"
+				count: 32
+			}]
+		}
+		{
+			x: 13.0d
+			y: 6.5d
+			description: ["After successfully producing the brine, pump the brine into a electrolytic separate to separate into sodium and chloride. Only the chloride will be used. Pump the chloride into a chemical oxidizer together with some hydrogen (obtained from electrolytic separation of water). Eventually, hydrogen chloride is produced and can be pumped into the chemical injection chamber."]
+			dependencies: ["187204F4008445F5"]
+			id: "2CC3205B4245DCF4"
+			tasks: [{
+				id: "3DD5C4D7B086677A"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+			rewards: [{
+				id: "5038071BC9CBD152"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				count: 24
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.5d
+			subtitle: "Tier 4"
+			description: ["Now, we are going to set up the ore quintupling system. Similarly, ore quintupling are just adding some machines onto the ore quadrapling system."]
+			hide_dependency_lines: true
+			dependencies: ["7068AB1E502E5273"]
+			id: "630BE9AC646C09B0"
+			tasks: [{
+				id: "073D6FF20A4669A4"
+				type: "checkmark"
+				title: "Ore quintupling system"
+			}]
+			rewards: [{
+				id: "2A330A62BCF7025A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.5d
+			description: ["Sulfur dusts are the required materials in ore quintupling. More specifically, you need some sulfuric acid, which is produced from sulfur dust."]
+			dependencies: ["630BE9AC646C09B0"]
+			id: "4A779A41526219C3"
+			tasks: [{
+				id: "3654AEA0370F8AE5"
+				type: "item"
+				item: "thermal:sulfur_dust"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6A7420BD2491BD47"
+				type: "item"
+				item: "thermal:sulfur_block"
+				count: 8
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.5d
+			description: [
+				"Put the sulfur dust into chemical oxidizer, which oxidizes sulfur dusts into sulfur dioxide (SO2)."
+				"After that, pump SO2 together with some oxygen into a chemical infuser to produce chemical trioxide (SO3)."
+			]
+			dependencies: ["4A779A41526219C3"]
+			id: "5DF569B90A6446B7"
+			tasks: [{
+				id: "46D9BD0528572A3D"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+			rewards: [{
+				id: "518DF87775FC50E0"
+				type: "item"
+				item: "mekanism:ingot_refined_obsidian"
+				count: 4
+			}]
+		}
+		{
+			x: 16.0d
+			y: 6.5d
+			description: [
+				"Before obtaining sulfuric acid, you also need some water vapour. Just simply pump some water into the rotary condensatrator and it will convert to water vapour."
+				"Then, pump the water vapour into a chemical infuser with the SO3 obtained. You will finally get some sulfuric acid, which is needed ore quintupling."
+			]
+			dependencies: ["5DF569B90A6446B7"]
+			id: "7228347A8FCF461C"
+			tasks: [{
+				id: "6B59E758FD18CEBF"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+			rewards: [{
+				id: "67DDDA7EB9C63232"
+				type: "item"
+				item: "mekanism:ingot_refined_glowstone"
+				count: 4
+			}]
+		}
+		{
+			x: 16.0d
+			y: 8.5d
+			description: ["Pump the ores into chemical dissolution chamber. Now, you can start your ore quintupling."]
+			dependencies: ["7228347A8FCF461C"]
+			id: "5E2EF94CFB368B53"
+			tasks: [{
+				id: "14C3FA4865BA9A6E"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_dissolution_chamber"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "58A1C06059BC35A1"
+				type: "item"
+				item: "mekanism:ingot_steel"
+				count: 20
+			}]
+		}
+		{
+			x: 16.0d
+			y: 10.5d
+			description: ["With the dirty ore slulrry obtained, transfer them into chemical washer together with some water. The slurry will be washed into clean slurry."]
+			dependencies: ["5E2EF94CFB368B53"]
+			id: "4803766D0E14A6FC"
+			tasks: [{
+				id: "2DC365C9A19E29CF"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_washer"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "3BF5683077DDD89D"
+				type: "item"
+				item: "mekanismmatter:naquada_reinforced_tnt"
+				count: 2
+			}]
+		}
+		{
+			x: 16.0d
+			y: 12.5d
+			description: [
+				"Transfer the clean slurry into chemical crystallizer, and you will get some ore crystals. Finally, just put the crystals into your ore quadrapling system to complete the remaining process."
+				""
+				"[Arrangement]"
+				"Chemical Dissolution Chamber -> Chemical Washer -> Chemical Crystallizer -> Chemical Injection Chamber -> Purification Chamber -> Crusher -> Purification Chamber -> Energized Smelter."
+			]
+			dependencies: ["4803766D0E14A6FC"]
+			id: "2CA7CE2F0457FF33"
+			tasks: [{
+				id: "0719FA016013D198"
+				type: "item"
+				item: {
+					id: "mekanism:chemical_crystallizer"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "3E8F8027294A37B5"
+				type: "item"
+				item: "mekanism:cardboard_box"
+				count: 12
+			}]
+		}
+		{
+			x: -5.5d
+			y: 13.0d
+			description: [
+				"Using the power of ore quintupling system, craft a workbench for quarry."
+				"I believe that ore blocks are no longer a problem for you ; )"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2CA7CE2F0457FF33"]
+			id: "4704B961D665B502"
+			tasks: [{
+				id: "2B68F3BE920F3D48"
+				type: "item"
+				item: "quarryplus:workbenchplus"
+			}]
+			rewards: [{
+				id: "336321D8B1C192B1"
+				type: "item"
+				item: {
+					id: "mekanism:electric_bow"
+					Count: 1b
+					tag: {
+						mekData: {
+							mode: 0b
+							EnergyContainers: [{
+								Container: 0b
+								stored: "120000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 11.0d
+			description: [
+				"Marker is needed for setting areas for quarry. You will need 3 of them placing on the same Y level."
+				"{image:kubejs:textures/quest/chapter6/chapter6_marker.png width:176 height:100 align:1}"
+			]
+			dependencies: ["4704B961D665B502"]
+			id: "07B73CE054AA3FB9"
+			tasks: [{
+				id: "3A729C7CFB0114A6"
+				type: "item"
+				item: "quarryplus:markerplus"
+				count: 3L
+			}]
+			rewards: [{
+				id: "0CCA2744B84E0DA0"
+				type: "item"
+				item: "mekanism:personal_chest"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 13.0d
+			description: ["We are now going to dig some extremely rare ores. Craft a quarry for that or you will need to dig for an extremely long time."]
+			dependencies: ["4704B961D665B502"]
+			id: "741A1D9BD4239A0F"
+			tasks: [{
+				id: "225550E44A1DE586"
+				type: "item"
+				item: "quarryplus:quarry"
+			}]
+			rewards: [{
+				id: "592EEB577716AA40"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "resource"
+					}
+				}
+				count: 12
+			}]
+		}
+		{
+			x: -3.5d
+			y: 15.0d
+			description: [
+				"To increase the speed of quarry, you may use an enchantment mover. Just simply move the \"Efficiency\" enchantment from a diamond / netherite pickaxe to the quarry using this block."
+				"{image:kubejs:textures/quest/chapter6/chapter6_enchantmover.png width:176 height:100 align:1}"
+			]
+			dependencies: ["4704B961D665B502"]
+			id: "339668700B064EEB"
+			tasks: [{
+				id: "36EAD659E261F3D5"
+				type: "item"
+				item: "quarryplus:enchantmover"
+			}]
+			rewards: [
+				{
+					id: "3CED18D8B62CF400"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 5s
+								id: "minecraft:efficiency"
+							}]
+						}
+					}
+				}
+				{
+					id: "514D15D4DE8545BE"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 13.0d
+			description: ["Now, you need to find this extremely rare ore which is found under the sea biome. Using quarry is the simpliest way to obtain this ore."]
+			dependencies: ["741A1D9BD4239A0F"]
+			id: "6B0CC8213A15FAFD"
+			tasks: [{
+				id: "1B610CDDB2C5610C"
+				type: "item"
+				item: "allthemodium:allthemodium_ore"
+			}]
+			rewards: [
+				{
+					id: "5A26BFA0B584818A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "4940BC43B365562C"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 15.0d
+			description: ["To further increase the speed of quarry, you can use time in a bottle. Shift+RC the quarry while holding the bottle. This bottle will multiply the tick speed of target block."]
+			dependencies: ["339668700B064EEB"]
+			id: "5F1C69AE101C679C"
+			tasks: [{
+				id: "2EF6756B80BBCB1F"
+				type: "item"
+				item: {
+					id: "tiab:timeinabottle"
+					Count: 1b
+					tag: {
+						timeData: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "511E6B95F5419B26"
+					type: "item"
+					item: "mekanism:upgrade_speed"
+					count: 64
+				}
+				{
+					id: "4B3A6D2F81B372FD"
+					type: "item"
+					item: "mekanism:upgrade_muffling"
+					count: 64
+				}
+				{
+					id: "365ED4E939759F96"
+					type: "item"
+					item: "mekanism:upgrade_gas"
+					count: 64
+				}
+				{
+					id: "4FA7A87864FD7D4C"
+					type: "item"
+					item: "mekanism:upgrade_energy"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 15.0d
+			description: ["Vibranium is pretty common and always expose at the surface of nether."]
+			dependencies: ["741A1D9BD4239A0F"]
+			id: "0DD5AB19A3C6EA78"
+			tasks: [{
+				id: "1C269A441F291951"
+				type: "item"
+				item: "allthemodium:vibranium_ore"
+			}]
+			rewards: [
+				{
+					id: "45D4DFB4D62E6CAF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "6965E49B24FBB8C9"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 11.0d
+			description: ["This ore is the rarest ore in this modpack. Try your best to get this ore!"]
+			dependencies: ["741A1D9BD4239A0F"]
+			id: "535B4E27E635FD20"
+			tasks: [{
+				id: "74FF41384FC13407"
+				type: "item"
+				item: "allthemodium:unobtainium_ore"
+			}]
+			rewards: [
+				{
+					id: "0FADC9A0E55A41DC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "10F47D37F81253CF"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 13.0d
+			description: [
+				"Remember to quintuple the ores to maximize output. Turn them into alloy blocks. With the alloy blocks, we can finally enter the age of space exploration."
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 7."
+			]
+			dependencies: [
+				"535B4E27E635FD20"
+				"6B0CC8213A15FAFD"
+				"0DD5AB19A3C6EA78"
+			]
+			id: "65DFACB4338FF649"
+			tasks: [
+				{
+					id: "1C121D203BBF67F1"
+					type: "item"
+					item: "allthemodium:unobtainium_vibranium_alloy_block"
+				}
+				{
+					id: "7B9DDD6676C02932"
+					type: "item"
+					item: "allthemodium:vibranium_allthemodium_alloy_block"
+				}
+				{
+					id: "20A855538B6C7B5A"
+					type: "item"
+					item: "allthemodium:unobtainium_allthemodium_alloy_block"
+				}
+			]
+			rewards: [
+				{
+					id: "0FFA28DCFDE2A627"
+					type: "item"
+					item: "mekanism:sulfuric_acid_bucket"
+					count: 8
+				}
+				{
+					id: "55577E197EBFE622"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 18
+				}
+				{
+					id: "75F17DDDD8240001"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+	]
+}

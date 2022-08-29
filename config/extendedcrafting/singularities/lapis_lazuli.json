@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.lapis_lazuli",
+  "colors": [
+    "193483",
+    "13295e"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/lapis"
+  }
+}

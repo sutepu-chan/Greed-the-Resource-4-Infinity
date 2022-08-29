@@ -1,0 +1,10 @@
+{
+    "name": "Gold",
+    "colors": [
+        "e5be2e",
+        "ad992e"
+    ],
+    "ingredient": {
+        "tag": "forge:storage_blocks/gold"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.electrum",
+  "colors": [
+    "c4af55",
+    "9e9a5f"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/electrum"
+  }
+}

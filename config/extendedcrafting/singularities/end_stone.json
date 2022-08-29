@@ -1,0 +1,11 @@
+{
+  "name": "End Stone",
+  "colors": [
+    "cacd94",
+    "56593d"
+  ],
+  "ingredient": {
+    "tag": "chisel:end_stone"
+  },
+  "materialCount": 15000
+}

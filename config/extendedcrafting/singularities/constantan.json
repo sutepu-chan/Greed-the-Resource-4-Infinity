@@ -1,0 +1,10 @@
+{
+    "name": "Constantan",
+    "colors": [
+      "905824",
+      "905824"
+    ],
+    "ingredient": {
+      "tag": "forge:storage_blocks/constantan"
+    }
+  }

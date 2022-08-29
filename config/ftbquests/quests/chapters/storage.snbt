@@ -1,0 +1,3504 @@
+{
+	id: "62C643D67A41F0DC"
+	group: "55D64AD3CBBBA98A"
+	order_index: 1
+	filename: "storage"
+	title: "Storage"
+	icon: "appliedenergistics2:singularity"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Wooden Chests"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "Chapter 1"
+			description: ["Basically, you first storage method are chests."]
+			id: "7361E68DAF5FDB9F"
+			tasks: [{
+				id: "1CC7915CDB5E18A8"
+				type: "item"
+				title: "Chests"
+				icon: "minecraft:chest"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			subtitle: "Chapter 5"
+			description: ["Black hole unit acts like drawers from \"Storage Drawer\". It is capable of storing huge amount of a specific item. Higher tiers store more items."]
+			dependencies: ["7361E68DAF5FDB9F"]
+			id: "5B4EA42A8B9D2C16"
+			tasks: [{
+				id: "5D211ED24B0A3D28"
+				type: "item"
+				item: "industrialforegoing:common_black_hole_unit"
+			}]
+			rewards: [{
+				id: "50EEC9F7EDB8B69C"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			dependencies: ["5B4EA42A8B9D2C16"]
+			id: "0DCFC0353092F4BF"
+			tasks: [{
+				id: "7F0E6C9742052C4A"
+				type: "item"
+				item: "industrialforegoing:pity_black_hole_unit"
+			}]
+			rewards: [{
+				id: "0891004311ECFD23"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 6.0d
+			dependencies: ["0DCFC0353092F4BF"]
+			id: "705C0B9FDB8002FA"
+			tasks: [{
+				id: "671D64DBE2811015"
+				type: "item"
+				item: "industrialforegoing:simple_black_hole_unit"
+			}]
+			rewards: [{
+				id: "3F05A816213B05AF"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 8.0d
+			dependencies: ["705C0B9FDB8002FA"]
+			id: "17787E88DA72E9A0"
+			tasks: [{
+				id: "44ABBCB044A3BA50"
+				type: "item"
+				item: "industrialforegoing:advanced_black_hole_unit"
+			}]
+			rewards: [{
+				id: "53E84A1C631056FE"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 10.0d
+			description: ["The largest possible black hole unit. Getting this will ease you a lot for you AE2 network."]
+			dependencies: ["17787E88DA72E9A0"]
+			id: "048704968568CEAC"
+			tasks: [{
+				id: "13F5FC5F04C52BCC"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_unit"
+			}]
+			rewards: [{
+				id: "7586B7A421A5D240"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			subtitle: "Chapter 5"
+			description: ["Black hole tank is an enormous tank. You can store a huge amount of specific fluid in it."]
+			dependencies: ["7361E68DAF5FDB9F"]
+			id: "426DE0910A177544"
+			tasks: [{
+				id: "2B1FBC81E5573CD3"
+				type: "item"
+				item: "industrialforegoing:common_black_hole_tank"
+			}]
+			rewards: [{
+				id: "3DC9DF26181F2641"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			dependencies: ["426DE0910A177544"]
+			id: "4EA8E5D96F066E02"
+			tasks: [{
+				id: "3850C78018535B4C"
+				type: "item"
+				item: "industrialforegoing:pity_black_hole_tank"
+			}]
+			rewards: [{
+				id: "0E28561509371397"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["4EA8E5D96F066E02"]
+			id: "6C76B7A235E0CABE"
+			tasks: [{
+				id: "15A0A045B3302CBD"
+				type: "item"
+				item: "industrialforegoing:simple_black_hole_tank"
+			}]
+			rewards: [{
+				id: "1A38B197A7F80572"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.0d
+			dependencies: ["6C76B7A235E0CABE"]
+			id: "13BFD8B59DF68491"
+			tasks: [{
+				id: "2B470EE2338A69AC"
+				type: "item"
+				item: "industrialforegoing:advanced_black_hole_tank"
+			}]
+			rewards: [{
+				id: "0FEC5D137C6EBFEB"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 10.0d
+			description: ["The largest possible black hole tank. Getting this will ease you a lot for you AE2 network."]
+			dependencies: ["13BFD8B59DF68491"]
+			id: "17FDF6F88A13207A"
+			tasks: [{
+				id: "09713F73601C722E"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_tank"
+			}]
+			rewards: [{
+				id: "4DDFA5D7ECE6DB95"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.0d
+			description: ["Black hole controller is able to store at most 16 black hole units or black hole tanks. The contents can be accessed outside by importers or exporters, e.g., import bus, pipes, cables, etc."]
+			dependencies: [
+				"5B4EA42A8B9D2C16"
+				"426DE0910A177544"
+			]
+			id: "1BC3EE0ED05F6F5D"
+			tasks: [{
+				id: "31B0B4EE685563BA"
+				type: "item"
+				item: "industrialforegoing:black_hole_controller"
+			}]
+			rewards: [{
+				id: "54EE5B0D0A19AAAE"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			title: "Dimensional Storage"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Chapter 2"
+			description: ["Dimensional Storage is a powerful storage network offered by Occultism. The ingredients arn't hard to obtain which makes it extremely suitable for early game storage."]
+			dependencies: ["7361E68DAF5FDB9F"]
+			id: "551475F3CE1C1E0A"
+			tasks: [
+				{
+					id: "691E6B9CAF84BFA8"
+					type: "item"
+					item: {
+						id: "occultism:dimensional_matrix"
+						Count: 1b
+						tag: {
+							spiritName: "Legiaseth"
+						}
+					}
+				}
+				{
+					id: "06FBB5BEB26E31B3"
+					type: "item"
+					item: "occultism:storage_controller_base"
+				}
+			]
+			rewards: [{
+				id: "52D16F76ACA0F0F6"
+				type: "choice"
+				title: "Choose your book of binding"
+				icon: "occultism:book_of_binding_foliot"
+				table_id: 3992974081605352128L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Combine the dimensional crystal matrix and dimensional actuator base to craft the dimensional storage actuator."
+				"Simply place the actuator down and your storage network is prepared."
+			]
+			dependencies: ["551475F3CE1C1E0A"]
+			id: "0B3794180F890D12"
+			tasks: [{
+				id: "12CC322B45C95FE0"
+				type: "item"
+				item: "occultism:storage_controller"
+			}]
+			rewards: [{
+				id: "53A5DD857A33FEF8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Storage stabilizer increases storage base in the storage dimension. There are 4 tiers of storage stabilizer, in which each tier adds more storage slots to the network."
+				"Storage stabilizers is requied to place one block higher than the storage actuator and point to the dimensional matrix in a 5 blocks radius."
+				"{image:kubejs:textures/quest/energy/energy_dimensional_storage.png width:176 height:100 align:1}"
+			]
+			dependencies: ["0B3794180F890D12"]
+			id: "720DA0E612D9B19C"
+			tasks: [{
+				id: "0D1CD18D1F9BBC16"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier1"
+			}]
+			rewards: [{
+				id: "6FC8B782003D5CCB"
+				type: "choice"
+				title: "Choose your book of binding"
+				icon: "occultism:book_of_binding_foliot"
+				table_id: 3992974081605352128L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			dependencies: ["720DA0E612D9B19C"]
+			id: "56DB23A49FF8CB23"
+			tasks: [{
+				id: "4A0D9C53CF0E8C0B"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+			rewards: [{
+				id: "1FB0903D0EDA16D5"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			dependencies: ["56DB23A49FF8CB23"]
+			id: "7A9F151236BFA626"
+			tasks: [{
+				id: "7C796C433F560AF0"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+			rewards: [{
+				id: "1A92B66D8FFE1C27"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 12.0d
+			dependencies: ["7A9F151236BFA626"]
+			id: "427C3E6DE3B8E8E1"
+			tasks: [{
+				id: "12D22570C78FD602"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+			rewards: [{
+				id: "0CEBDE615C359ACD"
+				type: "item"
+				item: "occultism:iesnium_ore"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			description: ["Dimensional storage can be accessed remotely by players through storage accessors. Shift+RC at storage actuator to bind the storage accessor."]
+			dependencies: ["0B3794180F890D12"]
+			id: "551C9829CC730782"
+			tasks: [{
+				id: "2EDD817F5AC17C74"
+				type: "item"
+				item: {
+					id: "occultism:storage_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "28307B5C0172858B"
+				type: "choice"
+				title: "Choose your book of binding"
+				icon: "occultism:book_of_binding_foliot"
+				table_id: 3992974081605352128L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			description: ["Dimensional storage can be accessed by players and spirits through dimensional wormhole. Shift+RC to storage actuator to bind the wormhole."]
+			dependencies: ["0B3794180F890D12"]
+			id: "2F9B6F9E91AFFB05"
+			tasks: [{
+				id: "700377FEEF64DCF4"
+				type: "item"
+				item: {
+					id: "occultism:stable_wormhole"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6A3504009BD2C0D5"
+				type: "choice"
+				title: "Choose your book of binding"
+				icon: "occultism:book_of_binding_foliot"
+				table_id: 3992974081605352128L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			subtitle: "Chapter 1"
+			description: ["Iron chest mod offers larger chests for Minecraft."]
+			dependencies: ["7361E68DAF5FDB9F"]
+			id: "52360BFB3EAD67D9"
+			tasks: [{
+				id: "264165B3D87410B2"
+				type: "item"
+				item: "ironchest:copper_chest"
+			}]
+			rewards: [{
+				id: "07798043CFB24D5C"
+				type: "item"
+				item: "ironchest:wood_to_copper_chest_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["52360BFB3EAD67D9"]
+			id: "671223041D7AC189"
+			tasks: [{
+				id: "2BEE0480AFB80846"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "4018EFFB4385B053"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["671223041D7AC189"]
+			id: "70F98FA850F80197"
+			tasks: [{
+				id: "5452E12AF6CC07F2"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [{
+				id: "7DE6960426AA9DFE"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["671223041D7AC189"]
+			id: "4972F4FC7EA84594"
+			tasks: [{
+				id: "559657E2FE97956A"
+				type: "item"
+				item: "ironchest:silver_chest"
+			}]
+			rewards: [{
+				id: "7201F06DEB16DCB4"
+				type: "item"
+				item: "ironchest:copper_to_silver_chest_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["70F98FA850F80197"]
+			id: "5BC52BDCDA023AC5"
+			tasks: [{
+				id: "05866869E8CCE006"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [{
+				id: "0941EDA019348BFF"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 10.0d
+			dependencies: ["5BC52BDCDA023AC5"]
+			id: "7F2C01896FF56E8D"
+			tasks: [{
+				id: "3586D6E23394B83C"
+				type: "item"
+				item: "ironchest:crystal_chest"
+			}]
+			rewards: [{
+				id: "02718B1EDBEEBDB2"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 10.0d
+			dependencies: ["5BC52BDCDA023AC5"]
+			id: "4DE4C3F9AA2CB99B"
+			tasks: [{
+				id: "386E18501AC30632"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+			rewards: [{
+				id: "304053DAA53FC64E"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["52360BFB3EAD67D9"]
+			id: "78E9B8058BCCB1D3"
+			tasks: [{
+				id: "7E3E4D6069191DC1"
+				type: "item"
+				item: "ironchest:dirt_chest"
+			}]
+			rewards: [
+				{
+					id: "7CE8942B656C5E5A"
+					type: "item"
+					item: "minecraft:coarse_dirt"
+					count: 4
+				}
+				{
+					id: "7D2FF47B9E7B1024"
+					type: "item"
+					item: "minecraft:podzol"
+					count: 4
+				}
+				{
+					id: "079AE9DA849600BE"
+					type: "item"
+					item: "minecraft:dirt"
+					count: 4
+				}
+				{
+					id: "5D22C5A7E5D4CE7B"
+					type: "item"
+					item: "minecraft:grass_block"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			subtitle: "Chapter 5"
+			description: ["Applied Energistics 2 is a mod that focuses on creating a compact, easily accessible, considerably extendible storage system called an ME Network. The \"ME\" in the title stands for \"Matter <-> Energy\" -- the premise being that items added to the system are converted into energy and stored in a digital form before needing to be used again, whereupon they are converted back into matter."]
+			dependencies: ["7361E68DAF5FDB9F"]
+			id: "39095537AEEFCEFD"
+			tasks: [{
+				id: "4D257E7AEEC26EB5"
+				type: "checkmark"
+				title: "Applied Energistics 2"
+			}]
+			rewards: [
+				{
+					id: "0CEE1676890DE848"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_wrench"
+				}
+				{
+					id: "0FABF25AEC50C5A8"
+					type: "item"
+					item: "appliedenergistics2:network_tool"
+				}
+			]
+		}
+		{
+			title: "Certus Quartz"
+			x: 0.0d
+			y: -5.0d
+			description: [
+				"To initiate AE2, you need to look for some certus quartz ore underground. The charged certus quartz ore is a bit rarer and harder to discover. Good Luck!"
+				"{image:kubejs:textures/quest/energy/energy_certus_quartz_ore.png width:176 height:100 align:1}"
+			]
+			dependencies: ["39095537AEEFCEFD"]
+			id: "01881C9492EF51D0"
+			tasks: [
+				{
+					id: "423829D438526004"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_crystal"
+				}
+				{
+					id: "1EB02B02E3B51633"
+					type: "item"
+					item: "appliedenergistics2:charged_certus_quartz_crystal"
+				}
+			]
+			rewards: [
+				{
+					id: "2C34C592908C5739"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "66C80A7E99D5545D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			description: [
+				"Use a certus quartz ore, craft a meteorite compass. This compass will locate meteorite near your."
+				"Try to find a meteorite and I will tell you what to do!"
+			]
+			dependencies: ["01881C9492EF51D0"]
+			id: "51E0FE328F8892A6"
+			tasks: [
+				{
+					id: "59F7C9603199FA9B"
+					type: "item"
+					item: "appliedenergistics2:sky_compass"
+				}
+				{
+					id: "31BB79B6C3F000AC"
+					type: "structure"
+					title: "Find a Meteorite"
+					structure: "appliedenergistics2:meteorite"
+				}
+			]
+			rewards: [
+				{
+					id: "775C2E3F4D9C9305"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "7BE3899943A7524E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Inside the Meteorite"
+			x: 0.0d
+			y: -7.0d
+			description: [
+				"The meteorite is a collection of skystones, with a skystone chest in the middle."
+				"There will be inscriber press inside the skystone chest, which is indispensible for you to craft AE2 items."
+				"This step is going to spend much time as you have to find 4 meteorite with different inscriber loot!"
+				"{image:kubejs:textures/quest/energy/energy_meteorite.png width:176 height:100 align:1}"
+			]
+			dependencies: ["51E0FE328F8892A6"]
+			id: "2C419A41BAE444B5"
+			tasks: [
+				{
+					id: "797AF424B983AA8C"
+					type: "item"
+					item: "appliedenergistics2:sky_stone_block"
+				}
+				{
+					id: "121F731814A91A88"
+					type: "item"
+					item: "appliedenergistics2:smooth_sky_stone_chest"
+				}
+				{
+					id: "0A28AD5C37B7F6EE"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor_press"
+				}
+				{
+					id: "3440ACDD5D0A820C"
+					type: "item"
+					item: "appliedenergistics2:logic_processor_press"
+				}
+				{
+					id: "61F0539E8FF13573"
+					type: "item"
+					item: "appliedenergistics2:silicon_press"
+				}
+				{
+					id: "3043EA09CA64A779"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor_press"
+				}
+			]
+			rewards: [
+				{
+					id: "021A5A79E3AABD79"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "7833353A9DEB89C5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			description: [
+				"During your trip of finding meteorite, some more ingredients could also be prepared."
+				"Drop a charged certus quartz, a redstone dust and a nether quartz into a pool of water. 2x Fluix crystals will pop out after a short period of time."
+				"{image:kubejs:textures/quest/energy/energy_fluix_crystal.png width:176 height:100 align:1}"
+			]
+			dependencies: ["01881C9492EF51D0"]
+			id: "68C0CB1021C5015D"
+			tasks: [{
+				id: "0338003502A782ED"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "11E058D11D713DB8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0260184878BCDC68"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			description: [
+				"With the fluix crystal crafted, get a charger. This will help you in obtaining more charged certus quartz."
+				"**It accepts both FE and AE as energy source."
+			]
+			dependencies: ["68C0CB1021C5015D"]
+			id: "4C85E7C59EE3801D"
+			tasks: [{
+				id: "1B8CD49E48EC4FA7"
+				type: "item"
+				item: "appliedenergistics2:charger"
+			}]
+			rewards: [
+				{
+					id: "74249654C933965A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "53E560718A955FAE"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			description: [
+				"AE2 uses a different energy system, in unit AE."
+				"If you tranmit FE to AE2 machines directly, the energy converts in a ratio of 2FE=1AE. Energy acceptor improved the conversion ratio into 1FE=1AE, which helps you a lot in the shortage of FE in early or mid-game."
+			]
+			dependencies: ["68C0CB1021C5015D"]
+			id: "43E1366AB179F363"
+			tasks: [{
+				id: "14864AB2F8627305"
+				type: "item"
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+			rewards: [
+				{
+					id: "705140D50B4BC0D7"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "23D768F5663CD2BC"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			description: [
+				"Inscriber is used to craft many different circuits and processors in AE2. The inscriber only allows ONE item to be inserted at one time. It is recommended using hoppers or pipes to automate this process."
+				"{image:kubejs:textures/quest/energy/energy_inscriber.png width:176 height:100 align:1}"
+			]
+			dependencies: [
+				"68C0CB1021C5015D"
+				"2C419A41BAE444B5"
+			]
+			id: "2288AAC529A9CDD5"
+			tasks: [{
+				id: "4BEF2D4D4405956B"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+			rewards: [
+				{
+					id: "3F8F6549C02B9304"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "2EF17C3978DCBCD0"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Circuits and Processors"
+			x: -2.0d
+			y: -9.0d
+			description: ["Time to get all the circuits and processors."]
+			dependencies: ["2288AAC529A9CDD5"]
+			id: "305F3E0749AF2BE9"
+			tasks: [
+				{
+					id: "2B1B2DF7A711FC09"
+					type: "item"
+					item: "appliedenergistics2:printed_engineering_processor"
+				}
+				{
+					id: "5B2C53F53234ED0F"
+					type: "item"
+					item: "appliedenergistics2:printed_logic_processor"
+				}
+				{
+					id: "5C222DBDE216DF88"
+					type: "item"
+					item: "appliedenergistics2:printed_silicon"
+				}
+				{
+					id: "6E93A4E9341CBD3F"
+					type: "item"
+					item: "appliedenergistics2:logic_processor"
+				}
+				{
+					id: "7BDD5B82486AC96F"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor"
+				}
+			]
+			rewards: [
+				{
+					id: "0D9334F6E227733B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "5572E7B8F132FE8D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Cables in AE2"
+			x: -4.0d
+			y: -3.0d
+			description: [
+				"You can connect AE2 machines or devices by placing adjacent to each other. You can also connect them through cables."
+				"Quartz fibre is crafting ingredients for ME cables. It also allows tramission of AE between devices or cables without data connection."
+			]
+			dependencies: ["68C0CB1021C5015D"]
+			id: "4C64DAA1E5DF06DD"
+			tasks: [{
+				id: "696BDE8BBCA05069"
+				type: "item"
+				item: "appliedenergistics2:quartz_fiber"
+			}]
+			rewards: [
+				{
+					id: "04809E3D411D6E7E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "3A2CDDC34928C337"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			description: [
+				"Cables can be used to transmit AE or data in ME network between several devices."
+				"A glass cable is capable of transmitting 8 channels simultaneously. There are also 16 coloured Glass Cables available to craft with the appropriate dye. The coloured Cables allows contact with other cables without sharing the signal or connecting, except with the same colour."
+			]
+			dependencies: ["4C64DAA1E5DF06DD"]
+			id: "486CEB9F4A430533"
+			tasks: [{
+				id: "14CECE5C674B8E64"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+			rewards: [
+				{
+					id: "4D36017A2AD052AE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "5CFB29340786043C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Pure crystals"
+			x: -2.0d
+			y: -11.0d
+			description: [
+				"Pure crystals are also important ingredients in AE2. Pure crystals can be obtained by throwing the above seeds in a pool of water."
+				"The growth takes a pretty long time."
+			]
+			dependencies: ["305F3E0749AF2BE9"]
+			id: "20588E4347F46C1C"
+			tasks: [
+				{
+					id: "5BF882445AA3833A"
+					type: "item"
+					item: "appliedenergistics2:certus_crystal_seed"
+				}
+				{
+					id: "478DE0C5DF639666"
+					type: "item"
+					item: "appliedenergistics2:fluix_crystal_seed"
+				}
+				{
+					id: "2ADD64937902ED9C"
+					type: "item"
+					item: "appliedenergistics2:nether_quartz_seed"
+				}
+				{
+					id: "3F526B65F52F9127"
+					type: "item"
+					item: "appliedenergistics2:purified_certus_quartz_crystal"
+				}
+				{
+					id: "328C0D1F8CF06816"
+					type: "item"
+					item: "appliedenergistics2:purified_nether_quartz_crystal"
+				}
+				{
+					id: "4B5D250B47B47D61"
+					type: "item"
+					item: "appliedenergistics2:purified_fluix_crystal"
+				}
+			]
+			rewards: [
+				{
+					id: "482B3CF4A0BF3FBA"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "4485AB7A7B65634F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -9.0d
+			description: [
+				"Crystal growth accelerator cis able to accelerate the growth of crystal seeds. They should be placed around the pool of water, which means that you can only use at most 5 of them (one side for throwing the seeds into water)."
+				"{image:kubejs:textures/quest/energy/energy_crystal_growth_accelerator.png width:100 height:100 align:1}"
+			]
+			dependencies: ["68C0CB1021C5015D"]
+			id: "032A6B7C83C33401"
+			tasks: [{
+				id: "5A3C110B4756BC87"
+				type: "item"
+				item: "appliedenergistics2:quartz_growth_accelerator"
+			}]
+			rewards: [
+				{
+					id: "338512270908FB73"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "710EBC8F0978F924"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -9.0d
+			description: [
+				"ME controller is undoubtedly a must-need device in ME network, which is capable of expanding the channel limit."
+				"Each side of ME controller provides 32 channels, which means a single ME controller block can provide 6x32=192 channels."
+				"Multiple ME controllers in one ME network is possible. This is achieved by creating a multiblock structure consisting out of multiple adjacent ME Controller blocks. The size of this multiblock structure also may not exceed 7x7x7 blocks. The multiblock can be almost any shape. One ME network only accepts ONE controller multiblock. Each ME controller should have at least 3 sides facing airin the multiblock structure. The controller does not work when the two ends is connected to an offline controller also."
+				"When the controller is placed wrong, it appears red in color. When the controller is offline, it appears gray. It shines in rainbow color when it functions properly."
+				"{image:kubejs:textures/quest/energy/energy_me_controller.png width:100 height:100 align:1}"
+			]
+			dependencies: ["20588E4347F46C1C"]
+			id: "14B16B7DB7B3969C"
+			tasks: [{
+				id: "53BD5D08CCC040B1"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+			rewards: [
+				{
+					id: "3A5EDE3D2044051C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "72072528B3C03363"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: [
+				"Channel is a major mechanic in AE2. The devices or machines will only function when being able to accessed to a channel. The online/offline status is shown by The One Probe.."
+				"Most (NOT ALL) decives in AE2 consumes 1 channel. A simple network, e.g. consists of only energy cells, provides only 8 channels. To extend beyond this limit, some more devices is needed, and will be mentioned in this quest route."
+			]
+			dependencies: ["39095537AEEFCEFD"]
+			id: "10F80B330CC4FA80"
+			tasks: [{
+				id: "23F1EDEA1A3B644B"
+				type: "checkmark"
+				title: "Concept of Channels"
+			}]
+			rewards: [
+				{
+					id: "3F964129E195731B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "55F0F207693591C1"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			description: [
+				"ME network is a network which is expandable and versatile advanced data storage system with a multitude of applications."
+				"Applications for an ME Network are wide and varied, but some of the most popular are:"
+				"1. Expansible item and liquid data storage."
+				"2. Sorting system."
+				"3. ME Auto Crafting system."
+				"4. Automated distribution system."
+				"5. Wireless inventory access."
+				"{image:kubejs:textures/quest/energy/energy_me_network.png width:176 height:100 align:1}"
+			]
+			dependencies: ["39095537AEEFCEFD"]
+			id: "6EAD0D75F716D4B4"
+			tasks: [{
+				id: "5B91FF88C8971D74"
+				type: "checkmark"
+				title: "ME Network"
+			}]
+			rewards: [
+				{
+					id: "34EC73922364EBCB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "224A5F293DDC19F8"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -9.0d
+			description: [
+				"ME drive is a device in ME network which stores storage cells. It consumes one network channel."
+				"With the drive, it's time to further expand your ME network."
+			]
+			dependencies: ["14B16B7DB7B3969C"]
+			id: "21E3A8AE6C9B328F"
+			tasks: [{
+				id: "78FEB4C84BF635D3"
+				type: "item"
+				item: "appliedenergistics2:drive"
+			}]
+			rewards: [
+				{
+					id: "032B79633F82B4F3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "16ED59224B7E9051"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -11.0d
+			subtitle: "Click to Submit Items"
+			description: ["Storage cell is for storing items in ME network., and should be placed in an ME drive."]
+			dependencies: ["21E3A8AE6C9B328F"]
+			id: "0D57134F4962637C"
+			tasks: [{
+				id: "4FF9B9C65BC49F4B"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:1k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "7F5DEF8BA7A7E79A"
+					type: "item"
+					item: "appliedenergistics2:1k_cell_component"
+				}
+				{
+					id: "23181AB8FD1BE011"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0E2A512109A18041"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -13.0d
+			description: ["ME chest is a fundamental form of ME network. It can only stores 1 storage cell and you can access items in that cell."]
+			dependencies: ["20588E4347F46C1C"]
+			id: "59595711A0F0782F"
+			tasks: [{
+				id: "3A4A5C2A68E3C021"
+				type: "item"
+				item: "appliedenergistics2:chest"
+			}]
+			rewards: [
+				{
+					id: "49D322A58A1203AB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "573832B6FFF33C36"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -13.0d
+			description: ["Energy cell act as an energy storage in ME network."]
+			dependencies: ["20588E4347F46C1C"]
+			id: "7537C6DDC24213E3"
+			tasks: [{
+				id: "7794A5E97CC23E13"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "43B70E089AA6B5EA"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "3205A37F5096C002"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -13.0d
+			dependencies: ["7537C6DDC24213E3"]
+			id: "0726D9E65C428654"
+			tasks: [{
+				id: "598EFDB5F2D4376F"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:dense_energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "15C940E16BA06C4A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "733CC2F795AA2518"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -9.0d
+			description: ["Cell workbench can modify configuration of any cells. For example, you can configure whitelist/blacklist of the cell. It is also important in configuring View Cell."]
+			dependencies: ["20588E4347F46C1C"]
+			id: "0ABD82C15DC96728"
+			tasks: [{
+				id: "2D86E3891F2F25F0"
+				type: "item"
+				item: "appliedenergistics2:cell_workbench"
+			}]
+			rewards: [
+				{
+					id: "20E4DE38CF937FDE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "14577B502567AB38"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -9.0d
+			description: ["View cells are used in terminals which can filter the items shown in a terminal. It can only be configured by cell workbench."]
+			dependencies: ["0ABD82C15DC96728"]
+			id: "1B3C13F4BF86AEB1"
+			tasks: [{
+				id: "750A16F3EFD4D1ED"
+				type: "item"
+				item: "appliedenergistics2:view_cell"
+			}]
+			rewards: [
+				{
+					id: "45FDC7D76FFA3BC3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "030FE27E59EDA741"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Largest possible storage cells"
+			x: -8.0d
+			y: -13.0d
+			description: ["Collect all the largest cells in AE2!"]
+			dependencies: ["0D57134F4962637C"]
+			id: "556500107A255FD1"
+			tasks: [
+				{
+					id: "1954789FD687D3C5"
+					type: "item"
+					item: {
+						id: "aeadditions:item_storage_cell_16384"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "59521FCC67C42E83"
+					type: "item"
+					item: {
+						id: "aeadditions:fluid_storage_cell_4096"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4F0C538E1088153A"
+					type: "item"
+					item: {
+						id: "aeadditions:chemical_storage_cell_4096"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "317D3AEB50D6FA2D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "5E39996F3F33C355"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -9.0d
+			description: ["Terminals are devices that allows access to storage items. Each terminals uses one channel."]
+			dependencies: ["21E3A8AE6C9B328F"]
+			id: "18D26547C9605BFE"
+			tasks: [{
+				id: "7E36687B9B738AFE"
+				type: "item"
+				item: "appliedenergistics2:terminal"
+			}]
+			rewards: [
+				{
+					id: "1352CD89C874375C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "093385FDE7C903A3"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -9.0d
+			description: ["Fluid terminal allows access to fluid storage cells."]
+			dependencies: ["18D26547C9605BFE"]
+			id: "013758CBD3647A16"
+			tasks: [{
+				id: "7FC5C16E53E4FA92"
+				type: "item"
+				item: "appliedenergistics2:fluid_terminal"
+			}]
+			rewards: [
+				{
+					id: "1C01386EBC8CD751"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "14CD5A7CFB0879E1"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -9.0d
+			description: ["Chemical terminals allow access to chemical storage cells."]
+			dependencies: ["013758CBD3647A16"]
+			id: "1B7C0C56012FCFAA"
+			tasks: [{
+				id: "2116D99F9BF13478"
+				type: "item"
+				item: "aeadditions:chemical_terminal"
+			}]
+			rewards: [
+				{
+					id: "2231F04500EDF999"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "515D72E9038D7011"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -11.0d
+			description: ["Crafting terminal is a more advanced terminal which allows crafting process at terminal."]
+			dependencies: ["18D26547C9605BFE"]
+			id: "35A3A559F5BB816A"
+			tasks: [{
+				id: "514F8F0259BF1096"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+			rewards: [
+				{
+					id: "26DB0B807A9DC569"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "145116529A71792E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -11.0d
+			dependencies: ["18D26547C9605BFE"]
+			id: "312608A72A1CA298"
+			tasks: [{
+				id: "42713679D0BBBBFF"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:wireless_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "4E5BF0BE056202F0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "2B5E260EDA3ACF67"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Wireless access to ME network"
+			x: -2.0d
+			y: -15.0d
+			description: [
+				"Wireless access to ME network is possible. All you need is a security terminal, wireless transmitter and a wireless terminal."
+				"A security terminal is used for binding your wireless terminal to network. It also can be used in preventing other players accessing your network by biometric cards."
+			]
+			dependencies: ["59595711A0F0782F"]
+			id: "4576BEBEC805BCF4"
+			tasks: [{
+				id: "5A8C0D5B6FBDD950"
+				type: "item"
+				item: "appliedenergistics2:security_station"
+			}]
+			rewards: [
+				{
+					id: "032DB996673169E7"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "583817F7F2F31434"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -15.0d
+			description: ["Biometric card is used to grant specific permissions to other players of your network. This is only important in a server."]
+			dependencies: ["4576BEBEC805BCF4"]
+			id: "05701BC6F848FB18"
+			tasks: [{
+				id: "6DD409C403F5AD76"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:biometric_card"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0FEE9E24990BDD89"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "5E8DCC54E80695B5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -17.0d
+			description: ["Wireless access point is for transmitting storage data to your wireless terminal. It only transmit in a 16 blocks radius limit."]
+			dependencies: ["4576BEBEC805BCF4"]
+			id: "7C03A38756188F26"
+			tasks: [{
+				id: "37636C4B987363D4"
+				type: "item"
+				item: "appliedenergistics2:wireless_access_point"
+			}]
+			rewards: [
+				{
+					id: "5E65FCD588DED51E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "4B6C466D9872E3F5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -19.0d
+			description: ["Wireless boosters increases the transmission distance of the wireless access point. The access point work in maximum of 64 booster, providing a transmission in 512 blocks radius."]
+			dependencies: ["7C03A38756188F26"]
+			id: "7C793DB9AC713886"
+			tasks: [{
+				id: "7287A1FCCC222A8D"
+				type: "item"
+				item: "appliedenergistics2:wireless_booster"
+				count: 64L
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "79A544D1A485A30C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "72CB0C56B0E20643"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -19.0d
+			description: [
+				"Wireless terminal binds to your ME network by placing it onto the right-most slot of security terminal."
+				"The status of your wireless terminal shows \"Linked\" if you have done it successfully."
+			]
+			dependencies: ["7C793DB9AC713886"]
+			id: "1DC0ACCBC2DA72DB"
+			tasks: [{
+				id: "268837FC55F2141B"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:wireless_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "413E577302861F0E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0C02F15BF9E4D1CF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -19.0d
+			dependencies: ["1DC0ACCBC2DA72DB"]
+			id: "0C764500D81C4904"
+			tasks: [{
+				id: "50EA52827749ADBA"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_crafting_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "32B855C5A980D246"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1BF7978D96778FA3"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -17.0d
+			dependencies: ["1DC0ACCBC2DA72DB"]
+			id: "289B9005C246C21F"
+			tasks: [{
+				id: "0ABC3C495D6244AA"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_pattern_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "346C639821706D6A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0CBBB775029E6D65"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -21.0d
+			dependencies: ["1DC0ACCBC2DA72DB"]
+			id: "3ECA855FEE5FBDF1"
+			tasks: [{
+				id: "0934991F03122F2F"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_interface_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "2984B32B9A7B29C5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "053CB10B0B81C9EB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Addons to your wireless crafting terminal."
+			x: 4.0d
+			y: -19.0d
+			description: ["Magnet card is a magnet upgrade to the terminal. It absorbs items nearby and directly insert into the terminal."]
+			dependencies: ["0C764500D81C4904"]
+			id: "2E552D535BA74C1A"
+			tasks: [{
+				id: "4C70C51429C96C13"
+				type: "item"
+				item: "ae2wtlib:magnet_card"
+			}]
+			rewards: [
+				{
+					id: "36CE561119264FE0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "7D7B6BF074DC16B8"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -5.0d
+			description: ["Covered cable is able to transmit up to 8 channels."]
+			dependencies: ["486CEB9F4A430533"]
+			id: "641F103E74200F31"
+			tasks: [{
+				id: "34EAB7C911689EC4"
+				type: "item"
+				item: "appliedenergistics2:fluix_covered_cable"
+			}]
+			rewards: [
+				{
+					id: "5CAA9B58E28C7A40"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "30004B5B5C661F86"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -1.0d
+			description: ["Dense covered cable is able to transmit up to 32 channels."]
+			dependencies: ["486CEB9F4A430533"]
+			id: "7C0CCEAAB7B8B916"
+			tasks: [{
+				id: "0B262947C6C859C2"
+				type: "item"
+				item: "appliedenergistics2:fluix_covered_dense_cable"
+			}]
+			rewards: [
+				{
+					id: "3665F6F41004E69D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "401F00FBEA66E10E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			description: ["Smart cable is able to transmit 8 channels. You can view the amount of channels used in smart cable."]
+			dependencies: ["641F103E74200F31"]
+			id: "5525AD814B051205"
+			tasks: [{
+				id: "1753FCD7A96E1F59"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_cable"
+			}]
+			rewards: [
+				{
+					id: "11DF8E0E5E1F217A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "6FB57AA386F1D7F5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -1.0d
+			description: ["Dense smart cable is able to transmit 32 channels. You can view the amount of channels used in smart cable."]
+			dependencies: ["7C0CCEAAB7B8B916"]
+			id: "0F365D9158EBBF40"
+			tasks: [{
+				id: "3118F5853442016B"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}]
+			rewards: [
+				{
+					id: "34F81265C01B997E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "2EBED0B369AAB724"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -3.0d
+			description: [
+				"Cable anchors is able to prevent connection of two adjacent cables."
+				"{image:kubejs:textures/quest/energy/energy_cable_anchor.png width:100 height:100 align:1}"
+			]
+			dependencies: ["486CEB9F4A430533"]
+			id: "0D9A371BBBF55940"
+			tasks: [{
+				id: "3F83E2341A89721E"
+				type: "item"
+				item: "appliedenergistics2:cable_anchor"
+			}]
+			rewards: [
+				{
+					id: "17168813FD24AFBF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "3278BE96F629F98E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -3.0d
+			description: [
+				"Facade can be used to cover your cables. One facade can only attach to one side of cable. If you are going to cover all 4 sides of cables, you will need 4 facades."
+				"Facades is crafted from surrounding a desired blocks with 4 cable anchors. For example, if you want to cover the cables with a stone texture, surround a stone block with 4 cable anchors, and you will get the stone facade."
+			]
+			dependencies: ["0D9A371BBBF55940"]
+			id: "130045EF6BC6895A"
+			tasks: [{
+				id: "39A699E322C3B13E"
+				type: "item"
+				title: "Any cable facade"
+				icon: {
+					id: "appliedenergistics2:facade"
+					Count: 1b
+					tag: {
+						item: "minecraft:stone"
+					}
+				}
+				item: {
+					id: "appliedenergistics2:facade"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "09D8A6C742445F4C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0F742BA59CBD0974"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -11.0d
+			description: [
+				"Sometimes, the disk will get fragmentated. Disk fragmentation occurs when items get scattered throughout between your disks. This can cause poor disk performance and overall network degradation."
+				"ME IO port solved this problem. Moves the disk contents into ME network again, combiner items of the same type inside one disk. Therefore, this prevents multiple disks are storing one single types of items, and this will make your storage more efficient and effective."
+			]
+			dependencies: ["0D57134F4962637C"]
+			id: "0D636EE06FE6963D"
+			tasks: [{
+				id: "71F2C77E0B8B1748"
+				type: "item"
+				item: "appliedenergistics2:io_port"
+			}]
+			rewards: [
+				{
+					id: "1A3F7992192C90FF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "39D2725B6C92D278"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Cores"
+			x: 2.0d
+			y: -11.0d
+			description: ["Anihilation core and Formation cores are crafting components in AE2."]
+			dependencies: ["20588E4347F46C1C"]
+			id: "091FB642125B1707"
+			tasks: [
+				{
+					id: "5D64E9DA5DABB567"
+					type: "item"
+					item: "appliedenergistics2:annihilation_core"
+				}
+				{
+					id: "17E314B52D1E825B"
+					type: "item"
+					item: "appliedenergistics2:formation_core"
+				}
+			]
+			rewards: [
+				{
+					id: "3462D5AB0D0DEEB1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "01522821A68A5EEF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "ME interfaces"
+			x: 4.0d
+			y: -11.0d
+			description: [
+				"Interfaces creates access to your storage. You can configure items displayed at interface and also input items into network through interface. Each interface block uses one channel."
+				"This block mostly used in automation."
+			]
+			dependencies: ["091FB642125B1707"]
+			id: "742005EBE2AE5B91"
+			tasks: [
+				{
+					id: "12BF3477166BA25F"
+					type: "item"
+					item: "appliedenergistics2:interface"
+				}
+				{
+					id: "02AC74D8CFF03EB9"
+					type: "item"
+					item: "appliedenergistics2:fluid_interface"
+				}
+			]
+			rewards: [
+				{
+					id: "710307F1B8E4E7BA"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "4C7063FC2772AAF5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Flatter ME Interfaces"
+			x: 6.0d
+			y: -11.0d
+			description: ["These interfaces is able to attach onto a block or a machine. They are mostly used in automations and auto-crafting."]
+			dependencies: ["742005EBE2AE5B91"]
+			id: "03918347FE0D5923"
+			tasks: [
+				{
+					id: "2E9AC24C354CEC4A"
+					type: "item"
+					item: "appliedenergistics2:cable_interface"
+				}
+				{
+					id: "26D45D3AB58F0324"
+					type: "item"
+					item: "appliedenergistics2:cable_fluid_interface"
+				}
+			]
+			rewards: [
+				{
+					id: "7CF9BC4D82B016C3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "56F03EE32D80F1FC"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "CPU of Auto-Crafting"
+			x: 4.0d
+			y: -13.0d
+			description: [
+				"AE2 provides auto-crafting systems. Molecular assembler is a part of the auto crafting system of the ME Network. It is a machinethat automates the assembly of items according to instructions."
+				"It need to be attached to an ME interface to function properly, which means that one ME interface can be attached to at most 6 molecular assembler."
+				"One ME interface act as a CPU core of your auto-crafting system and the molecular assmebler act as a thread of your core. In other words, more molecular assmebler attaching to the ME interface will increase the speed of auto-crafting, and more ME interface allows more items can be crafted at the same time."
+				"Note that the channels used depends on the amount of ME interface. i.e. 1 ME interface + 6 Molecular Assembler uses 1 channel."
+				"{image:kubejs:textures/quest/energy/energy_molecular_assembler.png width:120 height:100 align:1}"
+			]
+			dependencies: ["742005EBE2AE5B91"]
+			id: "3E7FFFE7B5ECEEB2"
+			tasks: [{
+				id: "71007C2E62D2E0EF"
+				type: "item"
+				item: "appliedenergistics2:molecular_assembler"
+			}]
+			rewards: [
+				{
+					id: "664D82F05AC663FE"
+					type: "item"
+					item: "appliedenergistics2:64k_cell_component"
+				}
+				{
+					id: "1336986B85F5DB94"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1A678B30495D8F09"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "RAM of Auto-Crafting"
+			x: 6.0d
+			y: -13.0d
+			description: [
+				"Crafting storages act as a RAM of your auto-crafting system. For some big and complicated recipes, it requires more crafting storages, or RAM to carry out the command."
+				"The crafting storage is an expandable multiblock structure. The crafting storages need to be placed in rectangular shape in order to be functionable."
+				"Crafting co-processing unit synchronises the crafting jobs from the ME Network with the Crafting Storage and the Molecular Assembler."
+				"Crafting Monitor will display the item of the job being crafted by a Molecular Assembler showing a countdown of the remaining units of the job to be crafted."
+				"The above blocks are interchangable and functionable in the multiblock structure, if you placed them correctly in a rectangular shape."
+				"{image:kubejs:textures/quest/energy/energy_crafting_storage.png width:100 height:100 align:1}"
+			]
+			dependencies: ["3E7FFFE7B5ECEEB2"]
+			id: "5B3BF83365815AFC"
+			tasks: [
+				{
+					id: "386C56F88F7A7995"
+					type: "item"
+					item: "appliedenergistics2:64k_crafting_storage"
+				}
+				{
+					id: "61F4847DB314AB29"
+					type: "item"
+					item: "appliedenergistics2:crafting_accelerator"
+				}
+				{
+					id: "3B75BCC461A38BBB"
+					type: "item"
+					item: "appliedenergistics2:crafting_monitor"
+				}
+			]
+			rewards: [
+				{
+					id: "3FEE65094292EC87"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1CA10D93F9F73697"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -11.0d
+			description: ["Interface Terminal allows remote access to all the ME Interface Pattern inventory making it possible to add or remove patterns without having to go to the Interface's location. The inventories are listed by Devices and machines connected to the Interfaces."]
+			dependencies: ["03918347FE0D5923"]
+			id: "16BC989B833E042D"
+			tasks: [{
+				id: "4B5154963F9E8540"
+				type: "item"
+				item: "appliedenergistics2:interface_terminal"
+			}]
+			rewards: [
+				{
+					id: "50E534F43E2FC297"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "6F0412F073617022"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -9.0d
+			description: ["It creates recipes for auto-crafting using blank patterns."]
+			dependencies: ["742005EBE2AE5B91"]
+			id: "5C1AEEC005EC51D3"
+			tasks: [{
+				id: "6066633021E244B8"
+				type: "item"
+				item: "appliedenergistics2:pattern_terminal"
+			}]
+			rewards: [
+				{
+					id: "0D9AE0B2D84FDF14"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "44ADA2A751EB9255"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -9.0d
+			description: ["Blank pattern can be encoded with a crafting or processing recipe using an ME Pattern Terminal. The encoded patterns need to be placed inside an interface."]
+			dependencies: ["5C1AEEC005EC51D3"]
+			id: "232EA70B038488CE"
+			tasks: [{
+				id: "0C82FDAD6D2FDEBD"
+				type: "item"
+				item: "appliedenergistics2:blank_pattern"
+			}]
+			rewards: [
+				{
+					id: "0DABC0163FC930FC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "7446D1747FE2280A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -1.0d
+			description: ["ME Toggle Bus functions similarly to cables. It also allows its connection state to be toggled via redstone. This allows you to cut off a section of a ME Network."]
+			dependencies: ["486CEB9F4A430533"]
+			id: "01A91F2707E165D0"
+			tasks: [{
+				id: "27253AC8D8F9CDC0"
+				type: "item"
+				item: "appliedenergistics2:toggle_bus"
+			}]
+			rewards: [
+				{
+					id: "0A738B0A13E078EC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "3BAE09907274DCBD"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Spatial Storage"
+			x: -4.0d
+			y: -1.0d
+			description: [
+				"AE2 provides spatial storage also. Spatial pylon is the main block used to construct a Spatial Containment Structure, for containing placed blocks in world."
+				"Spatial pylon need to be placed in straight lines with minimum length of 2 blocks, at x,y,z axis correspondingly."
+				"Spatial IO port need to be placed at the intersection point of the lines of spatial pylon. Redstone signal and AE energy is required for the operation of spatial containment structure."
+				"{image:kubejs:textures/quest/energy/energy_spatial_pylon.png width:100 height:100 align:1}"
+			]
+			dependencies: ["486CEB9F4A430533"]
+			id: "34D17C1B57ED192E"
+			tasks: [
+				{
+					id: "311BF5CA81D33ACC"
+					type: "item"
+					item: "appliedenergistics2:spatial_pylon"
+				}
+				{
+					id: "55E287B369FFF6C9"
+					type: "item"
+					item: "appliedenergistics2:spatial_io_port"
+				}
+			]
+			rewards: [
+				{
+					id: "1A4F86749FDAD0F4"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1AE3C02EBEAA42A8"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			description: ["You need spatial storage cell to store the space. 128 storage cell is the largest spatial storage cell."]
+			dependencies: ["34D17C1B57ED192E"]
+			id: "6D6B605E9317C4BD"
+			tasks: [{
+				id: "2A9CF8FEF6FF6223"
+				type: "item"
+				item: "appliedenergistics2:128_cubed_spatial_storage_cell"
+			}]
+			rewards: [
+				{
+					id: "58B09891E73BF7F0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "18F3C8F2DA70EBE6"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -13.0d
+			description: ["Portable cells are like a hand-held ME network. It also acts like a backpack. You can store items inside the cell during adventures. After the adventure, you can import the things back to ME network using ME IO Port."]
+			dependencies: ["0D57134F4962637C"]
+			id: "71BC973D87C2D40B"
+			tasks: [{
+				id: "3B4B71705472DC54"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:64k_portable_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "1D50C0F195D3AE26"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "45AD55FA74B3A692"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			title: "Wireless ME Network"
+			x: 2.0d
+			y: -7.0d
+			description: [
+				"Wireless ME Network is also possible in AE2, so that you can access to your items at your distant base."
+				"To create the connection, you need to prepare several items."
+			]
+			dependencies: ["305F3E0749AF2BE9"]
+			id: "5C47852FD418D946"
+			tasks: [{
+				id: "127038C2C60F53E4"
+				type: "item"
+				item: "appliedenergistics2:condenser"
+			}]
+			rewards: [
+				{
+					id: "4907C811B16FF926"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "68A576722489EB50"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -7.0d
+			description: ["Insert a 64K storage component to the top right hand slot of the matter condensor. Then, insert any items into the slot below. When the items amount reach 256000, one singularity forms."]
+			dependencies: ["5C47852FD418D946"]
+			id: "747A9BB7B2C2AA9A"
+			tasks: [{
+				id: "5350B3A7556BB9B8"
+				type: "item"
+				item: "appliedenergistics2:singularity"
+			}]
+			rewards: [
+				{
+					id: "554899BF2F13CB35"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "4B214D70B7AE3E7B"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -7.0d
+			description: [
+				"Drop one singularity and one ender dust on ground and explode them using tiny tnt. The quantum entangled singularity will then poped out."
+				"The quantum entangled singularities are produced in pairs, which is required to create a connection between bridge on each side."
+			]
+			dependencies: ["747A9BB7B2C2AA9A"]
+			id: "1450594D970A31E4"
+			tasks: [{
+				id: "1F1AF0231A06DD44"
+				type: "item"
+				item: "appliedenergistics2:quantum_entangled_singularity"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "34C6BDE476A12D3C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1903B4C8CA720AB2"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -5.0d
+			description: [
+				"Get 8 ME quantum rings and 1 ME quantum link chamber. Place them in a verticle 3x3 multiblock structure, surrounding the ME quantum link chamber by ME quantum ring."
+				"After the multiblock structure formed. Put 1 quantum entangled singularity in the ME quantum link chamber."
+				"On the another side, repeat the above steps. Remember to place the another quantum entangled singularity which is produced in pairs to set up connection. It is recommended that the quantum entangled singularities of the same pair should be renamed using anvils."
+				"{image:kubejs:textures/quest/energy/energy_quantum_ring.png width:100 height:100 align:1}"
+			]
+			dependencies: ["1450594D970A31E4"]
+			secret: true
+			id: "12F75EAF662976C7"
+			tasks: [
+				{
+					id: "6758B1DC83AACFC9"
+					type: "item"
+					item: "appliedenergistics2:quantum_link"
+					count: 2L
+				}
+				{
+					id: "104421075DED58F8"
+					type: "item"
+					item: "appliedenergistics2:quantum_ring"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "4A22BD84ECCF854D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "11B9875AE5A61B8A"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -13.0d
+			description: [
+				"Memeory card is for setting up P2P Tunnels."
+				"P2P Tunnels stands for \"Point to Point\" Tunnels, which is a versatile configurable system to move items / redstone / power / fluids / light / ME channels from one location to another though an existing ME Network without storage."
+				"Tunnels can be infinite amount of outputs (limited by the amount of channels), but can only have single point of input."
+				"To configure a P2P Tunnel you must first attune the tunnel to carry what you want it to, then you need to configure the outputs to their input. You configure the connections by using the Memory Card."
+				"First, Shift+RC the input to save it on your memory card, then simply RC the different outputs to store the input onto the outputs. this also sets the type of the output to match the type of the input."
+			]
+			dependencies: ["20588E4347F46C1C"]
+			id: "26EB67ED9A518759"
+			tasks: [{
+				id: "26400C05A3A0E1B4"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:memory_card"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "7A5B9453C5CA3835"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "54FEA7059BC7D935"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -15.0d
+			description: ["ME Tunnels can be used to carry channels from one location to another, and can carry up to 32 channels, same as a ME Dense Cable, while only requiring a single channel per point, making tunnels a very powerful tool to expand me networks, especially over a distance. However with the great flex-ability they give you comes a limitation, the channel of a p2p tunnel cannot be carried by another p2p tunnel, meaning that you cannot nest them recursively."]
+			dependencies: ["26EB67ED9A518759"]
+			id: "1145D8AD22975D9A"
+			tasks: [{
+				id: "1A416C8AF2CB0910"
+				type: "item"
+				item: "appliedenergistics2:me_p2p_tunnel"
+			}]
+			rewards: [
+				{
+					id: "136E9EE071DF7088"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "59162D0E5E50AC90"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -15.0d
+			dependencies: ["26EB67ED9A518759"]
+			id: "53E3330023BB4C82"
+			tasks: [{
+				id: "3488080B3985B8BB"
+				type: "item"
+				item: "appliedenergistics2:redstone_p2p_tunnel"
+			}]
+			rewards: [
+				{
+					id: "2ED8BAC385E6E82F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "2C90C73CF3173902"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -15.0d
+			dependencies: ["26EB67ED9A518759"]
+			id: "7A8F1D7AF2413206"
+			tasks: [{
+				id: "5F726C01216B4E38"
+				type: "item"
+				item: "appliedenergistics2:item_p2p_tunnel"
+			}]
+			rewards: [
+				{
+					id: "3691122D9E30BD0C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "589A10385A36871C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -17.0d
+			dependencies: ["26EB67ED9A518759"]
+			id: "7989B1A8E1FEEB69"
+			tasks: [{
+				id: "2C05AFECC418C876"
+				type: "item"
+				item: "appliedenergistics2:fluid_p2p_tunnel"
+			}]
+			rewards: [
+				{
+					id: "17A253B3A51DCB8A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "284949BABA3A956D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -17.0d
+			dependencies: ["26EB67ED9A518759"]
+			id: "135E70AE57460CFC"
+			tasks: [{
+				id: "607B7A6589A0C5E5"
+				type: "item"
+				item: "appliedenergistics2:fe_p2p_tunnel"
+			}]
+			rewards: [
+				{
+					id: "67416D84550B8E21"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1F9E9A19F14F9DD7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -17.0d
+			dependencies: ["26EB67ED9A518759"]
+			id: "1FE91A00E805008E"
+			tasks: [{
+				id: "755E952E223CAFBF"
+				type: "item"
+				item: "appliedenergistics2:light_p2p_tunnel"
+			}]
+			rewards: [
+				{
+					id: "25FCEEFC066BBD97"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "6B6DF0C1BDDB23BF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Lazier AE2"
+			x: -6.0d
+			y: -7.0d
+			description: ["Lazier AE2 provides more convenient recipes and machines for automation."]
+			dependencies: ["68C0CB1021C5015D"]
+			id: "650A2DFB42040DB8"
+			tasks: [
+				{
+					id: "6E1422865612C358"
+					type: "item"
+					item: "lazierae2:carbonic_fluix_dust"
+				}
+				{
+					id: "784B2F25103D7F27"
+					type: "item"
+					item: "lazierae2:fluix_iron_ingot"
+				}
+				{
+					id: "16BB2AC62A1F97AD"
+					type: "item"
+					item: "lazierae2:fluix_steel_ingot"
+				}
+				{
+					id: "5931D86B0DCFAD69"
+					type: "item"
+					item: "lazierae2:resonating_gem"
+				}
+			]
+			rewards: [
+				{
+					id: "48167C681189F843"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "7EFCC7CD7390A548"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -7.0d
+			description: ["A new press added by Lazier AE2!"]
+			dependencies: ["650A2DFB42040DB8"]
+			id: "6DF18D64F8DB8C31"
+			tasks: [{
+				id: "4FE79E6655D1854D"
+				type: "item"
+				item: "lazierae2:universal_press"
+			}]
+			rewards: [
+				{
+					id: "78B13B295FEDFEF2"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "13C14B23602334E5"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -5.0d
+			dependencies: ["6DF18D64F8DB8C31"]
+			id: "3440CA73CADBEC17"
+			tasks: [
+				{
+					id: "562B4DD62DDB7BE9"
+					type: "item"
+					item: "lazierae2:parallel_printed"
+				}
+				{
+					id: "5E816EE34EF63131"
+					type: "item"
+					item: "lazierae2:parallel_processor"
+				}
+			]
+			rewards: [
+				{
+					id: "6D692A1B642962C7"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "3D6F8EDC67DB67CD"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -7.0d
+			description: ["Speculation cores are crafting ingredients in Lazier AE2. It requires matter balls from AE2."]
+			dependencies: ["6DF18D64F8DB8C31"]
+			id: "55E9768B3E8EDD27"
+			tasks: [
+				{
+					id: "6330B23796C74227"
+					type: "item"
+					item: "lazierae2:speculation_core_1"
+				}
+				{
+					id: "7E6446364D01A999"
+					type: "item"
+					item: "lazierae2:speculation_core_2"
+				}
+				{
+					id: "53FF83769445EB15"
+					type: "item"
+					item: "lazierae2:speculation_core_4"
+				}
+				{
+					id: "30F42815450A493B"
+					type: "item"
+					item: "lazierae2:speculation_core_8"
+				}
+				{
+					id: "1841A2B50B94BB46"
+					type: "item"
+					item: "lazierae2:speculation_core_16"
+				}
+				{
+					id: "31F7DCB8B5E76076"
+					type: "item"
+					item: "lazierae2:speculation_core_32"
+				}
+				{
+					id: "1E1AE33E3707FC48"
+					type: "item"
+					item: "lazierae2:speculation_core_64"
+				}
+			]
+			rewards: [
+				{
+					id: "3F0638D49FD0DCC5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "2DC004E906266297"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -7.0d
+			dependencies: ["55E9768B3E8EDD27"]
+			id: "78E1834E5D0AE78E"
+			tasks: [
+				{
+					id: "7E748C6E73FEC311"
+					type: "item"
+					item: "lazierae2:speculative_printed"
+				}
+				{
+					id: "7D86DD9EAFC0099F"
+					type: "item"
+					item: "lazierae2:speculative_processor"
+				}
+			]
+			rewards: [
+				{
+					id: "7F0EB9B64F5A1700"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "5EF2A698019F03B1"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			description: ["Fluix Aggregator provides faster methods for in-world crafting and some other crafting processes."]
+			dependencies: ["650A2DFB42040DB8"]
+			id: "68779152A7AD9B9D"
+			tasks: [{
+				id: "40015E132BAD0369"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+			rewards: [
+				{
+					id: "54DEE81EF91D8BB7"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "24BBA2022C914F9F"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -7.0d
+			description: ["Pulse Centrifuge provides better and faster ways of obtaining pure crystals."]
+			dependencies: [
+				"78E1834E5D0AE78E"
+				"3440CA73CADBEC17"
+			]
+			id: "2625D1F82E22DE24"
+			tasks: [{
+				id: "12DC525D55780B4B"
+				type: "item"
+				item: "lazierae2:centrifuge"
+			}]
+			rewards: [
+				{
+					id: "569C9536CC444EFE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "72263F3E8BE9450C"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -5.0d
+			description: ["The best way in converting certus quartz to charged certuz quartz!"]
+			dependencies: [
+				"78E1834E5D0AE78E"
+				"3440CA73CADBEC17"
+			]
+			id: "02720B24C62F32AB"
+			tasks: [{
+				id: "03B073D3ACCF1288"
+				type: "item"
+				item: "lazierae2:energizer"
+			}]
+			rewards: [
+				{
+					id: "49DBE718D566E6EE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0984505CB18BF65D"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -3.0d
+			description: ["Like an advanced inscriber! Faster and allows bulk crafting."]
+			dependencies: [
+				"78E1834E5D0AE78E"
+				"3440CA73CADBEC17"
+			]
+			id: "77A1E00210C8D0EC"
+			tasks: [{
+				id: "4E76F9B63156BF24"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+			rewards: [
+				{
+					id: "4BCE45C9B9819E13"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "0A38C8F8620B7399"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -15.0d
+			description: [
+				"Color Applicator allows you to paint in world objects, including AE cables, vanilla wools, etc., with Paint Balls or any dyes (less efficiency)."
+				"It functions like a storage cell which can hold Paint Balls of all colors, so i can be loaded with an ME Chest."
+				"Shift click in the air, or hold shift and scroll the mouse wheel allows you to change the selected color of the applicator."
+			]
+			dependencies: ["59595711A0F0782F"]
+			id: "658CEFFBE233978B"
+			tasks: [{
+				id: "4AB6EE316EE618E6"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:color_applicator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "72B877351864364E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "590FCFF1351528D9"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			subtitle: "Chapter 1"
+			description: [
+				"Dank provides a hand-held extremely large storage, with the auto-pickup function, which makes it extremely suitable for mining!"
+				"It is also a great tool for construction. Press \"i\", by default, to change its mode into construction mode, so that it will be able to place the block in world highlighted in its inventory."
+			]
+			dependencies: ["7361E68DAF5FDB9F"]
+			id: "2AB06877F6080803"
+			tasks: [{
+				id: "05E9C92F5596B563"
+				type: "item"
+				item: "dankstorage:dank_1"
+			}]
+			rewards: [{
+				id: "4EFF3272C92B42B4"
+				type: "item"
+				item: "minecraft:coal_block"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			description: ["You can place dank on ground by dock, treating it like a chest."]
+			dependencies: ["2AB06877F6080803"]
+			id: "4EEB0C8D9554C81A"
+			tasks: [{
+				id: "6C69CF52716023D2"
+				type: "item"
+				item: "dankstorage:dock"
+			}]
+			rewards: [{
+				id: "0841126AD8A4B778"
+				type: "item"
+				item: "mysticalagriculture:water_essence"
+				count: 16
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["2AB06877F6080803"]
+			id: "2FE0A9456BC93984"
+			tasks: [{
+				id: "189E36FAF0865982"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_2"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "65D343735DBF6064"
+				type: "item"
+				item: "minecraft:torch"
+				count: 64
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			dependencies: ["2FE0A9456BC93984"]
+			id: "67C321B7485C3AB1"
+			tasks: [{
+				id: "2667380F9B56DB25"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_3"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1640B7241AE01D01"
+				type: "item"
+				item: "minecraft:gold_block"
+				count: 2
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.0d
+			dependencies: ["67C321B7485C3AB1"]
+			id: "181B2B29FD5E7496"
+			tasks: [{
+				id: "5370397E22A476A2"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_4"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0D9C34AEC8848A4A"
+				type: "item"
+				item: "minecraft:emerald_block"
+				count: 2
+			}]
+		}
+		{
+			x: 8.0d
+			y: 10.0d
+			dependencies: ["181B2B29FD5E7496"]
+			id: "4A92ECF8C75AF44E"
+			tasks: [{
+				id: "62653BE471F7C1B9"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_5"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5C41ECA38FF1A8E4"
+				type: "item"
+				item: "minecraft:diamond_block"
+				count: 2
+			}]
+		}
+		{
+			x: 8.0d
+			y: 12.0d
+			dependencies: ["4A92ECF8C75AF44E"]
+			id: "4D1BAC67FC8E88D5"
+			tasks: [{
+				id: "200711B138444B25"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_6"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5FE66107D16673C1"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 14.0d
+			dependencies: ["4D1BAC67FC8E88D5"]
+			id: "6343FE358E681EB0"
+			tasks: [{
+				id: "4093A4FBFFD1FD6E"
+				type: "item"
+				item: "dankstorage:dank_7"
+			}]
+			rewards: [{
+				id: "4A8A61216B625D07"
+				type: "item"
+				item: "minecraft:nether_star"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 12.0d
+			description: ["Draconic chest is a chest added by Draconic Evolution. It provides a very large inventory with many slots, where you can also do crafting or smelt things there! It acts like a backpack and the inventory will be kept upon breaking."]
+			dependencies: ["7F2C01896FF56E8D"]
+			id: "2B33E5755DAA71E2"
+			tasks: [{
+				id: "61A297D6FD22660F"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconium_chest"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2A9FACC5E7EE7977"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 2
+			}]
+		}
+	]
+}

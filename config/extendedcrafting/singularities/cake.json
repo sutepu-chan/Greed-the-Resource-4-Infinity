@@ -1,0 +1,11 @@
+{
+  "name": "Cake",
+  "colors": [
+    "f2e3c4",
+    "ad5723"
+  ],
+  "ingredient": {
+    "item": "minecraft:cake"
+  },
+  "materialCount": 1000
+}

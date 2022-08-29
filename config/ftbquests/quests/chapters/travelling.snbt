@@ -1,0 +1,823 @@
+{
+	id: "77CFACBF6A1F5468"
+	group: "55D64AD3CBBBA98A"
+	order_index: 0
+	filename: "travelling"
+	title: "Travelling"
+	icon: {
+		id: "allthemodium:allthemodium_boots"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Why do we need travelling?"
+			x: 0.0d
+			y: 1.5d
+			description: ["It will become laggy if you concentrate so much machines or other things in one place. A better choice would be separating things out. Here comes the problem, how could we travel between far distant easily? This chapter gives you the answer."]
+			id: "5D762ED287ECED81"
+			tasks: [{
+				id: "3F85D6F7CD75A557"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1DD3CCFC10C52E19"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			subtitle: "Chapter 1"
+			description: [
+				"I think most of you are familiar with waystone. Waystone allows you to set waypoints and teleport to in cost of xp."
+				"Every 100 blocks will cost 1 level more, where 20 levels are the maximum. Teleporting across dimensions will increase the xp cost by 5. Each leashed mob increases the cost by 2."
+				"Waystones can be generated in village, or randomly in world."
+			]
+			dependencies: ["5D762ED287ECED81"]
+			id: "69B13C06FEBEDC3C"
+			tasks: [{
+				id: "7CFF607B78C55B96"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "7B72B93B45563810"
+				type: "item"
+				item: "waystones:sharestone"
+				count: 2
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.5d
+			description: [
+				"Warp plates allow bi-directional teleportation."
+				"When you place it down, an attuned shard will be generated inside the plate (A). Just simply take it out and put it into another plate (B). Then, you can teleport from A to B just standing on plate A."
+			]
+			dependencies: ["69B13C06FEBEDC3C"]
+			id: "3A7FCF8150CC8496"
+			tasks: [{
+				id: "22C58CB2E0E134A8"
+				type: "item"
+				item: "waystones:warp_plate"
+				count: 2L
+			}]
+			rewards: [{
+				id: "73E9340F9DEA164B"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: ["Warp scroll is one-time scroll that allows you to teleport to a certain activated waystone."]
+			dependencies: ["69B13C06FEBEDC3C"]
+			id: "527ED32019DBA25D"
+			tasks: [{
+				id: "230562F5178F1FA6"
+				type: "item"
+				item: "waystones:warp_scroll"
+			}]
+			rewards: [{
+				id: "7675B04FE2DA8AC7"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Draconic Evolution (DE)"
+			x: 0.0d
+			y: -1.0d
+			subtitle: "Chapter 1"
+			description: ["DE provides several convenient ways in travelling. This dislocator pedestal is one of the most basic teleportation item. Just get one first."]
+			dependencies: ["5D762ED287ECED81"]
+			id: "797F3F60EDEAFC1E"
+			tasks: [{
+				id: "094BAD53BD7C263B"
+				type: "item"
+				item: "draconicevolution:dislocator_pedestal"
+			}]
+			rewards: [
+				{
+					id: "3267EA08BAD1DDDB"
+					type: "item"
+					item: "minecraft:blaze_rod"
+					count: 4
+				}
+				{
+					id: "1436F01D1AE8299A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			description: [
+				"Dislocator allows you to teleport to a certain coordinate. Set the coordinate by Shift+RC. Note that it has a durability."
+				"It can either be used in hand or placed on a dislocator pedestal."
+			]
+			dependencies: ["797F3F60EDEAFC1E"]
+			id: "099AA3D3D262C7E6"
+			tasks: [{
+				id: "7CAF3596B53B2871"
+				type: "item"
+				item: {
+					id: "draconicevolution:dislocator"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7DA66F37F3A91CA4"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 6
+				}
+				{
+					id: "082B00CFFE341997"
+					type: "xp"
+					xp: 80
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			description: [
+				"This type of dislocator will save your current lcoation. The player used will teleport to you directly."
+				"It can either be used in hand or placed on a dislocator pedestal."
+			]
+			dependencies: ["099AA3D3D262C7E6"]
+			id: "0F33E006C397157A"
+			tasks: [{
+				id: "5609CA78246C1A44"
+				type: "item"
+				item: "draconicevolution:player_dislocator_unbound"
+			}]
+			rewards: [
+				{
+					id: "42357E64E60D27CA"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 6
+				}
+				{
+					id: "27953D602649BD41"
+					type: "xp"
+					xp: 80
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			description: [
+				"Hold this item and RC will get you two dislocator with unique ID. Place these two dislocator at two dislocator pedestal will create a bi-directional teleportation."
+				"It can only be used on dislocator pedestal."
+			]
+			dependencies: ["099AA3D3D262C7E6"]
+			id: "3628754F5769F83C"
+			tasks: [{
+				id: "7AC30F52A6603293"
+				type: "item"
+				item: "draconicevolution:p2p_dislocator_unbound"
+			}]
+			rewards: [
+				{
+					id: "0FB2A8321FC0146B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 6
+				}
+				{
+					id: "2A9ECFDA7997A6D8"
+					type: "xp"
+					xp: 80
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			description: [
+				"Using draconium infused obsidian with the dislocator receptacle is able to create a portal that teleports you to a specific location."
+				"This portal can be in any size. Just make sure you can get into the portal."
+				"To set the teleport location, use a dislocator. Set the locate by Shift+RC by dislocator and RC at the dislocator receptacle."
+				"{image:kubejs:textures/quest/travel/travel_draconic_portal.png width:176 height:100 align:1}"
+			]
+			dependencies: ["099AA3D3D262C7E6"]
+			id: "474CC24B61F1AE76"
+			tasks: [
+				{
+					id: "6015CB533550F777"
+					type: "item"
+					item: "draconicevolution:infused_obsidian"
+				}
+				{
+					id: "2274A4471D886E81"
+					type: "item"
+					item: "draconicevolution:dislocator_receptacle"
+				}
+			]
+			rewards: [{
+				id: "6245CF9CE5BC7317"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 4
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			subtitle: "Chapter 8"
+			description: ["This item can be put at curios slot. It allows you to set multiple points to teleport to, consuming ender pearls as fuel."]
+			dependencies: ["099AA3D3D262C7E6"]
+			id: "162D52ECC6C7CD28"
+			tasks: [{
+				id: "379EE8179ECE1647"
+				type: "item"
+				item: {
+					id: "draconicevolution:advanced_dislocator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0A7010E8C079FE38"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 6
+				}
+				{
+					id: "2A37E2ED3EC1A2A1"
+					type: "xp"
+					xp: 80
+				}
+			]
+		}
+		{
+			title: "MTR"
+			x: 0.0d
+			y: 4.0d
+			subtitle: "Chapter 1"
+			description: [
+				"Minecraft Transit Railway is a mod based on railways in Hong Kong, UK and America. You can set up routes, trains, stations using this mod. Setting the trains allows you to ride on the train and travel from one place to another."
+				"Railway dashboard is the indispensible item in setting up trains."
+				"This mod also contains great decoration and utility blocks to use. Also try them yourself!"
+				"Besides, this mod includes also the ship systems, which is similar with its train system."
+				"This quest guides you on setting up simple train stations. (Some more guide on this mod might be added in the furture)"
+			]
+			dependencies: ["5D762ED287ECED81"]
+			id: "37E015BAD6304D6E"
+			tasks: [{
+				id: "012C622A92E1D35D"
+				type: "item"
+				item: "mtr:dashboard"
+			}]
+			rewards: [{
+				id: "4888B7B2D7E01234"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			description: ["You need a lot of rail nodes in setting up the rails. Ensure you have a stable iron supply before continue!"]
+			dependencies: ["37E015BAD6304D6E"]
+			id: "74BD962E8D524CDF"
+			tasks: [{
+				id: "0D340CD94CD8D57F"
+				type: "item"
+				item: "mtr:rail"
+				count: 7L
+			}]
+			rewards: [{
+				id: "4A98104DC2F3695F"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 8
+			}]
+		}
+		{
+			title: "Rail connectors"
+			x: 0.0d
+			y: 6.5d
+			description: [
+				"Rail connectors can create rails by RC at two different rail nodes. This item can be used infinitely."
+				"Try to create a short rail first!"
+				"{image:kubejs:textures/quest/travel/travel_rail_connector.png width:176 height:100 align:1}"
+			]
+			dependencies: ["74BD962E8D524CDF"]
+			id: "4A00F6C44F31DE21"
+			tasks: [{
+				id: "6D6BCB03F7B30021"
+				type: "item"
+				title: "Any #mtr:rail_connector"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mtr:rail_connector"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0687EDE3F64C0819"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 10
+				}
+				{
+					id: "3C4A6DF2F65AD24B"
+					type: "xp"
+					xp: 550
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 4.0d
+			description: [
+				"A train station will definitely need a platform. Craft a platform connector to set up plateform (rails in red). The platform has to be multiples of 25 plus 1 (i.e., 26, 51, 76, 101...), because a cart of train takes 25 blocks long."
+				"{image:kubejs:textures/quest/travel/travel_platform_connector.png width:176 height:100 align:1}"
+			]
+			dependencies: ["74BD962E8D524CDF"]
+			id: "11B88F85C908BF3D"
+			tasks: [{
+				id: "36BDF54662B588EF"
+				type: "item"
+				item: {
+					id: "mtr:rail_connector_platform"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0C23DD2F1FE9EBEC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 10
+				}
+				{
+					id: "554FD2A1ABAF9C16"
+					type: "xp"
+					xp: 550
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 6.5d
+			description: [
+				"Sliding rail connect is to define the place where your train starts (the terminal). The rail is in yellow and it should multiples of 25 + 1 blocks long in length (i.e., 26, 51, 76, 101...), and same length with your stations."
+				"When you success, you will see a train spawn on the rail immediately. The train model can be changed afterwards."
+				"{image:kubejs:textures/quest/travel/travel_siding_connector.png width:176 height:100 align:1}"
+			]
+			dependencies: ["74BD962E8D524CDF"]
+			id: "238774B05E66A0E0"
+			tasks: [{
+				id: "67DE517DE2D65318"
+				type: "item"
+				item: {
+					id: "mtr:rail_connector_siding"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "638A0E0AA51CB268"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 10
+				}
+				{
+					id: "54A7EBF7B9764BB3"
+					type: "xp"
+					xp: 550
+				}
+			]
+		}
+		{
+			title: "Platform blocks"
+			x: -5.0d
+			y: 6.5d
+			description: [
+				"You need some platform blocks to define a platform, so that you can get onto the train."
+				"You can also place some decorating blocks at your platform."
+				"{image:kubejs:textures/quest/travel/travel_platform_blocks.png width:176 height:100 align:1}"
+			]
+			dependencies: [
+				"11B88F85C908BF3D"
+				"4A00F6C44F31DE21"
+				"238774B05E66A0E0"
+			]
+			id: "2E61CDA8641BF963"
+			tasks: [{
+				id: "2AF858C39CF93BD9"
+				type: "item"
+				title: "Any #mtr:platforms"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mtr:platforms"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6EDE6998F33D9EAB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 10
+				}
+				{
+					id: "601F639F0A348786"
+					type: "xp"
+					xp: 550
+				}
+			]
+		}
+		{
+			title: "Setting up station networks - 1"
+			x: -5.0d
+			y: 9.0d
+			description: [
+				"Now, we have finished the rails part. Time to set up how the train works."
+				"RC to open you dashboard. On your left hand side, press the \"Station\" button on top and press \"Add Station\" button at bottom."
+				"On the map right hand side, scroll to zoom in to the station you set up already. Drag to define the size of the station you wish to be (it can be very large or very small). Also rename the station at the box at the bottom left hand corner."
+				"{image:kubejs:textures/quest/travel/travel_station_setup.png width:176 height:100 align:1}"
+				"{image:kubejs:textures/quest/travel/travel_station_setup_complete.png width:176 height:100 align:1}"
+			]
+			dependencies: ["2E61CDA8641BF963"]
+			id: "0F8D718B9F999F58"
+			tasks: [{
+				id: "7C7118D91A910F37"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1A063AD021435435"
+					type: "item"
+					item: {
+						id: "questsadditions:lootcrate_block"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								type: "fooddelight"
+							}
+						}
+					}
+					count: 2
+				}
+				{
+					id: "76A7FD4CE3C37427"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			title: "Setting up station networks - 2"
+			x: -2.5d
+			y: 9.0d
+			description: [
+				"Then, press the \"Routes\" button, then click \"Add Routes\". Zoom your map right hand size larger. There will be a small white pixel (square) indicating the locationg of stations. Click the white pixels to define where your train is going to. Also rename this route at the bottom left hand corner."
+				"{image:kubejs:textures/quest/travel/travel_route_setup.png width:176 height:100 align:1}"
+				"{image:kubejs:textures/quest/travel/travel_route_setup_complete.png width:176 height:100 align:1}"
+			]
+			dependencies: ["0F8D718B9F999F58"]
+			id: "062C4D4AE49B2484"
+			tasks: [{
+				id: "5600C0035E0BD881"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "50DED4FCE674127C"
+					type: "item"
+					item: {
+						id: "questsadditions:lootcrate_block"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								type: "fooddelight"
+							}
+						}
+					}
+					count: 2
+				}
+				{
+					id: "3DF71C299AB0D856"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			title: "Setting up station networks - 3"
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"Click the \"Depot\" button and \"Add Depot\" button. Set up the depot just like what you did before for platforms."
+				"{image:kubejs:textures/quest/travel/travel_depot_setup.png width:176 height:100 align:1}"
+			]
+			dependencies: ["062C4D4AE49B2484"]
+			id: "7C39790E3AEBFE65"
+			tasks: [{
+				id: "698C0027826F0D71"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "441385E95144BD21"
+					type: "item"
+					item: {
+						id: "questsadditions:lootcrate_block"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								type: "fooddelight"
+							}
+						}
+					}
+					count: 2
+				}
+				{
+					id: "0BF024229F1F6195"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			title: "Setting up station networks - 4"
+			x: 2.5d
+			y: 9.0d
+			description: [
+				"Put your cursor on the depot setup and click the \"Pen\" button. It leads you to a config interface. On the left hand side, you can set  your train frequency."
+				"On your right hand side, click \"Edit Instruction\" and add your available routes into selected routes. After adding, refresh your path and your simple train system has been set up."
+				"{image:kubejs:textures/quest/travel/travel_train.png width:176 height:100 align:1}"
+			]
+			dependencies: ["7C39790E3AEBFE65"]
+			id: "3AD535270BDA0B73"
+			tasks: [{
+				id: "57273A4D9E293AC5"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1611D179787D86AF"
+					type: "item"
+					item: {
+						id: "questsadditions:lootcrate_block"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								type: "fooddelight"
+							}
+						}
+					}
+					count: 2
+				}
+				{
+					id: "17C59A0059B57C2C"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			title: "Changing train models"
+			x: 2.5d
+			y: 6.5d
+			description: ["You can change the train models by clicking at the white pixel of sidings under your \"Depot\" tab. It also allows you to change the number and the velocity of trains."]
+			dependencies: ["3AD535270BDA0B73"]
+			id: "670B6917CDA2A676"
+			tasks: [{
+				id: "5DC338D5E33F37CB"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "03D29CE453704FE4"
+					type: "item"
+					item: {
+						id: "questsadditions:lootcrate_block"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								type: "fooddelight"
+							}
+						}
+					}
+					count: 2
+				}
+				{
+					id: "5255FB878C0D9C23"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			title: "Jetpacks"
+			x: 2.5d
+			y: 4.0d
+			subtitle: "Chapter 5"
+			description: [
+				"Jetpacks provide a convenient way to fly around your world."
+				"Higher tier jetpacks will have a higher speed and better hovering ability."
+			]
+			dependencies: ["5D762ED287ECED81"]
+			id: "2543386C60D6271C"
+			tasks: [{
+				id: "240C650B3DC30117"
+				type: "item"
+				item: {
+					id: "ironjetpacks:wood_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "58B50AB40D779576"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "168C1B364D9C6223"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Workstation of Vehicles"
+			x: 2.5d
+			y: 1.5d
+			subtitle: "Chapter 1"
+			description: [
+				"This workstation allows you to build your own vehicle for travelling in your own factory, or even city!"
+				"RC to open the GUI of the workstation. There will be instructions on the ingredients required to build and vehicles. Of course you need to prepare some other items, such as engines and wheels. Check recipes in JEI."
+				"{image:kubejs:textures/quest/travel/travel_vehicles.png width:180 height:100 align:1 fit:true}"
+			]
+			dependencies: ["5D762ED287ECED81"]
+			id: "32780BBFA50EA162"
+			tasks: [{
+				id: "51EE791EAC668BEC"
+				type: "item"
+				item: "vehicle:workstation"
+			}]
+			rewards: [{
+				id: "141A83447ADE913B"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 4
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			subtitle: "Chapter 6"
+			description: [
+				"Mekanism provides a convenient bi-directional portal, at the cost of energy."
+				"You can set channels at GUI of the teleporter. The destination is chosen by setting designated channels at the two side sof the teleporter."
+				"{image:kubejs:textures/quest/travel/travel_mekanism_teleporter.png width:100 height:150 align:1}"
+			]
+			dependencies: ["5D762ED287ECED81"]
+			id: "0DAA694931516521"
+			tasks: [
+				{
+					id: "44A2C20B0BDEE2E9"
+					type: "item"
+					item: {
+						id: "mekanism:teleporter"
+						Count: 1b
+						tag: {
+							mekData: { }
+						}
+					}
+				}
+				{
+					id: "5F1FC26445C9AF3A"
+					type: "item"
+					item: "mekanism:teleporter_frame"
+					count: 9L
+				}
+			]
+			rewards: [
+				{
+					id: "006657087AC6101D"
+					type: "item"
+					item: {
+						id: "mekanism:teleporter"
+						Count: 1b
+						tag: {
+							mekData: { }
+						}
+					}
+				}
+				{
+					id: "79FC1A8EC05FB804"
+					type: "item"
+					item: "mekanism:teleporter_frame"
+					count: 9
+				}
+			]
+		}
+	]
+}

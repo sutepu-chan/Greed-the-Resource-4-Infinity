@@ -1,0 +1,591 @@
+{
+	id: "35B51129FB1BE431"
+	group: "2DDEDFB13E9FB842"
+	order_index: 1
+	filename: "chapter2"
+	title: "Chapter 2: Spirits' Nature"
+	icon: "occultism:spirit_fire"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 2.0d
+			y: 8.5d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "occultism:textures/item/ritual_dummy.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.047619047619044d
+			y: 3.452380952380956d
+			width: 12.0d
+			height: 12.0d
+			rotation: 0.0d
+			image: "occultism:textures/item/pentacle.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "occultism:textures/block/chalk_glyph/11.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -1.0d
+			y: 5.5d
+			width: 1.5d
+			height: 1.5d
+			rotation: 5.0d
+			image: "occultism:textures/block/chalk_glyph/1.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 10.0d
+			image: "occultism:textures/block/chalk_glyph/2.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			width: 1.3d
+			height: 1.3d
+			rotation: 40.0d
+			image: "occultism:textures/block/chalk_glyph/3.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "occultism:textures/block/chalk_glyph/7.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "occultism:textures/block/chalk_glyph/9.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["Harvest the seed you have planted. This is the most basic stuff needed."]
+			dependencies: ["0EA9C997641AFA52"]
+			id: "34D221F9F095BFC6"
+			tasks: [{
+				id: "048941361E4E3EC9"
+				type: "item"
+				item: "occultism:datura"
+			}]
+			rewards: [
+				{
+					id: "2AE0923FE3ECD57A"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "590DF94DF7430D52"
+					type: "item"
+					item: "minecraft:netherrack"
+				}
+			]
+		}
+		{
+			title: "Items from Other World"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"To continue, you need to create a spirit fire. Drop the demon's fruit onto any block (netherrack is better because it makes the fire lasts forever). Then, use your flint and steel to light up the fruit. Spirit fire is then created."
+				"Throw the saplings, andesites and diamond into the fire. It will return you with the above items."
+				"The fire takes no damage on you."
+			]
+			dependencies: ["34D221F9F095BFC6"]
+			id: "13BE2A368E84143B"
+			tasks: [
+				{
+					id: "139C4C79A6982B6D"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_sapling_natural"
+						Count: 1b
+						tag: {
+							isInventoryItem: 1b
+						}
+					}
+				}
+				{
+					id: "103D48D4E9826008"
+					type: "item"
+					item: "occultism:spirit_attuned_gem"
+				}
+			]
+			rewards: [{
+				id: "00355C86C4D521F1"
+				type: "item"
+				item: "occultism:datura"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			description: [
+				"Here comes the uses of demon's dream fruit. Take the unstale otherworld sampling you got. You will find that it looks exactly the same with oak saplings, except theoneprobe is telling you it is from Occultism."
+				"Let the sapling grow or by bone meal. Don't harvest it first! You will lost your items if you harvest directly."
+				"To get the otherworld wood, you need to ingest demon's dream fruit. It grants you hunger and more importantly, \"Third Eye\" effect. Under the \"Third Eye\" effect, you are finally able to harvest the wood. The effect doesn't last long and remember to harvest the leaves to get more otherworld saplinigs."
+				"{image:kubejs:textures/quest/chapter2/chapter2_otherworld_sapling.png width:176 height:100 align:1}"
+			]
+			dependencies: ["13BE2A368E84143B"]
+			id: "2906E00B892C04DC"
+			tasks: [{
+				id: "76556DD27154D3C7"
+				type: "item"
+				item: "occultism:otherworld_log"
+				count: 4L
+			}]
+			rewards: [{
+				id: "5277110A314D659A"
+				type: "item"
+				item: "minecraft:ink_sac"
+				count: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"Items from otherworld actually also exists in the overworld. Use a divination rod will help you to locate them. Remember they require \"Third Eye\" effect to harvest."
+				"Binding the rod to specific blocks will help you locate specific otherworld items. After binding, hold your RC and if there is otherworld blocks nearby, the block glows."
+				"Bind to andesite -> otherworld stone"
+				"Bind to oak log -> otherworld log"
+				"Bind to netherrack -> Iesnium ore"
+				"{image:kubejs:textures/quest/chapter2/chapter2_divination_rod.png width:176 height:100 align:1}"
+			]
+			dependencies: ["2906E00B892C04DC"]
+			id: "0973B9B12ECEC23F"
+			tasks: [{
+				id: "53E88EC5B688701F"
+				type: "item"
+				item: {
+					id: "occultism:divination_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6162292B099795F4"
+				type: "item"
+				item: "minecraft:writable_book"
+			}]
+		}
+		{
+			title: "Preparing your first ritual"
+			x: 1.0d
+			y: 4.0d
+			description: [
+				"Get a white chalk, and purify it through the spirit fire."
+				"White chalk is required for the lowest tier rituals. For higher tiers' rituals, you need other types of rituals."
+			]
+			dependencies: ["0973B9B12ECEC23F"]
+			id: "5CFF5A92CB533312"
+			tasks: [
+				{
+					id: "5D1D328248AD6C2D"
+					type: "item"
+					item: "occultism:chalk_white_impure"
+				}
+				{
+					id: "13EF9E0F00DD0C61"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "37B6689811ADE3A1"
+				type: "item"
+				item: "minecraft:bone"
+				count: 3
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["It takes a long time to erase the wrong chalk drawing. Use chalk brush instead."]
+			dependencies: ["5CFF5A92CB533312"]
+			id: "5E39EA33A456ABD2"
+			tasks: [{
+				id: "6B1E49711C4023A2"
+				type: "item"
+				item: "occultism:brush"
+			}]
+			rewards: [{
+				id: "35BD7E61A01FC1EF"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "resource"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "Other ritual items"
+			x: 2.0d
+			y: 5.0d
+			description: ["You also need these two items to summon spirits."]
+			dependencies: ["5CFF5A92CB533312"]
+			id: "7CB1CD0E2043D3D2"
+			tasks: [
+				{
+					id: "478B0832F161FDE1"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "1C9433F612E1BA2D"
+					type: "item"
+					item: "occultism:candle_white"
+					count: 4L
+				}
+				{
+					id: "6023AEEC87FBB5B7"
+					type: "item"
+					item: "occultism:book_of_binding_foliot"
+				}
+				{
+					id: "116E67E5DE4FEE96"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "1D9F626EFFB0E770"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "resource"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			description: [
+				"You need to bind the book with foliot to start your ritual. Just simply combine Dictionary of Spirits (in your akashic tome) with the book."
+				""
+				"[Note]"
+				"There is a rendering bug when crafting this book with Dictionary of Spirits on crafting table. Your akashic tome will temporarily disappear until you re-open the crafting table. Crafting it in 2x2 inventory grid will not cause this bug."
+			]
+			dependencies: ["7CB1CD0E2043D3D2"]
+			id: "7C9292C619C69DD7"
+			tasks: [{
+				id: "6C42EC47EB275AD3"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+			rewards: [{
+				id: "61BD845F0D7B3CCF"
+				type: "item"
+				item: "alltheores:copper_dust"
+				count: 4
+			}]
+		}
+		{
+			title: "Ritual of Foliot Crusher"
+			x: 4.0d
+			y: 5.0d
+			description: [
+				"Here is the time to set up your first ritual. Construct the ritual as below."
+				"The sacrificial bowl can be put anywhere in 8 blocks radius of the ritual to sacrifice other items."
+				"After finish constructing the ritual, RC the golden sacrificial bowl to start summoning. Sit back and watch the animation."
+				"The foliot summoned only has a limited time to stay overworld. Shift+RC can see the decay rate."
+				"To obtain gold dust, just simply throw gold ingots or ores to him. He will do it for you."
+				"{image:kubejs:textures/quest/chapter2/chapter2_crushing_ritual.png width:176 height:100 align:1}"
+			]
+			dependencies: ["7C9292C619C69DD7"]
+			id: "7844E593A89426E5"
+			tasks: [{
+				id: "44CE61AA2FAEFCC5"
+				type: "item"
+				item: "alltheores:gold_dust"
+			}]
+			rewards: [{
+				id: "1A7579DFD84C2100"
+				type: "item"
+				item: "mekanism:dust_obsidian"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			description: ["Golden cholks allows you to get rituals with higher tiers."]
+			dependencies: ["5E39EA33A456ABD2"]
+			id: "0FAF87AE031C0E3B"
+			tasks: [
+				{
+					id: "727D0C7910200874"
+					type: "item"
+					item: "occultism:chalk_gold_impure"
+				}
+				{
+					id: "3FDB4B8B6B6772CC"
+					type: "item"
+					item: {
+						id: "occultism:chalk_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "49BA2760568B709A"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 4
+			}]
+		}
+		{
+			title: "Automating Crushing Ritual 1"
+			x: 5.0d
+			y: 4.0d
+			description: [
+				"You can simply automate the ritual by a hopper (you have to place some blocks to prevent the dust spreading everywhere)"
+				"{image:kubejs:textures/quest/chapter2/chapter2_automate_crushing.png width:176 height:100 align:1}"
+			]
+			dependencies: ["7844E593A89426E5"]
+			id: "3D4E2065431A161F"
+			tasks: [{
+				id: "2A6D451958F887AE"
+				type: "checkmark"
+				title: "Automaing crushing ritual"
+			}]
+			rewards: [{
+				id: "3C9F58C2B48EFDFC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Automating Crushing Ritual 2"
+			x: 6.0d
+			y: 3.0d
+			description: ["Item collector can also be used. Basic tier can collect the items in 5 blocks radius (or 11x11x11 area)."]
+			dependencies: ["3D4E2065431A161F"]
+			id: "78468A379222C84B"
+			tasks: [{
+				id: "2D8AA5B7C0FE5520"
+				type: "item"
+				item: "itemcollectors:basic_collector"
+			}]
+			rewards: [{
+				id: "2477B5C29C6649C8"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			description: [
+				"Setting up other rituals are similar to the crushing one. Just follow the set up guide on JEI or Dictionary of Spirits."
+				"Otherworld goggles allows you to the otherworld items without eating demono's dream fruit."
+			]
+			dependencies: ["7844E593A89426E5"]
+			id: "0ABA930D96BFD094"
+			tasks: [{
+				id: "6BE6F8A9A444B81C"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5BB9A6ABC18210CE"
+				type: "item"
+				item: "alltheores:gold_dust"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			description: [
+				"You also need an infused pickaxe, which is essential in occultism in mining iesnium ore."
+				"Iesnium ore can only be mined by Infused pickaxe or Iesnium pickaxe."
+			]
+			dependencies: ["0ABA930D96BFD094"]
+			id: "46937AE18F776ADF"
+			tasks: [{
+				id: "4144667827E7E14A"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Jagurakzur"
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6F266008558D4343"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 8.5d
+			description: [
+				"Hope you can find the ore quick! Melt the ore down into alloy."
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 3."
+			]
+			dependencies: ["46937AE18F776ADF"]
+			id: "5F86A4685735039E"
+			tasks: [{
+				id: "429E92A3B6F06FEC"
+				type: "item"
+				item: "occultism:iesnium_ore"
+			}]
+			rewards: [
+				{
+					id: "1AB8D9D39461AF66"
+					type: "item"
+					item: "occultism:iesnium_dust"
+					count: 2
+				}
+				{
+					id: "7B1AB3624A9B155A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Getting End Stone without going to the End"
+			x: -2.0d
+			y: 3.0d
+			description: [
+				"Some recipe requires End stone dust. Considering the fact that you may not want to fight the ender dragon in such an early stage. End stone can be obtained by ritual of summoning possessed endermite. Check JEI for how to set up the ritual."
+				"To complete the ritual, you have to throw an egg to the ritual after placing all the items."
+				"{image:kubejs:textures/quest/chapter2/chapter2_possessed_endermite.png width:176 height:100 align:1}"
+			]
+			dependencies: ["0FAF87AE031C0E3B"]
+			id: "552320F9152E5DF1"
+			tasks: [{
+				id: "7B0BCFCCD6A36106"
+				type: "item"
+				item: "minecraft:end_stone"
+			}]
+			rewards: [{
+				id: "214E8EBF005B2921"
+				type: "item"
+				item: "minecraft:end_stone"
+				count: 4
+			}]
+		}
+		{
+			title: "Kill 5x Zombie"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Repeatable"
+			description: ["Loss your netherrack? Don't panic."]
+			dependencies: ["13BE2A368E84143B"]
+			id: "69B3F91849C8F50F"
+			tasks: [{
+				id: "4475A0ABD5FF6651"
+				type: "kill"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 5L
+			}]
+			rewards: [{
+				id: "7D1C07E9C77E1B03"
+				type: "questsadditions:repeat"
+				icon: "minecraft:netherrack"
+				table_id: 1973505741723590775L
+			}]
+		}
+	]
+}

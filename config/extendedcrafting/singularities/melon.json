@@ -1,0 +1,11 @@
+{
+  "name": "Melon",
+  "colors": [
+    "4c791d",
+    "385813"
+  ],
+  "ingredient": {
+    "tag": "chipped:melon"
+  },
+  "materialCount": 15000
+}

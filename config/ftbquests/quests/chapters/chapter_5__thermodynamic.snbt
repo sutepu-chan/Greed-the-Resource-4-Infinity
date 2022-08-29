@@ -1,0 +1,604 @@
+{
+	id: "38CD2F23F2E6C755"
+	group: "2DDEDFB13E9FB842"
+	order_index: 4
+	filename: "chapter_5__thermodynamic"
+	title: "Chapter 5: Alloys and Chemistry"
+	icon: "enderioalloys:item_material_skull_zombie_electrode"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Energy options"
+			x: -1.0d
+			y: 0.5d
+			description: [
+				"Stirring dynamo is the easier dynamo that you can get. It generates energy by furnace fuels."
+				"For other energy sources, you can check the \"Energy\" chapter for more information."
+			]
+			dependencies: ["51B7581D4BB2D4A8"]
+			id: "2A4732086A9382D1"
+			tasks: [{
+				id: "3D8C63FDEEAC0B84"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+			rewards: [{
+				id: "33D158130F74B50C"
+				type: "item"
+				item: "minecraft:coal_block"
+				count: 4
+			}]
+		}
+		{
+			title: "Setting up infinite lava generator"
+			x: 1.0d
+			y: 0.5d
+			description: [
+				"Lava is usually a great energy source. Thermal series provides a easy way in getting lava, by using magma crucible and igneous extruder."
+				"{image:kubejs:textures/quest/chapter5/chapter5_lava_generator.png width:176 height:100 align:1}"
+			]
+			dependencies: ["2A4732086A9382D1"]
+			id: "7C565E1C3EACD3D8"
+			tasks: [
+				{
+					id: "028F6425C44E1F43"
+					type: "item"
+					item: "thermal:machine_crucible"
+				}
+				{
+					id: "0AC7089ECAB8C442"
+					type: "item"
+					item: "thermal:device_rock_gen"
+				}
+			]
+			rewards: [{
+				id: "25D31B5BF78A41A2"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			description: [
+				"This machine provides a faster way in obtaining plates, gears, coins, etc."
+				"Note that you also need a die for this machine to work."
+			]
+			dependencies: ["2A4732086A9382D1"]
+			id: "7CB3301A0A9BA0C1"
+			tasks: [{
+				id: "1EE551380C6D5536"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+			rewards: [{
+				id: "3DC668F966199B78"
+				type: "item"
+				item: "thermal:press_gear_die"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			description: [
+				"The alloy smelter. Allows you to create alloy faster."
+				"Ane most importantly, you can get EnderIO alloys from induction smelter only, which is needed to continue your progress."
+			]
+			dependencies: ["2A4732086A9382D1"]
+			id: "0845DD78258E1127"
+			tasks: [{
+				id: "52C3F0F30F24E4DF"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "5EB3C60562EBAB33"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:empty_pcb"
+					Count: 1b
+					tag: {
+						"pneumaticcraft:uv_exposure": 100
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			description: ["Another way to obtain metal dust."]
+			dependencies: ["2A4732086A9382D1"]
+			id: "2F86F6BF490BF340"
+			tasks: [{
+				id: "684194C0E631D450"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "3D1E029A634018FA"
+				type: "item"
+				item: "thermal:basalz_powder"
+				count: 64
+			}]
+		}
+		{
+			title: "EnderIO basic alloy"
+			x: -3.0d
+			y: 2.5d
+			description: ["These are the basic alloys from EnderIO."]
+			dependencies: ["0845DD78258E1127"]
+			id: "34BA638F60B3A8C4"
+			tasks: [
+				{
+					id: "12C19F8B4F00BDB4"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_redstone_alloy"
+				}
+				{
+					id: "7B5BE0456A970416"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_pulsating_iron"
+				}
+				{
+					id: "0D1B356401B974FA"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_energetic_silver"
+				}
+				{
+					id: "4CB5C634C84D6049"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_conductive_iron"
+				}
+				{
+					id: "7630B343DC11C151"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_crude_steel"
+				}
+				{
+					id: "6978E74C549E4D16"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_dark_steel"
+				}
+				{
+					id: "7091489AA9A2A6D5"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_electrical_steel"
+				}
+				{
+					id: "17837312A6586FEF"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_energetic_alloy"
+				}
+			]
+			rewards: [
+				{
+					id: "1DA5637ADF00D4CA"
+					type: "item"
+					item: "alltheores:ore_aluminum"
+					count: 16
+				}
+				{
+					id: "43B662E90E676769"
+					type: "item"
+					item: "alltheores:ore_copper"
+					count: 16
+				}
+				{
+					id: "0F38C88B091F469A"
+					type: "item"
+					item: "alltheores:ore_lead"
+					count: 16
+				}
+				{
+					id: "6FAC04AFF80FDC2D"
+					type: "item"
+					item: "alltheores:ore_nickel"
+					count: 16
+				}
+				{
+					id: "5F535B5072AB9341"
+					type: "item"
+					item: "alltheores:ore_osmium"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "EnderIO advance alloy"
+			x: -3.0d
+			y: 4.5d
+			description: ["These are more advanced alloy which requires the basic alloys as ingredients."]
+			dependencies: ["34BA638F60B3A8C4"]
+			id: "5565364E3B1B586E"
+			tasks: [
+				{
+					id: "753970E420BFD33B"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_crystalline_alloy"
+				}
+				{
+					id: "3DC2FBEC882A51B0"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_vivid_alloy"
+				}
+				{
+					id: "00A2221430604910"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_vibrant_alloy"
+				}
+				{
+					id: "41698C132A8628C6"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_end_steel"
+				}
+				{
+					id: "307582C37A3487FC"
+					type: "item"
+					item: "enderioalloys:item_alloy_ingot_melodic_alloy"
+				}
+			]
+			rewards: [
+				{
+					id: "29591F7D970E3569"
+					type: "item"
+					item: "alltheores:ore_platinum"
+					count: 16
+				}
+				{
+					id: "3714319106B93762"
+					type: "item"
+					item: "alltheores:ore_silver"
+					count: 16
+				}
+				{
+					id: "5BF0CCE9C6BCF368"
+					type: "item"
+					item: "alltheores:ore_tin"
+					count: 16
+				}
+				{
+					id: "483B48152744CEE1"
+					type: "item"
+					item: "alltheores:ore_uranium"
+					count: 16
+				}
+				{
+					id: "43370F45F9C8FAFE"
+					type: "item"
+					item: "alltheores:ore_zinc"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			description: ["Chemistry Dissolver is able to turn items into simple compounds or in elements."]
+			dependencies: ["5565364E3B1B586E"]
+			id: "3801A402672681AE"
+			tasks: [{
+				id: "76CF7122FA2BE407"
+				type: "item"
+				item: "alchemistry:chemical_dissolver"
+			}]
+			rewards: [{
+				id: "07712CE532D52BF0"
+				type: "item"
+				item: "minecraft:magma_cube_spawn_egg"
+				count: 8
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.5d
+			subtitle: "Introduction to Chemistry"
+			description: [
+				"To continue, you need to know some basic concepts of Chemistry."
+				""
+				"Element - A substance that cannot be broken down  into simpler components by any non-nuclear chemical reaction."
+				""
+				"Atom - The smallest particle of a chemical element that can exist."
+				""
+				"Atomic Number - The number of protons in the nucleus of an atom, which is characteristic of a chemical element and determines its place in the periodic table."
+				""
+				"Chemical Compound - Substance that is composed of two or more separate elements"
+			]
+			dependencies: ["3801A402672681AE"]
+			id: "53738207D659989D"
+			tasks: [{
+				id: "5CD59AD48B9E01AB"
+				type: "checkmark"
+				title: "CHEM 1000"
+			}]
+			rewards: [{
+				id: "1D84B996A991FB5B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			description: ["Chemical combiner allows chemical reaction can be carried out to get a new substance."]
+			dependencies: ["3801A402672681AE"]
+			id: "5B9BA4CCA1E48896"
+			tasks: [{
+				id: "07BB7FEC7839EC7D"
+				type: "item"
+				item: "alchemistry:chemical_combiner"
+			}]
+			rewards: [{
+				id: "127CFA7094DA0C5D"
+				type: "item"
+				item: "thermal:diamond_dust"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.5d
+			subtitle: "Chemical Reaction"
+			description: ["Chemical Reaction - A process in which one or more substances (reactants) are converted to one or more different substances (products). Note that changing of physical form of a substance (e.g. evaporation of water) is not regarded as a chemical reaction."]
+			dependencies: ["5B9BA4CCA1E48896"]
+			id: "1C7D068EC063726D"
+			tasks: [{
+				id: "37F57B92A7BD8CC8"
+				type: "checkmark"
+				title: "CHEM 1001"
+			}]
+			rewards: [{
+				id: "63041993052DD15B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Fission reactor for chemicals"
+			x: 1.0d
+			y: 2.5d
+			description: [
+				"A fission reactor allows you to get elements with a smaller atomic number from a larger atomic number. It is built in a 5x5x5 hollow structure, with a controller attached outside the multiblock structure. Check Alchemistry Guide book for multiblock projections."
+				"{image:kubejs:textures/quest/chapter5/chapter5_fission_reactor.png width:176 height:100 align:1}"
+			]
+			dependencies: ["5B9BA4CCA1E48896"]
+			id: "1365E9198CC017DF"
+			tasks: [
+				{
+					id: "220639B9B8C05CFF"
+					type: "item"
+					item: "alchemistry:fission_casing"
+					count: 98L
+				}
+				{
+					id: "705596BCB6316866"
+					type: "item"
+					item: "alchemistry:fission_core"
+					count: 3L
+				}
+				{
+					id: "7DD8A2B3432EB25F"
+					type: "item"
+					item: "alchemistry:fission_controller"
+				}
+			]
+			rewards: [{
+				id: "29034A3AA004C666"
+				type: "item"
+				item: "minecraft:podzol"
+				count: 64
+			}]
+		}
+		{
+			title: "Fusion reactor for chemicals"
+			x: 3.0d
+			y: 4.5d
+			description: [
+				"A fusion reactor allows you to get elements with a larger atomic number from a smaller atomic number. It is built in a 5x5x5 hollow structure, with a controller attached outside the multiblock structure. Check Alchemistry Guide book for multiblock projections."
+				"{image:kubejs:textures/quest/chapter5/chapter5_fusion_reactor.png width:176 height:100 align:1}"
+			]
+			dependencies: ["5B9BA4CCA1E48896"]
+			id: "2BBEEA188FE3F8AE"
+			tasks: [
+				{
+					id: "15405EE50DC53FFE"
+					type: "item"
+					item: "alchemistry:fusion_casing"
+					count: 98L
+				}
+				{
+					id: "3699DFD19B88E750"
+					type: "item"
+					item: "alchemistry:fusion_core"
+					count: 3L
+				}
+				{
+					id: "164BB4469C0049A1"
+					type: "item"
+					item: "alchemistry:fusion_controller"
+				}
+			]
+			rewards: [{
+				id: "0490C8DBF6B1F1C5"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 64
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			description: [
+				"Titanium element is the must-get element to progress to the next step."
+				"Further dissolve the TiO2 to get Ti element."
+				"I recommend you to get 12 of them, for crafting purpose."
+			]
+			dependencies: ["15038FC851B4BB7F"]
+			id: "6AC9E802122AC845"
+			tasks: [{
+				id: "3A18114EBB8D6240"
+				type: "item"
+				item: "chemlib:element_titanium"
+				count: 3L
+			}]
+			rewards: [{
+				id: "0C4448FDA1072BDF"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "resource"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.5d
+			description: [
+				"Cellulose and kaolinite is also important to progress to the next step."
+				"They are easy to obtain. They come from some common items."
+			]
+			dependencies: ["6AC9E802122AC845"]
+			id: "5FB2AE3D6446C0EA"
+			tasks: [
+				{
+					id: "16DA09FAA85F4F15"
+					type: "item"
+					item: "chemlib:compound_cellulose"
+					count: 2L
+				}
+				{
+					id: "7F3FF00B75E263C7"
+					type: "item"
+					item: "chemlib:compound_kaolinite"
+				}
+			]
+			rewards: [{
+				id: "49FAB2620304DF19"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "resource"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			description: [
+				"Try to get 4 mullite for recipe use later."
+				"Mullite is still not difficult to get. Get some of this to prepare for the next chapter!"
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 6."
+			]
+			dependencies: ["5FB2AE3D6446C0EA"]
+			id: "716CE0FA1AA28D0D"
+			tasks: [{
+				id: "3785CA5E85B52ED3"
+				type: "item"
+				item: "chemlib:compound_mullite"
+			}]
+			rewards: [
+				{
+					id: "4B00C5557F3925DD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "5B9A2C3A40773DE2"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			description: ["Get some ink sac from squids. Put it into the chemical dissovler to obtain some titanium oxide."]
+			dependencies: [
+				"2BBEEA188FE3F8AE"
+				"1365E9198CC017DF"
+			]
+			id: "15038FC851B4BB7F"
+			tasks: [
+				{
+					id: "7254136F35312255"
+					type: "item"
+					item: "minecraft:ink_sac"
+				}
+				{
+					id: "71392857AE718DC0"
+					type: "item"
+					item: "chemlib:compound_titanium_oxide"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "080F3CCE35ACAF64"
+				type: "item"
+				item: "mekanism:dust_coal"
+				count: 16
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			description: [
+				"Only certain chemicals can be obtained by chemical dissolver."
+				"However, all chemicals can be obtained by fission and fusion reactors."
+			]
+			dependencies: ["15038FC851B4BB7F"]
+			id: "190D34AAAFCE86FD"
+			tasks: [{
+				id: "0F5EB3203CADB1A0"
+				type: "checkmark"
+				title: "Note"
+			}]
+			rewards: [{
+				id: "7111A4DBE31BA7DE"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+	]
+}

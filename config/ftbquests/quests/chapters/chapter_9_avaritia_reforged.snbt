@@ -1,0 +1,895 @@
+{
+	id: "222E4FE4458B7741"
+	group: "2DDEDFB13E9FB842"
+	order_index: 8
+	filename: "chapter_9_avaritia_reforged"
+	title: "Chapter 9: Avaritia Reforged"
+	icon: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Neutron collector will generates neutron piles in regular time intervals when supplied with energy."]
+			dependencies: ["5DF6AC1C679C243A"]
+			id: "102CB3501C73661D"
+			tasks: [{
+				id: "040843BAC4C4FF12"
+				type: "item"
+				item: "kubejs:neutron_pile"
+			}]
+			rewards: [{
+				id: "1985B9A14ED0809D"
+				type: "item"
+				item: "draconicevolution:small_chaos_frag"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Quantum compressor requires neutron nuggets as ingredients. Neutron nuggets is crafted from 9x neutron piles."]
+			dependencies: ["102CB3501C73661D"]
+			id: "5FE2442A80FADC8A"
+			tasks: [{
+				id: "31074F991000DDD6"
+				type: "item"
+				item: "extendedcrafting:compressor"
+			}]
+			rewards: [
+				{
+					id: "06FB0BFE380D9940"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 64
+				}
+				{
+					id: "23E3A9C86E08876B"
+					type: "xp"
+					xp: 2000
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: ["Ultimate singularity costs a lot, but it worths."]
+			dependencies: ["5FE2442A80FADC8A"]
+			id: "3E762098F0266ABE"
+			tasks: [{
+				id: "2579AE68E0A7F1D0"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+			rewards: [
+				{
+					id: "764C1807AB00CEB8"
+					type: "item"
+					item: "kubejs:ultimate_stew"
+					count: 5
+				}
+				{
+					id: "5FF27D2CE638E0AE"
+					type: "item"
+					item: "kubejs:cosmic_meatballs"
+					count: 5
+				}
+				{
+					id: "4EB3344A22320DCE"
+					type: "item"
+					item: "kubejs:endest_pearl"
+					count: 5
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: ["Infinity Ingots are used in most of the crafting recipes of creative items."]
+			dependencies: ["3E762098F0266ABE"]
+			id: "4FA75996BA80D649"
+			tasks: [{
+				id: "79051D2C98411D55"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+			}]
+			rewards: [{
+				id: "6CFAF6F2239FF502"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "singularity"
+					}
+				}
+				count: 10
+			}]
+		}
+		{
+			x: 4.5d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["3E762098F0266ABE"]
+			id: "77A676C65E25F86E"
+			tasks: [{
+				id: "11973CE9F2A64C40"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3C6ABE1844A3A272"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "7E42649F5498EDE5"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 11.5d
+			hide_dependency_lines: true
+			dependencies: ["3E762098F0266ABE"]
+			id: "4F7E1AE9F4D1BDD3"
+			tasks: [{
+				id: "218BCAF4EF342D26"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "sensor"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "79FD3B92A512C8C8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "707FFBF51D90813C"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["3E762098F0266ABE"]
+			id: "160DAA2E679410E7"
+			tasks: [{
+				id: "3ECEC0C5FCAC3673"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "souls"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1047FDAA056A9785"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "0485D555F47E7CD4"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 13.0d
+			hide_dependency_lines: true
+			dependencies: ["3E762098F0266ABE"]
+			id: "5CB96263758BC6CD"
+			tasks: [{
+				id: "3F43D4142867DB3F"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1026DE9EF5052EC6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "12BE479E5D4C4BB5"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 14.5d
+			hide_dependency_lines: true
+			dependencies: ["3E762098F0266ABE"]
+			id: "2EC57B95C8E0970E"
+			tasks: [{
+				id: "26BAA418437535AA"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "51F64B1B3B052C19"
+			tasks: [{
+				id: "6A15964978882F13"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_helmet"
+			}]
+			rewards: [
+				{
+					id: "573BC6D50D7E0D56"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "0BAC13FBBFAE7CA6"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "076D1397D4153B4D"
+			tasks: [{
+				id: "749813392D09DEC6"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_chestplate"
+			}]
+			rewards: [
+				{
+					id: "3D445630F9168BD6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "59AB253B1DBE236C"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 11.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "077908C0A2D5AC73"
+			tasks: [{
+				id: "78F20A715A4857E9"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_leggings"
+			}]
+			rewards: [
+				{
+					id: "78C8203CDA444CCB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "2E5868E6EFC2DE19"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 13.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "58F22CB99AC9AD22"
+			tasks: [{
+				id: "5CEE31EAD5A24D94"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_boots"
+			}]
+			rewards: [
+				{
+					id: "3FC93EAB3D004954"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "43D42821C70F025C"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "6984B714AB333B51"
+			tasks: [{
+				id: "40294EBC3D102D91"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_axe"
+			}]
+			rewards: [
+				{
+					id: "2CD08C57BA5B549C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "2ADE90E533EC9BE4"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "16EC44176D3CB689"
+			tasks: [{
+				id: "1245B210B54821FD"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_shovel"
+			}]
+			rewards: [
+				{
+					id: "19CCA593EA0A1A10"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "0BF4A244F3E176A9"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			description: [
+				"Bedrock breakable"
+				"Shift+LC is able to break 5x5 area at once (including bedrock)."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "28840B900DDBDE31"
+			tasks: [{
+				id: "2C830C34A92C736D"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_pickaxe"
+			}]
+			rewards: [
+				{
+					id: "439093830CEB379F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "6012E95315DDCC5B"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "3D053A26FFBFE8F6"
+			tasks: [{
+				id: "3718A382EDCA00B2"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_sword"
+			}]
+			rewards: [
+				{
+					id: "27FC7063EF014896"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "01DF61AFF05CF0A5"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "0BB20B8D73A7CD73"
+			tasks: [{
+				id: "2A15A7335FFDDEFB"
+				type: "item"
+				item: "upgradednetherite_creative:creative_upgraded_netherite_bow"
+			}]
+			rewards: [
+				{
+					id: "5B91999A415ECC9F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "7008F481451AB4C2"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "3ACAB581931972E9"
+			tasks: [{
+				id: "69E3D68FE8195320"
+				type: "item"
+				item: "mekanism:creative_energy_cube"
+			}]
+			rewards: [
+				{
+					id: "199AEEE7A857D990"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "36C2526F5923E03D"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "21BAB71F805BA083"
+			tasks: [{
+				id: "2BAEAF6734BDD8F1"
+				type: "item"
+				item: "pneumaticcraft:creative_compressor"
+			}]
+			rewards: [
+				{
+					id: "28C0E06B7F4F58E8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "56ADB50FE97B0A30"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "0A6047905069427E"
+			tasks: [{
+				id: "701825AA0A66B994"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:creative_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "37048BB807132A82"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "68C57653A14D4B6A"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "67166B1CE31FF449"
+			tasks: [{
+				id: "61BBCF05DD9B0450"
+				type: "item"
+				item: "thermal:rf_coil_creative_augment"
+			}]
+			rewards: [
+				{
+					id: "33A265A466BDC805"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "583B14F85EBCD7ED"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "7DA2F1FE696FAEDA"
+			tasks: [{
+				id: "63E870E9CE93B8AC"
+				type: "item"
+				item: "thermal:fluid_tank_creative_augment"
+			}]
+			rewards: [
+				{
+					id: "456A7B817C6ADFC6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "1319B205515F5A10"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 11.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "2277D9B948D07988"
+			tasks: [{
+				id: "6036FAB335D9DFCC"
+				type: "item"
+				item: "thermal:machine_efficiency_creative_augment"
+			}]
+			rewards: [
+				{
+					id: "490F9AD9729E8F23"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "6E5467FE5E853C3B"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 13.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "04EE4CBB0535F2C8"
+			tasks: [{
+				id: "2B1D1A8B3C6D63BF"
+				type: "item"
+				item: "thermal:machine_catalyst_creative_augment"
+			}]
+			rewards: [
+				{
+					id: "382769ED7508EFF1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "65E2C9FA4AD67EA0"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			title: "Congratulations!"
+			icon: {
+				id: "custommachinery:structure_creator"
+				Count: 1b
+				tag: {
+					custommachinery: { }
+				}
+			}
+			x: 0.0d
+			y: 16.0d
+			subtitle: "Certificate of Completion"
+			description: ["Congratulation! You have finished this modpack."]
+			hide_dependency_lines: true
+			dependencies: [
+				"58F22CB99AC9AD22"
+				"077908C0A2D5AC73"
+				"076D1397D4153B4D"
+				"51F64B1B3B052C19"
+				"6984B714AB333B51"
+				"16EC44176D3CB689"
+				"28840B900DDBDE31"
+				"0BB20B8D73A7CD73"
+				"3D053A26FFBFE8F6"
+				"3ACAB581931972E9"
+				"21BAB71F805BA083"
+				"0A6047905069427E"
+				"67166B1CE31FF449"
+				"7DA2F1FE696FAEDA"
+				"2277D9B948D07988"
+				"04EE4CBB0535F2C8"
+				"2EC57B95C8E0970E"
+				"5CB96263758BC6CD"
+				"4F7E1AE9F4D1BDD3"
+				"77A676C65E25F86E"
+				"160DAA2E679410E7"
+			]
+			id: "4E620C4C333892B5"
+			tasks: [{
+				id: "697EB09B88D02BFE"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "00CB32E92EB67DA7"
+					type: "item"
+					item: "mekanism:creative_bin"
+				}
+				{
+					id: "439CD157A5B16286"
+					type: "item"
+					item: "mekanism:creative_fluid_tank"
+				}
+				{
+					id: "62D65202615AF9CC"
+					type: "item"
+					item: "mekanism:creative_chemical_tank"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			description: ["The energy cube is filled by building a multiblock structure as shown below. The leftmost and rightmost block is a \"FULL\" ultimate energy cube. Shift+RC the empty creative energy cube with a redstone torch and the cube will be filled."]
+			hide_dependency_lines: true
+			dependencies: ["3ACAB581931972E9"]
+			id: "7A6FFE05C4FF1C71"
+			tasks: [{
+				id: "557D244483C21E8C"
+				type: "item"
+				item: {
+					id: "mekanism:creative_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "494DF992B2B09996"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "37EC276ACEEA7C54"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 8.5d
+			description: ["Ascended Angel Ring is not limited by anchors. It grants you the genuine creative flight."]
+			hide_dependency_lines: true
+			dependencies: ["3E762098F0266ABE"]
+			id: "45A7D915448F79B0"
+			tasks: [{
+				id: "7D1295C01C25D6D0"
+				type: "item"
+				item: "balancedflight:ascended_flight_ring"
+			}]
+			rewards: [
+				{
+					id: "6FED25FEF31291F0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "0F9B932924D7B242"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+	]
+}

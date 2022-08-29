@@ -1,0 +1,546 @@
+{
+	id: "36B652390C5B9FC6"
+	group: "2DDEDFB13E9FB842"
+	order_index: 6
+	filename: "chapter_7_to_the_space"
+	title: "Chapter 7: To the Space"
+	icon: {
+		id: "boss_tools:rocket_t3"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: -0.5d
+			description: ["NASA workbench is required to craft a rocket. It also symbolizes that you have already taken a great leap in this modpack."]
+			dependencies: ["65DFACB4338FF649"]
+			id: "5ABCC851B5349232"
+			tasks: [{
+				id: "3FA3E4D3D9F236E2"
+				type: "item"
+				item: "boss_tools:nasa_workbench"
+			}]
+			rewards: [{
+				id: "37AE45E6A100CAE3"
+				type: "item"
+				item: "thermal:copper_plate"
+				count: 4
+			}]
+		}
+		{
+			title: "Materials of a Tier 1 rocket"
+			x: -1.0d
+			y: 1.5d
+			description: ["You need to prepare the above materials for a tier 1 rocket."]
+			dependencies: ["5ABCC851B5349232"]
+			id: "48DCA13B77E25308"
+			tasks: [
+				{
+					id: "691C2539325ECCA5"
+					type: "item"
+					item: "boss_tools:compressed_steel"
+					count: 6L
+				}
+				{
+					id: "5CF90E94F7E0B80D"
+					type: "item"
+					item: "boss_tools:rocket_nose_cone"
+				}
+				{
+					id: "6D35D3D349532214"
+					type: "item"
+					item: "boss_tools:rocket_fin"
+					count: 4L
+				}
+				{
+					id: "47471CD2AD74B762"
+					type: "item"
+					item: "boss_tools:iron_tank"
+					count: 2L
+				}
+				{
+					id: "53E702645FF29182"
+					type: "item"
+					item: "boss_tools:iron_engine"
+				}
+			]
+			rewards: [{
+				id: "0788DFEC56A56658"
+				type: "item"
+				item: "mekanism:dust_steel"
+				count: 8
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.5d
+			description: [
+				"Craft a rocket using NASA table, with the ingredients prepared."
+				"Before going up into the space, you have to prepare a few more pieces of machines. Remember to prepare two sets of them. One for travelling from Earth to your destination. Another one for travelling back to the earth."
+			]
+			dependencies: ["48DCA13B77E25308"]
+			id: "6391A7954ED4D488"
+			tasks: [{
+				id: "4B667F7D9A805437"
+				type: "item"
+				item: {
+					id: "boss_tools:rocket_t1"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "62F3D0918BC6022E"
+					type: "item"
+					item: "boss_tools:coal_torch"
+					count: 32
+					random_bonus: 32
+				}
+				{
+					id: "34100B475862711A"
+					type: "item"
+					item: "boss_tools:coal_lantern"
+					count: 32
+					random_bonus: 32
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			description: [
+				"Launch pad provides a space for placing the rocket down."
+				"Place the pad in a 3x3 structure to make it workable."
+				"{image:kubejs:textures/quest/chapter7/chapter7_launch_pad.png width:176 height:100 align:1}"
+			]
+			dependencies: ["6391A7954ED4D488"]
+			id: "2398266E84266B84"
+			tasks: [{
+				id: "114560917E9F398F"
+				type: "item"
+				item: "boss_tools:rocket_launch_pad"
+				count: 9L
+			}]
+			rewards: [{
+				id: "645BBDE0924B9F2C"
+				type: "item"
+				item: "mekanism:ultimate_logistical_transporter"
+				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			description: ["Oil refinery is for turning oil into rocket fuel. But you don't really need it because you can also use the refined oil produced from Pneumaticcraft also."]
+			dependencies: ["6391A7954ED4D488"]
+			size: 0.75d
+			optional: true
+			id: "4BF30FEBC561718A"
+			tasks: [{
+				id: "00C5F6C0CE910D89"
+				type: "item"
+				item: "boss_tools:fuel_refinery"
+			}]
+			rewards: [{
+				id: "4886C3581CAEC688"
+				type: "item"
+				item: "enderioalloys:item_alloy_ingot_end_steel"
+				count: 4
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			description: [
+				"It is what it is. To load the fuel into the rocket. Simply place down the block near your launch pad and insert fuel by tanks for pipes."
+				"{image:kubejs:textures/quest/chapter7/chapter7_fuel_loader.png width:176 height:100 align:1}"
+			]
+			dependencies: ["6391A7954ED4D488"]
+			id: "5F53172B9A1CF309"
+			tasks: [{
+				id: "28DAB0BA9FCFA146"
+				type: "item"
+				item: "boss_tools_giselle_addon:fuel_loader"
+			}]
+			rewards: [{
+				id: "229CB67966972FF1"
+				type: "item"
+				item: "mekanism:ultimate_mechanical_pipe"
+				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			description: ["It is what it is. It loads fuel into rockets."]
+			dependencies: ["6391A7954ED4D488"]
+			id: "63C683B1497D3884"
+			tasks: [{
+				id: "039627DF1B32BE68"
+				type: "item"
+				item: "boss_tools:oxygen_loader"
+			}]
+			rewards: [{
+				id: "33657A0216710E42"
+				type: "item"
+				item: "mekanism:ultimate_pressurized_tube"
+				count: 16
+			}]
+		}
+		{
+			title: "Space suits"
+			x: -5.0d
+			y: 5.5d
+			description: ["Space has no air. You need a space suit in order to survive in Space. Get a netherite space suit which provides proper protection from vacuum and ultraviolet radiation from stars. Remember to load oxygen to your space suit."]
+			dependencies: ["63C683B1497D3884"]
+			id: "0760AA86CB444201"
+			tasks: [
+				{
+					id: "0197E37DEDDB4036"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4D8F512525D82DB6"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "67EBE94F115ED6F1"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7DA5EF4E5AAB6BE5"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "52A8EEFB68CB71E4"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 8
+				}
+				{
+					id: "55127E3B797651B3"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			title: "Oxygen backup"
+			x: -5.0d
+			y: 7.5d
+			description: ["You can also bring some oxygen can for emergency uses."]
+			dependencies: ["0760AA86CB444201"]
+			id: "4D0139195C5CAC71"
+			tasks: [{
+				id: "50A25871CD33FE7E"
+				type: "item"
+				item: "boss_tools_giselle_addon:oxygen_can"
+			}]
+			rewards: [{
+				id: "0787EF254A0D7574"
+				type: "item"
+				item: {
+					id: "boss_tools_giselle_addon:oxygen_can"
+					Count: 1b
+					tag: {
+						"boss_tools_giselle_addon:oxygen_capacitor_capability": {
+							oxygenstorage: {
+								oxygen: 24000
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: ["Gravity normalizer can turn the gravity of the planet you landed into same as that of the Earth."]
+			dependencies: ["6391A7954ED4D488"]
+			id: "0606ECEBDAA30AE0"
+			tasks: [{
+				id: "2241449D6FC23D36"
+				type: "item"
+				item: "boss_tools_giselle_addon:gravity_normalizer"
+			}]
+			rewards: [{
+				id: "4B0E90500989B6B7"
+				type: "item"
+				item: "mekanism:ingot_steel"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			description: ["Oxygen bubble distributor can distribute oxygen into a configurable area when inserted with water."]
+			dependencies: ["6391A7954ED4D488"]
+			id: "25B609A3BA92BDA8"
+			tasks: [{
+				id: "2DB1F510D6DBA73D"
+				type: "item"
+				item: "boss_tools:oxygen_bubble_distributor"
+			}]
+			rewards: [{
+				id: "619839970639F094"
+				type: "item"
+				item: "mekanism:hdpe_pellet"
+				count: 8
+			}]
+		}
+		{
+			title: "Launching"
+			x: -1.0d
+			y: 5.5d
+			description: [
+				"After all the things have been prepared, it's time to go to the moon."
+				"Set up the things prepared as below. After the fuel has loaded to 100%, RC the rocket and press \"Space\" to launch. After launching successfully into the atmospher, you can choose which planet you are going. But for now, due to the fact that we only have tier 1 rocket, we can only go to the moon. Choose the moon option in the GUI session. And final reminder, remember to bring another set of launch pads and fuel loader with energy cubes and fuel!!!"
+				"{image:kubejs:textures/quest/chapter7/chapter7_launching.png width:176 height:100 align:1}"
+			]
+			dependencies: ["6391A7954ED4D488"]
+			id: "54C360954E1B226C"
+			tasks: [{
+				id: "1180EB616498ED8B"
+				type: "item"
+				item: "boss_tools:moon_sand"
+			}]
+			rewards: [{
+				id: "2A83616AE65FAB5B"
+				type: "item"
+				item: "boss_tools:fuel_bucket"
+				count: 8
+			}]
+		}
+		{
+			title: "Welcome to the Moon"
+			x: -1.0d
+			y: 7.5d
+			description: [
+				"Welcome to the moon, dude! In the moon, we have 2 things to do."
+				"1) Get some desh ore. We need them to craft tier 2 rocket."
+				"2) Find the Alien village. You can trade items with them. You can also get some decoration blocks from their village ; )."
+				"Remember also monitor your oxygen level to avoid suffocation."
+				"After finishing all the things, it's time to back to the Earth and prepare our next trip."
+			]
+			dependencies: ["54C360954E1B226C"]
+			id: "39E3EA7FE92C9EC5"
+			tasks: [
+				{
+					id: "29FD924A9490018B"
+					type: "item"
+					item: "boss_tools:moon_desh_ore"
+				}
+				{
+					id: "7BABA538E019BEE3"
+					type: "item"
+					item: "boss_tools:moon_cheese_ore"
+				}
+				{
+					id: "0D65CEA2BBDC9A5C"
+					type: "structure"
+					title: "Find Alien Village"
+					structure: "boss_tools:alien_village"
+				}
+			]
+			rewards: [
+				{
+					id: "4930565A4054C170"
+					type: "item"
+					item: "boss_tools:moon_bricks"
+					count: 128
+				}
+				{
+					id: "54A9D6E71733B719"
+					type: "item"
+					item: "boss_tools:iron_plating_block"
+					count: 128
+				}
+				{
+					id: "7D9681F2914A3F36"
+					type: "item"
+					item: "boss_tools:blue_iron_plating_block"
+					count: 128
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 7.5d
+			description: ["Using the desh ore mined, craft a tier 2 rocket."]
+			dependencies: ["39E3EA7FE92C9EC5"]
+			id: "2AB76DD07D26FF6F"
+			tasks: [{
+				id: "46C3AAAC57375404"
+				type: "item"
+				item: {
+					id: "boss_tools:rocket_t2"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "757B995CF18FE9EE"
+				type: "item"
+				item: "boss_tools:moon_desh_ore"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: 9.5d
+			description: ["Now, we are going to the Mars. The only thing you should do is to collect some silicon ores and ice shards to produce silicon ingots, which can only be found at Mars. Collect a bunch of them to ensure a stable supply of silicon ingots for crafting."]
+			dependencies: ["2AB76DD07D26FF6F"]
+			id: "626DF29175A76E7F"
+			tasks: [
+				{
+					id: "4269E39839FB7126"
+					type: "item"
+					item: "boss_tools:mars_silicon_ore"
+				}
+				{
+					id: "28874562968C6AE1"
+					type: "item"
+					item: "boss_tools:ice_shard"
+				}
+				{
+					id: "3B2A506BBAD62E87"
+					type: "item"
+					item: "boss_tools:silicon_ingot"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "70B55D63863B7AB3"
+					type: "item"
+					item: "boss_tools:ice_shard"
+					count: 16
+				}
+				{
+					id: "59E3E7E1D0084402"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 9.5d
+			description: [
+				"After finish the exploration at Mars, back to the Earth and craft a tier 3 rocket."
+				"Tier 3 rocket is the highest tier rocket which enables you to travel to any available planets you want."
+			]
+			dependencies: ["626DF29175A76E7F"]
+			id: "31041B329F26DB9A"
+			tasks: [{
+				id: "133ECB37A2996682"
+				type: "item"
+				item: {
+					id: "boss_tools:rocket_t3"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "6E7D177FB3796939"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 24
+				}
+				{
+					id: "6A8882F83D56F221"
+					type: "xp"
+					xp: 750
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 9.5d
+			description: [
+				"Get some infernal spikes from Venus. You need this block for crafting and unlocking the next chapter."
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 8."
+			]
+			dependencies: ["31041B329F26DB9A"]
+			id: "2F3A13047AA2AAC5"
+			tasks: [{
+				id: "488472D45F072FE3"
+				type: "item"
+				item: "boss_tools:infernal_spire_block"
+			}]
+			rewards: [
+				{
+					id: "0CB944E292BF01C9"
+					type: "item"
+					item: "boss_tools:infernal_spire_block"
+					count: 64
+				}
+				{
+					id: "4E7FC9C177BD0E3A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "623AC70FA00427FC"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+	]
+}

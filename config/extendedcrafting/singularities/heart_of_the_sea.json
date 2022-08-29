@@ -1,0 +1,11 @@
+{
+    "name": "Sea",
+    "colors": [
+      "1f94af",
+      "0d4b63"
+    ],
+    "ingredient": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "materialCount": 500
+  }

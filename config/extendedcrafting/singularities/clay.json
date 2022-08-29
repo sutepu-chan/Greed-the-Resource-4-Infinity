@@ -1,0 +1,11 @@
+{
+  "name": "Clay",
+  "colors": [
+    "9096a5",
+    "43444a"
+  ],
+  "ingredient": {
+    "tag": "chipped:clay"
+  },
+  "materialCount": 15000
+}

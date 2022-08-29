@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.emerald",
+  "colors": [
+    "2c1f15",
+    "117a26"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/emerald"
+  }
+}

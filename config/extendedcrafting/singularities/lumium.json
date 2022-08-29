@@ -1,0 +1,10 @@
+{
+  "name": "Lumium",
+  "colors": [
+    "e8da96",
+    "b8782d"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/lumium"
+  }
+}

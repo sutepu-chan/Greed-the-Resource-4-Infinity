@@ -1,0 +1,1139 @@
+{
+	id: "59E7B32287C92B7C"
+	group: "6CD795654E8AF853"
+	order_index: 2
+	filename: "mystical_agriculture"
+	title: "Resource Gathering"
+	icon: {
+		id: "minecraft:diamond_ore"
+		Count: 1b
+		tag: {
+			RepairCost: 1
+			Enchantments: [{
+				lvl: 2s
+				id: "minecraft:protection"
+			}]
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Chapter 3"
+			description: ["Prosperity ore is the crafting ingredients of the seeds in mystical agriculture. It is easy to find underground."]
+			id: "5848D9B82C72FD3A"
+			tasks: [{
+				id: "6A833AB85F643A6B"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Prosperity seed base is the crafting ingredients for ore seeds."]
+			dependencies: ["5848D9B82C72FD3A"]
+			id: "528EA91286CCBFDC"
+			tasks: [{
+				id: "74CC5852DEEC8A25"
+				type: "item"
+				item: "mysticalagriculture:prosperity_seed_base"
+			}]
+			rewards: [{
+				id: "72F6547D28A23894"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ore"
+				count: 8
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["Soulium seed base is the crafting ingredients for mob seeds."]
+			dependencies: ["528EA91286CCBFDC"]
+			id: "56383970AF310E85"
+			tasks: [{
+				id: "0390AFCAE775C416"
+				type: "item"
+				item: "mysticalagriculture:soulium_seed_base"
+			}]
+			rewards: [{
+				id: "6E6B9FC9B195C267"
+				type: "item"
+				item: "enderioalloys:item_alloy_ingot_soularium"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: ["Mystical Crafter is a new and custom machine added for crafting seeds from mystical agriculture and mystical agraddition, replacing the infusion altar."]
+			dependencies: ["528EA91286CCBFDC"]
+			id: "20955C37900D99D7"
+			tasks: [{
+				id: "39FBFB60EEA4D102"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:mystical_crafter"
+					}
+				}
+			}]
+			rewards: [{
+				id: "554743273A42AFC5"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ore"
+				count: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: ["Try to get a dye seed"]
+			dependencies: ["20955C37900D99D7"]
+			id: "44FC71CE576C9879"
+			tasks: [{
+				id: "3D7D99ED4CBFB099"
+				type: "item"
+				item: "mysticalagriculture:dye_seeds"
+			}]
+			rewards: [{
+				id: "709DFA56AB9382E8"
+				type: "item"
+				item: "mysticalagradditions:nether_prosperity_ore"
+				count: 8
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Mobs drop inferium essence upon death."]
+			dependencies: ["5848D9B82C72FD3A"]
+			id: "6C8B01CF8A7C6F13"
+			tasks: [{
+				id: "53272901EDFACE5A"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+			}]
+			rewards: [{
+				id: "04639F76F8164533"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["6C8B01CF8A7C6F13"]
+			id: "1A314DB92C010703"
+			tasks: [{
+				id: "48958FEDB10EB416"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+			}]
+			rewards: [{
+				id: "5CF92ACA971D084C"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.0d
+			dependencies: ["1A314DB92C010703"]
+			id: "39BD46035FBC3C57"
+			tasks: [{
+				id: "704493BCCD7451AB"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+			}]
+			rewards: [{
+				id: "102A166D0889EFA7"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["39BD46035FBC3C57"]
+			id: "6B76EDC20260ED69"
+			tasks: [{
+				id: "48ABAFD238EC23ED"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+			}]
+			rewards: [{
+				id: "3EB5A9AA107D42F5"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			dependencies: ["6B76EDC20260ED69"]
+			id: "2713B25E8335417F"
+			tasks: [{
+				id: "6D56B00ED97D15C8"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+			}]
+			rewards: [{
+				id: "36DAD83F84226378"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.0d
+			dependencies: ["2713B25E8335417F"]
+			id: "72F3CE956A913285"
+			tasks: [{
+				id: "1F4208FC85FC192A"
+				type: "item"
+				item: "mysticalagradditions:insanium_essence"
+			}]
+			rewards: [{
+				id: "3BA8E802781A79F7"
+				type: "item"
+				item: "mysticalagriculture:master_infusion_crystal"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			description: ["Ingots (except prosperity ingot) from mystical agriculture acts as a upgrade of mystical crafter. Pressing Shift while cursor on ingot shows the details of upgrade."]
+			dependencies: ["528EA91286CCBFDC"]
+			id: "1DA6D98F5CA425C5"
+			tasks: [{
+				id: "6828DEAAC05B0BB3"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ingot"
+			}]
+			rewards: [{
+				id: "2A759D1D522E2C62"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ore"
+				count: 64
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			dependencies: ["1DA6D98F5CA425C5"]
+			id: "04D63E65611546C0"
+			tasks: [{
+				id: "5E9187AA9C48B9B8"
+				type: "item"
+				item: "mysticalagriculture:inferium_ingot"
+			}]
+			rewards: [{
+				id: "25E590B398796872"
+				type: "item"
+				item: "mysticalagriculture:inferium_gemstone"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 8.0d
+			dependencies: ["04D63E65611546C0"]
+			id: "58887D5A49F02185"
+			tasks: [{
+				id: "78E60EC752C66D3D"
+				type: "item"
+				item: "mysticalagriculture:prudentium_ingot"
+			}]
+			rewards: [{
+				id: "46554B9F6C8FD70F"
+				type: "item"
+				item: "mysticalagriculture:prudentium_gemstone"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["58887D5A49F02185"]
+			id: "272D4878D9E1560C"
+			tasks: [{
+				id: "750164C5E34FAFA6"
+				type: "item"
+				item: "mysticalagriculture:tertium_ingot"
+			}]
+			rewards: [{
+				id: "56AA6B8CDEB8FD94"
+				type: "item"
+				item: "mysticalagriculture:tertium_gemstone"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["272D4878D9E1560C"]
+			id: "4174F8B5B274D7E8"
+			tasks: [{
+				id: "322D90C8F7200D30"
+				type: "item"
+				item: "mysticalagriculture:imperium_ingot"
+			}]
+			rewards: [{
+				id: "1249342A28359B41"
+				type: "item"
+				item: "mysticalagriculture:imperium_gemstone"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["4174F8B5B274D7E8"]
+			id: "5D1CE08FF2A3F469"
+			tasks: [{
+				id: "112DA728A79CC85D"
+				type: "item"
+				item: "mysticalagriculture:supremium_ingot"
+			}]
+			rewards: [{
+				id: "334020AF7F8222D5"
+				type: "item"
+				item: "mysticalagriculture:supremium_gemstone"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["5D1CE08FF2A3F469"]
+			id: "38F3024CD4D97A22"
+			tasks: [{
+				id: "24845DFEE083B25E"
+				type: "item"
+				item: "mysticalagradditions:insanium_ingot"
+			}]
+			rewards: [{
+				id: "6E85C6092428033E"
+				type: "item"
+				item: "mysticalagradditions:insanium_gemstone"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"Soulium dagger is required for crafting mob seeds."
+				"Put the soul jar in your inventory. The dagger will automatically insert the mobs' soul into the soul jar. Mobs seeds are only craftable using a full soul jar."
+			]
+			dependencies: ["56383970AF310E85"]
+			id: "00E63E7CF08BEC63"
+			tasks: [
+				{
+					id: "7E232EC676A9C344"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:soulium_dagger"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "212779980E118810"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:soul_jar"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "521B30D660C47FAC"
+				type: "item"
+				item: "minecraft:zombie_spawn_egg"
+				count: 64
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["Try to fill the soul jar with zombie's soul"]
+			dependencies: ["00E63E7CF08BEC63"]
+			id: "47A1259FA85BFACE"
+			tasks: [{
+				id: "26B1F8BB5B50854F"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:soul_jar"
+					Count: 1b
+					tag: {
+						Souls: 10.0d
+						Type: "mysticalagriculture:zombie"
+					}
+				}
+			}]
+			rewards: [{
+				id: "28AF5039A92B01AA"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:soul_jar"
+					Count: 1b
+					tag: {
+						Souls: 10.0d
+						Type: "mysticalagriculture:creeper"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: ["Try to craft a zombie seed."]
+			dependencies: ["47A1259FA85BFACE"]
+			id: "02F4C5A0F3004C6C"
+			tasks: [{
+				id: "63BA2776C4BBB914"
+				type: "item"
+				item: "mysticalagriculture:zombie_seeds"
+			}]
+			rewards: [{
+				id: "08182FBE3FA3938A"
+				type: "item"
+				item: "mysticalagriculture:soul_jar"
+				count: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			description: ["Infusion Altar is now required for crafting attunements only."]
+			dependencies: ["20955C37900D99D7"]
+			id: "00D164654226CD18"
+			tasks: [
+				{
+					id: "370AB605D76E2D30"
+					type: "item"
+					item: "mysticalagriculture:infusion_altar"
+				}
+				{
+					id: "63366769F440FE1E"
+					type: "item"
+					item: "mysticalagriculture:infusion_pedestal"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "0390B9CBD7F96744"
+				type: "item"
+				item: "mysticalagradditions:end_prosperity_ore"
+				count: 32
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			description: ["Tinkering tables are used for installing attunements onto tools."]
+			dependencies: ["00D164654226CD18"]
+			id: "55E63139DDFA6302"
+			tasks: [{
+				id: "26F32AE88B12A263"
+				type: "item"
+				item: "mysticalagriculture:tinkering_table"
+			}]
+			rewards: [{
+				id: "66E50C696365AD60"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ore"
+				count: 64
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["Botany Pot is a great place for planting seeds, which eases the automation of crop harvesting."]
+			dependencies: ["5848D9B82C72FD3A"]
+			id: "788999B8A7EE41A5"
+			tasks: [{
+				id: "2ABE121DA9F9F3CE"
+				type: "item"
+				item: "botanypots:botany_pot"
+			}]
+			rewards: [
+				{
+					id: "0413FB9610D401A1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+				}
+				{
+					id: "3F598436809A0A57"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["788999B8A7EE41A5"]
+			id: "0EF18D86DEC3E9E2"
+			tasks: [{
+				id: "609BC2528055F979"
+				type: "item"
+				item: "botanypotstiers:elite_botany_pot"
+			}]
+			rewards: [
+				{
+					id: "1F618E6C9EDC7A7D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "7D5E8B45C81163BE"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["0EF18D86DEC3E9E2"]
+			id: "67D884E39B475590"
+			tasks: [{
+				id: "12E780530671359A"
+				type: "item"
+				item: "botanypotstiers:ultra_botany_pot"
+			}]
+			rewards: [
+				{
+					id: "5A4BBCD8006FE882"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "5846FD3A878E4CDF"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			dependencies: ["67D884E39B475590"]
+			id: "0CC4028EB77FA9A5"
+			tasks: [{
+				id: "68862FB89DD3E536"
+				type: "item"
+				item: "botanypotstiers:creative_botany_pot"
+			}]
+			rewards: [
+				{
+					id: "28DA2C93FD5D0118"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 8
+				}
+				{
+					id: "24810C9998452C25"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			description: ["Hopper botany pots allows direct output of seeds to the storage below the pot."]
+			dependencies: ["0CC4028EB77FA9A5"]
+			id: "4F9B8B1900D4770F"
+			tasks: [{
+				id: "5ED4364936E6DA22"
+				type: "item"
+				item: "botanypotstiers:creative_hopper_botany_pot"
+			}]
+			rewards: [
+				{
+					id: "427A8298AAD2F37F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 16
+				}
+				{
+					id: "3994A7A0402438DB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Chapter 2"
+			description: [
+				"The dimensional mineshaft establish a connection to a unreachable mining dimension, for mining. The dimension is only accessible to spirits, because it is too small for humans."
+				"The mineshaft is activated by placing a magic lamp at the input slot. The spirit will mine ores at mining dimension and put the ores in the output slots. If all output slots are filled, additional items are discarded."
+				"The dimensional mineshaft is automatable by hoppers, pipes, or transport spirits at all the sides other then upside."
+			]
+			id: "5169DA1EC9754D3B"
+			tasks: [{
+				id: "16783FC665420F07"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+			rewards: [{
+				id: "6A67329828097139"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: ["Miner Djinni mines ores faster and more specifically but has a lower durability."]
+			dependencies: ["5169DA1EC9754D3B"]
+			id: "3242AF4443AC6963"
+			tasks: [{
+				id: "56AA6ED8E7619D5A"
+				type: "item"
+				item: {
+					id: "occultism:miner_djinni_ores"
+					Count: 1b
+					tag: {
+						spiritName: "Mjolmier"
+						rollsPerOperation: 1
+						Damage: 0
+						maxMiningTime: 300
+					}
+				}
+			}]
+			rewards: [{
+				id: "3A0D1CB900DA6B00"
+				type: "choice"
+				title: "Choose your book of binding!"
+				icon: "occultism:book_of_binding_foliot"
+				table_id: 3992974081605352128L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["Miner Foliot mines the ores slower by have a higher durability."]
+			dependencies: ["5169DA1EC9754D3B"]
+			id: "1A19111049867165"
+			tasks: [{
+				id: "4675009A1AA0399B"
+				type: "item"
+				item: {
+					id: "occultism:miner_foliot_unspecialized"
+					Count: 1b
+					tag: {
+						spiritName: "Raymaracarc"
+						rollsPerOperation: 1
+						Damage: 0
+						maxMiningTime: 400
+					}
+				}
+			}]
+			rewards: [{
+				id: "52B90C888745F624"
+				type: "choice"
+				title: "Choose your book of binding!"
+				icon: "occultism:book_of_binding_foliot"
+				table_id: 3992974081605352128L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			subtitle: "Chapter 6"
+			description: [
+				"Industrial Foregoing provides a fast and powerful miner which generates ores from void."
+				"Set up the machine like fluid laser base and use the correct lens to obtain the desired ores."
+			]
+			id: "312C62B7FB9291BC"
+			tasks: [{
+				id: "4F97FA7CC907FD45"
+				type: "item"
+				item: "industrialforegoing:ore_laser_base"
+			}]
+			rewards: [{
+				id: "0FF6D1EFB7588BF7"
+				type: "item"
+				item: "industrialforegoing:laser_lens0"
+			}]
+		}
+		{
+			title: "Ultimate Resource Generator"
+			x: -6.0d
+			y: -4.0d
+			subtitle: "Chapter 4"
+			description: [
+				"This pack provides a highly efficient but expensive multiblock resource generators. For all the generators, controllers, energy inputs and item output blocks are required for the multiblock structure. Press \"U\" by default allows you to see how the multiblock structure is built. The button at the bottom right hand corner makes the structure is visible layer by layer."
+				"{image:kubejs:textures/quest/resource/resource_generator_jei.png width:100 height:150 align:1}"
+			]
+			id: "51B71FDE9D677CC5"
+			tasks: [
+				{
+					id: "5E14A115CF40F6D5"
+					type: "item"
+					item: "masterfulmachinery:t0_controller"
+				}
+				{
+					id: "3212842120B53DD0"
+					type: "item"
+					item: "masterfulmachinery:t0_t0_item_port_items_output"
+				}
+				{
+					id: "72703CA3F2D68412"
+					type: "item"
+					item: "masterfulmachinery:t0_t0_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "13A2C0192F70D332"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "498926E988D9B043"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Tier 1 Generator"
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["51B71FDE9D677CC5"]
+			id: "3768964A607B6902"
+			tasks: [
+				{
+					id: "69144CFB1C9E4F57"
+					type: "item"
+					item: "masterfulmachinery:t1_controller"
+				}
+				{
+					id: "405259D07F5EC273"
+					type: "item"
+					item: "masterfulmachinery:t1_t1_item_port_items_output"
+				}
+				{
+					id: "3A40D7BA74D83ECC"
+					type: "item"
+					item: "masterfulmachinery:t1_t1_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "6CD722954E420C60"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "5E43EE73C40DD5DF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Tier 2 Generator"
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["3768964A607B6902"]
+			id: "0DF42B638EDC94AB"
+			tasks: [
+				{
+					id: "5690380D92A8422F"
+					type: "item"
+					item: "masterfulmachinery:t2_controller"
+				}
+				{
+					id: "5E3A34324546DC9C"
+					type: "item"
+					item: "masterfulmachinery:t2_t2_item_port_items_output"
+				}
+				{
+					id: "197CC48C38758B3F"
+					type: "item"
+					item: "masterfulmachinery:t2_t2_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "511E127241C5C104"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "28F1E992E370949E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Tier 3 Generator"
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["0DF42B638EDC94AB"]
+			id: "7BADB2995E3D3F2E"
+			tasks: [
+				{
+					id: "174682AA26522D26"
+					type: "item"
+					item: "masterfulmachinery:t3_controller"
+				}
+				{
+					id: "3AE217F2E75AC7E8"
+					type: "item"
+					item: "masterfulmachinery:t3_t3_item_port_items_output"
+				}
+				{
+					id: "660B87FABA1DAF4B"
+					type: "item"
+					item: "masterfulmachinery:t3_t3_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "6165B648CA33C3CC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "28693CD004EDB765"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			title: "Tier 4 Generator"
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["7BADB2995E3D3F2E"]
+			id: "21DFB370ACA67DC3"
+			tasks: [
+				{
+					id: "5B53368C35C69AF0"
+					type: "item"
+					item: "masterfulmachinery:t4_controller"
+				}
+				{
+					id: "48E48800B5389AE8"
+					type: "item"
+					item: "masterfulmachinery:t4_t4_item_port_items_output"
+				}
+				{
+					id: "007D375BB7F92A03"
+					type: "item"
+					item: "masterfulmachinery:t4_t4_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "7002AEC42C4156BF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+					count: 5
+				}
+				{
+					id: "442D272D665E0474"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			title: "Tier 5 Generator"
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["21DFB370ACA67DC3"]
+			id: "1731179D92BB83E8"
+			tasks: [
+				{
+					id: "2B6614C5CC275098"
+					type: "item"
+					item: "masterfulmachinery:t5_controller"
+				}
+				{
+					id: "491175EFC773CE60"
+					type: "item"
+					item: "masterfulmachinery:t5_t5_item_port_items_output"
+				}
+				{
+					id: "503AACDA9E68AB06"
+					type: "item"
+					item: "masterfulmachinery:t5_t5_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "00A3CBEB850C95F6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+					count: 6
+				}
+				{
+					id: "73D7E0101D6D9463"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			title: "Tier 6 Generator"
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["1731179D92BB83E8"]
+			id: "1CC9085922239981"
+			tasks: [
+				{
+					id: "13971643B3826B61"
+					type: "item"
+					item: "masterfulmachinery:t6_controller"
+				}
+				{
+					id: "139BBB179A2EE808"
+					type: "item"
+					item: "masterfulmachinery:t6_t6_item_port_items_output"
+				}
+				{
+					id: "580BCFE46CB66482"
+					type: "item"
+					item: "masterfulmachinery:t6_t6_energy_port_energy_input"
+				}
+			]
+			rewards: [
+				{
+					id: "7405532C1082B6B8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+					count: 7
+				}
+				{
+					id: "28C18B47A4D36BE6"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			description: [
+				"A Tier 3 Netherstar Generator, for your reference."
+				"{image:kubejs:textures/quest/resource/resource_tier3_netherstar.png width:100 height:100 align:1}"
+			]
+			dependencies: ["7C44EC057F3EC644"]
+			id: "60D6C008A23DA1EB"
+			tasks: [{
+				id: "2531B56E2A1489A7"
+				type: "checkmark"
+				title: "An example"
+			}]
+			rewards: [
+				{
+					id: "464AD195FF77073B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "0304A022940B3E96"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			description: [
+				"It seems that JEI does not display the structures properly sometimes and I have already contacted the mod author for that. To avoid anbiguity, I am going to introduce the multiblock formation."
+				"Each tiers will have (tier + 1) layers, e.g., Tier 2 has 3 layers and Tier 5 has 6 layers. For each subsequent layers, the material required is the compressed form of the previous layer. For instance, layer 2 requires compressed 2x blocks and layer 3 requires compressed 3x blocks, and similar after. For the base layer, you need to have the basic block form."
+				"Take constructing a tier 3 netherstar generator as an example. The base layer requires 6 netherstar blocks, tier 3 controller, tier 3 energy input and tier 3 item output. The energy input has to be placed on the left side of the controller while the item output is at the right side. 1st layer requires 9 netherstar block 1x, 2nd layer requires 9 netherstar block 2x, 3rd layer requires 9 netherstar block 3x."
+			]
+			dependencies: ["51B71FDE9D677CC5"]
+			id: "7C44EC057F3EC644"
+			tasks: [{
+				id: "41F148D4CA25EE33"
+				type: "checkmark"
+				title: "Building the multiblock structure"
+			}]
+			rewards: [
+				{
+					id: "18CEE90A47354BE3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "299E78125B38134D"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "More Generators are coming"
+			x: -8.0d
+			y: -4.0d
+			description: ["If you find a certain resource which might be very hard to obtain in a bulk amount, please suggest adding generator for certain kind of resource at Discord ;-). Discord Link can be found at the CurseForge page."]
+			dependencies: ["51B71FDE9D677CC5"]
+			id: "5EF18D9CFB25CDFF"
+			tasks: [{
+				id: "52CE5DDC66E77096"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "15D68AD42A3D81D1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "2B5659F09DC09E7C"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+	]
+}

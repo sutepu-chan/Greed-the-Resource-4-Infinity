@@ -1,0 +1,896 @@
+{
+	id: "255476F587EDD42A"
+	group: "6CD795654E8AF853"
+	order_index: 0
+	filename: "logistic_and_transmission"
+	title: "Logistic and Transmission"
+	icon: "mekanism:ultimate_universal_cable"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Xnet"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "Chapter 4"
+			description: [
+				"Xnet is a powerful and highly configuration transportation system on items, fluid, energy, information and gases, This mod is highly optimized which makes makes transporting items accross a cable of 12000 blocks long just as efficient as doing it on a 5 block long cable."
+				"Automation of Xnet based on network and channels. A net work is basically connecting cables to machines and one controller. Each controller (or network) has 8 channels in maximum, with types including items, fluid, energy, logics or gases. The channels can be renamed but renaming are mainly used in a multi-network system."
+			]
+			id: "19E74FFCFDF5E8AA"
+			tasks: [{
+				id: "36E96CD8AE2E4D9D"
+				type: "item"
+				item: "xnet:controller"
+			}]
+			rewards: [{
+				id: "382523F1A76C23A0"
+				type: "item"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				count: 36
+			}]
+		}
+		{
+			title: "Pipez"
+			x: 5.5d
+			y: 0.0d
+			subtitle: "Chapter 1"
+			description: [
+				"Pipez provides a cheap and convenient pipes for logistics and tranmission."
+				"Filters requires certain upgrades."
+			]
+			id: "510D293D1C0A2149"
+			tasks: [
+				{
+					id: "6C0BAEAF0D76A983"
+					type: "item"
+					item: "pipez:item_pipe"
+				}
+				{
+					id: "18D2BCEC11D8CA1B"
+					type: "item"
+					item: "pipez:fluid_pipe"
+				}
+				{
+					id: "1106CEB199CB5480"
+					type: "item"
+					item: "pipez:energy_pipe"
+				}
+				{
+					id: "68562B0C190FA1FE"
+					type: "item"
+					item: "pipez:gas_pipe"
+				}
+				{
+					id: "3A775977EE2442B2"
+					type: "item"
+					item: "pipez:universal_pipe"
+				}
+			]
+			rewards: [{
+				id: "53AB6FBE500E5D4A"
+				type: "item"
+				item: "pipez:wrench"
+			}]
+		}
+		{
+			title: "Pipe Upgrades"
+			x: 7.5d
+			y: 0.0d
+			description: ["Upgrades need to be installed in the opening of the pipes."]
+			dependencies: ["510D293D1C0A2149"]
+			id: "4FFE32B48A546EB2"
+			tasks: [
+				{
+					id: "351A619E30CC44F7"
+					type: "item"
+					item: "pipez:basic_upgrade"
+				}
+				{
+					id: "39F211259CB7AE41"
+					type: "item"
+					item: "pipez:improved_upgrade"
+				}
+				{
+					id: "12620820EBADEB1E"
+					type: "item"
+					item: "pipez:advanced_upgrade"
+				}
+				{
+					id: "6CD4BDD58712162E"
+					type: "item"
+					item: "pipez:ultimate_upgrade"
+				}
+				{
+					id: "5F8487FEAEBCCF98"
+					type: "item"
+					item: "pipez:infinity_upgrade"
+				}
+			]
+			rewards: [
+				{
+					id: "03845E08377F0AC1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "61340D963058ADDE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			description: ["Filter destination tools configure the output destination of pipes."]
+			dependencies: ["510D293D1C0A2149"]
+			id: "27858962E8571B62"
+			tasks: [{
+				id: "6661D8CEC7EAA660"
+				type: "item"
+				item: "pipez:filter_destination_tool"
+			}]
+			rewards: [{
+				id: "61F99107660434DD"
+				type: "item"
+				item: "minecraft:glass"
+				count: 4
+			}]
+		}
+		{
+			title: "CC:Tweaked"
+			x: 1.5d
+			y: 0.0d
+			description: ["W.I.P"]
+			id: "434F538704EDDC32"
+			tasks: [{
+				id: "74FE5B8B947646E0"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+		}
+		{
+			title: "Wireless Redstone"
+			x: 3.5d
+			y: 0.0d
+			subtitle: "Chapter 1"
+			description: ["Wireless Redstone allows control of redstone circuits at distant."]
+			id: "299EEA733CC9EFF8"
+			tasks: [
+				{
+					id: "1B2C237FBE0B9B6E"
+					type: "item"
+					item: "rangedwirelessredstone:redstone_transmitter"
+				}
+				{
+					id: "2BC5DE205FC9FDE7"
+					type: "item"
+					item: "rangedwirelessredstone:redstone_receiver"
+				}
+			]
+			rewards: [{
+				id: "726E1CF39B76A184"
+				type: "item"
+				item: "minecraft:redstone_block"
+				count: 12
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			dependencies: ["4FD057408BA333D6"]
+			id: "224DB7A44AC6FA36"
+			tasks: [{
+				id: "2161DD5CE4BB93DB"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+			}]
+			rewards: [{
+				id: "7E1A4DCB9E7298E8"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.0d
+			dependencies: ["224DB7A44AC6FA36"]
+			id: "138C4BE306C74863"
+			tasks: [{
+				id: "10328AA66345CC39"
+				type: "item"
+				item: "mekanism:advanced_universal_cable"
+			}]
+			rewards: [{
+				id: "273FB0343B6BD872"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -4.5d
+			y: 8.0d
+			dependencies: ["138C4BE306C74863"]
+			id: "18249998A3CB5246"
+			tasks: [{
+				id: "1525B1235FCEEBF7"
+				type: "item"
+				item: "mekanism:elite_universal_cable"
+			}]
+			rewards: [{
+				id: "49A54DA60604C3D8"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -4.5d
+			y: 10.0d
+			dependencies: ["18249998A3CB5246"]
+			id: "24CC469533BD0FCE"
+			tasks: [{
+				id: "47D70BE1A0695FF1"
+				type: "item"
+				item: "mekanism:ultimate_universal_cable"
+			}]
+			rewards: [{
+				id: "6552B50F1AB6784D"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			dependencies: ["4FD057408BA333D6"]
+			id: "10487776BE24B4D6"
+			tasks: [{
+				id: "1D8E7B50FB63D66D"
+				type: "item"
+				item: "mekanism:basic_mechanical_pipe"
+			}]
+			rewards: [{
+				id: "023CD4EF4D6C06B2"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			dependencies: ["10487776BE24B4D6"]
+			id: "74329C962EFA094D"
+			tasks: [{
+				id: "7A5E90D93A149F61"
+				type: "item"
+				item: "mekanism:advanced_mechanical_pipe"
+			}]
+			rewards: [{
+				id: "302B8B0EF0CD02CB"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.0d
+			dependencies: ["74329C962EFA094D"]
+			id: "70E635035A942428"
+			tasks: [{
+				id: "672B328D27D168EB"
+				type: "item"
+				item: "mekanism:elite_mechanical_pipe"
+			}]
+			rewards: [{
+				id: "47D9AD06D5BD9E00"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -2.5d
+			y: 10.0d
+			dependencies: ["70E635035A942428"]
+			id: "7727D47A03813704"
+			tasks: [{
+				id: "69E2904AD1DEE3E9"
+				type: "item"
+				item: "mekanism:ultimate_mechanical_pipe"
+			}]
+			rewards: [{
+				id: "1E6AF78645855302"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			dependencies: ["4FD057408BA333D6"]
+			id: "5581D2081D76292B"
+			tasks: [{
+				id: "7EEFB19B3EF359F8"
+				type: "item"
+				item: "mekanism:basic_pressurized_tube"
+			}]
+			rewards: [{
+				id: "1F92A6D181EBDEEB"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			dependencies: ["5581D2081D76292B"]
+			id: "44C8327FB37BA9DB"
+			tasks: [{
+				id: "1E927BC89BCA308C"
+				type: "item"
+				item: "mekanism:advanced_pressurized_tube"
+			}]
+			rewards: [{
+				id: "36427F1BCCAF65D3"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 8.0d
+			dependencies: ["44C8327FB37BA9DB"]
+			id: "601B89F0D0ADC7E7"
+			tasks: [{
+				id: "4D51B6DC5F3F85D6"
+				type: "item"
+				item: "mekanism:elite_pressurized_tube"
+			}]
+			rewards: [{
+				id: "5491FF4AA218E43B"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 10.0d
+			dependencies: ["601B89F0D0ADC7E7"]
+			id: "1802346FEAEF4258"
+			tasks: [{
+				id: "3FC995542A7151FA"
+				type: "item"
+				item: "mekanism:ultimate_pressurized_tube"
+			}]
+			rewards: [{
+				id: "28C42EFACE9068D8"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			dependencies: ["4FD057408BA333D6"]
+			id: "7797A3A5BBB51ED9"
+			tasks: [{
+				id: "238B0DD16C0ADEA1"
+				type: "item"
+				item: "mekanism:basic_logistical_transporter"
+			}]
+			rewards: [{
+				id: "364121EFC482550C"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["7797A3A5BBB51ED9"]
+			id: "7A7C1B644B9C6B39"
+			tasks: [{
+				id: "022936987A52DEFF"
+				type: "item"
+				item: "mekanism:advanced_logistical_transporter"
+			}]
+			rewards: [{
+				id: "2917E6373C758720"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.0d
+			dependencies: ["7A7C1B644B9C6B39"]
+			id: "781E11FE2E3E600C"
+			tasks: [{
+				id: "3D9D4AE922958800"
+				type: "item"
+				item: "mekanism:elite_logistical_transporter"
+			}]
+			rewards: [{
+				id: "1BA3910AAF8E2542"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.0d
+			dependencies: ["781E11FE2E3E600C"]
+			id: "3932790D6FE8B614"
+			tasks: [{
+				id: "55F7B0B2D325D310"
+				type: "item"
+				item: "mekanism:ultimate_logistical_transporter"
+			}]
+			rewards: [{
+				id: "4474C60A75BB8B07"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			description: ["Logistic transporter allows item filtering between pipes and machines, which is for advanced items or fluid transport."]
+			dependencies: ["4FD057408BA333D6"]
+			id: "13237A6133B88C41"
+			tasks: [{
+				id: "00C74A3266408833"
+				type: "item"
+				item: "mekanism:logistical_sorter"
+			}]
+			rewards: [{
+				id: "116A1156FF574766"
+				type: "item"
+				item: "mekanism:ingot_steel"
+				count: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			subtitle: "Chapter 6"
+			id: "4FD057408BA333D6"
+			tasks: [{
+				id: "14DF9D91D977094B"
+				type: "checkmark"
+				title: "Mekanism Cables and Pipes"
+			}]
+			rewards: [{
+				id: "5BDB96821F177A0A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			description: [
+				"Xnet connectors is used to connect machines to your network. These connectors only allow access through the side from which you are placing the connector. i.e. for a vanilla furnace that would mean that with a normal connector you can only get the melted result by placing a connector at the bottom of the furnace."
+				"There are total 4 colors for connectors which is for distinguishing between adjacent networks. One network only accepts one color of connector."
+				"{image:kubejs:textures/quest/transport/transport_controller.png width:150 height:100 align:1}"
+			]
+			dependencies: ["19E74FFCFDF5E8AA"]
+			id: "7FF83FB8343C9373"
+			tasks: [{
+				id: "1A3C8FE413F45768"
+				type: "item"
+				title: "Xnet Connectors"
+				icon: "xnet:connector_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:connectors"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "543E536736C509BD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "34994C892ECFF559"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -6.0d
+			description: [
+				"Advanced connectors overcomes the limitations of normal connectors, such that it can be access to any side of the machines even if you only connect them to one side of the machine. And of course, advanced connectors have higher effeciency on extraction and insertion."
+				""
+				"[Note]"
+				"Advanced energy connector cannot extract energy from sides other then the connection side due to the nature of energy generator that they only pushes energy to the connected side."
+			]
+			dependencies: ["7FF83FB8343C9373"]
+			id: "28A7BFD366BBBA4C"
+			tasks: [{
+				id: "44AEBE89A843C621"
+				type: "item"
+				title: "Advanced Connectors"
+				icon: "xnet:advanced_connector_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:advanced_connectors"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3A47C0E9A9D4608E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "71C80352717C975F"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: [
+				"Routers are useful when you want to go beyond 8 channels. It is done by conencting mulitple distinct networks by a router. One single router is already sufficient to connect up to 6 (6 sides of router) networks."
+				"Only named channels can be published in a router or routing network. This is done by givint it a published name in GUI of the router. Note that types are considered in published channels. You have a a published channel called 'foo' for items and another published channel called 'foo' for fluids on the same network but they will not interact and only count as one channel for the channel limit."
+				""
+				"[Note]"
+				"Only 32 channels can be published in a single routing network."
+				"There is a bug on errorly displaying the message \"There is too much channels in network\". Just ignore it is fine ;-)."
+				"You need to break the router block and place again in order to refresh the channel list."
+				"{image:kubejs:textures/quest/transport/transport_router.png width:176 height:100 align:1}"
+			]
+			dependencies: ["19E74FFCFDF5E8AA"]
+			id: "3A4DA20F26FE78B5"
+			tasks: [{
+				id: "21E269969A7E03E2"
+				type: "item"
+				item: "xnet:router"
+			}]
+			rewards: [{
+				id: "5958EBFA08D8D7B5"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["You can also connect the routers together to form a routing network by using routing cables."]
+			dependencies: ["3A4DA20F26FE78B5"]
+			id: "23FBF705B28DA060"
+			tasks: [{
+				id: "3BFC8A6ECFA10EAA"
+				type: "item"
+				item: "xnet:connector_routing"
+			}]
+			rewards: [
+				{
+					id: "13381BE63F332BC1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "1048EDF3457FDC5C"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			description: [
+				"Xnet also provides a wireless router connection, where you items or other things can be transported wirelessly."
+				"Wireless router requires an antenna on top to function."
+				"{image:kubejs:textures/quest/transport/transport_antenna.png width:100 height:200 align:1}"
+			]
+			dependencies: ["3A4DA20F26FE78B5"]
+			id: "6AE0CF4B71A53F16"
+			tasks: [
+				{
+					id: "1A5347D403D2BFEB"
+					type: "item"
+					item: "xnet:wireless_router"
+				}
+				{
+					id: "46E2651E3D252110"
+					type: "item"
+					item: "xnet:antenna_base"
+				}
+				{
+					id: "1399A3B73ECF79CB"
+					type: "item"
+					item: "xnet:antenna"
+				}
+				{
+					id: "2D8D37FD527BC83B"
+					type: "item"
+					item: "xnet:antenna_dish"
+				}
+			]
+			rewards: [{
+				id: "51B72246F33E01A5"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 4
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["23FBF705B28DA060"]
+			id: "16BFF5E1BDACFC23"
+			tasks: [{
+				id: "51E9E56BA701C7F4"
+				type: "item"
+				item: "xnet:advanced_connector_routing"
+			}]
+			rewards: [
+				{
+					id: "497C83439973D844"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "3D8A53D774DDE8F8"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			description: ["Cables are connectors that cannot interact with blocks, which is suitable in connecting connectors in long distance."]
+			dependencies: ["7FF83FB8343C9373"]
+			id: "6E938D1F148CEBE9"
+			tasks: [{
+				id: "5A52733F13063FC7"
+				type: "item"
+				title: "Cables"
+				icon: "xnet:netcable_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:cables"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "643B0E82CA772926"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "72DCE96EB50A7C68"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			description: [
+				"Facade can mimic any block texture for covering your cables or connectors."
+				"Shift+RC to set the block texture to be used."
+			]
+			dependencies: ["19E74FFCFDF5E8AA"]
+			id: "0D1D670DFEBE41C9"
+			tasks: [{
+				id: "105E8EEF31A37296"
+				type: "item"
+				item: "xnet:facade"
+			}]
+			rewards: [{
+				id: "5B191EDB8A7DF1E0"
+				type: "item"
+				item: "xnet:facade"
+				count: 24
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			subtitle: "Chapter 1"
+			description: [
+				"Capability Proxy allows indirectly interact with blocks. For example, if you place the block near a chest, you can open the chest by just right clicking to this proxy."
+				"Note that the direction of arrows on the block matters. Always place the block to be interacted while pointing at it."
+			]
+			id: "37EA4A633E35A35A"
+			tasks: [{
+				id: "4075C6B6B26C6484"
+				type: "item"
+				item: "capabilityproxy:capability_proxy"
+			}]
+			rewards: [
+				{
+					id: "31AEA94EBDDDB0B1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "3FB22B51DD8ABC4A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			description: ["Entity capability proxy allows interaction with entities in world, like a villager, dropped items, etc."]
+			dependencies: ["37EA4A633E35A35A"]
+			id: "7E47117BA0B85A77"
+			tasks: [{
+				id: "39D9D3FEA8DD1B38"
+				type: "item"
+				item: "capabilityproxy:entity_capability_proxy"
+			}]
+			rewards: [
+				{
+					id: "476728EAE90D3F28"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "1BE81F06F758AFCB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			description: ["Item capability proxies allows interacting with items in chest or interface. It is useful when the extraction or insertion rate is not high enough and you want to extract / insert with more cables or pipes."]
+			dependencies: ["37EA4A633E35A35A"]
+			id: "7CD807D2BC2C86A9"
+			tasks: [{
+				id: "12238DC1D5E10718"
+				type: "item"
+				item: "capabilityproxy:item_capability_proxy"
+			}]
+			rewards: [
+				{
+					id: "5045DAF8F87A50CB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "5D3C9DDA41F6435C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			description: ["Ranged capability proxy allows you to interact with the block it points at in maximum of 16 blocks distance."]
+			dependencies: ["37EA4A633E35A35A"]
+			id: "29B77C7F2A9857FC"
+			tasks: [{
+				id: "09F7817B6C5A042A"
+				type: "item"
+				item: "capabilityproxy:ranged_capability_proxy"
+			}]
+			rewards: [
+				{
+					id: "7F501CB8D716659D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "5773E274F73AA06C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+	]
+}

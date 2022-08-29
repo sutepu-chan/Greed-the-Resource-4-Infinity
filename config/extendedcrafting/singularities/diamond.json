@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.diamond",
+  "colors": [
+    "5ee0d2",
+    "28615a"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/diamond"
+  }
+}

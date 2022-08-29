@@ -1,0 +1,11 @@
+{
+  "name": "Cobblestone",
+  "colors": [
+    "909090",
+    "2a2a2a"
+  ],
+  "ingredient": {
+    "tag": "forge:cobblestone"
+  },
+  "materialCount": 15000
+}

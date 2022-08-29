@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.iron",
+  "colors": [
+    "c4c4c4",
+    "9c9c9c"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/iron"
+  }
+}

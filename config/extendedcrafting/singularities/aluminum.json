@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.aluminum",
+  "colors": [
+    "cfd6d7",
+    "8b8b8b"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/aluminum"
+  }
+}

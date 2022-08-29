@@ -1,0 +1,10 @@
+{
+    "name": "Allthemodium",
+    "colors": [
+        "dc9d19",
+        "a86d42"
+    ],
+    "ingredient": {
+        "item": "allthemodium:allthemodium_block"
+    }
+}

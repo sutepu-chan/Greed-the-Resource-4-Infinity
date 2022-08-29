@@ -1,0 +1,808 @@
+{
+	id: "76078A506579C5D4"
+	group: "2DDEDFB13E9FB842"
+	order_index: 0
+	filename: "chapter_1_yes_were_here_again"
+	title: "Chapter 1: Here we go again"
+	icon: "minecraft:oak_sapling"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome!"
+			x: -0.5d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"Welcome to Greed the Resource 4. This progress guide will guide you throughout this modpack!"
+				"Also check out my other works at CurseForge."
+			]
+			id: "34E8E79A239344C5"
+			tasks: [{
+				id: "1B36844757B38FA0"
+				type: "gamestage"
+				title: "Downloading this modpack"
+				stage: "starting_items"
+			}]
+			rewards: [
+				{
+					id: "4322FB23F148B2DD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "64F55EDF180CD416"
+					type: "item"
+					item: "minecraft:dirt"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Get the Wood"
+			x: -0.5d
+			y: -0.5d
+			description: [
+				"[Tips]"
+				"In this modpack, items can stay on crafting tables."
+			]
+			dependencies: ["3BA196B708210E0B"]
+			id: "3E1D4FE0E95371E9"
+			tasks: [
+				{
+					id: "05DF82505949B4F7"
+					type: "item"
+					title: "Logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 10L
+				}
+				{
+					id: "6E3FA8B6E7E84C71"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+			]
+			rewards: [{
+				id: "5F72A4865C3E6440"
+				type: "item"
+				item: "minecraft:bone"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			description: [
+				"Can't wait to get full set of tool?"
+				"I think you have discovered that. All the tools in vanilla minecraft have been disabled. Use tools from Tinker Construct instead! Get some pattern plate first."
+			]
+			dependencies: ["3E1D4FE0E95371E9"]
+			id: "2073020CF5F2A968"
+			tasks: [{
+				id: "4BF0987736EC6619"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 10L
+			}]
+			rewards: [{
+				id: "221AA32B18834B60"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 4
+			}]
+		}
+		{
+			title: "Tinker tables"
+			x: 1.0d
+			y: 3.0d
+			description: ["These 3 tables are the most fundamental tables in Tinker Construct."]
+			dependencies: ["2073020CF5F2A968"]
+			id: "36F9A8B5AFDFB759"
+			tasks: [
+				{
+					id: "1A0DAAFF1DA007E5"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+				{
+					id: "2CE4E8688EEEBC3C"
+					type: "item"
+					item: "tconstruct:part_builder"
+				}
+				{
+					id: "4C87CD2A51F0DBEE"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+			]
+			rewards: [{
+				id: "2ACB9EB34845E65D"
+				type: "item"
+				item: "minecraft:flint"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: [
+				"Tinker Construct is a mod that allows customization of tools. You can make different tool parts with whatever material you want!"
+				"There are also new alloy ingots in Tinker Construct. Those alloys are powerful and are able to craft very strong tools!"
+			]
+			dependencies: ["2073020CF5F2A968"]
+			id: "58015A86FB73E974"
+			tasks: [{
+				id: "31C603EB19F8A148"
+				type: "checkmark"
+				title: "Notes on Tinker Construct"
+			}]
+			rewards: [{
+				id: "69304F3E312DFF54"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			description: [
+				"Don't panic. Here is a tutorial on how to craft a certain tool of Tinker Construct."
+				"Firstly, put patterns and materials on Part Builder. Press the buttons in the middle with your required tool parts. (tool rod, tool binding, and pickaxe head for crafting pickaxes). This will produce the tool parts for tool customization."
+				"Try to obtain a flint pickaxe!"
+				"{image:kubejs:textures/quest/chapter1/chapter1_part_builder.png width:176 height:100 align:1}"
+			]
+			dependencies: ["36F9A8B5AFDFB759"]
+			id: "611834473BFE33AB"
+			tasks: [
+				{
+					id: "495D4EC08F61284F"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "494DA3047000C680"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "11CA1FD94416EDF2"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "06D7A0FB8B71EFDE"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			description: [
+				"After getting the tool parts, you have to put them together!"
+				"Open your Tinker Station, and press the pickaxe icon on the left hand side. After that, put the crafting tool parts onto the corresponding slots."
+				"{image:kubejs:textures/quest/chapter1/chapter1_tinkering_table.png width:176 height:100 align:1}"
+			]
+			dependencies: ["611834473BFE33AB"]
+			id: "662FECFB1B8F2F7B"
+			tasks: [{
+				id: "7753DFCC712DF7A5"
+				type: "item"
+				item: {
+					id: "tconstruct:pickaxe"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:mining_speed": 3.5f
+							"tconstruct:attack_damage": 1.25f
+							"tconstruct:harvest_level": 1.0f
+							"tconstruct:durability": 85.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:cultivated"
+								level: 2s
+							}
+							{
+								name: "tconstruct:jagged"
+								level: 1s
+							}
+							{
+								name: "tconstruct:piercing"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:flint"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3582EA5D6FEE1DF4"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:bone"
+						}
+					}
+				}
+				{
+					id: "350C0EA40DDB7E0A"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 8
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: [
+				"Excess tool parts can be stored at part chest!"
+				"{image:kubejs:textures/quest/chapter1/chapter1_part_chest.png width:176 height:100 align:1}"
+			]
+			dependencies: ["611834473BFE33AB"]
+			id: "6F2492AD916BE485"
+			tasks: [{
+				id: "7E297E6F83A0977C"
+				type: "checkmark"
+				title: "Excess tool parts"
+			}]
+			rewards: [{
+				id: "28439F183021DD10"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			description: [
+				"Tinker tools can be fixed by Tinker Stations. The tool parts can also be replaced at the leftmost slots of the Tinker Station."
+				"{image:kubejs:textures/quest/chapter1/chapter1_tinker_tool_fix.png width:180 height:100 align:1}"
+				"{image:kubejs:textures/quest/chapter1/chapter1_tinker_replace.png width:180 height:100 align:1}"
+			]
+			dependencies: ["662FECFB1B8F2F7B"]
+			id: "0EB7F73DF7072D53"
+			tasks: [{
+				id: "33975DAA567734CA"
+				type: "checkmark"
+				title: "Tinker tools"
+			}]
+			rewards: [{
+				id: "2A8C5443D39B0573"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Just a little iron"
+			x: 6.5d
+			y: 1.5d
+			description: [
+				"Before going straight down mining over a long time, you need to upgrade your tool first in order to get the ores that require an iron pickaxe."
+				"Get some iron first and I will guide you to the next step."
+			]
+			dependencies: ["662FECFB1B8F2F7B"]
+			id: "186171B0E2CEFE56"
+			tasks: [{
+				id: "235853C86C6226DA"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 4L
+			}]
+			rewards: [{
+				id: "7B0086A327A0570B"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 4
+			}]
+		}
+		{
+			title: "Simple Tinker Melter"
+			x: 8.0d
+			y: -2.0d
+			description: [
+				"Construct the tinker melter as below."
+				"{image:kubejs:textures/quest/chapter1/chapter1_tinker_smeltery.png width:100 height:100 align:1}"
+			]
+			dependencies: ["54AE42DEDC1E8B96"]
+			id: "507B17ECC65859FF"
+			tasks: [
+				{
+					id: "7D5663AC3153CD34"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "233D5C125041A3B4"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "21C0D021AD772F70"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "50EC54430BCFE1B6"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+			]
+			rewards: [{
+				id: "342A079EFC5A9A6F"
+				type: "item"
+				item: "alltheores:ore_copper"
+				count: 4
+			}]
+		}
+		{
+			x: 6.5d
+			y: -0.5d
+			description: [
+				"To get your tool upgrade, you need to construct a multiblock structure to smelt the metal ingots down. Seared brick is the crafting ingredient of the structure."
+				"Grab your clay, sand and gravel to craft grouts and smelt them in furnace."
+			]
+			dependencies: ["186171B0E2CEFE56"]
+			id: "54AE42DEDC1E8B96"
+			tasks: [{
+				id: "1F208F8619B53D86"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "68CB7CDEE02B0E55"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "Pickaxe head cast"
+			x: 8.0d
+			y: -4.0d
+			description: [
+				"To get your new pickaxe head ready, you also need a tool part cast."
+				"Get a blank cast first. Then, place it onto the seared casting table by RC. RC again with a pickaxe head (any type) on the blank cast. Now, a pickaxe head cast is completed."
+				""
+				"[Note]"
+				"Sand / Redsand cast is non-reusable while gold cast are reusable."
+				"All types of sand cast will return into blank cast when picked up from casting table. To complete this quest, you just need to break the casting table below and you will get the pickaxe head cast."
+			]
+			dependencies: ["507B17ECC65859FF"]
+			id: "78875831C6026B1E"
+			tasks: [{
+				id: "207B25284946B1B0"
+				type: "item"
+				title: "Any #tconstruct:casts/single_use/pickaxe_head"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts/single_use/pickaxe_head"
+					}
+				}
+			}]
+			rewards: [{
+				id: "564A29BF173262E0"
+				type: "item"
+				item: "minecraft:sand"
+				count: 16
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.5d
+			description: [
+				"Time to get your iron pickaxe head. Smelt some iron ore into the tinker melter. RC the faucet and let the molten iron out onto your pickaxe head cast. Your iron pickaxe head is done!"
+				"{image:kubejs:textures/quest/chapter1/chapter1_iron_tool_parts.png width:100 height:100 align:1}"
+			]
+			dependencies: ["78875831C6026B1E"]
+			id: "68B5705509E52CE5"
+			tasks: [{
+				id: "5DD356E685DF02BA"
+				type: "item"
+				item: {
+					id: "tconstruct:pickaxe_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1E889CF286448EB2"
+				type: "item"
+				item: "alltheores:ore_platinum"
+				count: 2
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.0d
+			description: [
+				"Getting the iron level pickaxe means that you are able to mining better ores. You may use these ores to make your tools even better!"
+				"Here is a list of resources that are required in early stage of the game. Try to get some of them."
+			]
+			dependencies: ["68B5705509E52CE5"]
+			id: "76699E1A9DD3A7D2"
+			tasks: [
+				{
+					id: "192A58FE1BF012B5"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+				{
+					id: "3203948C47D3DD81"
+					type: "item"
+					item: "alltheores:copper_ingot"
+				}
+				{
+					id: "7B2513900C80B0C5"
+					type: "item"
+					item: "alltheores:silver_ingot"
+				}
+				{
+					id: "2F0458F90DB914AC"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "7C4AB1199227BCD0"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+			]
+			rewards: [{
+				id: "57990CD9547A02C1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "resource"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.0d
+			description: ["To proceed to the next chapter, you need a little level of farming. Get a hoe (or other tools with the same function) first."]
+			dependencies: ["76699E1A9DD3A7D2"]
+			id: "6DC5101C3C203EEE"
+			tasks: [{
+				id: "110BE7BF8B772222"
+				type: "item"
+				title: "Craft a Kama or any tool for planting"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools/scythe"
+					}
+				}
+			}]
+			rewards: [{
+				id: "051388D89652B765"
+				type: "item"
+				item: "farmersdelight:rich_soil_farmland"
+				count: 48
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			description: [
+				"Get this seed by breaking grasses near you."
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 2."
+			]
+			dependencies: ["6DC5101C3C203EEE"]
+			id: "0EA9C997641AFA52"
+			tasks: [{
+				id: "6C9B6822C230B508"
+				type: "item"
+				item: "occultism:datura_seeds"
+			}]
+			rewards: [
+				{
+					id: "4B33971D2DBBCF21"
+					type: "item"
+					item: "minecraft:bone_meal"
+					count: 6
+				}
+				{
+					id: "74ADEC73D1BDFC05"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Chiselling your base."
+			x: 9.5d
+			y: -4.0d
+			description: [
+				"Chisel is a powerful mod that provides multiple variables for many blocks. It allows you to turn your base better. No more repeated and dull blocks!"
+				"{image:kubejs:textures/quest/chapter1/chapter1_chisel.png width:176 height:100 align:1}"
+			]
+			dependencies: ["78875831C6026B1E"]
+			id: "7FAE52E8C9D39134"
+			tasks: [{
+				id: "48C589A65714F072"
+				type: "item"
+				item: {
+					id: "chisel:iron_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6A279D81391D2DD7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Buidler's Wand"
+			x: 9.0d
+			y: -5.0d
+			description: ["Construction wands are another tools that help you build repeated patterns of structure much more faster."]
+			dependencies: ["78875831C6026B1E"]
+			id: "407C67CFA9435657"
+			tasks: [{
+				id: "2715B578E10CCC0D"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4AA5958DD6965BA0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Rolling your sushi"
+			x: 1.5d
+			y: -9.0d
+			description: [
+				"Similar to GR3F, you can roll your sushi here. SushiGoCrafting is a really fun mod."
+				"{image:kubejs:textures/quest/chapter1/chapter1_sushi.png width:176 height:100 align:1}"
+			]
+			dependencies: ["6DC5101C3C203EEE"]
+			id: "78D3102344F34C7A"
+			tasks: [
+				{
+					id: "34FA56CE1EB9B1AB"
+					type: "item"
+					item: "sushigocrafting:roller"
+				}
+				{
+					id: "6FEAD4FD9C891F53"
+					type: "item"
+					item: "sushigocrafting:rice_cooker"
+				}
+				{
+					id: "76FDCE2DC907B099"
+					type: "item"
+					item: "sushigocrafting:cutting_board"
+				}
+				{
+					id: "246C4227B6A2E95F"
+					type: "item"
+					item: "sushigocrafting:cooler_box"
+				}
+				{
+					id: "3CB27129901264AF"
+					type: "item"
+					item: "sushigocrafting:fermentation_barrel"
+				}
+			]
+			rewards: [{
+				id: "09C30AC2965BB428"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Farmer's Delight"
+			x: 4.0d
+			y: -9.0d
+			description: [
+				"Farmers' delight is probably my favourite cooking mod. It has new ways of interactive cooking, with tons of new food and items. There are also a lot of decorations for your kitchen. Some addons is added into this pack. Time to grab the seeds can discover new recipes!"
+				"{image:kubejs:textures/quest/chapter1/chapter1_farmers_delight.png width:176 height:100 align:1}"
+			]
+			dependencies: ["6DC5101C3C203EEE"]
+			id: "37D6AA5CBF0372B4"
+			tasks: [
+				{
+					id: "2370BB95CC14FFB0"
+					type: "item"
+					item: "farmersdelight:stove"
+				}
+				{
+					id: "3B77D2C85092D487"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+				}
+				{
+					id: "6A44C4BF34F67FAD"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "10E7D63E3C42A40E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "No Log Punch!"
+			x: -2.0d
+			y: -4.0d
+			description: ["Anyway, you need some wood to start your game. However, you can't punch the wood by bare hands. Try to obtain some flint and sticks first."]
+			dependencies: ["34E8E79A239344C5"]
+			id: "40C455D6F56BCA3F"
+			tasks: [
+				{
+					id: "6A94478D7F62EF32"
+					type: "item"
+					item: "minecraft:flint"
+					count: 2L
+				}
+				{
+					id: "59755C0F2FAA0933"
+					type: "item"
+					title: "sticks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:rods/wooden"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4461BC350BF4E269"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 2
+				}
+				{
+					id: "2C255E329D2BB875"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["With the flint and sticks, get a flint tool, which means that you can now chops the wood down!"]
+			dependencies: ["40C455D6F56BCA3F"]
+			id: "3BA196B708210E0B"
+			tasks: [{
+				id: "7D57CD738C5F5ACE"
+				type: "item"
+				item: {
+					id: "nologpunch:flint_tool"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7094FB2F59210397"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 12
+			}]
+		}
+	]
+}

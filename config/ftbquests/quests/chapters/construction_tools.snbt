@@ -1,0 +1,1060 @@
+{
+	id: "1004B4328A93CE5F"
+	group: "55D64AD3CBBBA98A"
+	order_index: 2
+	filename: "construction_tools"
+	title: "Utility Tools"
+	icon: "morphtool:tool"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.5d
+			y: 1.0d
+			description: ["Building gadget allows you to build designated shapes up to 15 blocks wide."]
+			id: "4FA4B940435F6D71"
+			tasks: [{
+				id: "3CAE608E47F1D976"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "40FAD8837AD665A5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "3101B5DA0F87A5F4"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			description: ["Exchanging gadget allows you to exchange the blocks in a certain area up to 15x15 blocks size."]
+			id: "24DFC824B07D4412"
+			tasks: [{
+				id: "69D886FEF42FC652"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_exchanging"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3D156105F06EA3F8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "7188DB437B59B35E"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 3.0d
+			description: ["Copy-Paste gadget allows you to copy a structure and paste to another place. RC to set the first position and Shift-RC to set the second position."]
+			id: "1097769211A14999"
+			tasks: [{
+				id: "2AFFEB133CBBED3B"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_copy_paste"
+					Count: 1b
+					tag: {
+						mode: 0b
+						template_id: [I;
+							-392875572
+							2011316412
+							-1164288421
+							941605839
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1BB8E450CE86E8E6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "34D7D6E3F09B11D8"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			description: ["Destruction gadget allows you to remove 16x16x16 space in maximum."]
+			id: "3C5078B6C6B44950"
+			tasks: [{
+				id: "38AA04BA9B7960B0"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "51BFBDA7A9B5E7FD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "0627FED053985F56"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["Construction wand (Builder's wand) is always a great tool in construction."]
+			id: "2B0A0FA5598BFD7A"
+			tasks: [{
+				id: "6D1E26405C6F7910"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "28A549AB6284E6BB"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["2B0A0FA5598BFD7A"]
+			id: "4038D0A3BB7887A8"
+			tasks: [{
+				id: "07E42A5761146504"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5C318F38E211A801"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["4038D0A3BB7887A8"]
+			id: "58A1470C14B26C52"
+			tasks: [{
+				id: "47DA90114437072E"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "78CCCB3DB64F0117"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			dependencies: ["58A1470C14B26C52"]
+			id: "4651933D229F706B"
+			tasks: [{
+				id: "1AE314F2817F333D"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "1BF5983A2F877998"
+				type: "item"
+				item: "minecraft:nether_star"
+				count: 4
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["2B0A0FA5598BFD7A"]
+			id: "77565B868FA43A81"
+			tasks: [{
+				id: "76A456AE8B04E53D"
+				type: "item"
+				item: "constructionwand:core_angel"
+			}]
+			rewards: [
+				{
+					id: "27A4AB1B8FA3D833"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "16BF227223016C4B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["2B0A0FA5598BFD7A"]
+			id: "7D623541F2B442DA"
+			tasks: [{
+				id: "260250FC00340FF2"
+				type: "item"
+				item: "constructionwand:core_destruction"
+			}]
+			rewards: [
+				{
+					id: "717D67FE8147A88F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "2E74EB1BBDB870D5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: 1.0d
+			description: ["Morphing Tools is a great tool for heavy tech pack. There are always so much different wrenches and it is really annoying and wasting so much inventory spaces if your bring them together. This tool solves that problem. Just combine the wrenches with morphing tool in crafting table. Then the morphing tool will be functionable as what it has combined. Shift-Scroll is able to choose the type of wrench you would like to use."]
+			id: "333DCBEB65D54BC3"
+			tasks: [{
+				id: "5DA29657229ED451"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+			rewards: [
+				{
+					id: "15F21E1E6EE4C2AC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "57D12CCD677AAEC8"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			title: "Customized Platform"
+			x: -8.5d
+			y: 1.0d
+			description: [
+				"The mod \"Platform\" provides a highly customizable blocks for decorations. You can make decks, bridges, mine shafts, or even wooden coaster supports. The only limit is your imagination!"
+				"{image:kubejs:textures/quest/utility_tools/utility_tools_platform.png width:200 height:100 align:1}"
+			]
+			id: "7D38F485E919E82E"
+			tasks: [{
+				id: "21BEAA6E5C990837"
+				type: "item"
+				item: "platforms:wrench"
+			}]
+			rewards: [{
+				id: "3C120300477A226A"
+				type: "choice"
+				title: "Choose you desired wood type!"
+				icon: "minecraft:oak_log"
+				table_id: 7215280449082338797L
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			dependencies: ["7D38F485E919E82E"]
+			id: "0B02BEE26650A7F0"
+			tasks: [{
+				id: "459A0A71536D2788"
+				type: "item"
+				item: "platforms:platformer"
+			}]
+			rewards: [{
+				id: "364CDD4348292D6C"
+				type: "choice"
+				title: "Choose your desired log type!"
+				icon: { id: "minecraft:oak_log", Count: 64b }
+				table_id: 7215280449082338797L
+			}]
+		}
+		{
+			title: "Workbench of Guns"
+			x: -10.5d
+			y: 3.0d
+			description: [
+				"This workbench is cable to craft guns from Timeless and Classic Guns, which is inspired from MrCrayfish's guns mod. This mod provides an even better experience on guns! It provides"
+				"1. Realistic Recoil"
+				"2. Attachment management"
+				"3. Parts Dyeing"
+				"There are soooo much types of guns and all of them are crafted through this workbench. RC to open the GUI and choose your favourite gun! There will be instructions to tells you the required crafting ingredient of that gun."
+				"{image:kubejs:textures/quest/utility_tools/utility_tools_ak47.png width:175 height:100 align:1}"
+			]
+			id: "5D69F17A9B71A810"
+			tasks: [{
+				id: "6D4A009DA544513B"
+				type: "item"
+				item: "tac:workbench"
+			}]
+			rewards: [
+				{
+					id: "3662936D8F86D553"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "5C5FB2DB540A2BE0"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -1.5d
+			description: ["Chisel provides a wide variety of blocks for architecturing, satisfying all needs."]
+			id: "7CE981D551B50F50"
+			tasks: [{
+				id: "0FBF0A75865712D5"
+				type: "item"
+				item: {
+					id: "chisel:iron_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2038458800041A2B"
+				type: "item"
+				item: "minecraft:clay"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -3.5d
+			dependencies: ["7CE981D551B50F50"]
+			id: "5C98DE90ECCE8A43"
+			tasks: [{
+				id: "7F44716EE90290F8"
+				type: "item"
+				item: {
+					id: "chisel:diamond_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+						chiseldata: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "481E08F6AA32D689"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "42A997BA6E80474B"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -5.5d
+			description: ["iChisel provides a preview GUI and bulk chisel is available."]
+			dependencies: ["5C98DE90ECCE8A43"]
+			id: "28454B7DE22998BB"
+			tasks: [{
+				id: "463559447FFC84FB"
+				type: "item"
+				item: {
+					id: "chisel:hitech_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+						chiseldata: {
+							target: {
+								id: "minecraft:air"
+								Count: -40b
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0B17DB45C074E6EC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "5EE99B1CC0EBC531"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			description: ["Auto Chisel provides automation for bulk amount chisel."]
+			dependencies: ["7CE981D551B50F50"]
+			id: "142336ABEC9A93EC"
+			tasks: [{
+				id: "4EF239D3F8DCD7DB"
+				type: "item"
+				item: "chisel:auto_chisel"
+			}]
+			rewards: [
+				{
+					id: "3D77ACC441D7883C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "72FA6202BB662800"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -1.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "456F5915DD3278B5"
+			tasks: [{
+				id: "538F9A9F409EEC15"
+				type: "item"
+				item: "chipped:botanist_workbench"
+			}]
+			rewards: [
+				{
+					id: "4A6A4E65B513BAEC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "0BD02050991F6965"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "4C981A192DCA3408"
+			tasks: [{
+				id: "26ACBD3760B77B36"
+				type: "item"
+				item: "chipped:glassblower"
+			}]
+			rewards: [
+				{
+					id: "22C59A7FAECB8604"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "705456386D059044"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -5.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "264D474F4ADA29C3"
+			tasks: [{
+				id: "4E473D17FBE55842"
+				type: "item"
+				item: "chipped:carpenters_table"
+			}]
+			rewards: [
+				{
+					id: "5EF937AC5AEE80AE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "2FA1A6765C5F6131"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -5.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "4176CB3BD1BFA686"
+			tasks: [{
+				id: "18B6A8264907EAB0"
+				type: "item"
+				item: "chipped:mason_table"
+			}]
+			rewards: [
+				{
+					id: "269DD208C5F7D29E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "011F534E1CFBC947"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "05BA82633485200E"
+			tasks: [{
+				id: "0663A522D80363B2"
+				type: "item"
+				item: "chipped:alchemy_bench"
+			}]
+			rewards: [
+				{
+					id: "275CE7E7C702D13D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "3FD1BF5A2054FF85"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "6B3C4BFF2E9E4FCB"
+			tasks: [{
+				id: "771A7A68160F1ED4"
+				type: "item"
+				item: "chipped:loom_table"
+			}]
+			rewards: [
+				{
+					id: "175EAE1615283F2B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "5238764FAAA7FB10"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["7312269AA2B6F30F"]
+			id: "187251272FBE423E"
+			tasks: [{
+				id: "0F7A55AEE35EE180"
+				type: "item"
+				item: "chipped:mechanist_workbench"
+			}]
+			rewards: [
+				{
+					id: "3F21FD66029A0470"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "5413EC3FD07CD427"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			description: ["Chipped also provides a wide variety of blocks with different textures for architecturing."]
+			id: "7312269AA2B6F30F"
+			tasks: [{
+				id: "0714C8340678DA89"
+				type: "checkmark"
+				title: "Chipped"
+			}]
+			rewards: [
+				{
+					id: "069A89C8D2A43A62"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "1995E2F5E59FBD6D"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "Woodcutters"
+			x: -0.5d
+			y: -3.5d
+			description: ["There are stonecutters, so there should also be woodcutters."]
+			id: "55245262BA86D55D"
+			tasks: [{
+				id: "0343EB1893D604CF"
+				type: "item"
+				title: "Any #corail_woodcutter:woodcutters"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "corail_woodcutter:woodcutters"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "730F733D338B5B12"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "5FE8764563E13FA3"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			title: "Angel Ring (Balanced)"
+			x: 1.5d
+			y: -1.5d
+			description: ["You can craft an angel ring to make building things easier."]
+			id: "1F7D728EF654EC65"
+			tasks: [
+				{
+					id: "3867FEBCF9F6FFEF"
+					type: "item"
+					item: "balancedflight:flight_core"
+				}
+				{
+					id: "0293008ABFC2550E"
+					type: "item"
+					item: "balancedflight:ascended_blackstone"
+				}
+			]
+			rewards: [{
+				id: "1DD090ED2C940A59"
+				type: "item"
+				item: "minecraft:gold_block"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			description: ["Basic flight anchors provides a 25 blocks radius for creative flight."]
+			dependencies: ["1F7D728EF654EC65"]
+			id: "21A479789FB29F66"
+			tasks: [{
+				id: "4DAF72F99EA7EB89"
+				type: "item"
+				item: "balancedflight:basic_flight_anchor"
+			}]
+			rewards: [{
+				id: "25C0E971CFA7D329"
+				type: "item"
+				item: "minecraft:ghast_tear"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			description: ["Gilded flight anchor provides a 50 blocks radius for creative flight."]
+			dependencies: ["21A479789FB29F66"]
+			id: "1867E179B8269D7D"
+			tasks: [{
+				id: "73C1676CDD26E112"
+				type: "item"
+				item: "balancedflight:gilded_flight_anchor"
+			}]
+			rewards: [{
+				id: "15D189203EA178E6"
+				type: "item"
+				item: "minecraft:gilded_blackstone"
+				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			description: ["Ascended flight anchor provides a 100 blocks distance for creative flight."]
+			dependencies: ["1867E179B8269D7D"]
+			id: "6008771C23BBD01C"
+			tasks: [{
+				id: "457F8AB963FE54A4"
+				type: "item"
+				item: "balancedflight:ascended_flight_anchor"
+			}]
+			rewards: [{
+				id: "734BBCB733A3D9E3"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: ["The basic angel ring only works around the flight anchor. Distant limit is stated at the tooltip of the anchor."]
+			dependencies: ["1F7D728EF654EC65"]
+			id: "494C9E3C88507C53"
+			tasks: [{
+				id: "2188AF0729B49E7B"
+				type: "item"
+				item: "balancedflight:basic_flight_ring"
+			}]
+			rewards: [{
+				id: "01850FFC9FB6702A"
+				type: "item"
+				item: "eidolon:arcane_gold_block"
+				count: 2
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["Feral Flare Lantern is like a torch placer that places invisible lights automatically."]
+			id: "56389A52728F3272"
+			tasks: [
+				{
+					id: "397979C81AFB26DA"
+					type: "item"
+					item: "torchmaster:feral_flare_lantern"
+				}
+				{
+					id: "4AF1CCD1AF05E73A"
+					type: "item"
+					item: "torchmaster:frozen_pearl"
+				}
+			]
+			rewards: [
+				{
+					id: "699818A8C0B79000"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "7C888DBF7965AB43"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 5.0d
+			description: ["Dreadlamp prevents spawning of friendly animals in 64 blocks radius."]
+			id: "4068AAD6A580A454"
+			tasks: [{
+				id: "12C8515BFAB2916E"
+				type: "item"
+				item: "torchmaster:dreadlamp"
+			}]
+			rewards: [
+				{
+					id: "7FD2F694AEADD9D9"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "01C0CEA9B0FA22C7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			description: ["Mega Torch prevents spawning of hostile mobs in 64 blocks radius."]
+			dependencies: ["56389A52728F3272"]
+			id: "4B5E1396C7769365"
+			tasks: [{
+				id: "17EDE44B89E0667B"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+			rewards: [
+				{
+					id: "3E6781DB3C7661BF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "2A030CE0D2297398"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "Egg to Capture"
+			x: -8.5d
+			y: -1.5d
+			subtitle: "Chapter 1"
+			description: [
+				"Spawn eggs are obtainable in this pack. You need to craft a capture egg and throw them to any mobs. If you succeed in your capture the target will disappear in its spawn egg! Be careful you have to weaken the target to capture it."
+				""
+				"[Note]"
+				"The captured egg is unstackable (current only. The mod author is making changes of it.)"
+			]
+			id: "3FE5679B28E14596"
+			tasks: [{
+				id: "7F9775293C653FC2"
+				type: "item"
+				item: "capturetomob:capture_egg_item"
+			}]
+		}
+	]
+}

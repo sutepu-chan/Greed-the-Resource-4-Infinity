@@ -1,0 +1,410 @@
+{
+	id: "5119D0C94B571847"
+	group: ""
+	order_index: 0
+	filename: "tips"
+	title: "Notes before starting"
+	icon: "minecraft:writable_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -1.5d
+			description: [
+				"Please do not distribute or download this modpack at 3rd party websites other than CurseForge."
+				"If you would like to translate this modpack and redistribute it, please let me know by DM me through CurseForge."
+			]
+			id: "0268136915019F85"
+			tasks: [{
+				id: "427C2F17DC10E06F"
+				type: "checkmark"
+				title: "No 3rd Party Distribution"
+			}]
+		}
+		{
+			title: "FTB ultimine"
+			x: -4.0d
+			y: 1.0d
+			description: [
+				"FTB ultimine is the most convenient and one of my favourite mod. It allows you to break multiple blocks at once by pressing \" ` \" (the key on the top left corner of your keyboard)"
+				"{image:kubejs:textures/quest/tips/tips_ultimine.png width:176 height:100 align:1}"
+			]
+			id: "78C90A62B3B1A369"
+			tasks: [{
+				id: "77843D75D8E8C158"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "412ECEA15126E03C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "10A628CA6A9F43D0"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			icon: {
+				id: "minecraft:diamond_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.5d
+			y: 1.0d
+			description: [
+				"You can now access to your armor and tool stats during game play. There is a HUD at the bottom left. The position and the things to be displayed can be configured by yourself."
+				"{image:kubejs:textures/quest/tips/tips_inventory_hud.png width:150 height:100 align:1}"
+			]
+			id: "00FBFE2B2ADFF030"
+			tasks: [{
+				id: "76318FDA5E5155DD"
+				type: "checkmark"
+				title: "Inventory HUD"
+			}]
+			rewards: [
+				{
+					id: "7B8B3DC75514C76F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "29277008A20ECF49"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			icon: "theoneprobe:probenote"
+			x: -1.5d
+			y: 1.0d
+			description: [
+				"The one probe is the mod that display the blocks / fluids that your are look at, at the top side of your screen."
+				"You can toggle it on/off by NumPad 1, and toggle liquid visibility by NumPab 2."
+				"{image:kubejs:textures/quest/tips/tips_theoneprobe.png width:200 height:100 align:1}"
+			]
+			id: "719EB10B86DCD49C"
+			tasks: [{
+				id: "5E877367FB0F4A38"
+				type: "checkmark"
+				title: "The one Probe"
+			}]
+			rewards: [
+				{
+					id: "32E646C059841B58"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "1962ED03DD7C807A"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			icon: "minecraft:map"
+			x: -6.5d
+			y: 3.0d
+			description: [
+				"There are two minimaps mod available at this modpack, namely, FTBchunks and Xaero's map."
+				"Xaero's minimap is disabled by defalt. You are using FTB chunks now. You can toggle the on/off at settings."
+				"Pressing \"M\" opens FTB chunks minimap and \"J\" for Xaero's full map. Settings button can be found at the full screen map."
+				"{image:kubejs:textures/quest/tips/tips_ftb_chunk.png width:100 height:120 align:1}"
+			]
+			id: "3C1826CE7F2EC7EB"
+			tasks: [{
+				id: "5D0C3A1C8BA963F4"
+				type: "checkmark"
+				title: "Minimaps"
+			}]
+			rewards: [
+				{
+					id: "2EB0C00A40F46031"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "3F1B9DC47D20AF66"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			icon: {
+				id: "minecraft:wooden_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.0d
+			y: 3.0d
+			description: [
+				"FTB chunks allows you to claim chunks. Open the full screen map. The button for claiming chunks is at your top left corner."
+				"LC to claim chunks. Chift+LC allows you to chunk load the designated area."
+				"{image:kubejs:textures/quest/tips/tips_claim_chunks.png width:100 height:100 align:1}"
+			]
+			id: "3EB4DF7C79349466"
+			tasks: [{
+				id: "563A3E7FAEA8BD57"
+				type: "checkmark"
+				title: "Claiming chunks"
+			}]
+			rewards: [
+				{
+					id: "785BC61FA76E8130"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "4AB356E62A57226F"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "Spice of Life"
+			x: -4.0d
+			y: 5.0d
+			description: [
+				"Eating more variations of food will grant you different benefits, in terms of the maximum health and some potion effects. Check \"Food Book\" (in your akashic tome) for detailed information for the benefits."
+				"Food bag is disabled due to bug."
+			]
+			id: "78B0AFC973F231F6"
+			tasks: [{
+				id: "6E0FD7ECB0D2E19D"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+			rewards: [
+				{
+					id: "0598E3AE498D4F77"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "7A8C2C2E7E182602"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "Signs!"
+			x: -6.5d
+			y: 5.0d
+			description: ["Better sign editing now!"]
+			id: "7B95F3051832CFD8"
+			tasks: [{
+				id: "044BA737907446D5"
+				type: "item"
+				title: "Get any wood signs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:signs"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6862C31169467078"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "3DA2B2491156D40E"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			icon: "minecraft:structure_void"
+			x: -4.0d
+			y: 7.5d
+			shape: "gear"
+			description: ["Build your own factory, Complete all the quests. ALL of the crafting process are automaticable."]
+			id: "1BFF84871301BABC"
+			tasks: [{
+				id: "7AC6EFC07A8346D9"
+				type: "checkmark"
+				title: "What's the goal?"
+			}]
+			rewards: [{
+				id: "5A90CC7016F18573"
+				type: "item"
+				item: "minecraft:player_head"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: [
+				"You have a limited number of force loaded chunks. Having too much chunks loading at the same time may cause severe performance impact on your server or your PC. Try to avoid chunk loading unused chunks."
+				"You may also keep in mind to put multiblock structures within a chunk. This reduces the unnecessary chunks to be loaded and could reduce cpu usage, which improves your server TPS or your own FPS."
+				"Press F3+G will show the chunk grid."
+				"{image:kubejs:textures/quest/tips/tips_chunks.png width:100 height:100 align:1}"
+			]
+			id: "539DF0D1407AF0EB"
+			tasks: [{
+				id: "6A3B22A8AB3B73D1"
+				type: "checkmark"
+				title: "Chunk loading safety"
+			}]
+			rewards: [
+				{
+					id: "473EF6D431CC61F5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "66EE2ADED266C062"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "22FE155FC75FFEF0"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "How to use Akashic Tome"
+			x: -1.5d
+			y: 5.0d
+			description: ["RC to open the book and choose the desired guide book. LC in the air will return to akashic tome."]
+			id: "76594B1C9717B67B"
+			tasks: [{
+				id: "51C6F413F51E4E79"
+				type: "item"
+				item: "akashictome:tome"
+			}]
+			rewards: [
+				{
+					id: "1FABBC29E1288CA2"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "36ED7334EA30844A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4842E3C0017DD5DD"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: ["In this modpack, there might be some terms that require speific knownledge on sicence. I am trying to explain them as simple as I can. If you still cannot understand them clearly, welcome to contact me through Discord (Link found in CurseForge Description Tab)."]
+			id: "2771578409466666"
+			tasks: [{
+				id: "1F1DF3288105920C"
+				type: "checkmark"
+				title: "I can't under the quest description!"
+			}]
+			rewards: [
+				{
+					id: "73A7DFAE7F45124E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "fooddelight"
+						}
+					}
+				}
+				{
+					id: "21EDF016A2E7536C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7D11A50184E534F8"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+	]
+}

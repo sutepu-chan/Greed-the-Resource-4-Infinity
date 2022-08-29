@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.invar",
+  "colors": [
+    "b3bab2",
+    "595b5b"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/invar"
+  }
+}

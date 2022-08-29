@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.nickel",
+  "colors": [
+    "b2b3ac",
+    "4a4a45"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/nickel"
+  }
+}

@@ -1,0 +1,1371 @@
+{
+	id: "230E911F262C405A"
+	group: "2DDEDFB13E9FB842"
+	order_index: 7
+	filename: "chapter_8_dragonic_project"
+	title: "Chapter 8: Dragonic Project"
+	icon: "draconicevolution:dragon_heart"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 2.0d
+			y: -2.5d
+			description: [
+				"Draconium Fusion Crafting Injector provides a new crafting method, which is required in most items from Draconic Evolution."
+				"You need to craft 10 of it in order to have success slots for putting items."
+				"{image:kubejs:textures/quest/chapter8/chapter8_draconic_fusion.png width:130 height:100 align:1}"
+			]
+			dependencies: ["2F3A13047AA2AAC5"]
+			id: "7A228EE428C16171"
+			tasks: [{
+				id: "651AD4090140295E"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+				count: 10L
+			}]
+			rewards: [{
+				id: "10EAB05595BC2A16"
+				type: "item"
+				item: "draconicevolution:draconium_ingot"
+				count: 64
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			description: ["Cores are crafting components of crafting injectors."]
+			dependencies: ["7A228EE428C16171"]
+			id: "07DF968F2B3028E4"
+			tasks: [{
+				id: "128502E3961CC74C"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+			rewards: [{
+				id: "2B6324EB617F6E47"
+				type: "item"
+				item: "draconicevolution:grinder"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			description: ["Get the wyvern crafting injector. It allows you to craft better tools, while consuming more energy."]
+			dependencies: ["07DF968F2B3028E4"]
+			id: "3BDE39E5387D8651"
+			tasks: [{
+				id: "5A92105D45201B85"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+			}]
+			rewards: [{
+				id: "477AAEE10119A41F"
+				type: "item"
+				item: {
+					id: "draconicevolution:stabilized_spawner"
+					Count: 1b
+					tag: {
+						bc_tile_data: {
+							bc_managed_data: {
+								mob_soul: {
+									id: "draconicevolution:mob_soul"
+									Count: 1b
+									tag: {
+										EntityName: "minecraft:zombie"
+									}
+								}
+								spawner_tier: 2b
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.5d
+			dependencies: [
+				"3C3FD0F71E4A9984"
+				"65CD7CB7F5AC789B"
+			]
+			id: "753DB2AEA8FE2E70"
+			tasks: [{
+				id: "783D7DEDC2ED24A6"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+			}]
+			rewards: [
+				{
+					id: "268E85380FE7FAC2"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "resource"
+						}
+					}
+					count: 32
+				}
+				{
+					id: "707C9F93E7A2F8B3"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			description: ["Draconic core is required for crafting draconic injectors."]
+			dependencies: ["3BDE39E5387D8651"]
+			id: "3C3FD0F71E4A9984"
+			tasks: [{
+				id: "64CE8AE5F9C3E001"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+			rewards: [{
+				id: "5299653DC12D6AF4"
+				type: "item"
+				item: "minecraft:dragon_head"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.5d
+			description: ["Chaotic core is required for crafting chaotic crafting injectors."]
+			dependencies: ["753DB2AEA8FE2E70"]
+			id: "7EE85B85ED62E500"
+			tasks: [{
+				id: "02D7E75E12320634"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+			rewards: [{
+				id: "14E2BF800DD41214"
+				type: "item"
+				item: "draconicevolution:large_chaos_frag"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 9.5d
+			dependencies: ["7EE85B85ED62E500"]
+			id: "3362D46FF0847CAA"
+			tasks: [{
+				id: "594356BDD3556393"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+			}]
+			rewards: [{
+				id: "35BDFDD89516743C"
+				type: "item"
+				item: "draconicevolution:large_chaos_frag"
+				count: 5
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			description: [
+				"Chestpiece from draconic evolution is a very powerful chestplate and it can be equiped at curios slot."
+				"Higher tier chestpiece provides more module slots for more powerful functions."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "12BA4AFDA587D513"
+			tasks: [{
+				id: "23CD3C39F40C5A4E"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_chestpiece"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1309588042
+									874136835
+									-1675694698
+									-933663899
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6459ECA479479AFB"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "6E209FD6CC70CEFE"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["12BA4AFDA587D513"]
+			id: "71F8309E3520762C"
+			tasks: [{
+				id: "582F0A0F31BE4CB8"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_chestpiece"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-1251809604
+									938688764
+									-1827161323
+									-2047029351
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0F582EE104237227"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "4770FD98F23585FC"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 5.5d
+			dependencies: ["71F8309E3520762C"]
+			id: "41A815223704FBF8"
+			tasks: [{
+				id: "03A5DAE53CA6FB32"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_chestpiece"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1887830399
+									-693155454
+									-2104631028
+									-2010186658
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "47B985887A0CC543"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "4D94839376C9DE85"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 8.0d
+			description: ["You will definitely won't regret having staff of power, which is highly customizable on functions and powers. It will definitely helps you a lot in your world!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"65AD8FBB0EE4EE71"
+				"112148508C6DEC0A"
+				"25F398D6768784A5"
+				"010F3FEA11FE571B"
+				"3FC47830B9AD7CC4"
+			]
+			id: "496224F8478A1283"
+			tasks: [{
+				id: "5EE73E2A51CC2F27"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_staff"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1653498049
+									-380612969
+									-2113091337
+									-359989
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6BC761E73B65BEA8"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "02D1F2355CAAC4EA"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"56AB892F73873106"
+				"7BDDF243E1322AA9"
+				"15DBE1CE6AFA5D85"
+				"564EE84693454A8B"
+				"0338C2C616FBD2A2"
+			]
+			id: "6CB21152268AD8EE"
+			tasks: [{
+				id: "49FFBD79114FF869"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_staff"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									2057972032
+									-2045490798
+									-1999874165
+									-21598712
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4B34D86BCC3B0C61"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "425BC28AB4D5B457"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			dependencies: ["3BDE39E5387D8651"]
+			id: "65CD7CB7F5AC789B"
+			tasks: [{
+				id: "6B9862722E4CBFD3"
+				type: "item"
+				item: "draconicevolution:wyvern_relay_crystal"
+			}]
+			rewards: [{
+				id: "51E3ABAD113A6641"
+				type: "item"
+				item: "minecraft:dragon_egg"
+				count: 8
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			dependencies: [
+				"3362D46FF0847CAA"
+				"753DB2AEA8FE2E70"
+			]
+			id: "1FE6388EF40CC489"
+			tasks: [{
+				id: "18DE361C761A8A23"
+				type: "item"
+				item: "draconicevolution:draconic_relay_crystal"
+			}]
+			rewards: [{
+				id: "78276D926FB3417F"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+				count: 4
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "1C5A3CA090683BAB"
+			tasks: [{
+				id: "7994A960921E4AD3"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_shovel"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									477872812
+									-1319550291
+									-1722887358
+									114660836
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6C91842E638C65D5"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "308781A154D222E5"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 3.5d
+			dependencies: ["1C5A3CA090683BAB"]
+			id: "65AD8FBB0EE4EE71"
+			tasks: [{
+				id: "6139435382504694"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_shovel"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									653199652
+									1955217991
+									-1341132839
+									802283793
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "67951220445F8FF1"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "780B9058AB7E5F57"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 5.5d
+			dependencies: ["65AD8FBB0EE4EE71"]
+			id: "56AB892F73873106"
+			tasks: [{
+				id: "5FC3CBD9C2CFCDE4"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_shovel"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1597379285
+									-134918153
+									-1109742120
+									612927773
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "40E39C78AC4E1D51"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "491DAFE86C0904B9"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "373ABB1F17D6E7FF"
+			tasks: [{
+				id: "345AD0FB11814CC4"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_hoe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									106022621
+									-1629863487
+									-2025722811
+									-1361416632
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4754DC59F2C36D09"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "5CDA74D3A5EFE8FE"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 3.5d
+			dependencies: ["373ABB1F17D6E7FF"]
+			id: "112148508C6DEC0A"
+			tasks: [{
+				id: "261C45CF00418803"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_hoe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1721955980
+									-614708132
+									-1313536776
+									-1549709303
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5BD947F46909D9D9"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "554ABC5C651F7B1D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 5.5d
+			dependencies: ["112148508C6DEC0A"]
+			id: "7BDDF243E1322AA9"
+			tasks: [{
+				id: "37788EE13D3BDC18"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_hoe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1290282430
+									1294027273
+									-1196612846
+									1246284445
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1D13821081C0E8DC"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "5210DA6786292136"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "7BAEF62B1191A6E3"
+			tasks: [{
+				id: "180C18A8DCABC381"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_pickaxe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1530784887
+									183255284
+									-1971174648
+									1028353745
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3F21EDEF4464539C"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "4D474978DD0839A3"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 3.5d
+			dependencies: ["7BAEF62B1191A6E3"]
+			id: "25F398D6768784A5"
+			tasks: [{
+				id: "52AB88F4F06AEC4F"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_pickaxe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-2144297537
+									-1394389602
+									-1237356012
+									1761678363
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "06A3591E51D76F70"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "774E57560096E174"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 5.5d
+			dependencies: ["25F398D6768784A5"]
+			id: "15DBE1CE6AFA5D85"
+			tasks: [{
+				id: "34EF7FA995C48B46"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_pickaxe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-507516156
+									-1891284668
+									-1664935144
+									-1946211900
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3A6265978DCC25BF"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "0EC7D979A7552C4B"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 14.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "41C09F73FA16A6D8"
+			tasks: [{
+				id: "3800FCD4D167984B"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_axe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-1256670730
+									-456833705
+									-1497404803
+									-1466637119
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2B95161BCBED2513"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "4F3AA19894736ABD"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 14.5d
+			y: 3.5d
+			dependencies: ["41C09F73FA16A6D8"]
+			id: "010F3FEA11FE571B"
+			tasks: [{
+				id: "4AAD13D709D53167"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_axe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1624832358
+									-612350558
+									-1495542277
+									-645501952
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5CAAF58461438850"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "61AD2329F3F7F796"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 14.5d
+			y: 5.5d
+			dependencies: ["010F3FEA11FE571B"]
+			id: "564EE84693454A8B"
+			tasks: [{
+				id: "19F5BD35D4EBEBB4"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_axe"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1331282432
+									-2004136176
+									-2120241553
+									1883096764
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7A62E125DD17334A"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "26822EC2F59123B3"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 18.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "79A0B76F6F6D8039"
+			tasks: [{
+				id: "3B535661A667C3D3"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_bow"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-147466638
+									1601258045
+									-1726320223
+									346597631
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6989C165F1DEE1C8"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "71C41B2099D16E81"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 18.5d
+			y: 3.5d
+			dependencies: ["79A0B76F6F6D8039"]
+			id: "6124D7BCEBF0E578"
+			tasks: [{
+				id: "2B8CFBF2E8CE93C0"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_bow"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									30814420
+									-1531360302
+									-1526371921
+									990070633
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "355AD8A1C1558DEB"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "1A14DEF86BC5B4D7"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 18.5d
+			y: 5.5d
+			dependencies: ["6124D7BCEBF0E578"]
+			id: "7DAA306755DDE2FD"
+			tasks: [{
+				id: "1C954A09E1BEC91E"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_bow"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1804515186
+									1061570638
+									-1112626802
+									605957071
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3F050C9AEB8E551D"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "7EC67BA6A4C567EF"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 16.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3BDE39E5387D8651"]
+			id: "7C22F26EEFFAB5D6"
+			tasks: [{
+				id: "1323D123AAC0ACE9"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_sword"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									132351709
+									-1929819285
+									-1514471591
+									1235758016
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3FF89BEA047E5608"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+				}
+				{
+					id: "56DE4AC800F1961B"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: 16.5d
+			y: 3.5d
+			dependencies: ["7C22F26EEFFAB5D6"]
+			id: "3FC47830B9AD7CC4"
+			tasks: [{
+				id: "58230A67B79727C7"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_sword"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-1515335152
+									1926975025
+									-2006377007
+									-2068103293
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "65A22566839CD4F0"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 2
+				}
+				{
+					id: "2EA9374B92E849B0"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 16.5d
+			y: 5.5d
+			dependencies: ["3FC47830B9AD7CC4"]
+			id: "0338C2C616FBD2A2"
+			tasks: [{
+				id: "5E3D42B6B762454A"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_sword"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-653584996
+									-1946071792
+									-1598407952
+									-400899572
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4BB7E48CBE82ED06"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 5
+				}
+				{
+					id: "7A8B721C7749DC47"
+					type: "xp"
+					xp: 1500
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			description: [
+				"Now, you should craft a neutron collector, symbolizing you have almost reached the end game of this modpack."
+				""
+				"[Quest]"
+				"This quest opens Chapter 9."
+			]
+			dependencies: ["753DB2AEA8FE2E70"]
+			id: "5DF6AC1C679C243A"
+			tasks: [{
+				id: "6E46E23D26455F51"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:neutronium_collector"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3C8DC66AA54AC0D1"
+					type: "item"
+					item: "draconicevolution:advanced_magnet"
+				}
+				{
+					id: "7B776BCC9E29BD29"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "7EF56461B052F0BD"
+					type: "xp"
+					xp: 2000
+				}
+			]
+		}
+	]
+}

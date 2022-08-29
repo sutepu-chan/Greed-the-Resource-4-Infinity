@@ -1,0 +1,11 @@
+{
+  "name": "Obsidian",
+  "colors": [
+    "651fa8",
+    "09070f"
+  ],
+  "ingredient": {
+    "tag": "forge:obsidian"
+  },
+  "materialCount": 15000
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Dirt",
+  "colors": [
+    "a67853",
+    "2c1f15"
+  ],
+  "ingredient": {
+    "item": "minecraft:dirt"
+  },
+  "materialCount": 15000
+}

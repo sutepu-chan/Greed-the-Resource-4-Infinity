@@ -1,0 +1,10 @@
+{
+    "name": "Netherrack",
+    "colors": [
+      "6e3333",
+      "2e1515"
+    ],
+    "ingredient": {
+      "tag": "forge:netherrack"
+    }
+  }

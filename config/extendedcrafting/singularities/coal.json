@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.coal",
+  "colors": [
+    "080808",
+    "0c0c0c"
+  ],
+  "ingredient": {
+    "tag": "chisel:coal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Netherstar",
+    "colors": [
+        "bce8da",
+        "53655c"
+    ],
+    "ingredient": {
+        "item": "allthecompressed:nether_star_block"
+    }
+}

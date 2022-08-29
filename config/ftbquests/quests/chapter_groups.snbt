@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "2DDEDFB13E9FB842", title: "Progress" }
+		{ id: "55D64AD3CBBBA98A", title: "Construction" }
+		{ id: "6CD795654E8AF853", title: "Automation" }
+	]
+}

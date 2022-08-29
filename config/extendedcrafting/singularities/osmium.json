@@ -1,0 +1,10 @@
+{
+  "name": "Osmium",
+  "colors": [
+    "839297",
+    "424a4b"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/osmium"
+  }
+}

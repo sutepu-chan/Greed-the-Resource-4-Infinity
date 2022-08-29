@@ -1,0 +1,11 @@
+{
+    "name": "Glass",
+    "colors": [
+        "8b8b8b",
+        "596463"
+    ],
+    "ingredient": {
+        "tag": "forge:glass"
+    },
+    "materialCount": 15000
+}

@@ -1,0 +1,880 @@
+{
+	id: "35E9A736546331BF"
+	group: "2DDEDFB13E9FB842"
+	order_index: 3
+	filename: "chapter_4_compacted_pressurization"
+	title: "Chapter 4: Compacted Pressurization"
+	icon: "pneumaticcraft:pressure_gauge"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -0.5d
+			description: [
+				"After getting the compact crafting stuffs, you are finally able to get a compressed iron ingot!"
+				"Use the power of compact crafting to compres TNT and iron blocks into compressed iron blocks."
+				"Later you will need a lot of this. But no panic! There is easier and cheaper to obtain the compressed iron ingot later."
+			]
+			dependencies: ["75F4D6E263EEDA5E"]
+			id: "09DF4B735BA0BCA5"
+			tasks: [{
+				id: "1D59F1B54DE492C6"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_block"
+				count: 6L
+			}]
+			rewards: [{
+				id: "05032F48D6CAD8F2"
+				type: "item"
+				item: "thermal:gunpowder_block"
+				count: 2
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			description: [
+				"With the material, you are now going to make a pressure chamber, which is very useful getting resources, and crafting many more items! Besides, with this chamber. you can also get compressed iron easier and cheaper."
+				"Pressure chamber is set up by the above blocks. You can also replace the chamber wall with chamber glass. Pressure chamber is a 3x3x3 - 5x5x5 hollow structure. Edges can only be walls. The picture shows the 5x5x5 pressure chamber."
+				"{image:kubejs:textures/quest/chapter4/chapter4_pressure_chamber.png width:176 height:100 align:1}"
+			]
+			dependencies: ["09DF4B735BA0BCA5"]
+			id: "404A99E9092B297D"
+			tasks: [
+				{
+					id: "5742D3F8517809B8"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 16L
+				}
+				{
+					id: "4C2D4FD8BED87DFF"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					count: 4L
+				}
+				{
+					id: "4729C4B759BD5012"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "456FBD97B29FD4DA"
+				type: "item"
+				item: "pneumaticcraft:pneumatic_wrench"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.5d
+			description: [
+				"You need a specific pressure (bar) in pressurized recipes. Pressure can be increased by compressor. Air compressor is the most basic one. Get one of them. Note that air compressor accepts furnace fuel items except lava. It produces air at a rate of 10mL/tick."
+				"Connect the compressor and pressure chamber by pressure tube. It takes some time to get the pressure level up. More compressor will result in a faster rate and being able to maintain at a higher level of pressure."
+				"{image:kubejs:textures/quest/chapter4/chapter4_air_compressor.png width:176 height:100 align:1}"
+			]
+			dependencies: ["404A99E9092B297D"]
+			id: "0010E5D1B6462C0E"
+			tasks: [{
+				id: "0F9D8861866518C2"
+				type: "item"
+				item: "pneumaticcraft:air_compressor"
+			}]
+			rewards: [{
+				id: "35845949880DFAD8"
+				type: "item"
+				item: "minecraft:coal"
+				count: 8
+			}]
+		}
+		{
+			title: "Concept of Pressure"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "PHY 1000"
+			description: [
+				"Pressure is related to volume of container and volume of air, correlated by the following equation,"
+				"P = A/V - 1"
+				"A: Volume of air (mL)"
+				"V: Volume of container (mL)"
+				"P: Pressure (bar)"
+			]
+			dependencies: ["404A99E9092B297D"]
+			id: "4664A3D8FF295CD0"
+			tasks: [{
+				id: "7B2521E46102D93A"
+				type: "checkmark"
+				title: "I am trying to explain in clear manner."
+				icon: "pneumaticcraft:pressure_gauge"
+			}]
+			rewards: [{
+				id: "5B78C72C2584DA6A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Concept of Heat"
+			x: 0.0d
+			y: 3.5d
+			subtitle: "PHY 1001"
+			description: [
+				"Heat is a form of energy transfer between two matters that results in a temperature difference."
+				"By theorem of thermal equilibrium, heat transfer from hotter objects to cooler objects."
+				"Thermal resistance is a heat property that an object resists a heat flow."
+				"Heat capacity is the heat required to produce a unit change in temperature."
+				""
+				"[Note]"
+				"Not all items support concept of heat. Check JEI for the materials."
+			]
+			dependencies: ["404A99E9092B297D"]
+			id: "5B986327BF6381B1"
+			tasks: [{
+				id: "4F80606CA19750D5"
+				type: "checkmark"
+				title: "I am trying to explain in clear manner."
+				icon: "minecraft:campfire"
+			}]
+			rewards: [{
+				id: "1C6E68DEE747D7E7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			title: "Tier 2 air compressor"
+			x: -6.0d
+			y: 3.5d
+			description: [
+				"This compressor is able to maintain a safe temperature of 20bar and produces air at 50mL/tick."
+				"It requires cooling due to the fact that its efficacy drops when temperature rises."
+			]
+			dependencies: ["0010E5D1B6462C0E"]
+			id: "23B0764236B2D093"
+			tasks: [{
+				id: "15C12A8CBD88B678"
+				type: "item"
+				item: "pneumaticcraft:advanced_air_compressor"
+			}]
+			rewards: [{
+				id: "525C2E421AC57814"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_block"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.5d
+			description: [
+				"Liquid compressor accepts hot liquids (e.g., lava), to produce air at 10mL/tick."
+				"Check available fluids in tabs inside its GUI."
+			]
+			dependencies: ["0010E5D1B6462C0E"]
+			id: "629FF25CC416FA25"
+			tasks: [{
+				id: "6E63896D42503B20"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+			rewards: [{
+				id: "763EE62C6922B973"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_block"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 7.5d
+			description: [
+				"This compressor is able to maintain a safe temperature of 20bar and produces air at 50mL/tick."
+				"It requires cooling due to the fact that its efficacy drops when temperature rises."
+			]
+			dependencies: ["629FF25CC416FA25"]
+			id: "0E192827F91E900C"
+			tasks: [{
+				id: "1A19F4C8A4CFB8FC"
+				type: "item"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+			rewards: [{
+				id: "44E05B1CD620922F"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_block"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.5d
+			description: ["Charging station allows you to charge items, e.g., air consistors, and most importantly, your wrench."]
+			dependencies: ["0010E5D1B6462C0E"]
+			id: "412C22198E55DE66"
+			tasks: [{
+				id: "5A97BC8EA8664199"
+				type: "item"
+				item: "pneumaticcraft:charging_station"
+			}]
+			rewards: [{
+				id: "6F967E13B7C33C40"
+				type: "item"
+				item: "pneumaticcraft:small_tank"
+			}]
+		}
+		{
+			title: "From Crude Oil to Plastic"
+			x: 0.0d
+			y: 5.5d
+			description: [
+				"Crude oil is one of the most essential material in Pneumaticcraft. It can be used to produces oils and plastics."
+				"Crude oil lakes generates on land occassionally, and underground more frequently. In this stage, you can only get it by exploring your world. There is other ways to get crude oil later."
+			]
+			dependencies: ["293DBA6BDB2FE9D7"]
+			id: "4E3E7ABF64B432E4"
+			tasks: [{
+				id: "2AE90F96464ED9ED"
+				type: "item"
+				item: "pneumaticcraft:oil_bucket"
+			}]
+			rewards: [{
+				id: "293EF82E6F28051F"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:small_tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							SavedTanks: {
+								Tank: {
+									FluidName: "pneumaticcraft:oil"
+									Amount: 32000
+								}
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Preparing for refinery - 1"
+			x: 2.0d
+			y: 5.5d
+			description: [
+				"Setting up refinery allows you to process the crude oil by \"Fractional Distillation\". This process utilizes the boiling point difference of hydrocarbons at different chain length (This is a bit technical. Just mention here. Not used in game)"
+				"Refinery allows you to get at most 4 types of oil by inputting crude oil and supplying with heat."
+				"It is a multiblock structure that the refinery controller is at the bottom and the 2-4 outputs on top. More outputs allow you to get more types of oil. Therefore, I recommend you to get 4 for them directly."
+				"{image:kubejs:textures/quest/chapter4/chapter4_refinery.png width:176 height:100 align:1}"
+			]
+			dependencies: ["4E3E7ABF64B432E4"]
+			id: "7AEB24CF56A24C49"
+			tasks: [
+				{
+					id: "7EE0D42DEC3AC9E1"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+				{
+					id: "2A2A27E87984850A"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+			]
+			rewards: [{
+				id: "5C6F9E67A0BBB674"
+				type: "item"
+				item: "minecraft:blue_ice"
+				count: 4
+			}]
+		}
+		{
+			title: "Preparing for refinery - 2"
+			x: 4.0d
+			y: 5.5d
+			description: [
+				"As mentioned, it utilizes heat to under the process. You need a certain temperature level. Definitely, you could use torches (slow), or lava (fast, but will solidize) to raise the temperature. The better option is to use a vortex tube. It separates incoming air into the hot and cold sides."
+				"When you place the vortex tube down, hotter side will face to you."
+				"There is a weak thermal connection between the hot and the cold side, and therefore, for better efficiency, place a heat sink on the cold side."
+				"{image:kubejs:textures/quest/chapter4/chapter4_vortex_tube.png width:176 height:100 align:1}"
+			]
+			dependencies: ["7AEB24CF56A24C49"]
+			id: "3459A18D9C30581C"
+			tasks: [
+				{
+					id: "764E653366C3D12B"
+					type: "item"
+					item: "pneumaticcraft:vortex_tube"
+				}
+				{
+					id: "54E245EC4B4610B2"
+					type: "item"
+					item: "pneumaticcraft:heat_sink"
+				}
+			]
+			rewards: [{
+				id: "6CD65E84E0147B2B"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_gear"
+				count: 4
+			}]
+		}
+		{
+			title: "Preparing for refinery - 3"
+			x: 4.0d
+			y: 7.5d
+			description: [
+				"By the heat concept, heat loss occurred when the refinery is exposed to the air."
+				"Just simply cover your refinery with materials of high thermal resistance can reduce heat loss."
+				"{image:kubejs:textures/quest/chapter4/chapter4_covered_refinery.png width:176 height:100 align:1}"
+			]
+			dependencies: ["3459A18D9C30581C"]
+			id: "37E24310E50F773C"
+			tasks: [{
+				id: "6925B4913697CF69"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 16L
+			}]
+			rewards: [{
+				id: "7B1F69D5684D1428"
+				type: "item"
+				item: "pneumaticcraft:plastic_brick_white"
+				count: 64
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.5d
+			description: [
+				"There are two ways in producing plastics in pneumaticcraft, biodiesel and crude oil."
+				"The crude oil way is faster and cheaper."
+				"The quest will unlock once you complete any one route of quest (in other words, you don't have to complete them all)."
+			]
+			dependencies: ["0010E5D1B6462C0E"]
+			id: "293DBA6BDB2FE9D7"
+			tasks: [{
+				id: "75C80661F56A5EAD"
+				type: "checkmark"
+				title: "Producing plastics"
+			}]
+			rewards: [{
+				id: "22ADF8EEED0A6974"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "fooddelight"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			description: [
+				"After everything is ready, you can set up the refinery and you will get the LPG. Transport it to a thermopneumatic processing plant, together with some coal under high temperature and high pressure."
+				"{image:kubejs:textures/quest/chapter4/chapter4_molten_plastic.png width:176 height:100 align:1}"
+			]
+			dependencies: ["37E24310E50F773C"]
+			id: "24FE56560CDF5545"
+			tasks: [{
+				id: "2CFCF295F3077DAC"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+			rewards: [{
+				id: "1EBB62D838F76026"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_block"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 13.5d
+			description: ["Place the molten plastic in world and it will eventually turn into plastic sheet."]
+			dependencies: ["090195301971F5F9"]
+			id: "086BCD84CBB64F06"
+			tasks: [{
+				id: "2F6195F8866660D6"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+				count: 4L
+			}]
+			rewards: [{
+				id: "5B61EDE0FDDF2DD3"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+				count: 4
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.5d
+			description: ["Get one of the above machine. Insert some mushrooms and water, and yeast culture can be obtained under high temperature and pressure."]
+			dependencies: ["293DBA6BDB2FE9D7"]
+			id: "6092083FE7B17ABF"
+			tasks: [{
+				id: "3E3EB4479575235B"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+			rewards: [
+				{
+					id: "539A55926EB4E11D"
+					type: "item"
+					item: "minecraft:potato"
+				}
+				{
+					id: "242377DE609AFCE9"
+					type: "item"
+					item: "minecraft:poisonous_potato"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			description: ["Transfer the yeast culture produced into the machine again. This time, we put potatoes in it and ethanol can be produced."]
+			dependencies: ["6092083FE7B17ABF"]
+			id: "2149CE44C0D12C57"
+			tasks: [{
+				id: "135E2678CDAABCB1"
+				type: "item"
+				item: "pneumaticcraft:ethanol_bucket"
+			}]
+			rewards: [{
+				id: "4D50B50B577E36A0"
+				type: "item"
+				item: "pneumaticcraft:kerosene_lamp"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 9.5d
+			description: ["Put any crops or seeds into the machine will produce vegetable oil."]
+			dependencies: ["6092083FE7B17ABF"]
+			id: "36CDFA9058BB09AE"
+			tasks: [{
+				id: "6CD9C3FF84935EDF"
+				type: "item"
+				item: "pneumaticcraft:vegetable_oil_bucket"
+			}]
+			rewards: [{
+				id: "01FBF82482B63572"
+				type: "item"
+				item: "pneumaticcraft:wall_lamp_white"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: 11.5d
+			description: [
+				"[Crude Oil]"
+				"You will eventually get the molten plastic. Higher temperature produces the molten plastic in a higher rate."
+				""
+				"[Biodiesel]"
+				"Put the vegetable oil and ethanol into the machine again. Biodiesel will be obtained. Put the biodiesel together with charcoal into the machine again will produce molten plastics."
+			]
+			dependencies: [
+				"36CDFA9058BB09AE"
+				"24FE56560CDF5545"
+			]
+			dependency_requirement: "one_completed"
+			id: "090195301971F5F9"
+			tasks: [{
+				id: "5B9C5C5E0DEB95BC"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+			rewards: [{
+				id: "31D454455B12F354"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:medium_tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							SavedTanks: {
+								Tank: {
+									FluidName: "pneumaticcraft:oil"
+									Amount: 16000
+								}
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Online Shopping"
+			x: 4.0d
+			y: 15.5d
+			description: [
+				"Not all the things can be produced by youself. You can get them \"Online\""
+				"Craft a amadron tablet. Shift+RC at a chest and a tank, which is used to store the things you have to paid or purchased."
+				"RC to increase order amount by 1. LC to decrease order amount by 1."
+				"{image:kubejs:textures/quest/chapter4/chapter4_amadron_tablet.png width:176 height:100 align:1}"
+			]
+			dependencies: ["086BCD84CBB64F06"]
+			id: "765EFF6054CB18F3"
+			tasks: [{
+				id: "64BC2CAAD0AF877C"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+			rewards: [{
+				id: "2006EEE908382936"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 15.5d
+			description: ["This is the thing that you have to buy on Amadron"]
+			dependencies: ["765EFF6054CB18F3"]
+			id: "720BE42538FAF5BB"
+			tasks: [{
+				id: "2A68CEFC4B97919A"
+				type: "item"
+				item: "pneumaticcraft:pcb_blueprint"
+			}]
+			rewards: [{
+				id: "1B23C85A8ABC240E"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 15.5d
+			description: ["With the blueprint, craft a UV light box."]
+			dependencies: ["720BE42538FAF5BB"]
+			id: "125A1B32056FA2B9"
+			tasks: [{
+				id: "33C970497A76B079"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+			rewards: [{
+				id: "7FBA4A8E62D69664"
+				type: "item"
+				item: "nourished_nether:basalt_redstone_ore"
+				count: 4
+			}]
+		}
+		{
+			title: "Empty PCB (0%)"
+			x: 2.0d
+			y: 13.5d
+			description: ["Get the empty PCB, which will be used as a crucial crafting ingredient."]
+			dependencies: ["086BCD84CBB64F06"]
+			id: "0B3595E4658C71FF"
+			tasks: [{
+				id: "3E26DA053F0664B5"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+			rewards: [{
+				id: "09028707C6CCE58A"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 16
+			}]
+		}
+		{
+			title: "Empty PCB (100%)"
+			x: 0.0d
+			y: 13.5d
+			description: ["Expose the empty PCB with UV using the light box. Exposing to 100% will increase the success probability in the etching process."]
+			dependencies: [
+				"125A1B32056FA2B9"
+				"0B3595E4658C71FF"
+			]
+			id: "55C64655E8C36742"
+			tasks: [{
+				id: "25BA6C1251B01C6D"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:empty_pcb"
+					Count: 1b
+					tag: {
+						"pneumaticcraft:uv_exposure": 100
+					}
+				}
+			}]
+			rewards: [{
+				id: "41A70A0C6D4C1073"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 11.5d
+			description: [
+				"Get the etching equipments."
+				"Similarly, etching requires a high temperature. Please also prepare a suitable temperauter ( >100 degree Celsius)"
+			]
+			dependencies: ["55C64655E8C36742"]
+			id: "1DC971BFBA985034"
+			tasks: [
+				{
+					id: "216B66024425F499"
+					type: "item"
+					item: "pneumaticcraft:etching_tank"
+				}
+				{
+					id: "7CD677841985276D"
+					type: "item"
+					item: "pneumaticcraft:etching_acid_bucket"
+				}
+			]
+			rewards: [{
+				id: "03D817B5D221C8BD"
+				type: "item"
+				item: "itemcollectors:basic_collector"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 9.5d
+			description: ["Put the empty PCB and the etching fluid into the tank. After certain time, you will get the unassembled PCB. Prepare more of this item. We are using many of this later!"]
+			dependencies: ["1DC971BFBA985034"]
+			id: "5F27EC0AAD2601FF"
+			tasks: [{
+				id: "05E537B5571E8582"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+			rewards: [{
+				id: "1A7B950B789CB0D8"
+				type: "item"
+				item: "pneumaticcraft:failed_pcb"
+				count: 2
+			}]
+		}
+		{
+			x: -6.0d
+			y: 11.5d
+			dependencies: ["5F27EC0AAD2601FF"]
+			id: "43D85631F7DCFE28"
+			tasks: [{
+				id: "662F14591DE9DACC"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+			rewards: [{
+				id: "70365B34C46D852E"
+				type: "item"
+				item: "minecraft:slime_block"
+				count: 2
+			}]
+		}
+		{
+			title: "Coolest Animation!"
+			x: -8.0d
+			y: 13.5d
+			description: [
+				"Time to get the assembly controller and the parts of assembler."
+				"Different recipes requires different set of assembly parts. To set it up, it is recommended that the assmebly platform is placing in the middle to allow access of the assembly arms."
+				"Not that only the import and the export arms can be placed diagonally to the assembly platform. Other assembly arms have to place right next to the platform."
+				"{image:kubejs:textures/quest/chapter4/chapter4_assembler.png width:176 height:100 align:1}"
+			]
+			dependencies: ["43D85631F7DCFE28"]
+			id: "6AC11E8F5232F943"
+			tasks: [
+				{
+					id: "2C94EE72B4646E2C"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "63D190D18B674A10"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "553E2515C543CE3F"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "61C1E7BCE22F3F26"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "2C5F6CF61DC915A9"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+				{
+					id: "5060E1D5ED6DF05A"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+			]
+			rewards: [
+				{
+					id: "312C9AC8402978CF"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_laser"
+				}
+				{
+					id: "46C4122D99536DFA"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_drill"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 13.5d
+			description: ["Use the assembler to get gears. Time to process to the thermo-technology age."]
+			dependencies: ["6AC11E8F5232F943"]
+			id: "42F4CE9492FEE5AF"
+			tasks: [
+				{
+					id: "2A0416E0D073E49B"
+					type: "item"
+					item: "thermal:tin_gear"
+				}
+				{
+					id: "0E08943F92D2FB2D"
+					type: "item"
+					item: "thermal:gold_gear"
+				}
+				{
+					id: "154F444F3167411D"
+					type: "item"
+					item: "thermal:iron_gear"
+				}
+			]
+			rewards: [{
+				id: "15AB6DC703C76101"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:drone"
+					Count: 1b
+					tag: {
+						"pneumaticcraft:air": 120000
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 13.5d
+			description: [
+				"The three basic material in Thermal Series."
+				""
+				"[Quest]"
+				"This quest unlocks Chapter 5."
+			]
+			dependencies: ["42F4CE9492FEE5AF"]
+			id: "51B7581D4BB2D4A8"
+			tasks: [
+				{
+					id: "057ECA5FFCBB237F"
+					type: "item"
+					item: "thermal:redstone_servo"
+				}
+				{
+					id: "1CEFF779420721C0"
+					type: "item"
+					item: "thermal:rf_coil"
+				}
+				{
+					id: "7D1CFCD583B1FCFA"
+					type: "item"
+					item: "thermal:machine_frame"
+				}
+			]
+			rewards: [
+				{
+					id: "10D9D8A8DD791424"
+					type: "item"
+					item: "thermal:dynamo_lapidary"
+				}
+				{
+					id: "6D96CA49C2CC7952"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Combination Crafting"
+			x: -8.0d
+			y: 15.5d
+			description: [
+				"Using the assembler, you can now craft the blocks required in combination crafting."
+				"Combination crafting is a new crafting methods in placing the blocks to form a multiblock structure."
+				"{image:kubejs:textures/quest/chapter4/chapter4_combination_crafting.png width:110 height:100 align:1}"
+			]
+			dependencies: ["6AC11E8F5232F943"]
+			id: "4EFC02C1DDB34D6D"
+			tasks: [
+				{
+					id: "0E6CE54E2ED87262"
+					type: "item"
+					item: "extendedcrafting:crafting_core"
+				}
+				{
+					id: "11720A001BC03DBE"
+					type: "item"
+					item: "extendedcrafting:pedestal"
+					count: 12L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 15.5d
+			description: ["The void dimension is a good place for constructing some dangerous reactors and also great for mob farms."]
+			dependencies: ["4EFC02C1DDB34D6D"]
+			id: "11AEBD8CF8B8E056"
+			tasks: [{
+				id: "2DD32AE099551317"
+				type: "item"
+				item: "javd:portal_block"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 15.5d
+			description: ["Mining dimension has a great content of allthemodium ores."]
+			dependencies: ["4EFC02C1DDB34D6D"]
+			id: "0EA7264A80AA3CE6"
+			tasks: [{
+				id: "572EE4EE6E531D71"
+				type: "item"
+				item: "jamd:mine_portal_block"
+			}]
+		}
+	]
+}

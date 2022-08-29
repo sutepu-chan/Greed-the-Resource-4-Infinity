@@ -1,0 +1,617 @@
+{
+	id: "608A180CEE9C7446"
+	group: "2DDEDFB13E9FB842"
+	order_index: 9
+	filename: "achievements"
+	title: "Achievements"
+	icon: "ironfurnaces:item_xmas"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "7CE1C3A9A9772CE8"
+			tasks: [{
+				id: "55A4DB470A6DA7FA"
+				type: "xp"
+				value: 30L
+				points: false
+			}]
+			rewards: [{
+				id: "060ACC850D0F448F"
+				type: "item"
+				item: "draconicevolution:small_chaos_frag"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["7CE1C3A9A9772CE8"]
+			id: "0520CEF17BF8A81E"
+			tasks: [{
+				id: "6DCB251F687AD9F6"
+				type: "xp"
+				value: 100L
+				points: false
+			}]
+			rewards: [{
+				id: "734683E7DE1C3C38"
+				type: "item"
+				item: "draconicevolution:small_chaos_frag"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["0520CEF17BF8A81E"]
+			id: "6C85C890FBB80BC5"
+			tasks: [{
+				id: "668AAE2B5ABD96EF"
+				type: "xp"
+				value: 200L
+				points: false
+			}]
+			rewards: [{
+				id: "610976ED69C4EC75"
+				type: "item"
+				item: "draconicevolution:small_chaos_frag"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["6C85C890FBB80BC5"]
+			id: "174A49CEB45DA275"
+			tasks: [{
+				id: "23ACF0CA21810C1E"
+				type: "xp"
+				value: 500L
+				points: false
+			}]
+			rewards: [{
+				id: "0A05868204636835"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			dependencies: ["174A49CEB45DA275"]
+			id: "7B99B644342CAA22"
+			tasks: [{
+				id: "21E98EB7B882ADA4"
+				type: "xp"
+				value: 1000L
+				points: false
+			}]
+			rewards: [{
+				id: "18F02E5762E6D925"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			id: "70B2A5BFF0BCBAA9"
+			tasks: [{
+				id: "4E192E0DCE5181DC"
+				type: "questsadditions:break"
+				block_type: 0
+				block: "minecraft:stone"
+				value: 1000L
+				checkItem: false
+			}]
+			rewards: [{
+				id: "4811E5796B91E38D"
+				type: "item"
+				item: "clickmachine:auto_clicker"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["70B2A5BFF0BCBAA9"]
+			id: "27F78F906181E5D5"
+			tasks: [{
+				id: "2E381A991ED179D5"
+				type: "questsadditions:break"
+				block_type: 0
+				block: "minecraft:stone"
+				value: 5000L
+				checkItem: false
+			}]
+			rewards: [{
+				id: "2F311B55F15E9B59"
+				type: "item"
+				item: {
+					id: "psi:psimetal_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["27F78F906181E5D5"]
+			id: "6EDE80B6CEAF3731"
+			tasks: [{
+				id: "029F41DBFDB92881"
+				type: "questsadditions:break"
+				block_type: 0
+				block: "minecraft:stone"
+				value: 10000L
+				checkItem: false
+			}]
+			rewards: [{
+				id: "00AE4F6007670D7E"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			id: "1F07954F002F65F5"
+			tasks: [{
+				id: "1F8FB51BB3521D95"
+				type: "questsadditions:days"
+				days: 100
+			}]
+			rewards: [
+				{
+					id: "140E89FC29EEA806"
+					type: "item"
+					item: "sushigocrafting:crab_cheese_california"
+					count: 2
+				}
+				{
+					id: "0D653CA1B2D9A0D9"
+					type: "item"
+					item: "sushigocrafting:tobiko_crab_cheese_california"
+					count: 2
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["1F07954F002F65F5"]
+			id: "40245A686E9F5390"
+			tasks: [{
+				id: "62F0792B2B124145"
+				type: "questsadditions:days"
+				days: 500
+			}]
+			rewards: [{
+				id: "08AB390EAD97838B"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["40245A686E9F5390"]
+			id: "54D70898442C19B7"
+			tasks: [{
+				id: "15C262A80144EC40"
+				type: "questsadditions:days"
+				days: 1000
+			}]
+			rewards: [{
+				id: "7443CAD317A35855"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			title: "Find every types of mushroom"
+			x: 6.0d
+			y: 0.0d
+			id: "165189399EDD8C37"
+			tasks: [
+				{
+					id: "524647598C0834C1"
+					type: "item"
+					item: "extcaves:mushroom_sweetshroom"
+				}
+				{
+					id: "6E82B8E2B1BE5740"
+					type: "item"
+					item: "extcaves:mushroom_goldishroom"
+				}
+				{
+					id: "264E3DA31DF157FE"
+					type: "item"
+					item: "extcaves:mushroom_shinyshroom"
+				}
+				{
+					id: "545C73098470D531"
+					type: "item"
+					item: "extcaves:mushroom_lumishroom"
+				}
+				{
+					id: "485B77071059B0DF"
+					type: "item"
+					item: "extcaves:mushroom_fluoshroom"
+				}
+				{
+					id: "4915DE4E56754C5D"
+					type: "item"
+					item: "extcaves:mushroom_rockshroom"
+				}
+			]
+			rewards: [
+				{
+					id: "3A0442178A8DE3D6"
+					type: "item"
+					item: "extcaves:stew_sticky"
+				}
+				{
+					id: "6156B7A0B1191FE8"
+					type: "item"
+					item: "extcaves:stew_fluorescent"
+				}
+				{
+					id: "1D085BBCEED89C28"
+					type: "item"
+					item: "extcaves:stew_hard"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			id: "7F8A64B4EF01CE91"
+			tasks: [{
+				id: "437D095CEA048BA0"
+				type: "stat"
+				title: "Sprint 50000 blocks distance"
+				icon: {
+					id: "minecraft:leather_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:sprint_one_cm"
+				value: 50000
+			}]
+			rewards: [{
+				id: "66F567985F4BEE93"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			id: "731BF8E74DE2F5E8"
+			tasks: [{
+				id: "623F31C686A8D212"
+				type: "stat"
+				title: "Walk 50 blocks by pig"
+				icon: "draconicevolution:mob_soul"
+				stat: "minecraft:pig_one_cm"
+				value: 50
+			}]
+			rewards: [{
+				id: "19DA66AD8FADF7C9"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			id: "3B1FB3FC099EF77F"
+			tasks: [{
+				id: "43D0D141104FD916"
+				type: "stat"
+				title: "Dealt 100K damage"
+				icon: {
+					id: "minecraft:netherite_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:damage_dealt"
+				value: 100000
+			}]
+			rewards: [{
+				id: "05B975492696CE4B"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			title: "Get 2M items into your ME storage"
+			icon: "appliedenergistics2:crafting_terminal"
+			x: 10.0d
+			y: 2.0d
+			id: "1215CA84FD0C3086"
+			tasks: [{
+				id: "1C2FA3FF2C63A0BB"
+				type: "stat"
+				stat: "appliedenergistics2:items_inserted"
+				value: 2000000
+			}]
+			rewards: [{
+				id: "687E48D0A362C72C"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			id: "6D69D6C639CA4B7D"
+			tasks: [{
+				id: "1A1AEE57B8787165"
+				type: "stat"
+				title: "Fight a raid"
+				icon: {
+					id: "hostilenetworks:data_model"
+					Count: 1b
+					tag: {
+						data_model: {
+							id: "hostilenetworks:evoker"
+						}
+					}
+				}
+				stat: "minecraft:raid_win"
+				value: 1
+			}]
+			rewards: [{
+				id: "0F441608F1CE2A55"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "singularity"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			id: "2F457840AD4308D2"
+			tasks: [{
+				id: "59724FBE8D7E663F"
+				type: "checkmark"
+				title: "Set up a train network!"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			id: "3BCCE1A8D7A85375"
+			tasks: [{
+				id: "0B6A2505E6F49DEA"
+				type: "checkmark"
+				title: "Build a factory with roads accessible to vehicles"
+			}]
+		}
+		{
+			title: "Use a wooden sword to final hit a zombie!"
+			x: -2.0d
+			y: 0.0d
+			id: "14A5C5CA8434203E"
+			tasks: [{
+				id: "63B55FF79C971B2D"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "minecraft:wooden_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+				nbt: { }
+				checkItem: true
+				item: {
+					id: "minecraft:wooden_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "276BA6D264B2CF32"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "427B9A965E22A894"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Use a stone sword to final hit a zombie!"
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["14A5C5CA8434203E"]
+			id: "20F2ED56FCB8920C"
+			tasks: [{
+				id: "009A3E7EAB536BAA"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "minecraft:stone_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+				nbt: { }
+				checkItem: true
+				item: {
+					id: "minecraft:stone_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "67DFBE5BBD248FEC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "225BE3CACDF060E7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Use a iron sword to final hit a zombie!"
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["20F2ED56FCB8920C"]
+			id: "10EBA2C473F5057A"
+			tasks: [{
+				id: "495F720C52A0A316"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+				nbt: { }
+				checkItem: true
+				item: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5DADB115868BDF8E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "414C0E04825AC349"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Use a diamond sword to final hit a zombie!"
+			icon: {
+				id: "minecraft:diamond_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.0d
+			y: 6.0d
+			dependencies: ["10EBA2C473F5057A"]
+			id: "0A0B517002F1CCFF"
+			tasks: [{
+				id: "2D06E7BB6B78519B"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "minecraft:diamond_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+				nbt: { }
+				checkItem: true
+				item: {
+					id: "minecraft:diamond_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "01AE093BBB60CF02"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "52B1152E9BCA9270"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			id: "58146C27AE90053C"
+			tasks: [{
+				id: "3139EA23FD57EA4F"
+				type: "stat"
+				title: "Eat 50 slices of cake"
+				icon: "minecraft:cake"
+				stat: "minecraft:eat_cake_slice"
+				value: 50
+			}]
+			rewards: [{
+				id: "5987A47086F342D2"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+	]
+}

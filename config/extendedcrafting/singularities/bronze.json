@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.bronze",
+  "colors": [
+    "b7722a",
+    "662a19"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/bronze"
+  }
+}
