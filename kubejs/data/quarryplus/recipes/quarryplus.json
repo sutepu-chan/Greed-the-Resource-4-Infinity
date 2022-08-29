@@ -1,0 +1,50 @@
+{
+    "type": "quarryplus:workbench_recipe",
+    "id": "quarryplus:builtin_quarryplus",
+    "ingredients": [
+        {
+            "item": "minecraft:diamond_block",
+            "count": 10
+        },
+        {
+            "item": "minecraft:gold_block",
+            "count": 10
+        },
+        {
+            "tag": "forge:obsidian",
+            "count": 128
+        },
+        {
+            "tag": "forge:glass",
+            "count": 196
+        },
+        {
+            "item": "mekanism:elite_control_circuit",
+            "count": 24
+        },
+        {
+            "item": "mekanism:alloy_atomic",
+            "count": 12
+        },
+        {
+            "item": "mekanism:hdpe_sheet",
+            "count": 36
+        },
+        {
+            "item": "mekanism:dust_lithium",
+            "count": 8
+        }
+    ],
+    "energy": 1000000.0,
+    "showInJEI": true,
+    "result": {
+        "item": "quarryplus:quarry",
+        "count": 1
+    },
+    "conditions": [
+        {
+            "value": "NewQuarry",
+            "type": "quarryplus:machine_enabled"
+        }
+    ]
+}

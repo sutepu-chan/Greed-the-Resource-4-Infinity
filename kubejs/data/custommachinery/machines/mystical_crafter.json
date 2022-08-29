@@ -1,0 +1,174 @@
+{
+    "name": {
+        "text": "Mystical Crafter",
+        "color": "white"
+    },
+    "appearance": {
+        "block": "custommachinery:machine/mystical_crafter/mystical_crafter",
+        "item": "custommachinery:machine/mystical_crafter/mystical_crafter",
+        "running": {
+            "block": "custommachinery:machine/mystical_crafter/mystical_crafter_running"
+        }
+    },
+    "components": [
+        {
+            "type": "custommachinery:energy",
+            "capacity": 1000000,
+            "maxInput": 1000000
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "seed",
+            "filter": ["mysticalagriculture:soulium_seed_base", "mysticalagriculture:prosperity_seed_base"],
+            "whitelist": true,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "essence",
+            "filter": ["mysticalagriculture:inferium_essence", "mysticalagriculture:prudentium_essence", "mysticalagriculture:tertium_essence", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_essence", "mysticalagradditions:insanium_essence", "mysticalagradditions:creative_essence"],
+            "whitelist": true,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "other",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "seed_output",
+            "mode": "output"
+        },
+        {
+            "type": "custommachinery:redstone",
+            "powertopause": 1
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "upgrade",
+            "filter": [
+                "mysticalagriculture:inferium_ingot",
+                "mysticalagriculture:prudentium_ingot",
+                "mysticalagriculture:tertium_ingot",
+                "mysticalagriculture:imperium_ingot",
+                "mysticalagriculture:supremium_ingot",
+                "mysticalagradditions:insanium_ingot"
+            ],
+            "whitelist": true,
+            "variant": "custommachinery:upgrade",
+            "capacity": 1
+        }
+    ],
+    "gui": [
+        {
+            "type": "custommachinery:texture",
+            "x": 0,
+            "y": 0,
+            "texture": "custommachinery:textures/gui/base_background.png"
+        },
+        {
+            "type": "custommachinery:text",
+            "x": 20,
+            "y": 20,
+            "text": "Mystical Crafter"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 90 
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "upgrade",
+            "x": 20,
+            "y": 138,
+            "item": "mysticalagriculture:inferium_ingot"
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "seed",
+            "x": 60,
+            "y": 50,
+            "item": "mysticalagriculture:prosperity_seed_base"
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "essence",
+            "x": 80,
+            "y": 50,
+            "item": "mysticalagriculture:inferium_essence"
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "other",
+            "x": 100,
+            "y": 50
+        },
+        {
+            "type": "custommachinery:progress",
+            "x": 135,
+            "y": 50,
+            "direction": "right"
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "seed_output",
+            "x": 175,
+            "y": 50
+        },
+        {
+            "type": "custommachinery:player_inventory",
+            "x": 50,
+            "y": 80
+        },
+        {
+            "type": "custommachinery:status",
+            "x": 216,
+            "y": 20
+        }
+    ],
+    "jei": [
+        {
+            "type": "custommachinery:texture",
+            "x": 0,
+            "y": 0,
+            "texture": "custommachinery:textures/gui/base_background.png"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 70 
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "seed",
+            "x": 45,
+            "y": 85
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "essence",
+            "x": 65,
+            "y": 85
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "other",
+            "x": 85,
+            "y": 85
+        },
+        {
+            "type": "custommachinery:progress",
+            "x": 110,
+            "y": 85,
+            "direction": "right"
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "seed_output",
+            "x": 140,
+            "y": 85
+        }
+    ]
+}

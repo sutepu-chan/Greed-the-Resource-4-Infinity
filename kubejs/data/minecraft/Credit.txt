@@ -1,0 +1,3 @@
+Credit to Porru07 - Better Chests Loot Datapack V1.16.5
+I don't know how to credit the datapack creators because curseforge will not add dependencies automatically.
+But this datapack does help me a lot in creating datapacks.

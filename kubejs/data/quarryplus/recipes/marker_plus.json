@@ -1,0 +1,34 @@
+{
+    "type": "quarryplus:workbench_recipe",
+    "id": "quarryplus:builtin_marker_plus",
+    "ingredients": [
+      {
+        "tag": "chipped:torch",
+        "count": 128
+      },
+      {
+        "item": "minecraft:emerald",
+        "count": 16
+      },
+      {
+        "item": "minecraft:lapis_lazuli",
+        "count": 132
+      },
+      {
+        "tag": "forge:dusts/glowstone",
+        "count": 8
+      }
+    ],
+    "energy": 100000.0,
+    "showInJEI": true,
+    "result": {
+      "item": "quarryplus:markerplus",
+      "count": 3
+    },
+    "conditions": [
+      {
+        "value": "MarkerPlus",
+        "type": "quarryplus:machine_enabled"
+      }
+    ]
+  }

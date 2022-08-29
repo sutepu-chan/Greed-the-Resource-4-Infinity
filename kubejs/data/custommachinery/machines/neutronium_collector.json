@@ -1,0 +1,83 @@
+{
+    "name": {
+        "text": "Neutron Collector",
+        "color": "white"
+    },
+    "appearance": {
+        "block": "custommachinery:machine/neutronium_collector/neutronium_collector",
+        "item": "custommachinery:machine/neutronium_collector/neutronium_collector",
+        "running": {
+            "block": "custommachinery:machine/neutronium_collector/neutronium_collector_running"
+        }
+    },
+    "components": [
+        {
+            "type": "custommachinery:energy",
+            "capacity": 1000000,
+            "maxInput": 1000000
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "neutron_output",
+            "mode": "output"
+        },
+        {
+            "type": "custommachinery:redstone",
+            "powertopause": 1
+        }
+    ],
+    "gui": [
+        {
+            "type": "custommachinery:texture",
+            "x": 0,
+            "y": 0,
+            "texture": "custommachinery:textures/gui/base_background.png"
+        },
+        {
+            "type": "custommachinery:text",
+            "x": 20,
+            "y": 20,
+            "text": "Neutronium Collector"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 90 
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "neutron_output",
+            "x": 175,
+            "y": 50
+        },
+        {
+            "type": "custommachinery:player_inventory",
+            "x": 50,
+            "y": 80
+        },
+        {
+            "type": "custommachinery:status",
+            "x": 216,
+            "y": 20
+        }
+    ],
+    "jei": [
+        {
+            "type": "custommachinery:texture",
+            "x": 0,
+            "y": 0,
+            "texture": "custommachinery:textures/gui/base_background.png"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 70 
+        },
+        {
+            "type": "custommachinery:slot",
+            "id": "neutron_output",
+            "x": 140,
+            "y": 85
+        }
+    ]
+}

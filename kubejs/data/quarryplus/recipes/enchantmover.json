@@ -1,0 +1,38 @@
+{
+    "type": "quarryplus:workbench_recipe",
+    "id": "quarryplus:builtin_enchantmover",
+    "ingredients": [
+        {
+            "item": "minecraft:diamond_block",
+            "count": 20
+        },
+        {
+            "item": "minecraft:redstone_block",
+            "count": 40
+        },
+        {
+            "tag": "forge:obsidian",
+            "count": 320
+        },
+        {
+            "item": "minecraft:anvil",
+            "count": 40
+        },
+        {
+            "item": "thermal:ender_pearl_dust",
+            "count": 128
+        }
+    ],
+    "energy": 840000.0,
+    "showInJEI": true,
+    "result": {
+        "item": "quarryplus:enchantmover",
+        "count": 1
+    },
+    "conditions": [
+        {
+            "value": "EnchantMover",
+            "type": "quarryplus:machine_enabled"
+        }
+    ]
+}
