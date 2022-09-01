@@ -26,4 +26,24 @@ onEvent('worldgen.add', e => {
         ore.squared = true // Adds random value to X and Z between 0 and 16. Recommended to be true
         ore.chance = 3 // Spawns the ore every ~3 chunks. You usually combine this with clusterCount = 1 for rare ores
     })
+    e.addOre(ore => {
+        ore.block = 'allthemodium:molten_bluelava'
+        ore.spawnsIn.blacklist = false 
+        ore.spawnsIn.values = [
+            '#minecraft:base_stone_overworld',
+            'minecraft:basalt',
+            'minecraft:netherrack'
+        ]
+        ore.biomes.blacklist = false 
+        ore.biomes.values = [ 
+            '#nether'
+        ]
+        ore.clusterMinSize = 1
+        ore.clusterMaxSize = 12
+        ore.clusterCount = 3
+        ore.minHeight = 5
+        ore.maxHeight = 60
+        ore.squared = true // Adds random value to X and Z between 0 and 16. Recommended to be true
+        ore.chance = 5 // Spawns the ore every ~3 chunks. You usually combine this with clusterCount = 1 for rare ores
+    })
 })
