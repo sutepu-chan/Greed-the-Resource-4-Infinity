@@ -1,3 +1,0 @@
-onEvent('player.tick', e => {
-    
-})
