@@ -1,0 +1,126 @@
+{
+	id: "44E8390E46359698"
+	order_index: 0
+	title: "FoodDelight"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "abnormals_delight:seared_venison" }
+		{ item: "abnormals_delight:passionfruit_glazed_duck" }
+		{ item: "abnormals_delight:dune_platter" }
+		{ item: "abnormals_delight:duck_noodles" }
+		{ item: "abnormals_delight:perch_with_mushrooms" }
+		{ item: "abnormals_delight:pike_with_beetroot" }
+		{ item: "abnormals_delight:venison_with_bamboo_shoots" }
+		{ item: "abnormals_delight:maple_glazed_bacon" }
+		{ item: "abnormals_delight:escargot" }
+		{ item: "abnormals_delight:slabdish" }
+		{ item: "abnormals_delight:cherry_cream_soda" }
+		{ item: "abnormals_delight:passion_aloe_nectar" }
+		{ item: "abnormals_delight:pickerelweed_juice" }
+		{ item: "abnormals_delight:vanilla_cake_slice" }
+		{ item: "abnormals_delight:chocolate_cake_slice" }
+		{ item: "abnormals_delight:strawberry_cake_slice" }
+		{ item: "abnormals_delight:banana_cake_slice" }
+		{ item: "abnormals_delight:mint_cake_slice" }
+		{ item: "corn_delight:taco" }
+		{ item: "corn_delight:creamed_corn" }
+		{ item: "corn_delight:corn_soup" }
+		{ item: "corn_delight:creamy_corn_drink" }
+		{ item: "abnormals_delight:adzuki_cake_slice" }
+		{ item: "abnormals_delight:yucca_gateau_slice" }
+		{ item: "corn_delight:cornbread_stuffing" }
+		{ item: "farmersdelight:hot_cocoa" }
+		{ item: "farmersdelight:apple_cider" }
+		{ item: "farmersdelight:melon_juice" }
+		{ item: "farmersdelight:sweet_berry_cheesecake" }
+		{ item: "farmersdelight:chocolate_pie" }
+		{ item: "farmersdelight:cake_slice" }
+		{ item: "farmersdelight:apple_pie_slice" }
+		{ item: "farmersdelight:sweet_berry_cheesecake_slice" }
+		{ item: "farmersdelight:chocolate_pie_slice" }
+		{ item: "farmersdelight:sweet_berry_cookie" }
+		{ item: "farmersdelight:honey_cookie" }
+		{ item: "farmersdelight:melon_popsicle" }
+		{ item: "farmersdelight:fruit_salad" }
+		{ item: "farmersdelight:mixed_salad" }
+		{ item: "farmersdelight:nether_salad" }
+		{ item: "farmersdelight:barbecue_stick" }
+		{ item: "farmersdelight:egg_sandwich" }
+		{ item: "farmersdelight:chicken_sandwich" }
+		{ item: "farmersdelight:hamburger" }
+		{ item: "farmersdelight:bacon_sandwich" }
+		{ item: "farmersdelight:mutton_wrap" }
+		{ item: "farmersdelight:cabbage_rolls" }
+		{ item: "farmersdelight:cooked_rice" }
+		{ item: "farmersdelight:beef_stew" }
+		{ item: "farmersdelight:dumplings" }
+		{ item: "farmersdelight:stuffed_potato" }
+		{ item: "farmersdelight:chicken_soup" }
+		{ item: "farmersdelight:vegetable_soup" }
+		{ item: "farmersdelight:fish_stew" }
+		{ item: "farmersdelight:fried_rice" }
+		{ item: "farmersdelight:pumpkin_soup" }
+		{ item: "farmersdelight:baked_cod_stew" }
+		{ item: "farmersdelight:noodle_soup" }
+		{ item: "farmersdelight:bacon_and_eggs" }
+		{ item: "farmersdelight:pasta_with_meatballs" }
+		{ item: "farmersdelight:pasta_with_mutton_chop" }
+		{ item: "farmersdelight:roasted_mutton_chops" }
+		{ item: "farmersdelight:vegetable_noodles" }
+		{ item: "farmersdelight:steak_and_potatoes" }
+		{ item: "farmersdelight:ratatouille" }
+		{ item: "farmersdelight:squid_ink_pasta" }
+		{ item: "farmersdelight:grilled_salmon" }
+		{ item: "farmersdelight:roast_chicken_block" }
+		{ item: "farmersdelight:roast_chicken" }
+		{ item: "farmersdelight:stuffed_pumpkin_block" }
+		{ item: "farmersdelight:stuffed_pumpkin" }
+		{ item: "farmersdelight:honey_glazed_ham_block" }
+		{ item: "farmersdelight:honey_glazed_ham" }
+		{ item: "farmersdelight:shepherds_pie_block" }
+		{ item: "farmersdelight:shepherds_pie" }
+		{ item: "farmersdelight:dog_food" }
+		{ item: "farmersdelight:horse_feed" }
+		{ item: "simpledelights:strawberry_shortcake" }
+		{ item: "nethers_delight:hoglin_sirloin" }
+		{ item: "nethers_delight:strider_slice" }
+		{ item: "nethers_delight:ground_strider" }
+		{ item: "nethers_delight:warped_moldy_meat" }
+		{ item: "nethers_delight:grilled_strider" }
+		{ item: "nethers_delight:strider_moss_stew" }
+		{ item: "nethers_delight:hoglin_ear" }
+		{ item: "nethers_delight:roast_hoglin_snout" }
+		{ item: "nethers_delight:roast_hoglin_ham" }
+		{ item: "nethers_delight:roast_hoglin" }
+		{ item: "simpledelights:chocolate_strawberries" }
+		{ item: "simpledelights:plum_pudding" }
+		{ item: "simpledelights:plum_pork" }
+		{ item: "simpledelights:creamcicle" }
+		{ item: "simpledelights:mango_wings" }
+		{ item: "simpledelights:sweet_potato_casserole" }
+		{ item: "simpledelights:stir_fry" }
+		{ item: "simpledelights:dubu_jjigae" }
+		{ item: "simpledelights:mapo_tofu" }
+		{ item: "simpledelights:cholent" }
+		{ item: "simpledelights:pear_bisque" }
+		{ item: "simpledelights:orange_chicken" }
+		{ item: "simpledelights:orange_sorbet" }
+		{ item: "simpledelights:mango_sorbet" }
+		{ item: "simpledelights:summer_salad" }
+		{ item: "simplefarming:tofu_scramble" }
+		{ item: "simplefarming:veggie_burger" }
+		{ item: "simplefarming:vegetable_medley" }
+		{ item: "simplefarming:zucchini_bread" }
+		{ item: "simplefarming:strawberry_pie" }
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "fooddelight"
+	}
+}

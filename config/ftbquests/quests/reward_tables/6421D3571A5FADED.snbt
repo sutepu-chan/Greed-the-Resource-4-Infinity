@@ -1,0 +1,30 @@
+{
+	id: "6421D3571A5FADED"
+	order_index: 4
+	title: "Logs"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:oak_log", count: 64 }
+		{ item: "minecraft:spruce_log", count: 64 }
+		{ item: "minecraft:birch_log", count: 64 }
+		{ item: "minecraft:jungle_log", count: 64 }
+		{ item: "minecraft:acacia_log", count: 64 }
+		{ item: "minecraft:dark_oak_log", count: 64 }
+		{ item: "atmospheric:morado_log", count: 64 }
+		{ item: "atmospheric:yucca_log", count: 64 }
+		{ item: "atmospheric:kousa_log", count: 64 }
+		{ item: "atmospheric:aspen_log", count: 64 }
+		{ item: "atmospheric:watchful_aspen_log", count: 64 }
+		{ item: "atmospheric:crustose_log", count: 64 }
+		{ item: "atmospheric:grimwood_log", count: 64 }
+		{ item: "autumnity:maple_log", count: 64 }
+		{ item: "autumnity:sappy_maple_log", count: 64 }
+		{ item: "betterlands:juniper_log", count: 64 }
+		{ item: "environmental:willow_log", count: 64 }
+		{ item: "environmental:cherry_log", count: 64 }
+		{ item: "environmental:wisteria_log", count: 64 }
+		{ item: "upgrade_aquatic:driftwood_log", count: 64 }
+		{ item: "upgrade_aquatic:river_log", count: 64 }
+	]
+}

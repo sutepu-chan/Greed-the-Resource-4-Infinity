@@ -1,0 +1,64 @@
+{
+	id: "62D550BAC88F4E7D"
+	order_index: 1
+	title: "Resource"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:iron_ingot", count: 4 }
+		{ item: "minecraft:gold_ingot", count: 4 }
+		{ item: "alltheores:aluminum_ingot", count: 4 }
+		{ item: "alltheores:copper_ingot", count: 4 }
+		{ item: "alltheores:lead_ingot", count: 4 }
+		{ item: "alltheores:nickel_ingot", count: 4 }
+		{ item: "alltheores:osmium_ingot", count: 4 }
+		{ item: "alltheores:platinum_ingot", count: 4 }
+		{ item: "alltheores:silver_ingot", count: 4 }
+		{ item: "alltheores:tin_ingot", count: 4 }
+		{ item: "alltheores:uranium_ingot", count: 4 }
+		{ item: "alltheores:zinc_ingot", count: 4 }
+		{ item: "biggerreactors:graphite_ingot", count: 4 }
+		{ item: "biggerreactors:cyanite_ingot", count: 2 }
+		{ item: "biggerreactors:blutonium_ingot" }
+		{ item: "draconicevolution:draconium_ingot", count: 2 }
+		{ item: "extendedcrafting:black_iron_ingot", count: 4 }
+		{ item: "extendedcrafting:redstone_ingot", count: 4 }
+		{ item: "extendedcrafting:ender_ingot", count: 2 }
+		{ item: "extendedcrafting:enhanced_ender_ingot" }
+		{ item: "extendedcrafting:crystaltine_ingot" }
+		{ item: "mekanism:ingot_refined_obsidian", count: 3 }
+		{ item: "mekanism:ingot_refined_glowstone", count: 3 }
+		{ item: "mekanism:ingot_steel", count: 3 }
+		{ item: "mysticalagriculture:prosperity_ingot", count: 4 }
+		{ item: "thermal:bronze_ingot", count: 2 }
+		{ item: "thermal:electrum_ingot", count: 2 }
+		{ item: "thermal:invar_ingot", count: 2 }
+		{ item: "thermal:constantan_ingot", count: 2 }
+		{ item: "thermal:signalum_ingot", count: 2 }
+		{ item: "thermal:lumium_ingot", count: 2 }
+		{ item: "thermal:enderium_ingot", count: 2 }
+		{ item: "tconstruct:cobalt_ingot", count: 2 }
+		{ item: "tconstruct:tinkers_bronze_ingot", count: 2 }
+		{ item: "tconstruct:rose_gold_ingot", count: 2 }
+		{ item: "minecraft:coal", count: 4 }
+		{ item: "minecraft:diamond" }
+		{ item: "minecraft:netherite_scrap" }
+		{ item: "minecraft:redstone", count: 4 }
+		{ item: "minecraft:lapis_lazuli", count: 4 }
+		{ item: "minecraft:emerald", count: 2 }
+		{ item: "minecraft:quartz", count: 4 }
+		{ item: "thermal:sulfur", count: 4 }
+		{ item: "thermal:niter", count: 4 }
+		{ item: "minecraft:prismarine_crystals", count: 2 }
+		{ item: "mekanism:fluorite_gem", count: 4 }
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "resource"
+	}
+}

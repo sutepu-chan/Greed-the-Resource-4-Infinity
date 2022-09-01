@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.silver",
+  "colors": [
+    "c7c8c9",
+    "535454"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/silver"
+  }
+}

@@ -1,0 +1,13 @@
+{
+	id: "3769E4C5836DBAC0"
+	order_index: 5
+	title: "BookOfBinding"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "occultism:book_of_binding_foliot" }
+		{ item: "occultism:book_of_binding_djinni" }
+		{ item: "occultism:book_of_binding_afrit" }
+		{ item: "occultism:book_of_binding_marid" }
+	]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "neutronium",
+    "disable": false,
+    "tier": 9,
+    "color": "4f4f4f",
+    "armorPoints": 800,
+    "enchantability": 500,
+    "craftingMaterial": "tag:forge:ingots/neutronium",
+    "rarity": 0,
+    "capacity": 568000000,
+    "usage": 5000,
+    "speedVertical": 1.8,
+    "accelVertical": 0.4,
+    "speedSideways": 0.45,
+    "speedHoverDescend": 0.90,
+    "speedHover": 0.0,
+    "sprintSpeedMulti": 4.0,
+    "sprintFuelMulti": 6.5,
+    "creative": false,
+    "sprintSpeedMultiVertical": 1.4,
+    "toughness": 4.0,
+    "knockbackResistance": 2.0
+}

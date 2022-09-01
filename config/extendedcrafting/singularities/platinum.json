@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.platinum",
+  "colors": [
+    "ac9f8a",
+    "ac9f8a"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/platinum"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Soul Sand",
+  "colors": [
+    "413128",
+    "221a15"
+  ],
+  "ingredient": {
+    "tag": "chipped:soul_sand"
+  },
+  "materialCount": 15000
+}

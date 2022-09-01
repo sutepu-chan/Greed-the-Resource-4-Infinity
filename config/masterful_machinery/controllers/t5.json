@@ -1,0 +1,24 @@
+{
+    "controllerId": "t5",
+    "name": "Tier 5 Generator",
+    "textureOverride": "allthemodium:block/vibranium_block",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "T5 Generator Item",
+            "id": "t5_item",
+            "data": {
+                "rows": 3,
+                "columns": 3
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "T5 Generator Energy",
+            "id": "t5_energy",
+            "data": {
+                "capacity": 2500000
+            }
+        }
+    ]
+}

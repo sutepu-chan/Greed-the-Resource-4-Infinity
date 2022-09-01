@@ -1,0 +1,10 @@
+{
+  "name": "Quartz",
+  "colors": [
+    "d9d5d0",
+    "5e5c5a"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/quartz"
+  }
+}

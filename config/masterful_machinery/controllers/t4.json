@@ -1,0 +1,24 @@
+{
+    "controllerId": "t4",
+    "name": "Tier 4 Generator",
+    "textureOverride": "allthemodium:block/allthemodium_block",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "T4 Generator Item",
+            "id": "t4_item",
+            "data": {
+                "rows": 3,
+                "columns": 3
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "T4 Generator Energy",
+            "id": "t4_energy",
+            "data": {
+                "capacity": 2500000
+            }
+        }
+    ]
+}

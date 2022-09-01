@@ -22,13 +22,13 @@
 		# The spawn rate for small bridges.
 		# Default: 25
 		#Range: 1 ~ 100
-		"Small Bridge Spawn Rate" = 25
+		"Small Bridge Spawn Rate" = 50
 		# The spawn rate for medium bridges.
 		# Default: 6
 		#Range: 1 ~ 100
-		"Medium Bridge Spawn Rate" = 6
+		"Medium Bridge Spawn Rate" = 12
 		# The spawn rate for large bridges.
 		# Default: 2
 		#Range: 1 ~ 100
-		"Large Bridge Spawn Rate" = 2
+		"Large Bridge Spawn Rate" = 4
 

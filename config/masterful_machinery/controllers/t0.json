@@ -1,0 +1,24 @@
+{
+    "controllerId": "t0",
+    "name": "Tier 0 Generator",
+    "textureOverride": "minecraft:block/iron_block",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "T0 Generator Item",
+            "id": "t0_item",
+            "data": {
+                "rows": 1,
+                "columns": 1
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "T0 Generator Energy",
+            "id": "t0_energy",
+            "data": {
+                "capacity": 2500000
+            }
+        }
+    ]
+}

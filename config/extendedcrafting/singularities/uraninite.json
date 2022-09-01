@@ -1,0 +1,10 @@
+{
+  "name": "Uraninite",
+  "colors": [
+    "009f34",
+    "00491c"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/uraninite"
+  }
+}

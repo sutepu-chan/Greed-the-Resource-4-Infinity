@@ -27,7 +27,7 @@
 		Explode = false
 		#Sets Wildfire Fireball explosion radius
 		#Range: 0.1 ~ 4.0
-		"Explosion Radius" = 0.5
+		"Explosion Radius" = 1.0
 
 #Great Hunger
 [hunger]
@@ -35,7 +35,7 @@
 	#Range: 1 ~ 100
 	"Spawn Weight" = 5
 	#Range: 1.0 ~ Infinity
-	"Max Health" = 20.0
+	"Max Health" = 40.0
 	"Maximum Stored Enchantments" = 5
 
 #Monster of the Ocean Depths
@@ -44,5 +44,5 @@
 	#Range: 1 ~ 100
 	"Spawn Weight" = 2
 	#Range: 1.0 ~ Infinity
-	"Max Health" = 40.0
+	"Max Health" = 60.0
 

@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.redstone",
+  "colors": [
+    "cd1d07",
+    "5b0b00"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/redstone"
+  }
+}

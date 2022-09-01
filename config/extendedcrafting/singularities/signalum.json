@@ -1,0 +1,10 @@
+{
+  "name": "Signalum",
+  "colors": [
+    "d93507",
+    "8a0f00"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/signalum"
+  }
+}

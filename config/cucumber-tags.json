@@ -30,6 +30,6 @@
   "forge:ingots/aluminum": "alltheores:aluminum_ingot",
   "forge:ingots/signalum": "thermal:signalum_ingot",
   "forge:ingots/brass": "null",
-  "forge:ingots/titanium": "better_diving:titanium_ingot",
+  "forge:ingots/titanium": "chemlib:ingot_titanium",
   "forge:rubber": "null"
 }

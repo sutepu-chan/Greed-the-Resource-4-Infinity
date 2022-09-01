@@ -1,0 +1,10 @@
+{
+    "name": "Vibranium",
+    "colors": [
+        "3cb694",
+        "0c4739"
+    ],
+    "ingredient": {
+        "item": "allthemodium:vibranium_block"
+    }
+}

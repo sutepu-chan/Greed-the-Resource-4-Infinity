@@ -7,11 +7,11 @@
 	# The number of upgrades the aggregator can hold.
 	# By default, upgrades will speed up the machine and increase the energy buffer at the cost of a higher energy consumption.
 	#Range: 0 ~ 64
-	upgrade_slots = 8
+	upgrade_slots = 32
 	# The amount of energy the aggregator can hold.
 	# The energy buffer is used to store energy before it is used.
 	#Range: > 0
-	energy_buffer_base = 100000
+	energy_buffer_base = 1000000
 	# The additional amount of energy the aggregator can hold per upgrade.
 	# Each upgrade increases the energy buffer by this amount.
 	# Setting this to 0 will disable the energy buffer upgrade.
@@ -23,7 +23,7 @@
 	# All recipes from the mod itself have an own energy usage value and this setting won't have any effect on them.
 	# This is only useful for custom recipes e.g. for modpack makers.
 	#Range: > 0
-	energy_usage_base = 300
+	energy_usage_base = 800
 	# The energy multiplier the aggregator uses per tick when upgraded.
 	# Each upgrade multiplies the energy usage by this value.
 	# Setting this to 1 will disable the energy usage multiplier.
@@ -49,11 +49,11 @@
 	# The number of upgrades the centrifuge can hold.
 	# By default, upgrades will speed up the machine and increase the energy buffer at the cost of a higher energy consumption.
 	#Range: 0 ~ 64
-	upgrade_slots = 8
+	upgrade_slots = 32
 	# The amount of energy the centrifuge can hold.
 	# The energy buffer is used to store energy before it is used.
 	#Range: > 0
-	energy_buffer_base = 100000
+	energy_buffer_base = 1000000
 	# The additional amount of energy the centrifuge can hold per upgrade.
 	# Each upgrade increases the energy buffer by this amount.
 	# Setting this to 0 will disable the energy buffer upgrade.
@@ -65,7 +65,7 @@
 	# All recipes from the mod itself have an own energy usage value and this setting won't have any effect on them.
 	# This is only useful for custom recipes e.g. for modpack makers.
 	#Range: > 0
-	energy_usage_base = 300
+	energy_usage_base = 800
 	# The energy multiplier the centrifuge uses per tick when upgraded.
 	# Each upgrade multiplies the energy usage by this value.
 	# Setting this to 1 will disable the energy usage multiplier.
@@ -91,11 +91,11 @@
 	# The number of upgrades the energizer can hold.
 	# By default, upgrades will speed up the machine and increase the energy buffer at the cost of a higher energy consumption.
 	#Range: 0 ~ 64
-	upgrade_slots = 8
+	upgrade_slots = 32
 	# The amount of energy the energizer can hold.
 	# The energy buffer is used to store energy before it is used.
 	#Range: > 0
-	energy_buffer_base = 100000
+	energy_buffer_base = 1000000
 	# The additional amount of energy the energizer can hold per upgrade.
 	# Each upgrade increases the energy buffer by this amount.
 	# Setting this to 0 will disable the energy buffer upgrade.
@@ -107,7 +107,7 @@
 	# All recipes from the mod itself have an own energy usage value and this setting won't have any effect on them.
 	# This is only useful for custom recipes e.g. for modpack makers.
 	#Range: > 0
-	energy_usage_base = 300
+	energy_usage_base = 800
 	# The energy multiplier the energizer uses per tick when upgraded.
 	# Each upgrade multiplies the energy usage by this value.
 	# Setting this to 1 will disable the energy usage multiplier.
@@ -133,11 +133,11 @@
 	# The number of upgrades the etcher can hold.
 	# By default, upgrades will speed up the machine and increase the energy buffer at the cost of a higher energy consumption.
 	#Range: 0 ~ 64
-	upgrade_slots = 8
+	upgrade_slots = 32
 	# The amount of energy the etcher can hold.
 	# The energy buffer is used to store energy before it is used.
 	#Range: > 0
-	energy_buffer_base = 100000
+	energy_buffer_base = 1000000
 	# The additional amount of energy the etcher can hold per upgrade.
 	# Each upgrade increases the energy buffer by this amount.
 	# Setting this to 0 will disable the energy buffer upgrade.
@@ -149,7 +149,7 @@
 	# All recipes from the mod itself have an own energy usage value and this setting won't have any effect on them.
 	# This is only useful for custom recipes e.g. for modpack makers.
 	#Range: > 0
-	energy_usage_base = 300
+	energy_usage_base = 800
 	# The energy multiplier the etcher uses per tick when upgraded.
 	# Each upgrade multiplies the energy usage by this value.
 	# Setting this to 1 will disable the energy usage multiplier.

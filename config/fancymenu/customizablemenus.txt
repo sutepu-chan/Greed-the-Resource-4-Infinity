@@ -1,0 +1,8 @@
+type = customizablemenus
+
+com.bisecthosting.mods.bhmenu.screens.BHOrderScreen {
+}
+
+net.minecraft.client.gui.screen.MainMenuScreen {
+}
+

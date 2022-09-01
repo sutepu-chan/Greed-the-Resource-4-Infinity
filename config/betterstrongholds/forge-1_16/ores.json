@@ -7,7 +7,17 @@
       "minecraft:gold_ore": 0.2,
       "minecraft:lapis_ore": 0.15,
       "minecraft:diamond_ore": 0.05,
-      "minecraft:coal_ore": 0.2
+      "minecraft:coal_ore": 0.2,
+      "alltheores:ore_aluminum": 0.2,
+      "alltheores:ore_copper": 0.25,
+      "alltheores:ore_lead": 0.2,
+      "alltheores:ore_nickel": 0.15,
+      "alltheores:ore_osmium": 0.15,
+      "alltheores:ore_platinum": 0.05,
+      "alltheores:ore_silver": 0.1,
+      "alltheores:ore_tin": 0.2,
+      "alltheores:ore_uranium": 0.2,
+      "alltheores:ore_zinc": 0.2
     },
     "defaultBlock": "minecraft:coal_ore"
   }

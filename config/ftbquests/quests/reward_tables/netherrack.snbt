@@ -1,0 +1,8 @@
+{
+	id: "1B634D0419A0E077"
+	order_index: 2
+	title: "Netherrack"
+	icon: "minecraft:netherrack"
+	loot_size: 1
+	rewards: [{ item: "minecraft:netherrack" }]
+}

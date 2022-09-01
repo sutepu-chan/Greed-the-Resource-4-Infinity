@@ -1,0 +1,11 @@
+{
+  "name": "Shulker",
+  "colors": [
+    "956895",
+    "845b84"
+  ],
+  "ingredient": {
+    "item": "minecraft:shulker_shell"
+  },
+  "materialCount": 3000
+}

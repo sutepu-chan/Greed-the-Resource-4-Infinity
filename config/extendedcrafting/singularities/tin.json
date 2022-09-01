@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.tin",
+  "colors": [
+    "70a2b8",
+    "324852"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/tin"
+  }
+}

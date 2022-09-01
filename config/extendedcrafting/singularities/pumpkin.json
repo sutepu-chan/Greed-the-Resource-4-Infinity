@@ -1,0 +1,11 @@
+{
+  "name": "Pumpkin",
+  "colors": [
+    "cf9139",
+    "9a5e14"
+  ],
+  "ingredient": {
+    "tag": "chipped:pumpkin"
+  },
+  "materialCount": 15000
+}

@@ -1,0 +1,24 @@
+{
+    "controllerId": "t2",
+    "name": "Tier 2 Generator",
+    "textureOverride": "minecraft:block/diamond_block",
+    "ports": [
+        {
+            "type": "masterfulmachinery:items",
+            "name": "T2 Generator Item",
+            "id": "t2_item",
+            "data": {
+                "rows": 2,
+                "columns": 2
+            }
+        },
+        {
+            "type": "masterfulmachinery:energy",
+            "name": "T2 Generator Energy",
+            "id": "t2_energy",
+            "data": {
+                "capacity": 2500000
+            }
+        }
+    ]
+}

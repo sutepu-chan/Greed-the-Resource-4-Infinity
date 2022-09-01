@@ -1,0 +1,10 @@
+{
+    "name": "Unobtainium",
+    "colors": [
+        "c253d2",
+        "3d2687"
+    ],
+    "ingredient": {
+        "item": "allthemodium:unobtainium_block"
+    }
+}

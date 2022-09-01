@@ -1,0 +1,10 @@
+{
+  "name": "Zinc",
+  "colors": [
+    "9dafb5",
+    "8292a1"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/zinc"
+  }
+}
