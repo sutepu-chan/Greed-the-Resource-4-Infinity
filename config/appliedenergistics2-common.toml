@@ -112,17 +112,17 @@
 
 # Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.
 [tickRates]
-	InterfaceMin = 5
+	InterfaceMin = 1
 	InterfaceMax = 120
-	ImportBusMin = 5
+	ImportBusMin = 1
 	ImportBusMax = 40
-	FluidImportBusMin = 5
+	FluidImportBusMin = 1
 	FluidImportBusMax = 40
-	ExportBusMin = 5
+	ExportBusMin = 1
 	ExportBusMax = 60
-	FluidExportBusMin = 5
+	FluidExportBusMin = 1
 	FluidExportBusMax = 60
-	AnnihilationPlaneMin = 2
+	AnnihilationPlaneMin = 5
 	AnnihilationPlaneMax = 120
 	METunnelMin = 5
 	METunnelMax = 20
