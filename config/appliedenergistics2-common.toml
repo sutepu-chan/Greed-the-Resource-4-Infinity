@@ -63,7 +63,7 @@
 	formationPlaneEntityLimit = 128
 
 [craftingCPU]
-	craftingCalculationTimePerTick = 5
+	craftingCalculationTimePerTick = 10
 
 [spatialio]
 	spatialPowerMultiplier = 1250.0
