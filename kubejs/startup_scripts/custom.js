@@ -41,6 +41,7 @@ onEvent('block.registry', e => {
         .harvestTool('pickaxe', 5)
         .requiresTool(true)
 })
+/*
 onEvent('fluid.registry', e => {
     e.create('blazing_pyrotheum')
         .displayName('Blazing Pyrotheum')
@@ -55,3 +56,4 @@ onEvent('fluid.registry', e => {
         .bucketColor(0x30b8fc)
         .luminosity(1)
 })
+*/
