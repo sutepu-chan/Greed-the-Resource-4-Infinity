@@ -6,7 +6,7 @@
 	"gui_x_offset": 0,
 	"gui_y_offset": 0.5,
 	"gui_z_offset": 0,
-	"sim_cost": 6200,
+	"sim_cost": 10000,
 	"input": {
 		"item": "hostilenetworks:empty_prediction"
 	},
