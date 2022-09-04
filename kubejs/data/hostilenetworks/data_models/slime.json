@@ -1,5 +1,10 @@
 {
 	"type": "minecraft:slime",
+	"subtypes": [
+		"tconstruct:earth_slime",
+		"tconstruct:ender_slime",
+		"tconstruct:sky_slime"
+	],
 	"name": "entity.minecraft.slime",
 	"name_color": "0x7BCA62",
 	"gui_scale": 2,
@@ -21,7 +26,33 @@
 		},
 		{
 			"item": "minecraft:slime_block",
-			"count": 4
+			"count": 16
+		},
+		{
+			"item": "tconstruct:sky_slime",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:ender_slime",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:earth_congealed_slime",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:sky_congealed_slime",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:ender_congealed_slime",
+			"count": 16
 		}
-	]
+	],
+    "tier_data": [          
+      25,50,100,200
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

@@ -17,23 +17,37 @@
 	"fabricator_drops": [
 		{
 			"item": "minecraft:nether_star",
-			"count": 2
+			"count": 16
 		},
         {
             "item": "mysticalagradditions:withering_soul",
-            "count": 4
-        },
-        {
-            "item": "minecraft:wither_rose",
             "count": 16
         },
         {
-            "item": "minecraft:wither_skeleton_skull",
-            "count": 2
+            "item": "minecraft:wither_rose",
+            "count": 64
         },
         {
-            "item": "mysticalagradditions:insanium_essence",
+            "item": "industrialforegoing:ether_gas_bucket",
             "count": 1
+        },
+        {
+            "item": "industrialforegoing:ether_gas_bucket",
+            "count": 1
+        },
+        {
+            "item": "mysticalagriculture:soulium_ingot",
+            "count": 32
+        },
+        {
+            "item": "mysticalagriculture:prosperity_shard",
+            "count": 64
         }
-	]
+	],
+    "tier_data": [          
+      3,6,12,24
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:evoker",
+    "name": "entity.minecraft.evoker",
+    "name_color": "0xCEC987",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2500,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.evoker",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:emerald",
+            "count": 4
+        },
+        {
+            "item": "minecraft:totem_of_undying",
+            "count": 1
+        },
+        {
+            "item": "occultism:otherworld_log",
+            "count": 16
+        },
+        {
+            "item": "occultism:otherstone",
+            "count": 16
+        },
+        {
+            "item": "occultism:spirit_attuned_gem",
+            "count": 8
+        }
+    ],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
+}

@@ -17,11 +17,25 @@
 	"fabricator_drops": [
 		{
 			"item": "minecraft:coal",
-			"count": 32
+			"count": 64
 		},
 		{
 			"item": "minecraft:wither_skeleton_skull",
-			"count": 3
+			"count": 12
+		},
+		{
+			"item": "witherproofed:reinforced_alloy",
+			"count": 4
+		},
+		{
+			"item": "tconstruct:necrotic_bone",
+			"count": 16
 		}
-	]
+	],
+    "tier_data": [          
+      8,16,32,64
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

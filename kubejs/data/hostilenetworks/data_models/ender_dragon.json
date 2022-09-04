@@ -17,23 +17,15 @@
 	"fabricator_drops": [
 		{
 			"item": "minecraft:dragon_breath",
-			"count": 16
-		},
-		{
-			"item": "minecraft:dragon_egg",
-			"count": 1
+			"count": 64
 		},
         {
             "item": "mysticalagradditions:dragon_scale",
             "count": 16
         },
-        {
-            "item": "draconicevolution:draconium_dust",
-            "count": 32
-        },
-        {
-            "item": "mysticalagradditions:insanium_essence",
-            "count": 1
+		{
+            "item": "tconstruct:dragon_scale",
+            "count": 16
         },
 		{
 			"item": "draconicevolution:dragon_heart",
@@ -41,7 +33,45 @@
 		},
 		{
 			"item": "minecraft:dragon_head",
-			"count": 3
+			"count": 8
+		},
+		{
+			"item": "dragonmounts:aether_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:ender_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:fire_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:forest_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:ghost_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:ice_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:nether_dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "dragonmounts:water_dragon_egg",
+			"count": 1
 		}
-	]
+	],
+    "tier_data": [          
+      3,6,12,24
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

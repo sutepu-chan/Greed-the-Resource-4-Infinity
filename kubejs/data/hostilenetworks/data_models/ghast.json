@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:ghast",
+    "name": "entity.minecraft.ghast",
+    "name_color": "0xF0F0F0",
+    "gui_scale": 0.25,
+    "gui_x_offset": 0,
+    "gui_y_offset": 4,
+    "gui_z_offset": 0,
+    "sim_cost": 3500,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.ghast",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:ghast_tear",
+            "count": 32
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 64
+        },
+        {
+            "item": "witherproofed:ghostly_essence",
+            "count": 2
+        },
+        {
+            "item": "minecraft:crying_obsidian",
+            "count": 24
+        }
+    ],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
+}

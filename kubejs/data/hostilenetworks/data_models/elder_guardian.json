@@ -17,27 +17,37 @@
 	"fabricator_drops": [
 		{
 			"item": "minecraft:heart_of_the_sea",
-			"count": 1
+			"count": 4
 		},
 		{
 			"item": "minecraft:nautilus_shell",
-			"count": 1
+			"count": 4
 		},
 		{
 			"item": "minecraft:prismarine_crystals",
-			"count": 12
+			"count": 32
 		},
 		{
 			"item": "minecraft:prismarine_shard",
-			"count": 8
+			"count": 32
 		},
 		{
 			"item": "minecraft:wet_sponge",
-			"count": 1
+			"count": 4
 		},
 		{
 			"item": "progressivebosses:elder_guardian_spike",
-			"count": 4
+			"count": 8
+		},
+		{
+			"item": "occultism:iesnium_ingot",
+			"count": 2
 		}
-	]
+	],
+    "tier_data": [          
+      3,6,12,24
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:zombified_piglin",
+	"name": "entity.minecraft.zombified_piglin",
+	"name_color": "0x3B992F",
+	"gui_scale": 1,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 3500,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:nether_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.zombified_piglin",
+	"fabricator_drops": [
+		{
+			"item": "piglin_expansion:piglin_divinity_essence",
+			"count": 16
+		}
+	],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
+}

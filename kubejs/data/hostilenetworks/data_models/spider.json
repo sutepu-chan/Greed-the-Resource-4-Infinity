@@ -1,0 +1,49 @@
+{
+	"type": "minecraft:spider",
+	"name": "entity.minecraft.spider",
+	"name_color": "0x322B26",
+	"gui_scale": 1,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 2000,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.spider",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:string",
+			"count": 64
+		},
+		{
+			"item": "minecraft:spider_eye",
+			"count": 64
+		},
+		{
+			"item": "minecraft:cobweb",
+			"count": 32
+		},
+		{
+			"item": "tconstruct:cave_spider_head",
+			"count": 4
+		},
+		{
+			"item": "tconstruct:spider_head",
+			"count": 4
+		},
+		{
+			"item": "extendedmushrooms:poisonous_mushroom",
+			"count": 32
+		}
+	],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
+}

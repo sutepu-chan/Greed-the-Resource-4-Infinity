@@ -1,0 +1,65 @@
+{
+	"type": "minecraft:guardian",
+	"name": "entity.minecraft.guardian",
+	"name_color": "0x6A9583",
+	"gui_scale": 1,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 2500,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.guardian",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:sea_lantern",
+			"count": 32
+		},
+		{
+			"item": "minecraft:prismarine",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:yellow_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:orange_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:red_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:white_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:pink_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:purple_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:blue_jelly_torch",
+			"count": 32
+		},
+		{
+			"item": "upgrade_aquatic:green_jelly_torch",
+			"count": 32
+		}
+	],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
+}

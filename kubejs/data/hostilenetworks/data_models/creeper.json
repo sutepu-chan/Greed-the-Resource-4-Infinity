@@ -17,11 +17,25 @@
 	"fabricator_drops": [
 		{
 			"item": "minecraft:gunpowder",
-			"count": 16
+			"count": 63
+		},
+		{
+			"item": "thermal:gunpowder_block",
+			"count": 7
 		},
 		{
 			"item": "minecraft:creeper_head",
-			"count": 4
+			"count": 8
+		},
+		{
+			"item": "minecraft:tnt",
+			"count": 64
 		}
-	]
+	],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

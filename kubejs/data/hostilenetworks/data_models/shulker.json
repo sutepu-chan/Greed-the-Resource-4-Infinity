@@ -17,11 +17,25 @@
 	"fabricator_drops": [
 		{
 			"item": "minecraft:shulker_shell",
-			"count": 6
+			"count": 32
 		},
 		{
 			"item": "minecraft:end_rod",
-			"count": 4
+			"count": 64
+		},
+		{
+			"item": "minecraft:chorus_flower",
+			"count": 8
+		},
+		{
+			"item": "minecraft:chorus_fruit",
+			"count": 64
 		}
-	]
+	],
+    "tier_data": [          
+      8,16,32,64
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }

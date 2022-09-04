@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:magma_cube",
+	"name": "entity.minecraft.magma_cube",
+	"name_color": "0xCC2200",
+	"gui_scale": 2,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 3500,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:nether_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.magma_cube",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:magma_cream",
+			"count": 64
+		},
+		{
+			"item": "minecraft:magma_block",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:queens_slime_ingot",
+			"count": 8
+		},
+		{
+			"item": "tconstruct:magma_cake",
+			"count": 1
+		},
+		{
+			"item": "tconstruct:lavawood",
+			"count": 64
+		}
+	],
+    "tier_data": [          
+      12,24,48,96
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
+}

@@ -1,27 +1,41 @@
 {
-  "type": "minecraft:blaze",
-  "name": "entity.minecraft.blaze",
-  "name_color": "0xFFD528",
-  "gui_scale": 1,
-  "gui_x_offset": 0,
-  "gui_y_offset": 0,
-  "gui_z_offset": 0,
-  "sim_cost": 3500,
-  "input": {
-    "item": "hostilenetworks:empty_prediction"
-  },
-  "base_drop": {
-    "item": "hostilenetworks:nether_prediction"
-  },
-  "trivia": "hostilenetworks.trivia.blaze",
-  "fabricator_drops": [
-    {
-      "item": "minecraft:blaze_rod",
-      "count": 10
+    "type": "minecraft:blaze",
+    "name": "entity.minecraft.blaze",
+    "name_color": "0xFFD528",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 3500,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
     },
-    {
-      "item": "thermal:sulfur",
-      "count": 16
-    }
-  ]
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.blaze",
+    "fabricator_drops": [
+        {
+            "item": "allthecompressed:blaze_rod_block",
+            "count": 7
+        },
+        {
+            "item": "thermal:sulfur",
+            "count": 32
+        },
+        {
+            "item": "minecraft:blaze_rod",
+            "count": 63
+        },
+        {
+            "item": "tconstruct:blazing_blood_bucket",
+            "count": 1
+        }
+    ],
+    "tier_data": [          
+      10,20,40,80
+    ],                     
+    "data_per_kill": [     
+      1,1,1,1
+    ]
 }
