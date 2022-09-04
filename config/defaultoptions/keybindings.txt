@@ -77,7 +77,7 @@ key_keybind.advancedperipherals.description:key.keyboard.left.control
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_placebo.toggleWings:key.keyboard.unknown
 key_placebo.toggleTrails:key.keyboard.unknown
-key_key.dankstorage.construction:key.keyboard.i
+key_key.dankstorage.construction:key.keyboard.keypad.7
 key_key.buildinggadgets.settings_menu:key.keyboard.g
 key_key.buildinggadgets.range:key.keyboard.unknown
 key_key.buildinggadgets.undo:key.keyboard.unknown
