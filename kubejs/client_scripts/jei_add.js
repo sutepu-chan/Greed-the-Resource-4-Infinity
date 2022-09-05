@@ -131,7 +131,6 @@ onEvent('jei.add.items', e => {
         'chemlib:ingot_vanadium',
         'chemlib:ingot_tungsten',
         'chemlib:ingot_titanium',
-        'chemlib:ingot_thorium',
         'chemlib:ingot_neodymium',
         'chemlib:ingot_magnesium',
         'chemlib:ingot_lithium',

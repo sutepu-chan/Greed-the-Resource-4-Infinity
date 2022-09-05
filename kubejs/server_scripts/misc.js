@@ -208,7 +208,6 @@ onEvent('recipes', e => {
         'francium',
         'radium',
         'actinium',
-        'thorium',
         'protactinium',
         'uranium',
         'neptunium',
