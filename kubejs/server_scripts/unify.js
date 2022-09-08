@@ -439,7 +439,7 @@ onEvent('recipes', e => {
     miscUnify('mekanism:dust_obsidian', '#forge:dusts/obsidian', ['mekanism:dust_obsidian', 'occultism:obsidian_dust'])
     miscUnify('thermal:sulfur_dust', '#forge:dusts/sulfur', ['thermal:sulfur_dust', 'eidolon:sulfur'])
     miscUnify('thermal:charcoal_block', '#forge:storage_blocks/charcoal', ['mekanism:block_charcoal', 'thermal:charcoal_block'])
-    miscUnify('mekanism:dust_coal', 'lazierae2:coal_dust', ['lazierae2:coal_dust', 'mekanism:dust_coal'])
+    miscUnify('mekanism:dust_coal', '#forge:dusts/coal', ['lazierae2:coal_dust', 'mekanism:dust_coal'])
     miscUnify('boss_tools:iron_stick', '#forge:rods/iron', ['buildersaddition:iron_rod', 'boss_tools:iron_stick'])
     modifyShaped(e, 'boss_tools:iron_stick', 4, ['I', 'I'], {
         I: '#forge:ingots/iron'
