@@ -7,7 +7,11 @@ onEvent('recipes', e => {
         'botanypots:hopper_botany_pot',
         'botanypotstiers:elite_hopper_botany_pot',
         'botanypotstiers:ultra_hopper_botany_pot',
-        'botanypotstiers:creative_hopper_botany_pot'
+        'botanypotstiers:creative_hopper_botany_pot',
+        /botanypots:.+_botany_pot/,
+        /botanypots:hopper_.+_botany_pot/,
+        /botanypotstiers:.+_botany_pot/,
+        /botanypotstiers:.+_hopper_.+_botany_pot/
     ])
     let potTiers = [
         'elite',
