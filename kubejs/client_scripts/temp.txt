@@ -68,7 +68,6 @@
 'francium',
 'radium',
 'actinium',
-'thorium',
 'protactinium',
 'uranium',
 'neptunium',

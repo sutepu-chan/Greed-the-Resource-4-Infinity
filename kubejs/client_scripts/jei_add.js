@@ -136,6 +136,7 @@ onEvent('jei.add.items', e => {
         'chemlib:ingot_lithium',
         'chemlib:ingot_germanium',
         'chemlib:ingot_barium',
-        'chemlib:ingot_chromium'
+        'chemlib:ingot_chromium',
+        'chemlib:ingot_thorium'
     ]).forEach(item => e.add(item))
 })
