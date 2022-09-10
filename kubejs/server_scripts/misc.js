@@ -214,7 +214,7 @@ onEvent('recipes', e => {
     })
 
     //===== minecolonies =====//
-    e.add('structurize:caliper', [' G ', 'S S', 'I I'], {
+    e.shaped('structurize:caliper', [' G ', 'S S', 'I I'], {
         I: 'minecraft:iron_ingot',
         G: '#forge:gears/iron',
         S: '#forge:rods/wooden'
