@@ -79,6 +79,17 @@ onEvent('jei.information', e => {
     })
     //===== avaritia =====//
     e.add('upgradednetherite_creative:creative_upgraded_netherite_pickaxe', 'Bedrock breakable! Hold shift to break an 11x11 area.')
+    //===== ender storage =====//
+    e.add('enderstorage:ender_chest', [
+        'Cross-dimensional wireless item transfer to any chest on the same channel.',
+        'Use dye on the colored bars to set the channel.',
+        'Use a diamond on the latch to switch to private channel.',
+    ])
+    e.add('enderstorage:ender_tank', [
+        'Cross-dimensional wireless fluid transfer to any tank on the same channel.',
+        'Use dye on the colored bars to set the channel.',
+        'Use a diamond on the latch to switch to private channel.',
+    ])
     //===== misc =====//
     e.add('akashictome:tome', 'RC to open the book and choose the desired guide book. LC in the air will return to akashic tome.')
 })
