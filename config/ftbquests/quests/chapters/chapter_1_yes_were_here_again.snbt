@@ -581,42 +581,9 @@
 			]
 		}
 		{
-			title: "Chiselling your base."
-			x: 9.5d
-			y: -4.0d
-			description: [
-				"Chisel is a powerful mod that provides multiple variables for many blocks. It allows you to turn your base better. No more repeated and dull blocks!"
-				"{image:kubejs:textures/quest/chapter1/chapter1_chisel.png width:176 height:100 align:1}"
-			]
-			dependencies: ["78875831C6026B1E"]
-			id: "7FAE52E8C9D39134"
-			tasks: [{
-				id: "48C589A65714F072"
-				type: "item"
-				item: {
-					id: "chisel:iron_chisel"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "6A279D81391D2DD7"
-				type: "item"
-				item: {
-					id: "ftbquests:lootcrate"
-					Count: 1b
-					tag: {
-						type: "fooddelight"
-					}
-				}
-			}]
-		}
-		{
 			title: "Buidler's Wand"
-			x: 9.0d
-			y: -5.0d
+			x: 10.0d
+			y: -4.0d
 			description: ["Construction wands are another tools that help you build repeated patterns of structure much more faster."]
 			dependencies: ["78875831C6026B1E"]
 			id: "407C67CFA9435657"

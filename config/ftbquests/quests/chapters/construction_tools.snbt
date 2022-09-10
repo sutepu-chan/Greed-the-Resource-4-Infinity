@@ -435,139 +435,6 @@
 			]
 		}
 		{
-			x: -10.5d
-			y: -1.5d
-			description: ["Chisel provides a wide variety of blocks for architecturing, satisfying all needs."]
-			id: "7CE981D551B50F50"
-			tasks: [{
-				id: "0FBF0A75865712D5"
-				type: "item"
-				item: {
-					id: "chisel:iron_chisel"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "2038458800041A2B"
-				type: "item"
-				item: "minecraft:clay"
-			}]
-		}
-		{
-			x: -10.5d
-			y: -3.5d
-			dependencies: ["7CE981D551B50F50"]
-			id: "5C98DE90ECCE8A43"
-			tasks: [{
-				id: "7F44716EE90290F8"
-				type: "item"
-				item: {
-					id: "chisel:diamond_chisel"
-					Count: 1b
-					tag: {
-						Damage: 0
-						chiseldata: { }
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "481E08F6AA32D689"
-					type: "item"
-					item: {
-						id: "ftbquests:lootcrate"
-						Count: 1b
-						tag: {
-							type: "resource"
-						}
-					}
-					count: 3
-				}
-				{
-					id: "42A997BA6E80474B"
-					type: "xp"
-					xp: 200
-				}
-			]
-		}
-		{
-			x: -10.5d
-			y: -5.5d
-			description: ["iChisel provides a preview GUI and bulk chisel is available."]
-			dependencies: ["5C98DE90ECCE8A43"]
-			id: "28454B7DE22998BB"
-			tasks: [{
-				id: "463559447FFC84FB"
-				type: "item"
-				item: {
-					id: "chisel:hitech_chisel"
-					Count: 1b
-					tag: {
-						Damage: 0
-						chiseldata: {
-							target: {
-								id: "minecraft:air"
-								Count: -40b
-							}
-						}
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "0B17DB45C074E6EC"
-					type: "item"
-					item: {
-						id: "ftbquests:lootcrate"
-						Count: 1b
-						tag: {
-							type: "resource"
-						}
-					}
-					count: 3
-				}
-				{
-					id: "5EE99B1CC0EBC531"
-					type: "xp"
-					xp: 200
-				}
-			]
-		}
-		{
-			x: -8.5d
-			y: -3.5d
-			description: ["Auto Chisel provides automation for bulk amount chisel."]
-			dependencies: ["7CE981D551B50F50"]
-			id: "142336ABEC9A93EC"
-			tasks: [{
-				id: "4EF239D3F8DCD7DB"
-				type: "item"
-				item: "chisel:auto_chisel"
-			}]
-			rewards: [
-				{
-					id: "3D77ACC441D7883C"
-					type: "item"
-					item: {
-						id: "ftbquests:lootcrate"
-						Count: 1b
-						tag: {
-							type: "resource"
-						}
-					}
-					count: 3
-				}
-				{
-					id: "72FA6202BB662800"
-					type: "xp"
-					xp: 200
-				}
-			]
-		}
-		{
 			x: -6.5d
 			y: -1.5d
 			dependencies: ["7312269AA2B6F30F"]
@@ -816,7 +683,7 @@
 			tasks: [{
 				id: "0343EB1893D604CF"
 				type: "item"
-				title: "Any #corail_woodcutter:woodcutters"
+				title: "Any Corail Woodcutters"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -978,8 +845,8 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: 5.0d
+			x: -10.5d
+			y: -1.5d
 			description: ["Dreadlamp prevents spawning of friendly animals in 64 blocks radius."]
 			id: "4068AAD6A580A454"
 			tasks: [{
