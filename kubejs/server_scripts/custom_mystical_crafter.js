@@ -99,8 +99,6 @@ onEvent('recipes', e => {
 		[2, 'alltheores:aluminum_ingot', 'mysticalagriculture:aluminum_seeds'],
 		[2, 'alltheores:copper_ingot', 'mysticalagriculture:copper_seeds'],
 		[2, 'thermal:niter_dust', 'mysticalagriculture:saltpeter_seeds'],
-		[2, 'chisel:marble/raw', 'mysticalagriculture:marble_seeds'],
-		[2, 'chisel:limestone/raw', 'mysticalagriculture:limestone_seeds'],
 		[2, 'minecraft:basalt', 'mysticalagriculture:basalt_seeds'],
 		[3, 'minecraft:iron_ingot', 'mysticalagriculture:iron_seeds'],
 		[3, 'minecraft:smooth_quartz', 'mysticalagriculture:nether_quartz_seeds'],

@@ -171,7 +171,6 @@ onEvent('jei.hide.items', e => {
         'kubejs:dummy_fluid_item',
 
         //mod
-        '@chisel',
         '@itemfilters',
         '@theoneprobe',
         '@titanium',

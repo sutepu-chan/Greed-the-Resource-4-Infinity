@@ -80,33 +80,6 @@ onEvent('recipes', e => {
         M: 'allthecompressed:nether_star_block'
     })
 
-    //===== chisel =====//
-    e.remove({ input: 'minecraft:charcoal', output: 'chisel:charcoal/raw', type: 'minecraft:crafting_shapeless' })
-    removeRecipeByID(e, [
-        'chisel:iron_chisel',
-        'chisel:diamond_chisel',
-        'chisel:hitech_chisel',
-        'chisel:auto_chisel'
-    ])
-    e.shaped('chisel:iron_chisel', [' I', 'T '], {
-        I: '#forge:ingots/iron',
-        T: '#forge:terracotta'
-    })
-    e.shaped('chisel:diamond_chisel', [' D', 'C '], {
-        D: '#forge:gems/diamond',
-        C: 'chisel:iron_chisel'
-    })
-    e.shaped('chisel:hitech_chisel', ['  D', ' C ', 'I  '], {
-        D: '#forge:gems/diamond',
-        I: '#forge:ingots/iron',
-        C: 'chisel:diamond_chisel'
-    })
-    e.shaped('chisel:auto_chisel', ['GGG', 'SCS', 'PPP'], {
-        G: '#forge:glass/colorless',
-        S: '#forge:rods/iron',
-        C: 'chisel:iron_chisel',
-        P: '#forge:plates/iron'
-    })
     //===== time in a bottle =====//
     e.remove({ output: 'tiab:timeinabottle' })
     e.recipes.thermal.smelter('tiab:timeinabottle', ['64x minecraft:clock', '8x mekanism:alloy_atomic', '32x mekanism:dust_lithium'])

@@ -13,8 +13,8 @@ onEvent('recipes', e => {
     oreRecover([
         ['minecraft:diamond_ore', '#forge:dusts/diamond', 9, '#forge:cobblestone'],
         ['minecraft:emerald_ore', '#forge:dusts/emerald', 9, '#forge:cobblestone'],
-        ['minecraft:ancient_debris', '#forge:dusts/netherite', 9, '#chisel:basalt'],
-        ['draconicevolution:end_draconium_ore', 'draconicevolution:draconium_dust', 9, '#chisel:end_stone'],
+        ['minecraft:ancient_debris', '#forge:dusts/netherite', 9, '#chipped:basalt'],
+        ['draconicevolution:end_draconium_ore', 'draconicevolution:draconium_dust', 9, '#chipped:end_stone'],
         ['draconicevolution:nether_draconium_ore', 'draconicevolution:draconium_dust', 9, '#forge:netherrack'],
         ['draconicevolution:overworld_draconium_ore', 'draconicevolution:draconium_dust', 9, '#forge:cobblestone']
     ])

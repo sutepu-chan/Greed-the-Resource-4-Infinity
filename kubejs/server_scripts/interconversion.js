@@ -1,7 +1,4 @@
 onEvent('recipes', e => {
-    //===== basalt =====//
-    e.shapeless('chisel:basalt/raw', 'minecraft:basalt')
-    e.shapeless('minecraft:basalt', 'chisel:basalt/raw')
     //===== wood related items =====//
     e.shapeless('minecraft:oak_boat', '#minecraft:boats')
     e.shapeless('minecraft:chest', '#forge:chests/wooden')

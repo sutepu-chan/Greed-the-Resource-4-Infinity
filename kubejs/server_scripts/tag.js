@@ -25,16 +25,6 @@ onEvent('item.tags', e => {
         e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
     })
     //add item tags
-    e.add('forge:marble', '#chisel:marble')
-    e.add('chisel:basalt', ['minecraft:basalt', 'minecraft:polished_basalt'])
-    e.add('chisel:sandstone', ['minecraft:sandstone', 'minecraft:chiseled_sandstone', 'minecraft:cut_sandstone', 'minecraft:smooth_sandstone'])
-    e.add('chisel:metals/aluminum', 'alltheores:aluminum_block')
-    e.add('chisel:metals/bronze', 'thermal:bronze_block')
-    e.add('chisel:emerald', 'minecraft:emerald_block')
-    e.add('chisel:redstone', 'minecraft:redstone_block')
-    e.add('chisel:coal', 'minecraft:coal_block')
-    e.add('chisel:charcoal', 'thermal:charcoal_block')
-    e.add('chisel:end_stone', 'minecraft:end_stone')
     e.add('minecraft:logs_unstripped', '/^.+:(?!stripped_).+_log$/')
     e.add('forge:swords', ['allthemodium:alloy_paxel', 'allthemodium:alloy_sword'])
     e.add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])
@@ -129,16 +119,6 @@ onEvent('item.tags', e => {
 //===== Block Tag =====//
 onEvent('block.tags', e => {
     //add block tags
-    e.add('forge:marble', '#chisel:marble')
-    e.add('chisel:basalt', ['minecraft:basalt', 'minecraft:polished_basalt'])
-    e.add('chisel:sandstone', ['minecraft:sandstone', 'minecraft:chiseled_sandstone', 'minecraft:cut_sandstone', 'minecraft:smooth_sandstone'])
-    e.add('chisel:metals/aluminum', 'alltheores:aluminum_block')
-    e.add('chisel:metals/bronze', 'thermal:bronze_block')
-    e.add('chisel:emerald', 'minecraft:emerald_block')
-    e.add('chisel:redstone', 'minecraft:redstone_block')
-    e.add('chisel:coal', 'minecraft:coal_block')
-    e.add('chisel:charcoal', 'thermal:charcoal_block')
-    e.add('chisel:end_stone', 'minecraft:end_stone')
     e.add('forge:ores/certus_quartz', ['appliedenergistics2:quartz_ore', 'appliedenergistics2:charged_quartz_ore'])
     e.add('forge:ores/quartz', '#forge:ores/certus_quartz')
     e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])

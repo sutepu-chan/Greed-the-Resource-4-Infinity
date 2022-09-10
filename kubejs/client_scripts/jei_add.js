@@ -5,18 +5,6 @@ onEvent('jei.add.items', e => {
         //Mekanism
         'mekanism:creative_fluid_tank',
         'mekanism:creative_chemical_tank',
-        //Chisel
-        'chisel:factory/dots',
-        'chisel:futura/screen_metallic',
-        'chisel:iron_chisel',
-        'chisel:diamond_chisel',
-        'chisel:hitech_chisel',
-        'chisel:offset_tool',
-        'chisel:auto_chisel',
-        'chisel:antiblock/white',
-        'chisel:limestone/raw',
-        'chisel:marble/raw',
-        'chisel:basalt/raw',
         //AE2
         Item.of('appliedenergistics2:facade', '{item:"minecraft:stone"}'),
         //Structurize
