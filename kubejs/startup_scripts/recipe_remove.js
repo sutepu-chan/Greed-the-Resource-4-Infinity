@@ -184,6 +184,7 @@ global.recipe_disable = [
     //ae2
     'appliedenergistics2:spatial_anchor',
     'appliedenergistics2:vibration_chamber',
+    'appliedenergistics2:wooden_gear',
     //library ferret
     'libraryferret:iron_coins_jtl',
     'libraryferret:emerald_coins_jtl',
