@@ -19,6 +19,11 @@ onEvent('recipes', e => {
         A: 'eidolon:arcane_gold_ingot',
         F: 'appliedenergistics2:fluix_crystal'
     })
+    modifyShaped(e, 'appliedenergistics2:grindstone', 1, ['SGS', 'QSQ', 'SQS'], {
+        Q: 'appliedenergistics2:certus_quartz_crystal',
+        S: '#minecraft:stone_bricks',
+        G: '#forge:gears/invar'
+    })
     e.custom({
         type: 'extendedcrafting:shaped_table',
         tier: 3,
