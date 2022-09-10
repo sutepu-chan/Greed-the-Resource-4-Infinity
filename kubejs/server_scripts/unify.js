@@ -7,70 +7,6 @@ onEvent('recipes', e => {
         e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
         e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
 
-        utils.listOf([
-            'copper',
-            'tin',
-            'uranium',
-            'lead',
-            'osmium',
-            'bronze',
-        ]).forEach(name => {
-            e.remove({ id: `mekanism:processing/${name}/storage_blocks/from_ingots`})
-            e.remove({ id: `mekanism:processing/${name}/ingot/from_nuggets`})
-            e.remove({ id: `mekanism:processing/${name}/ingot/from_block`})
-            e.remove({ id: `mekanism:processing/${name}/nugget/from_ingot`})
-        })
-        utils.listOf([
-            'copper',
-            'tin',
-            'lead',
-            'silver',
-            'nickel'
-        ]).forEach(name => {
-            e.remove({ id: `thermal:storage/${name}_block` })
-            e.remove({ id: `thermal:storage/${name}_ingot_from_nuggets`})
-            e.remove({ id: `thermal:storage/${name}_ingot_from_block`})
-            e.remove({ id: `thermal:storage/${name}_nugget_from_ingot`})
-        })
-        e.remove({ id: `tconstruct:common/materials/copper_block_from_ingots`})
-        utils.listOf([
-            'copper',
-            'aluminum'
-        ]).forEach(name => {
-            e.remove({ id: `tmechworks:${name}_block_from_${name}_ingot`})
-            e.remove({ id: `tmechworks:${name}_ingot_from_${name}_block`})
-            e.remove({ id: `tmechworks:${name}_ingot_from_${name}_nugget`})
-            e.remove({ id: `tmechworks:${name}_nugget_from_${name}_ingot`})
-        })
-        utils.listOf([
-            'aluminum',
-            'copper',
-            'lead',
-            'tin',
-            'silver',
-            'osmium',
-            'uranium',
-            'nickel'
-        ]).forEach(name => {
-            e.remove({ id: `bno:${name}_block`})
-            e.remove({ id: `bno:${name}_ingot-1`})
-            e.remove({ id: `bno:${name}_ingot-2`})
-            e.remove({ id: `bno:${name}_nugget`})
-        })
-        utils.listOf([
-            'copper',
-            'silver'
-        ]).forEach(name => {
-            e.remove({ id: `occultism:crafting/${name}_block`})
-            e.remove({ id: `occultism:crafting/${name}_ingot_from_block`})
-            e.remove({ id: `occultism:crafting/${name}_ingot_from_nuggets`})
-            e.remove({ id: `occultism:crafting/${name}_nugget`})
-        })
-        e.remove({ id: `eidolon:lead_block`})
-        e.remove({ id: `boss_tools:steel_block`})
-        e.remove({ id: `boss_tools:steel_ingot`})
-        e.remove({ id: `boss_tools:steel_ingot_from_nugget`})
-
         e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:smelting' })
         e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:blasting' })
         e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
@@ -128,6 +64,89 @@ onEvent('recipes', e => {
     //netherite
     e.replaceOutput('#forge:dusts/netherite', 'thermal:netherite_dust')
     e.replaceInput('mekanism:dust_netherite', '#forge:dusts/netherite')
+
+    //===== Remove redundant recipe in JEI =====//
+    utils.listOf([
+        'copper',
+        'tin',
+        'uranium',
+        'lead',
+        'osmium',
+        'bronze',
+    ]).forEach(name => {
+        e.remove({ id: `mekanism:processing/${name}/storage_blocks/from_ingots` })
+        e.remove({ id: `mekanism:processing/${name}/ingot/from_nuggets` })
+        e.remove({ id: `mekanism:processing/${name}/ingot/from_block` })
+        e.remove({ id: `mekanism:processing/${name}/nugget/from_ingot` })
+    })
+    utils.listOf([
+        'copper',
+        'tin',
+        'lead',
+        'silver',
+        'nickel'
+    ]).forEach(name => {
+        e.remove({ id: `thermal:storage/${name}_block` })
+        e.remove({ id: `thermal:storage/${name}_ingot_from_nuggets` })
+        e.remove({ id: `thermal:storage/${name}_ingot_from_block` })
+        e.remove({ id: `thermal:storage/${name}_nugget_from_ingot` })
+    })
+    e.remove({ id: `tconstruct:common/materials/copper_block_from_ingots` })
+    utils.listOf([
+        'copper',
+        'aluminum'
+    ]).forEach(name => {
+        e.remove({ id: `tmechworks:${name}_block_from_${name}_ingot` })
+        e.remove({ id: `tmechworks:${name}_ingot_from_${name}_block` })
+        e.remove({ id: `tmechworks:${name}_ingot_from_${name}_nugget` })
+        e.remove({ id: `tmechworks:${name}_nugget_from_${name}_ingot` })
+    })
+    utils.listOf([
+        'aluminum',
+        'copper',
+        'lead',
+        'tin',
+        'silver',
+        'osmium',
+        'uranium',
+        'nickel'
+    ]).forEach(name => {
+        e.remove({ id: `bno:${name}_block` })
+        e.remove({ id: `bno:${name}_ingot-1` })
+        e.remove({ id: `bno:${name}_ingot-2` })
+        e.remove({ id: `bno:${name}_nugget` })
+    })
+    utils.listOf([
+        'copper',
+        'silver'
+    ]).forEach(name => {
+        e.remove({ id: `occultism:crafting/${name}_block` })
+        e.remove({ id: `occultism:crafting/${name}_ingot_from_block` })
+        e.remove({ id: `occultism:crafting/${name}_ingot_from_nuggets` })
+        e.remove({ id: `occultism:crafting/${name}_nugget` })
+    })
+    e.remove({ id: `eidolon:lead_block` })
+    e.remove({ id: `boss_tools:steel_block` })
+    e.remove({ id: `boss_tools:steel_ingot` })
+    e.remove({ id: `boss_tools:steel_ingot_from_nugget` })
+
+    //===== slurry remove =====//
+    let mekanismMetals = ['osmium', 'lead', 'tin', 'uranium', 'copper']
+    mekanismMetals.forEach(metal => {
+        e.remove({ id: `mekanism:processing/${metal}/clump/from_shard` })
+        e.remove({ id: `mekanism:processing/${metal}/clump/from_ore` })
+        e.remove({ id: `mekanism:processing/${metal}/crystal/from_slurry` })
+        e.remove({ id: `mekanism:processing/${metal}/dirty_dust/from_clump` })
+        e.remove({ id: `mekanism:processing/${metal}/dust/from_dirty_dust` })
+        e.remove({ id: `mekanism:processing/${metal}/dust/from_ore` })
+        e.remove({ id: `mekanism:processing/${metal}/ingot/from_ore_blasting` })
+        e.remove({ id: `mekanism:processing/${metal}/ingot/from_ore_blasting` })
+        e.remove({ id: `mekanism:processing/${metal}/ore/from_dust` })
+        e.remove({ id: `mekanism:processing/${metal}/shard/from_crystal` })
+        e.remove({ id: `mekanism:processing/${metal}/shard/from_ore` })
+        e.remove({ id: `mekanism:processing/${metal}/slurry/dirty` })
+        e.remove({ id: `mekanism:processing/${metal}/slurry/clean` })
+    })
     //===== Plate Unification =====//
     function plateCasting(material, coolingTime, result) {
         let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
