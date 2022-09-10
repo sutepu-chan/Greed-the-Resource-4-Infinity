@@ -169,7 +169,8 @@ onEvent('jei.hide.items', e => {
         'mininggadgets:minerslight',
         'occultism:lighted_air',
         'kubejs:dummy_fluid_item',
-
+        'environmental:sawmill',
+         
         //mod
         '@itemfilters',
         '@theoneprobe',
