@@ -2941,7 +2941,7 @@
 		}
 		{
 			title: "Lazier AE2"
-			x: -6.0d
+			x: -8.0d
 			y: -7.0d
 			description: ["Lazier AE2 provides more convenient recipes and machines for automation."]
 			dependencies: ["68C0CB1021C5015D"]
@@ -2961,11 +2961,6 @@
 					id: "16BB2AC62A1F97AD"
 					type: "item"
 					item: "lazierae2:fluix_steel_ingot"
-				}
-				{
-					id: "5931D86B0DCFAD69"
-					type: "item"
-					item: "lazierae2:resonating_gem"
 				}
 			]
 			rewards: [
@@ -2988,10 +2983,10 @@
 			]
 		}
 		{
-			x: -8.0d
-			y: -7.0d
+			x: -12.0d
+			y: -5.0d
 			description: ["A new press added by Lazier AE2!"]
-			dependencies: ["650A2DFB42040DB8"]
+			dependencies: ["68779152A7AD9B9D"]
 			id: "6DF18D64F8DB8C31"
 			tasks: [{
 				id: "4FE79E6655D1854D"
@@ -3018,9 +3013,12 @@
 			]
 		}
 		{
-			x: -12.0d
-			y: -5.0d
-			dependencies: ["6DF18D64F8DB8C31"]
+			x: -14.0d
+			y: -3.0d
+			dependencies: [
+				"6DF18D64F8DB8C31"
+				"71D3E68EAE67A1A4"
+			]
 			id: "3440CA73CADBEC17"
 			tasks: [
 				{
@@ -3054,10 +3052,10 @@
 			]
 		}
 		{
-			x: -10.0d
+			x: -12.0d
 			y: -7.0d
 			description: ["Speculation cores are crafting ingredients in Lazier AE2. It requires matter balls from AE2."]
-			dependencies: ["6DF18D64F8DB8C31"]
+			dependencies: ["68779152A7AD9B9D"]
 			id: "55E9768B3E8EDD27"
 			tasks: [
 				{
@@ -3116,9 +3114,12 @@
 			]
 		}
 		{
-			x: -12.0d
+			x: -14.0d
 			y: -7.0d
-			dependencies: ["55E9768B3E8EDD27"]
+			dependencies: [
+				"55E9768B3E8EDD27"
+				"6DF18D64F8DB8C31"
+			]
 			id: "78E1834E5D0AE78E"
 			tasks: [
 				{
@@ -3152,8 +3153,8 @@
 			]
 		}
 		{
-			x: -6.0d
-			y: -5.0d
+			x: -10.0d
+			y: -7.0d
 			description: ["Fluix Aggregator provides faster methods for in-world crafting and some other crafting processes."]
 			dependencies: ["650A2DFB42040DB8"]
 			id: "68779152A7AD9B9D"
@@ -3182,7 +3183,7 @@
 			]
 		}
 		{
-			x: -14.0d
+			x: -16.0d
 			y: -7.0d
 			description: ["Pulse Centrifuge provides better and faster ways of obtaining pure crystals."]
 			dependencies: [
@@ -3215,7 +3216,7 @@
 			]
 		}
 		{
-			x: -14.0d
+			x: -16.0d
 			y: -5.0d
 			description: ["The best way in converting certus quartz to charged certuz quartz!"]
 			dependencies: [
@@ -3248,7 +3249,7 @@
 			]
 		}
 		{
-			x: -14.0d
+			x: -16.0d
 			y: -3.0d
 			description: ["Like an advanced inscriber! Faster and allows bulk crafting."]
 			dependencies: [
@@ -3499,6 +3500,36 @@
 				item: "minecraft:wither_skeleton_skull"
 				count: 2
 			}]
+		}
+		{
+			x: -12.0d
+			y: -3.0d
+			description: ["Use the fluix aggregator obtained, and get the resonating gem."]
+			dependencies: ["68779152A7AD9B9D"]
+			id: "71D3E68EAE67A1A4"
+			tasks: [{
+				id: "3E6ACC4DAD747854"
+				type: "item"
+				item: "lazierae2:resonating_gem"
+			}]
+			rewards: [
+				{
+					id: "453D33C3958DD897"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "380AB36CB2003AA1"
+					type: "xp"
+					xp: 500
+				}
+			]
 		}
 	]
 }
