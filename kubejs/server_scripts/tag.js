@@ -104,6 +104,7 @@ onEvent('item.tags', e => {
     e.add('forge:nuggets', 'kubejs:neutron_nugget')
     e.add('forge:storage_blocks/neutronium', 'kubejs:neutronium')
     e.add('forge:storage_blocks', 'kubejs:neutronium')
+    e.add('forge:dusts/ender_pearl', 'appliedenergistics2:ender_dust')
     //remove item tags
     e.remove('forge:dyes/yellow', 'mekanism:dust_sulfur')
     e.remove('curios:ring', ['balancedflight:ascended_flight_ring', 'balancedflight:basic_flight_ring'])
