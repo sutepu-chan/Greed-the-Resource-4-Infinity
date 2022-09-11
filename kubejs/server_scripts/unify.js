@@ -454,7 +454,7 @@ onEvent('recipes', e => {
     miscUnify('tconstruct:netherite_nugget', '#forge:nuggets/netherite', ['tconstruct:netherite_nugget', 'nourished_nether:netherite_nugget', 'charm:netherite_nugget'])
     miscUnify('thermal:quartz_dust', '#forge:dusts/quartz', ['appliedenergistics2:nether_quartz_dust', 'mekanism:dust_quartz', 'thermal:quartz_dust'])
     miscUnify('allthecompressed:nether_star_block', '#forge:storage_blocks/nether_star', ['allthecompressed:nether_star_block', 'extendedcrafting:nether_star_block'])
-    miscUnify('thermal:ender_pearl_dust', '#appliedenergistics2:dusts/ender', ['thermal:ender_pearl_dust', 'appliedenergistics2:ender_dust'])
+    miscUnify('thermal:ender_pearl_dust', '#forge:dusts/ender_pearl', ['thermal:ender_pearl_dust', 'appliedenergistics2:ender_dust'])
     miscUnify('mekanism:dust_obsidian', '#forge:dusts/obsidian', ['mekanism:dust_obsidian', 'occultism:obsidian_dust'])
     miscUnify('thermal:sulfur_dust', '#forge:dusts/sulfur', ['thermal:sulfur_dust', 'eidolon:sulfur'])
     miscUnify('thermal:charcoal_block', '#forge:storage_blocks/charcoal', ['mekanism:block_charcoal', 'thermal:charcoal_block'])
