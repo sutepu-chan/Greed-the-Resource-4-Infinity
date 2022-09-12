@@ -1,14 +1,20 @@
 onEvent('recipes', e => {
 	//===== crafting table recipes =====//
 	removeRecipeByOutput(e, [
-		'extendedcrafting:basic_table',
-		'extendedcrafting:advanced_table',
-		'extendedcrafting:elite_table',
-		'extendedcrafting:ultimate_table',
 		'extendedcrafting:compressor',
 		'extendedcrafting:crafting_core',
 		'extendedcrafting:pedestal'
 	])
+	let tiers = [
+		'basic',
+		'advanced',
+		'elite',
+		'ultimate'
+	]
+	tiers.forEach(tier => {
+		e.remove({ output: `extendedcrafting:${tier}_table` })
+		e.remove({ output: `extendedcrafting:${tier}_auto_table` })
+	})
 	e.shaped('extendedcrafting:basic_table', ['BBB', 'CWC', 'ACA'], {
 		A: 'extendedcrafting:basic_catalyst',
 		C: 'extendedcrafting:basic_component',
@@ -126,157 +132,45 @@ onEvent('recipes', e => {
 			"item": "extendedcrafting:ultimate_table"
 		}
 	})
-	//basic auto crafting table
-	e.custom({
-		"type": "extendedcrafting:shaped_table",
-		"tier": 2,
-		"pattern": [
-			"ABCBA",
-			"DEFED",
-			"CFGFC",
-			"DEFED",
-			"ABCBA"
-		],
-		"key": {
-			"A": {
-				"item": "extendedcrafting:crystaltine_component"
+	//auto crafting table
+	tiers.forEach(tier => {
+		e.custom({
+			type: 'extendedcrafting:shaped_table',
+			tier: 2,
+			pattern: [
+				'ABCBA',
+				'DEFED',
+				'CFGFC',
+				'DEFED',
+				'ABCBA'
+			],
+			key: {
+				A: {
+					item: 'extendedcrafting:crystaltine_component'
+				},
+				B: {
+					item: 'extendedcrafting:black_iron_ingot'
+				},
+				C: {
+					item: 'extendedcrafting:redstone_catalyst'
+				},
+				D: {
+					item: 'extendedcrafting:redstone_component'
+				},
+				E: {
+					item: 'extendedcrafting:crystaltine_catalyst'
+				},
+				F: {
+					item: 'extendedcrafting:black_iron_slate'
+				},
+				G: {
+					item: `extendedcrafting:${tier}_table`
+				}
 			},
-			"B": {
-				"item": "extendedcrafting:black_iron_ingot"
-			},
-			"C": {
-				"item": "extendedcrafting:redstone_catalyst"
-			},
-			"D": {
-				"item": "extendedcrafting:redstone_component"
-			},
-			"E": {
-				"item": "extendedcrafting:crystaltine_catalyst"
-			},
-			"F": {
-				"item": "extendedcrafting:black_iron_slate"
-			},
-			"G": {
-				"item": "extendedcrafting:basic_table"
+			result: {
+				item: `extendedcrafting:${tier}_auto_table`
 			}
-		},
-		"result": {
-			"item": "extendedcrafting:basic_auto_table"
-		}
-	})
-	//advanced auto crafting table
-	e.custom({
-		"type": "extendedcrafting:shaped_table",
-		"tier": 2,
-		"pattern": [
-			"ABCBA",
-			"DEFED",
-			"CFGFC",
-			"DEFED",
-			"ABCBA"
-		],
-		"key": {
-			"A": {
-				"item": "extendedcrafting:crystaltine_component"
-			},
-			"B": {
-				"item": "extendedcrafting:black_iron_ingot"
-			},
-			"C": {
-				"item": "extendedcrafting:redstone_catalyst"
-			},
-			"D": {
-				"item": "extendedcrafting:redstone_component"
-			},
-			"E": {
-				"item": "extendedcrafting:crystaltine_catalyst"
-			},
-			"F": {
-				"item": "extendedcrafting:black_iron_slate"
-			},
-			"G": {
-				"item": 'extendedcrafting:advanced_table'
-			}
-		},
-		"result": {
-			"item": "extendedcrafting:advanced_auto_table"
-		}
-	})
-	//elite auto crafting table
-	e.custom({
-		"type": "extendedcrafting:shaped_table",
-		"tier": 2,
-		"pattern": [
-			"ABCBA",
-			"DEFED",
-			"CFGFC",
-			"DEFED",
-			"ABCBA"
-		],
-		"key": {
-			"A": {
-				"item": "extendedcrafting:crystaltine_component"
-			},
-			"B": {
-				"item": "extendedcrafting:black_iron_ingot"
-			},
-			"C": {
-				"item": "extendedcrafting:redstone_catalyst"
-			},
-			"D": {
-				"item": "extendedcrafting:redstone_component"
-			},
-			"E": {
-				"item": "extendedcrafting:crystaltine_catalyst"
-			},
-			"F": {
-				"item": "extendedcrafting:black_iron_slate"
-			},
-			"G": {
-				"item": 'extendedcrafting:elite_table'
-			}
-		},
-		"result": {
-			"item": "extendedcrafting:elite_auto_table"
-		}
-	})
-	//ultimate auto crafting table
-	e.custom({
-		"type": "extendedcrafting:shaped_table",
-		"tier": 2,
-		"pattern": [
-			"ABCBA",
-			"DEFED",
-			"CFGFC",
-			"DEFED",
-			"ABCBA"
-		],
-		"key": {
-			"A": {
-				"item": "extendedcrafting:crystaltine_component"
-			},
-			"B": {
-				"item": "extendedcrafting:black_iron_ingot"
-			},
-			"C": {
-				"item": "extendedcrafting:redstone_catalyst"
-			},
-			"D": {
-				"item": "extendedcrafting:redstone_component"
-			},
-			"E": {
-				"item": "extendedcrafting:crystaltine_catalyst"
-			},
-			"F": {
-				"item": "extendedcrafting:black_iron_slate"
-			},
-			"G": {
-				"item": 'extendedcrafting:ultimate_table'
-			}
-		},
-		"result": {
-			"item": "extendedcrafting:ultimate_auto_table"
-		}
+		}).id(`kubejs:extendedcraft/${tier}_auto_table`)
 	})
 	draconicFusion(e, 'extendedcrafting:compressor', 3, 972000000, 'extendedcrafting:frame', [
 		'extendedcrafting:ultimate_catalyst',
