@@ -467,7 +467,8 @@ onEvent('recipes', e => {
     e.replaceInput('mekanism:sawdust', 'thermal:sawdust')
     e.replaceOutput('mekanism:dust_diamond', 'thermal:diamond_dust')
     //blocks
-    modifyShaped(e, 'piglin_expansion:basalt_quadratiles', 4, ['PB', 'BP'], {
+    e.remove({ output: 'piglin_expansion:basalt_quadratiles' })
+    e.shaped('4x piglin_expansion:basalt_quadratiles', ['PB', 'BP'], {
         B: 'minecraft:basalt',
         P: 'minecraft:polished_basalt'
     })
