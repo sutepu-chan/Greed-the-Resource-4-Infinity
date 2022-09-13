@@ -41,19 +41,3 @@ onEvent('block.registry', e => {
         .harvestTool('pickaxe', 5)
         .requiresTool(true)
 })
-/*
-onEvent('fluid.registry', e => {
-    e.create('blazing_pyrotheum')
-        .displayName('Blazing Pyrotheum')
-        .textureStill('kubejs:block/fluid/pyrotheum_still')
-        .textureFlowing('kubejs:block/fluid/pyrotheum_flow')
-        .bucketColor(0xfcdd29)
-        .luminosity(1)
-    e.create('gelid_cryotheum')
-        .displayName('Gelid Cryotheum')
-        .textureStill('kubejs:block/fluid/cryotheum_still')
-        .textureFlowing('kubejs:block/fluid/cryotheum_flow')
-        .bucketColor(0x30b8fc)
-        .luminosity(1)
-})
-*/
