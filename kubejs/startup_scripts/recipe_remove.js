@@ -173,6 +173,12 @@ global.recipe_disable = [
     'extendedcrafting:enhanced_ender_nugget',
     'extendedcrafting:enhanced_ender_component',
     'extendedcrafting:enhanced_ender_catalyst',
+    'extendedcrafting:ender_ingot_block',
+    'extendedcrafting:enhanced_ender_ingot_block',
+    'extendedcrafting:ender_ingot',
+    'extendedcrafting:ender_nugget',
+    'extendedcrafting:ender_catalyst',
+    'extendedcrafting:ender_component',
     //powah
     'powah:solar_panel_starter',
     'powah:solar_panel_basic',
@@ -238,5 +244,6 @@ global.recipe_disable = [
     'custommachinery:machine_creator_item',
     'custommachinery:box_creator_item',
     'custommachinery:structure_creator',
-
+    'packagedexcrafting:ender_crafter',
+    
 ]
