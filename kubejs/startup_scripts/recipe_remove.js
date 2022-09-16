@@ -245,5 +245,6 @@ global.recipe_disable = [
     'custommachinery:box_creator_item',
     'custommachinery:structure_creator',
     'packagedexcrafting:ender_crafter',
+    'packagedauto:crafter',
     
 ]
