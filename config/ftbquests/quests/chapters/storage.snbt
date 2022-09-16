@@ -3531,5 +3531,272 @@
 				}
 			]
 		}
+		{
+			title: "Packaged Auto"
+			x: -16.0d
+			y: -9.0d
+			description: [
+				"Packaged Auto acts like an addon to AE2 which enables autocrafting of recipes with more than 9 type of items in Extended Crafting, using this mod and AE2 solely."
+				"To start this mod, you need to get these two crafting materials."
+			]
+			dependencies: ["78E1834E5D0AE78E"]
+			id: "2C15967DFE0B4954"
+			tasks: [
+				{
+					id: "59AA1D6C4472F393"
+					type: "item"
+					item: "packagedauto:package_component"
+				}
+				{
+					id: "422CE2A9155A66C7"
+					type: "item"
+					item: "packagedauto:me_package_component"
+				}
+			]
+			rewards: [
+				{
+					id: "716C5FCBDD7873B0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "4813F922AA2AAC45"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -16.0d
+			y: -11.0d
+			description: [
+				"Package recipe holder acts like a Pattern from AE2. It holds the recipes even through there is more than 9 types of items."
+				"Package recipe encoder is required to encode recipes into the holder. Simply select the recipe type and encode the recipes with the help of JEI."
+				"One recipe encoder can store up to 20 recipes."
+			]
+			dependencies: ["2C15967DFE0B4954"]
+			id: "1DA5E91FCAC58049"
+			tasks: [
+				{
+					id: "63743EB75F266B44"
+					type: "item"
+					item: "packagedauto:recipe_holder"
+				}
+				{
+					id: "4B5537E5545D6B37"
+					type: "item"
+					item: "packagedauto:encoder"
+				}
+			]
+			rewards: [
+				{
+					id: "6629A75FE1B0104B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "16E97CE73FC73DF1"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -16.0d
+			y: -13.0d
+			description: [
+				"A package packs the ingredients of designated recipes into packages, which will be send to auto crafter for further crafting processes."
+				"{image:kubejs:textures/quest/storage/storage_packager.png width:200 height:100 align:1 fit:true}"
+			]
+			dependencies: ["1DA5E91FCAC58049"]
+			id: "35AB27F18D75C8EA"
+			tasks: [{
+				id: "7313ADCA198E1E84"
+				type: "item"
+				item: "packagedauto:packager"
+			}]
+			rewards: [
+				{
+					id: "0AC4930350F6704A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "6A5802F5B03D6827"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -18.0d
+			y: -13.0d
+			description: ["For recipes with more than 9 types of items, packager extension is needed to temporarily save the crafting ingredients. Simply place this block near the packager and they will work automatically."]
+			dependencies: ["35AB27F18D75C8EA"]
+			id: "265C3759C25CD0B9"
+			tasks: [{
+				id: "24A0DB7E8775CDFC"
+				type: "item"
+				item: "packagedauto:packager_extension"
+			}]
+			rewards: [
+				{
+					id: "5290E6AB85C0BCF6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "1CC84D01B537C2FB"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -13.0d
+			description: [
+				"After having the packages, unpackager is needed to unpacking the ingredients and send to autocrafter."
+				"For convenience, packager and unpackager can be placed together. The packages crafted from package will be delivered to unpackager automatically."
+				"{image:kubejs:textures/quest/storage/storage_unpackager.png width:175 height:100 align:1 fit:true}"
+			]
+			dependencies: ["35AB27F18D75C8EA"]
+			id: "58D39606C6113BF3"
+			tasks: [{
+				id: "648CF54DC7F48A80"
+				type: "item"
+				item: "packagedauto:unpackager"
+			}]
+			rewards: [
+				{
+					id: "1A53E0455A99B05B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "452025DF7A0D9A34"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -13.0d
+			description: ["Automatic combination crafter works the same as the normal version. Place the marked pedestal near the Combination crafter package."]
+			dependencies: ["58D39606C6113BF3"]
+			id: "0FFB4D75A8136B4A"
+			tasks: [
+				{
+					id: "3868834AD75415C2"
+					type: "item"
+					item: "packagedexcrafting:combination_crafter"
+				}
+				{
+					id: "3C2785F472BF1DB7"
+					type: "item"
+					item: "packagedexcrafting:marked_pedestal"
+				}
+			]
+			rewards: [
+				{
+					id: "14063E25EFAE8960"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "2A782F6F40C63867"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -15.0d
+			description: [
+				"Package crafter will definitely help you a lot in easing your game progress by making the repetitive work automaticable."
+				"For the ease of automation and consideration of compacting, package crafter can be placed right next to unpackager so as to deliver the unpacked materials for autocrafting."
+				"{image:kubejs:textures/quest/storage/storage_autocrafter.png width:200 height:100 align:1 fit:true}"
+			]
+			dependencies: ["58D39606C6113BF3"]
+			id: "18B6E63C07E8EA98"
+			tasks: [
+				{
+					id: "00C37FB5B3DB46B8"
+					type: "item"
+					item: "packagedexcrafting:basic_crafter"
+				}
+				{
+					id: "6DD6B6BF764156AD"
+					type: "item"
+					item: "packagedexcrafting:advanced_crafter"
+				}
+				{
+					id: "457349AD49659E5E"
+					type: "item"
+					item: "packagedexcrafting:elite_crafter"
+				}
+				{
+					id: "4FA6123BC7BF9AAD"
+					type: "item"
+					item: "packagedexcrafting:ultimate_crafter"
+				}
+			]
+			rewards: [
+				{
+					id: "0ADAB1A428526738"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "ae2"
+						}
+					}
+				}
+				{
+					id: "7A345E4750C56A00"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
 	]
 }

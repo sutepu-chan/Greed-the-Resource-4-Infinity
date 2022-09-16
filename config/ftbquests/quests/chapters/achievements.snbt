@@ -212,8 +212,8 @@
 		}
 		{
 			title: "Find every types of mushroom"
-			x: 6.0d
-			y: 0.0d
+			x: 8.0d
+			y: 2.0d
 			id: "165189399EDD8C37"
 			tasks: [
 				{
@@ -266,7 +266,7 @@
 			]
 		}
 		{
-			x: 10.0d
+			x: 8.0d
 			y: 0.0d
 			id: "7F8A64B4EF01CE91"
 			tasks: [{
@@ -290,7 +290,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 10.0d
 			y: 0.0d
 			id: "731BF8E74DE2F5E8"
 			tasks: [{
@@ -308,7 +308,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 6.0d
 			y: 2.0d
 			id: "3B1FB3FC099EF77F"
 			tasks: [{
@@ -334,12 +334,13 @@
 		{
 			title: "Get 2M items into your ME storage"
 			icon: "appliedenergistics2:crafting_terminal"
-			x: 10.0d
-			y: 2.0d
+			x: -4.0d
+			y: 0.0d
 			id: "1215CA84FD0C3086"
 			tasks: [{
 				id: "1C2FA3FF2C63A0BB"
 				type: "stat"
+				icon: "appliedenergistics2:terminal"
 				stat: "appliedenergistics2:items_inserted"
 				value: 2000000
 			}]
@@ -350,7 +351,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 10.0d
 			y: 2.0d
 			id: "6D69D6C639CA4B7D"
 			tasks: [{
@@ -382,7 +383,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 6.0d
 			y: 4.0d
 			id: "2F457840AD4308D2"
 			tasks: [{
@@ -392,7 +393,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 8.0d
 			y: 4.0d
 			id: "3BCCE1A8D7A85375"
 			tasks: [{
@@ -596,7 +597,7 @@
 			]
 		}
 		{
-			x: 8.0d
+			x: 6.0d
 			y: 0.0d
 			id: "58146C27AE90053C"
 			tasks: [{
@@ -611,6 +612,77 @@
 				id: "5987A47086F342D2"
 				type: "item"
 				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			id: "1371941F06EA9783"
+			tasks: [{
+				id: "27EF4A39D05760B4"
+				type: "checkmark"
+				title: "Allow the Draconic Reactor the blow up once!"
+			}]
+		}
+		{
+			icon: "appliedenergistics2:terminal"
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["1215CA84FD0C3086"]
+			id: "5E0A6C13C47246B4"
+			tasks: [{
+				id: "7AC96D180591FCB1"
+				type: "stat"
+				title: "Get 20M items into your ME storage"
+				icon: "appliedenergistics2:terminal"
+				stat: "appliedenergistics2:items_inserted"
+				value: 20000000
+			}]
+			rewards: [{
+				id: "208C27DC1D2D5E7C"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+				count: 2
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			dependencies: ["5E0A6C13C47246B4"]
+			id: "36A3914F60BAED5B"
+			tasks: [{
+				id: "4FFDA26EA56AD6F2"
+				type: "stat"
+				title: "Get 200M items into your ME storage"
+				icon: "appliedenergistics2:terminal"
+				stat: "appliedenergistics2:items_inserted"
+				value: 200000000
+			}]
+			rewards: [{
+				id: "465ADE88947175DC"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+				count: 3
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["36A3914F60BAED5B"]
+			id: "3702C64092B85D83"
+			tasks: [{
+				id: "3A12E2D68AE70DA6"
+				type: "stat"
+				title: "Get 2B items into your ME storage"
+				icon: "appliedenergistics2:terminal"
+				stat: "appliedenergistics2:items_inserted"
+				value: 2000000000
+			}]
+			rewards: [{
+				id: "0E81B0946AAB3B09"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+				count: 4
 			}]
 		}
 	]
