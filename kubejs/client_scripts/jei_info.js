@@ -92,9 +92,4 @@ onEvent('jei.information', e => {
     ])
     //===== misc =====//
     e.add('akashictome:tome', 'RC to open the book and choose the desired guide book. LC in the air will return to akashic tome.')
-    e.add('@jsblock', [
-        'No recipes set by mod author!',
-        'Only Obtainable in Creative!',
-        'Planning to add recipes by myself in later version'
-    ])
 })
