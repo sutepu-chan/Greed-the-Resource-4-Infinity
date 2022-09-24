@@ -375,7 +375,10 @@
 		{
 			x: 1.5d
 			y: 3.0d
-			description: ["In this modpack, there might be some terms that require speific knownledge on sicence. I am trying to explain them as simple as I can. If you still cannot understand them clearly, welcome to contact me through Discord (Link found in CurseForge Description Tab)."]
+			description: [
+				"In this modpack, there might be some terms that require speific knownledge on sicence. I am trying to explain them as simple as I can. If you still cannot understand them clearly, welcome to contact me through Discord (Link found in CurseForge Description Tab)."
+				"For the quests, unless specified, you are required to complete all the quest dependencies in order to unlock the following quest."
+			]
 			id: "2771578409466666"
 			tasks: [{
 				id: "1F1DF3288105920C"
