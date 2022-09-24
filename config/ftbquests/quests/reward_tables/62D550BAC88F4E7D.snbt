@@ -23,8 +23,6 @@
 		{ item: "draconicevolution:draconium_ingot", count: 2 }
 		{ item: "extendedcrafting:black_iron_ingot", count: 4 }
 		{ item: "extendedcrafting:redstone_ingot", count: 4 }
-		{ item: "extendedcrafting:ender_ingot", count: 2 }
-		{ item: "extendedcrafting:enhanced_ender_ingot" }
 		{ item: "extendedcrafting:crystaltine_ingot" }
 		{ item: "mekanism:ingot_refined_obsidian", count: 3 }
 		{ item: "mekanism:ingot_refined_glowstone", count: 3 }
