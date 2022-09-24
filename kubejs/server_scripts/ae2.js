@@ -1,7 +1,8 @@
 onEvent('recipes', e => {
     removeRecipeByID(e, [
         /mekanism:compat\/appliedenergistics2\/.+crystal_purification/,
-        /mekanism:compat\/appliedenergistics2\/.+purified_crystal/
+        /mekanism:compat\/appliedenergistics2\/.+purified_crystal/,
+        /ae2extras:.+/
     ])
     removeRecipeByOutput(e, [
         'ae2wtlib:infinity_booster_card'
@@ -63,4 +64,8 @@ onEvent('recipes', e => {
             item: 'ae2wtlib:infinity_booster_card'
         }
     }).id(`kubejs:ae2wtlib/infinity_booster_card`)
+    e.shapeless('ae2extras:256k_crafting_storage', ['aeadditions:item_storage_component_256', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/256k_crafting_storage`)
+    e.shapeless('ae2extras:1m_crafting_storage', ['aeadditions:item_storage_component_1024', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/1m_crafting_storage`)
+    e.shapeless('ae2extras:4m_crafting_storage', ['aeadditions:item_storage_component_4096', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/4m_crafting_storage`)
+    e.shapeless('ae2extras:16m_crafting_storage', ['aeadditions:item_storage_component_16384', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/16m_crafting_storage`)
 })
