@@ -196,7 +196,6 @@ onEvent('recipes', e => {
         'draconicevolution:chaotic_core'
     ])
     //===== chest =====//
-
     e.shaped('draconicevolution:draconium_chest', ['DDD', 'CNO', 'DDD'], {
         D: '#forge:ingots/draconium',
         C: 'ironchest:crystal_chest',

@@ -53,7 +53,7 @@ onEvent('recipes', e => {
         'allthemodium:vibranium_helmet'
     ])
     
-    // ===== armor upgrade =====//
+    //===== armor upgrade =====//
     armorupgrade('ingots/iron', 'minecraft:leather', 'minecraft:iron')
     armorupgrade('ingots/gold', 'minecraft:iron', 'minecraft:golden')
     armorupgrade('gems/diamond', 'minecraft:iron', 'minecraft:diamond')

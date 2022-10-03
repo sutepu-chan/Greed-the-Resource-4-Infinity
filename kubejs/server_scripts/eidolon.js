@@ -82,7 +82,6 @@ onEvent('recipes', e => {
         ]
     }).id(`kubejs:compactcrafting/field_projector`)
 
-
     //===== recipe crashes =====//
     e.shapeless('4x eidolon:smooth_stone_bricks', ['8x minecraft:stone_bricks', 'minecraft:quartz']).id(`kubejs:eidolon/smooth_stone_bricks`)
 

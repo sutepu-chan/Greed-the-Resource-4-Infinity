@@ -32,27 +32,4 @@ onEvent('recipes', e => {
         M: '#forge:ingots/melodic_alloy',
         C: 'alchemistry:fusion_casing'
     })
-    //unusable code in serverpack, causing java.lang.out of array index error
-    //not solvable currently
-    /*
-    modifyShaped(e, 'alchemistry:fission_casing', 6, ['SBS', 'SWS', 'SSS'], {
-        S: 'enderioalloys:block_alloy_dark_steel',
-        W: 'chemlib:compound_water',
-        B: 'allthecompressed:blaze_rod_block'
-    })
-    modifyShaped(e, 'alchemistry:fusion_casing', 6, ['SBS', 'SWS', 'SSS'], {
-        S: 'enderioalloys:block_alloy_dark_steel',
-        W: 'chemlib:compound_water',
-        B: 'allthecompressed:ender_pearl_block'
-    })
-    
-    modifyShaped(e, 'alchemistry:fission_core', 3, ['SSS', 'SRS', 'SSS'], {
-        S: '#forge:storage_blocks/energetic_silver',
-        R: 'biggerreactors:reactor_fuel_rod'
-    })
-    modifyShaped(e, 'alchemistry:fusion_core', 3, ['SSS', 'SRS', 'SSS'], {
-        S: '#forge:storage_blocks/energetic_alloy',
-        R: 'biggerreactors:reactor_fuel_rod'
-    })
-    */
 })

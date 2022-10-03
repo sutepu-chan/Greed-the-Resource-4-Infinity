@@ -79,7 +79,7 @@ onEvent('recipes', e => {
         U: 'industrialforegoing:advanced_black_hole_unit'
     })
     //===== black hole controller =====//
-    e.remove({output: 'industrialforegoing:black_hole_controller'})
+    e.remove({ output: 'industrialforegoing:black_hole_controller' })
     draconicFusion(e, 'industrialforegoing:black_hole_controller', 1, 5000000, 'draconicevolution:wyvern_core', [
         'draconicevolution:wyvern_core',
         'draconicevolution:wyvern_core',
@@ -163,7 +163,7 @@ onEvent('recipes', e => {
         M: 'industrialforegoing:machine_frame_simple',
         G: '#forge:gears/gold'
     })
-    
+
     //===== progress adjust =====//
     modifyShaped(e, 'industrialforegoing:mob_imprisonment_tool', 1, [' G ', 'G G', 'SG '], {
         G: '#forge:ingots/gold',

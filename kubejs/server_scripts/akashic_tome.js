@@ -10,25 +10,22 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'industrialforegoing:industrial_foregoing',
-                    'akashictome:displayName': {
-                        text: "IndustrialForegoing'sManual"
-                    },
+                    'akashictome:displayName': { text: "IndustrialForegoing'sManual" },
+                    'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"IndustrialForegoing"}]}'
                     }
                 }
             },
             sushigocrafting: {
-                id: "patchouli:guide_book",
+                id: 'patchouli:guide_book',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'BecomingAnItamae'
-                    },
-                    "patchouli:book": "sushigocrafting:sushigocrafting",
+                    'patchouli:book': 'sushigocrafting:sushigocrafting',
+                    'akashictome:displayName': { text: "BecomingAnItamae" },
                     'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"BecomingAnItamae"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"SushiGoCrafting"}]}'
                     }
                 }
             },
@@ -36,19 +33,19 @@ onEvent('recipes', e => {
                 id: 'theoneprobe:probenote',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'ProbeSettings'
-                    },
-                    'akashictome:is_morphing': 1
+                    'akashictome:displayName': { text: "ProbeSetting" },
+                    'akashictome:is_morphing': 1,
+                    display: {
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"TheOneProbe"}]}'
+                    }
                 }
             },
             ftbquests: {
                 id: 'ftbquests:book',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'QuestBook'
-                    },
+                    'akashictome:displayName': { text: "QuestBook" },
+                    'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"FTBQuest"}]}'
                     }
@@ -59,11 +56,10 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'thermal:guidebook',
-                    'akashictome:displayName': {
-                        text: 'Thermalpedia'
-                    },
+                    'akashictome:displayName': { text: "Thermalpedia" },
+                    'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"ThermalGuide"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"ThermalSeries"}]}'
                     }
                 }
             },
@@ -71,12 +67,10 @@ onEvent('recipes', e => {
                 id: 'rftoolsbase:manual',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'TechnologyGuide'
-                    },
+                    'akashictome:displayName': { text: "TechnologyGuide" },
                     'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"RFToolsGuide"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"RFTools"}]}'
                     }
                 }
             },
@@ -84,9 +78,7 @@ onEvent('recipes', e => {
                 id: 'powah:book',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'Powah!Manual'
-                    },
+                    'akashictome:displayName': { text: "Powah!Manual" },
                     'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Powah!"}]}'
@@ -94,12 +86,10 @@ onEvent('recipes', e => {
                 }
             },
             solpotato: {
-                id: "solpotato:food_book",
+                id: 'solpotato:food_book',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'SpiceOfLife:Potato'
-                    },
+                    'akashictome:displayName': { text: "SpiceOfLife:Potato" },
                     'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"FoodBook"}]}'
@@ -110,10 +100,8 @@ onEvent('recipes', e => {
                 id: 'patchouli:guide_book',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'MysticalAgriculture'
-                    },
                     'patchouli:book': 'mysticalagriculture:guide',
+                    'akashictome:displayName': { text: "MysticalAgriculture" },
                     'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"MysticalAgriculture"}]}'
@@ -125,9 +113,8 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'engineersdecor:engineersdecor_manual',
-                    'akashictome:displayName': {
-                        text: "Engineer'sDecor"
-                    },
+                    'akashictome:displayName': { text: "EngineersDecor" },
+                    'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"EngineersDecor"}]}'
                     }
@@ -138,34 +125,29 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'extendedcrafting:guide',
-                    'akashictome:displayName': {
-                        text: "ExtendedCrafting"
-                    },
+                    'akashictome:displayName': { text: "ExtendedCrafting" },
+                    'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"ExtendedCrafting"}]}'
                     }
                 }
             },
             tconstruct: {
-                id: "tconstruct:encyclopedia",
+                id: 'tconstruct:encyclopedia',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'Encyclopedia'
-                    },
+                    'akashictome:displayName': { text: "TinkerEncyclopedia" },
                     'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopedia"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"TinkersConstruct"}]}'
                     }
                 }
             },
             tmechworks: {
-                id: "tmechworks:book",
+                id: 'tmechworks:book',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'TinkerMechworks'
-                    },
+                    'akashictome:displayName': { text: "TinkerMechworks" },
                     'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"TinkerMechworks"}]}'
@@ -173,15 +155,13 @@ onEvent('recipes', e => {
                 }
             },
             occultism: {
-                id: "occultism:dictionary_of_spirits",
+                id: 'occultism:dictionary_of_spirits',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: 'DictionaryOfSpirits'
-                    },
+                    'akashictome:displayName': { text: "DictionaryOfSpirits" },
                     'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"DictionaryOfSpirits"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Occultism"}]}'
                     }
                 }
             },
@@ -190,11 +170,10 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'pneumaticcraft:book',
-                    'akashictome:displayName': {
-                        text: "Pneumaticcraft"
-                    },
+                    'akashictome:displayName': { text: "PNC:R" },
+                    'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"PNC:R"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"PneumaticCraft"}]}'
                     }
                 }
             },
@@ -202,11 +181,10 @@ onEvent('recipes', e => {
                 id: 'eidolon:codex',
                 Count: 1,
                 tag: {
-                    'akashictome:displayName': {
-                        text: "Eidolon"
-                    },
+                    'akashictome:displayName': { text: "ArsEcclesia" },
+                    'akashictome:is_morphing': 1,
                     display: {
-                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"ArsEcclesia"}]}'
+                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Eidolon"}]}'
                     }
                 }
             },
@@ -215,9 +193,8 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'alchemistry:alchemistry_book',
-                    'akashictome:displayName': {
-                        text: "Alchemistry"
-                    },
+                    'akashictome:displayName': { text: "Alchemistry" },
+                    'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Alchemistry"}]}'
                     }
@@ -228,9 +205,8 @@ onEvent('recipes', e => {
                 Count: 1,
                 tag: {
                     'patchouli:book': 'advancedperipherals:manual',
-                    'akashictome:displayName': {
-                        text: "AdvancedPeripherals"
-                    },
+                    'akashictome:displayName': { text: "AdvancedPeripherals" },
+                    'akashictome:is_morphing': 1,
                     display: {
                         Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"AdvancedPeripherals"}]}'
                     }
