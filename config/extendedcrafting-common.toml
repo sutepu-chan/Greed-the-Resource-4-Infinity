@@ -13,7 +13,7 @@
 	powerCapacity = 5000000
 	#How much FE/t the Crafting Core should use when crafting by default.
 	#Range: > 0
-	powerRate = 500
+	powerRate = 500000
 
 #Settings for the Extended Crafting Tables.
 ["Table Crafting"]
@@ -28,7 +28,7 @@
 	autoTablePowerCapacity = 500000
 	#How much FE the Auto Crafting Tables should use when crafting.
 	#Range: > 0
-	autoTablePowerRate = 5000
+	autoTablePowerRate = 50000
 	#How much FE the Auto Crafting Tables should use when auto inserting items.
 	#Range: > 0
 	autoTableInsertPowerRate = 20000
