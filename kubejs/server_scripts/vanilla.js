@@ -54,11 +54,6 @@ onEvent('recipes', e => {
         O: '#forge:obsidian',
         G: 'minecraft:ghast_tear'
     })
-    colors.forEach(color => {
-        e.shaped(`3x minecraft:${color}_stained_glass`, ['GGG', 'G G', 'GGG',], {
-            G: `minecraft:${color}_stained_glass_pane`
-        }).id(`kubejs:minecraft/${color}_pane_to_glass`)
-    })
     //===== Add Tag Recipe =====//
     e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
     e.replaceInput('minecraft:stick', '#forge:rods/wooden')
