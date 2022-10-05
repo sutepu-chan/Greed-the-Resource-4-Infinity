@@ -211,4 +211,127 @@ onEvent('recipes', e => {
         e.shapeless(`botanypotstiers:creative_${a}_botany_pot`, [`#forge:dyes/${a}`, creativePot]).id(`kubejs:botanypots/creative_${a}_botany_pot_from_dye`)
         e.shapeless(`botanypotstiers:creative_hopper_${a}_botany_pot`, [`#forge:dyes/${a}`, creativeHopperPot]).id(`kubejs:botanypots/creative_hopper_${a}_botany_pot_from_dye`)
     });
+
+    //===== compactibility =====//
+    e.custom({
+        type: "botanypots:crop",
+        seed: { item: "sushigocrafting:avocado_sapling" },
+        categories: ["dirt"],
+        growthTicks: 600,
+        display: { block: "sushigocrafting:avocado_sapling" },
+        results: [
+            {
+                chance: 0.6,
+                output: { item: "sushigocrafting:avocado" },
+                minRolls: 1,
+                maxRolls: 3
+            },
+            {
+                chance: 0.3,
+                output: { item: "sushigocrafting:avocado_log" },
+                minRolls: 1,
+                maxRolls: 1
+            },
+            {
+                chance: 0.05,
+                output: { item: "sushigocrafting:avocado_sapling" },
+                minRolls: 1,
+                maxRolls: 1
+            }
+        ]
+    })
+    e.custom({
+        type: "botanypots:crop",
+        seed: { item: "sushigocrafting:seaweed" },
+        categories: ["water"],
+        growthTicks: 1000,
+        display: {
+            block: "sushigocrafting:seaweed",
+            renderFluid: false
+        },
+        results: [
+            {
+                chance: 0.6,
+                output: { item: "sushigocrafting:seaweed" },
+                minRolls: 1,
+                maxRolls: 3
+            }
+        ]
+    })
+    e.custom({
+        type: "botanypots:crop",
+        seed: { item: "sushigocrafting:rice_seeds" },
+        categories: ["water"],
+        growthTicks: 1000,
+        display: {
+            block: "sushigocrafting:rice_crop",
+            renderFluid: false
+        },
+        results: [
+            {
+                chance: 0.6,
+                output: { item: "sushigocrafting:rice" },
+                minRolls: 1,
+                maxRolls: 3
+            },
+            {
+                chance: 0.1,
+                output: { item: "sushigocrafting:rice_seeds" },
+                minRolls: 1,
+                maxRolls: 1
+            }
+        ]
+    })
+    e.custom({
+        type: "botanypots:crop",
+        seed: { item: 'sushigocrafting:sesame_seeds' },
+        categories: ["farmland"],
+        growthTicks: 1000,
+        display: { block: 'sushigocrafting:sesame_crop' },
+        results: [
+            {
+                chance: 0.6,
+                output: {
+                    type: "forge:nbt",
+                    item: "sushigocrafting:sesame_seed",
+                    count: 1,
+                    nbt: "{Amount:25}"
+                },
+                minRolls: 1,
+                maxRolls: 1
+            },
+            {
+                chance: 0.1,
+                output: { item: 'sushigocrafting:sesame_seeds' },
+                minRolls: 1,
+                maxRolls: 1
+            }
+        ]
+    })
+    let seedOnPot = (type, result) => {
+        e.custom({
+            type: "botanypots:crop",
+            seed: { item: `sushigocrafting:${type}_seeds` },
+            categories: ["farmland"],
+            growthTicks: 1000,
+            display: { block: `sushigocrafting:${type}_crop` },
+            results: [
+                {
+                    chance: 0.6,
+                    output: { item: result },
+                    minRolls: 1,
+                    maxRolls: 2
+                },
+                {
+                    chance: 0.1,
+                    output: { item: `sushigocrafting:${type}_seeds` },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
+            ]
+        })
+    }
+    seedOnPot('cucumber', 'sushigocrafting:cucumber')
+    seedOnPot('soy', 'sushigocrafting:soy_bean')
+    seedOnPot('wasabi', 'sushigocrafting:wasabi_root')
 })
