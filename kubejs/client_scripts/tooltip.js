@@ -274,7 +274,9 @@ onEvent("item.tooltip", e => {
 
     //===== angel ring =====//
     goldTooltip('angelring:itemdiamondring', 'Crafting Ingredient')
-
+    
+    //===== ae2 =====//
+    whiteTooltip('appliedenergistics2:quantum_entangled_singularity', 'Use Ender Pearl instead of Ender Dust for explosion crafting')
     //====== space =====//
     grayTooltip('boss_tools:oxygen_loader', 'Convert water into Oxygen.')
     grayTooltip('boss_tools:fuel_refinery', 'Turn oil into rocket fuel.')
