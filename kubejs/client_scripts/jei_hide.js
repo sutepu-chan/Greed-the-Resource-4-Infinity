@@ -177,7 +177,6 @@ onEvent('jei.hide.items', e => {
         '@titanium',
         '@phosphophyllite',
         '@curios',
-        '@structurize',
         '@structure_gel',
         '@tac', //rendering lag at JEI
         '@hammerlib',
