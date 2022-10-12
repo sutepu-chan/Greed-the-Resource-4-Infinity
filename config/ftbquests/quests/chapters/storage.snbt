@@ -2649,7 +2649,7 @@
 			x: 6.0d
 			y: -7.0d
 			description: [
-				"Drop one singularity and one ender dust on ground and explode them using tiny tnt. The quantum entangled singularity will then poped out."
+				"Drop one singularity and one ender pearl on ground and explode them using tiny tnt. The quantum entangled singularity will then poped out."
 				"The quantum entangled singularities are produced in pairs, which is required to create a connection between bridge on each side."
 			]
 			dependencies: ["747A9BB7B2C2AA9A"]
