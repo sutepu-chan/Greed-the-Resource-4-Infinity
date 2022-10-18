@@ -255,7 +255,7 @@ onEvent('recipes', e => {
                 "nbt": "{Id:\"extendedcrafting:netherstar\"}"
             },
             "C": {
-                "item": "kubejs:neutronium_ingot"
+                "item": 'endless:neutronium_ingot'
             },
             "D": {
                 "item": "enderioalloys:item_alloy_ingot_stellar_alloy"
@@ -296,7 +296,7 @@ onEvent('recipes', e => {
                 "nbt": "{Id:\"extendedcrafting:platinum\"}"
             },
             "C": {
-                "item": "kubejs:neutronium_ingot"
+                "item": 'endless:neutronium_ingot'
             },
             "D": {
                 "item": "enderioalloys:item_alloy_ingot_vivid_alloy"
@@ -337,7 +337,7 @@ onEvent('recipes', e => {
                 "nbt": "{Id:\"extendedcrafting:forge_energy\"}"
             },
             "C": {
-                "item": "kubejs:neutronium_ingot"
+                "item": 'endless:neutronium_ingot'
             },
             "D": {
                 "item": "enderioalloys:item_alloy_ingot_vibrant_alloy"

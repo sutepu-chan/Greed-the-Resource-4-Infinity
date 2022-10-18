@@ -78,8 +78,8 @@ onEvent('recipes', e => {
         'minecraft:dragon_egg',
         'draconicevolution:medium_chaos_frag',
         'kubejs:endest_pearl',
-        'kubejs:neutronium_ingot',
-        'kubejs:neutronium_ingot',
+        'endless:neutronium_ingot',
+        'endless:neutronium_ingot',
         'draconicevolution:draconic_relay_crystal',
         'draconicevolution:draconic_relay_crystal',
         'draconicevolution:chaotic_core',
@@ -117,8 +117,8 @@ onEvent('recipes', e => {
         'allthecompressed:allthemodium_block_2x',
         'draconicevolution:awakened_core',
         'draconicevolution:awakened_core',
-        '#forge:nuggets/neutronium',
-        '#forge:nuggets/neutronium'
+        'endless:neutronium_nugget',
+        'endless:neutronium_nugget'
     ])
     //===== relay crystal =====//
     draconicFusion(e, 'draconicevolution:basic_relay_crystal', 1, 200000, 'draconicevolution:draconium_core', [
