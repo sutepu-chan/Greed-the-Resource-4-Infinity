@@ -1,6 +1,0 @@
-{
-    "parent": "minecraft:item/handheld",
-    "textures": {
-        "layer0": "upgradednetherite_creative:items/tools/infinity_sword/layer_0"
-    }
-}
