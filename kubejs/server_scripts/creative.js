@@ -190,7 +190,7 @@ onEvent('recipes', e => {
                 item: "aeadditions:chemical_storage_cell_4096"
             },
             D: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             E: {
                 item: "appliedenergistics2:fluix_crystal"
@@ -243,7 +243,7 @@ onEvent('recipes', e => {
                 item: "pneumaticcraft:plastic_brick_white"
             },
             G: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             H: {
                 item: "pneumaticcraft:advanced_air_compressor"
@@ -283,7 +283,7 @@ onEvent('recipes', e => {
                 item: "pneumaticcraft:heat_frame"
             },
             C: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             D: {
                 item: "extendedcrafting:ultimate_singularity"
@@ -317,7 +317,7 @@ onEvent('recipes', e => {
                 item: "allthecompressed:sand_block_4x"
             },
             D: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             E: {
                 item: "allthecompressed:sand_block_8x"
@@ -350,7 +350,7 @@ onEvent('recipes', e => {
                 item: "extendedcrafting:ultimate_singularity"
             },
             E: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             F: {
                 item: "allthecompressed:uranium_block_8x"
@@ -386,7 +386,7 @@ onEvent('recipes', e => {
                 nbt: "{BlockEntityTag:{TankInv:[{FluidName:\"minecraft:empty\",Capacity:32000,Tank:0b,Amount:0}]}}"
             },
             E: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             F: {
                 item: "industrialforegoing:supreme_black_hole_tank"
@@ -419,7 +419,7 @@ onEvent('recipes', e => {
                 item: "extendedcrafting:ultimate_singularity"
             },
             E: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             F: {
                 item: "draconicevolution:reactor_core"
@@ -454,7 +454,7 @@ onEvent('recipes', e => {
                 item: "mekanism:pellet_antimatter"
             },
             D: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+                item: "endless:infinity_ingot"
             },
             E: {
                 item: "draconicevolution:large_chaos_frag"
@@ -491,290 +491,5 @@ onEvent('recipes', e => {
             item: 'mekanism:creative_energy_cube'
         }
     }).id(`kubejs:mekanism/creative_energy_cube`)
-    //creativerite
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            " AAAAAAA ",
-            "AAAABAAAA",
-            "AA  C  AA",
-            "    C    ",
-            "    C    ",
-            "    C    ",
-            "    C    ",
-            "    C    ",
-            "    C    "
-        ],
-        key: {
-            A: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            B: {
-                item: "extendedcrafting:crystaltine_block"
-            },
-            C: {
-                item: "kubejs:neutronium_ingot"
-            }
-        },
-        result: {
-            type: "forge:nbt",
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_pickaxe',
-            count: 1,
-            nbt: "{Enchantments:[{lvl:100,id:\"minecraft:fortune\"}]}"
-        }
-    }).id(`kubejs:creativerite/pickaxe`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            " A       ",
-            "AAAAA    ",
-            "AAAA     ",
-            " AB      ",
-            "  B      ",
-            "  B      ",
-            "  B      ",
-            "  B      ",
-            "  B      "
-        ],
-        key: {
-            A: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            B: {
-                item: "kubejs:neutronium_ingot"
-            }
-        },
-        result: {
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_axe'
-        }
-    }).id(`kubejs:creativerite/axe`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "      AAA",
-            "     AAAA",
-            "      AAA",
-            "     B A ",
-            "    B    ",
-            "   B     ",
-            "  B      ",
-            " B       ",
-            "B        "
-        ],
-        key: {
-            A: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            B: {
-                item: "kubejs:neutronium_ingot"
-            }
-        },
-        result: {
-            type: "forge:nbt",
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_shovel',
-            count: 1,
-            nbt: "{Enchantments:[{lvl:100,id:\"minecraft:fortune\"}]}"
-        }
-    }).id(`kubejs:creativerite/shovel`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "       AA",
-            "      AAA",
-            "     AAA ",
-            "    AAA  ",
-            " B AAA   ",
-            "  BAA    ",
-            "  CB     ",
-            " C  B    ",
-            "D        "
-        ],
-        key: {
-            A: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            B: {
-                item: "extendedcrafting:crystaltine_ingot"
-            },
-            C: {
-                item: "kubejs:neutronium_ingot"
-            },
-            D: {
-                item: "extendedcrafting:ultimate_singularity"
-            }
-        },
-        result: {
-            type: "forge:nbt",
-            item: "upgradednetherite_creative:creative_upgraded_netherite_sword",
-            count: 1,
-            nbt: "{Enchantments:[{lvl:100,id:\"minecraft:looting\"},{lvl:100,id:\"minecraft:sweeping\"},{lvl:2147483647,id:\"minecraft:sharpness\"}]}"
-        }
-    }).id(`kubejs:creativerite/sword`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "   AA    ",
-            "  A B    ",
-            " A  B    ",
-            "A   B    ",
-            "C   B    ",
-            "A   B    ",
-            " A  B    ",
-            "  A B    ",
-            "   AA    "
-        ],
-        key: {
-            A: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            B: {
-                item: "minecraft:white_wool"
-            },
-            C: {
-                item: "extendedcrafting:crystaltine_block"
-            }
-        },
-        result: {
-            type: "forge:nbt",
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_bow',
-            count: 1,
-            nbt: "{Enchantments:[{lvl:1,id:\"minecraft:infinity\"},{lvl:2147483647,id:\"minecraft:power\"}]}"
-        }
-    }).id(`kubejs:creativerite/bow`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "  AAAAA  ",
-            " ABBBBBA ",
-            " A CBC A ",
-            " ABBDBBA ",
-            " ABBBBBA ",
-            " AB B BA ",
-            "         ",
-            "         ",
-            "         "
-        ],
-        key: {
-            A: {
-                item: "kubejs:neutronium_ingot"
-            },
-            B: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            C: {
-                item: "extendedcrafting:ultimate_singularity"
-            },
-            D: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_helmet",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            }
-        },
-        result: {
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_helmet'
-        }
-    }).id(`kubejs:creativerite/helmet`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            " AA   AA ",
-            "AAA   AAA",
-            "AAA   AAA",
-            " ABBBBBA ",
-            " ABBCBBA ",
-            " ABBDBBA ",
-            " ABBBBBA ",
-            " ABBBBBA ",
-            "  AAAAA  "
-        ],
-        key: {
-            A: {
-                item: "kubejs:neutronium_ingot"
-            },
-            B: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            C: {
-                item: "extendedcrafting:crystaltine_block"
-            },
-            D: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_bodyarmor",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            }
-        },
-        result: {
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_chestplate'
-        }
-    }).id(`kubejs:creativerite/chestplate`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "AAAAAAAAA",
-            "ABBBCBBBA",
-            "ABAADAABA",
-            "ABA   ABA",
-            "AEA   AEA",
-            "ABA   ABA",
-            "ABA   ABA",
-            "ABA   ABA",
-            "ABA   ABA"
-        ],
-        key: {
-            A: {
-                item: "kubejs:neutronium_ingot"
-            },
-            B: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            C: {
-                item: "extendedcrafting:ultimate_singularity"
-            },
-            D: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_pants",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            },
-            E: {
-                item: "extendedcrafting:crystaltine_block"
-            }
-        },
-        result: {
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_leggings'
-        }
-    }).id(`kubejs:creativerite/leggings`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            " AAA AAA ",
-            " ABA ABA ",
-            " ABA ABA ",
-            "AABA ABAA",
-            "ABBA ABBA",
-            "AAAACAAAA",
-            "         ",
-            "         ",
-            "         "
-        ],
-        key: {
-            A: {
-                item: "kubejs:neutronium_ingot"
-            },
-            B: {
-                item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
-            },
-            C: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_boots",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            }
-        },
-        result: {
-            item: 'upgradednetherite_creative:creative_upgraded_netherite_boots'
-        }
-    }).id(`kubejs:creativerite/boots`)
+
 })
