@@ -1,0 +1,167 @@
+
+#Endless Base Config
+[general]
+	#Whether to allow the super mode of infinity tools keep stone and dirt.
+	"Is Keep Stone" = true
+	#Whether to allow the hammer mode of the infinity pickaxe to destory unbreakable blocks such as bedrock.
+	"Is Break Bedrock" = true
+	#Whether to merge matter cluster
+	"Is Merge Matter Cluster" = false
+	#Damage of right click attack of the infinity sword.
+	#Range: 10 ~ 100000
+	"Sword Range Damage" = 50000
+	#Infinity sword right click attack range.
+	#Range: 8 ~ 64
+	"Sword Attack Range" = 16
+	#Whether to allow infinity sword right click attack neutral creatures.
+	"Is Sword Attack Animal" = true
+	#Damage of the sub arrow.
+	#Range: 10 ~ 100000
+	"Sub Arrow Damage" = 10000
+	#Damage of the infinity bow or crossbow without projectile.
+	#Range: 5 ~ 100
+	"No Arrow Damage" = 10
+	#Maximum distance of a chain cutting of the infinity axe.
+	#Range: 16 ~ 1024
+	"Axe Chain Distance" = 32
+	#Whether to allow the infinity axe to turn grass block into dirt.
+	"Is Axe Change Grass Block" = true
+	#Food effect time scaling factor
+	#Range: 0.1 ~ 5.0
+	"Food Time" = 1.0
+	#Whether to allow the infinity pickaxe to destory unbreakable blocks with shift + left click.
+	"Is Remove Block" = true
+	#Maximum quantity of a single item in a matter cluster.
+	#Range: 256 ~ 10240
+	"Matter Cluster Max Count" = 4096
+	#Maximum category of items in a matter cluster.
+	#Range: 8 ~ 64
+	"Matter Cluster Max Term" = 16
+	#Endest pearl explosion damage
+	#Range: 100 ~ 10000
+	"Endest Pearl End Damage" = 1000
+	#Endest pearl attraction damage
+	#Range: 1 ~ 10
+	"Endest Pearl One Damage" = 5
+	#Endest pearl attraction range
+	#Range: 10 ~ 32
+	"Endest Pearl Attraction Range" = 20
+	#Damage of infinity weapons to players wearing a full suit of infinity armor.
+	#Range: 4 ~ 100
+	"Infinity Armor Bear Damage" = 10
+	#Damage of infinity weapons to players wearing a full suit of infinity armor and holding infinity weapons.
+	#Range: 1 ~ 50
+	"Infinity Bear Damage" = 4
+	#Infinity crossbow fireworks damage.
+	#Range: 5 ~ 10000
+	"Infinity Firework Damage" = 100
+	#Whether to allow the infinity sword and bow to destroy the guardian crystal in DE(Draconic Evolution).
+	"Is Break DE Crystal" = false
+	#Whether to allow the extreme crafting table to use vanilla crafting table recipes.
+	"Is Craft Table" = false
+	#Whether to show feedback when player log into the game.
+	"Is Logo Info" = false
+	#Whether to allow the infinity arrow to channel lightning.
+	"Is Arrow Lightning" = false
+
+#Basic amount of singularities required by the compressor.
+[singularity]
+	#base count
+	#Range: 10 ~ 2000
+	Coal = 450
+	#base count
+	#Range: 10 ~ 2000
+	Clay = 400
+	#base count
+	#Range: 10 ~ 2000
+	Iron = 300
+	#base count
+	#Range: 10 ~ 2000
+	Gold = 350
+	#base count
+	#Range: 10 ~ 2000
+	Diamond = 250
+	#base count
+	#Range: 10 ~ 2000
+	Emerald = 200
+	#base count
+	#Range: 10 ~ 2000
+	Netherite = 150
+	#base count
+	#Range: 10 ~ 2000
+	Lapis = 400
+	#base count
+	#Range: 10 ~ 2000
+	Quartz = 500
+	#base count
+	#Range: 10 ~ 2000
+	Redstone = 400
+	#base count
+	#Range: 10 ~ 2000
+	Silver = 200
+	#base count
+	#Range: 10 ~ 2000
+	Copper = 300
+	#base count
+	#Range: 10 ~ 2000
+	Ruby = 250
+	#base count
+	#Range: 10 ~ 2000
+	Dragon = 100
+	#base count
+	#Range: 10 ~ 2000
+	Space = 50
+	#base count
+	#Range: 10 ~ 2000
+	Xray = 150
+	#base count
+	#Range: 10 ~ 2000
+	Ultra = 80
+	#base count
+	#Range: 10 ~ 2000
+	Zinc = 300
+	#base count
+	#Range: 10 ~ 2000
+	Nickel = 400
+	#base count
+	#Range: 10 ~ 2000
+	Lead = 300
+	#base count
+	#Range: 10 ~ 2000
+	Tin = 400
+	#base count
+	#Range: 10 ~ 2000
+	DragonIum = 80
+	#base count
+	#Range: 10 ~ 2000
+	AwakenDragon = 10
+	#base count
+	#Range: 10 ~ 2000
+	Mana = 200
+	#base count
+	#Range: 10 ~ 2000
+	Tara = 100
+	#base count
+	#Range: 10 ~ 2000
+	ElementIum = 50
+
+#Mod Impact
+[modRatio]
+	#Maximum multiple of the amount of singularities affected by other mods.
+	#Range: 5 ~ 50
+	"Mod Ratio Rate" = 20
+	#Maximum addition of the amount of singularities affected by other mods.
+	#Range: 500 ~ 5000
+	"Mod Ratio Count" = 2000
+
+#Blacklist of the super mode of infinity tools.For example, if you want stone and block of diamond to be ignored from the super mode of the infinity pickaxe, use ["minecraft:stone", "minecraft:diamond_block"] in pickaxe blacklist;if you want dirt to be ignored from the super mode of the infinity shovel, use ["minecraft:dirt"] in shovel blacklist.
+["black list"]
+	#Blacklist of the super mode of the infinity pickaxe
+	"Pickaxe Black List" = []
+	#Blacklist of the super mode of the infinity axe
+	"Axe Black List" = []
+	#Blacklist of the super mode of the infinity shovel
+	"Shovel Black List" = []
+	#Blacklist of the super mode of the infinity hoe
+	"Hoe Black List" = []
+
