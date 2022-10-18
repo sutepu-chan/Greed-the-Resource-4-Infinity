@@ -277,6 +277,7 @@ onEvent("item.tooltip", e => {
     
     //===== ae2 =====//
     whiteTooltip('appliedenergistics2:quantum_entangled_singularity', 'Use Ender Pearl instead of Ender Dust for explosion crafting')
+    
     //====== space =====//
     grayTooltip('boss_tools:oxygen_loader', 'Convert water into Oxygen.')
     grayTooltip('boss_tools:fuel_refinery', 'Turn oil into rocket fuel.')
@@ -285,7 +286,7 @@ onEvent("item.tooltip", e => {
     grayTooltip('boss_tools:rocket_launch_pad', 'Place into 3x3 structure to allow rocket launching.')
 
     //===== avaritia armor =====//
-    e.addAdvanced('upgradednetherite_creative:creative_upgraded_netherite_helmet', (item, advanced, text) => {
+    e.addAdvanced('endless:infinity_helmet', (item, advanced, text) => {
         if (!e.isShift()) {
             text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
@@ -300,7 +301,7 @@ onEvent("item.tooltip", e => {
             text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
-    e.addAdvanced('upgradednetherite_creative:creative_upgraded_netherite_chestplate', (item, advanced, text) => {
+    e.addAdvanced('endless:infinity_chestplate', (item, advanced, text) => {
         if (!e.isShift()) {
             text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
@@ -315,7 +316,7 @@ onEvent("item.tooltip", e => {
             text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
-    e.addAdvanced('upgradednetherite_creative:creative_upgraded_netherite_leggings', (item, advanced, text) => {
+    e.addAdvanced('endless:infinity_leggings', (item, advanced, text) => {
         if (!e.isShift()) {
             text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
@@ -330,7 +331,7 @@ onEvent("item.tooltip", e => {
             text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
-    e.addAdvanced('upgradednetherite_creative:creative_upgraded_netherite_boots', (item, advanced, text) => {
+    e.addAdvanced('endless:infinity_boots', (item, advanced, text) => {
         if (!e.isShift()) {
             text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
@@ -345,4 +346,8 @@ onEvent("item.tooltip", e => {
             text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
+
+    //===== better muffling =====//
+    whiteTooltip('bettermuffling:muffling_block', 'Be Quiet! Shh...')
+    yellowTooltip('bettermuffling:muffling_block_advanced', 'Be Silent! Shhhhh....')
 })
