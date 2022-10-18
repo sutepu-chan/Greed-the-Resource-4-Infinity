@@ -192,13 +192,13 @@ onEvent('recipes', e => {
 				"item": "kubejs:neutron_pile"
 			},
 			{
-				"item": "kubejs:neutron_nugget"
+				"item": 'endless:neutronium_nugget'
 			},
 			{
-				"item": "kubejs:neutronium_ingot"
+				"item": "endless:neutronium_ingot"
 			},
 			{
-				"item": "kubejs:neutronium"
+				"item": 'endless:neutronium_block'
 			},
 			{
 				"item": "kubejs:endest_pearl"
