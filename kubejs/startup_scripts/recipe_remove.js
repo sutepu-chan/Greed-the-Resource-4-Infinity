@@ -234,10 +234,6 @@ global.recipe_disable = [
     'mysticalagriculture:sapphire_seeds',
     'mysticalagriculture:iridium_essence',
     'mysticalagriculture:iridium_seeds',
-    //creative
-    'upgradednetherite_creative:creative_upgraded_netherite_horse_armor',
-    'upgradednetherite_creative:creative_upgraded_netherite_crossbow',
-    'upgradednetherite_creative:creative_upgraded_netherite_shield',
     //ae2 extras
     'ae2extras:256k_cell_component',
     'ae2extras:1m_cell_component',
@@ -255,6 +251,22 @@ global.recipe_disable = [
     'ae2extras:1m_fluid_storage_cell',
     'ae2extras:4m_fluid_storage_cell',
     'ae2extras:16m_fluid_storage_cell',
+    //avaritia
+    'endless:singularity_awakened_draconium',
+    'endless:singularity_draconium',
+    'endless:singularity_tin',
+    'endless:singularity_lead',
+    'endless:singularity_nickel',
+    'endless:singularity_coal',
+    'endless:singularity_iron',
+    'endless:singularity_gold',
+    'endless:singularity_diamond',
+    'endless:singularity_netherite',
+    'endless:singularity_emerald',
+    'endless:singularity_lapis',
+    'endless:singularity_redstone',
+    'endless:singularity_quartz',
+    'endless:singularity_clay',
     //misc
     'upgrade_aquatic:prismarine_rod',
     'pneumaticcraft:manometer',
