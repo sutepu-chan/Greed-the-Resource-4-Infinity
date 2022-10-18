@@ -77,8 +77,7 @@ onEvent('jei.information', e => {
     ]).forEach(book => {
         e.add(book, 'Uncraftable! Check Akashic Tome.')
     })
-    //===== avaritia =====//
-    e.add('upgradednetherite_creative:creative_upgraded_netherite_pickaxe', 'Bedrock breakable! Hold shift to break an 11x11 area.')
+
     //===== ender storage =====//
     e.add('enderstorage:ender_chest', [
         'Cross-dimensional wireless item transfer to any chest on the same channel.',
