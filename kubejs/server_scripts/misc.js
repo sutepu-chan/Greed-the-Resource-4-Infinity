@@ -202,4 +202,6 @@ onEvent('recipes', e => {
         S: '#forge:rods/wooden'
     })
 
+    //===== ferret library =====//
+    e.remove({id: /library_ferret:.+/})
 })
