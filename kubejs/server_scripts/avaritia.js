@@ -32,6 +32,63 @@ onEvent('recipes', e => {
         'endless:neutronium_leggings',
         'endless:neutronium_boots',
     ])
+    //===== items =====//
+    e.custom({
+        type: 'extendedcrafting:shapeless_table',
+        ingredients: [
+            { item: "endless:neutronium_pile" },
+            { item: "endless:neutronium_nugget" },
+            { item: "endless:neutronium_ingot" },
+            { item: "endless:neutronium_block" },
+            { item: "endless:crystal_matrix_ingot" },
+            { item: "endless:crystal_matrix_block" },
+            { item: "endless:cosmic_meatballs" },
+            { item: "endless:ultimate_stew" },
+            { item: "endless:endest_pearl" },
+            { item: "endless:record_fragment" },
+            { item: "appliedenergistics2:singularity" },
+            { item: "mysticalagradditions:insanium_gemstone_block" },
+            { item: "aeadditions:item_storage_cell_16384" },
+            { item: "aeadditions:fluid_storage_cell_4096" },
+            { item: "aeadditions:chemical_storage_cell_4096" },
+            { item: "tconstruct:hepatizon_block" },
+            { item: "tconstruct:manyullyn_block" },
+            { item: "tconstruct:queens_slime_block" },
+            { item: "tconstruct:pig_iron_block" },
+            { item: "tconstruct:rose_gold_block" },
+            { item: "tconstruct:tinkers_bronze_block" },
+            { item: "tconstruct:slimesteel_block" },
+            { item: "tconstruct:cobalt_block" },
+            { item: "draconicevolution:draconium_core" },
+            { item: "draconicevolution:wyvern_core" },
+            { item: "draconicevolution:awakened_core" },
+            { item: "draconicevolution:chaotic_core" },
+            { item: "ironfurnaces:million_furnace" },
+            { item: 'kubejs:eternal_singularity' }
+        ],
+        result: {
+            item: 'endless:infinity_catalyst'
+        }
+    }).id(`kubejs:infinity_catalyst`)
+    //===== blocks =====//
+    e.custom({
+        type: 'draconicevolution:fusion_crafting',
+        result: { item: 'endless:neutronium_collector' },
+        catalyst: { item: 'draconicevolution:infused_obsidian' },
+        total_energy: 56412000,
+        tier: 'DRACONIC',
+        ingredients: [
+            { item: 'draconicevolution:draconic_energy_core' },
+            { item: 'draconicevolution:draconic_energy_core' },
+            { item: 'draconicevolution:draconic_energy_core' },
+            { item: 'draconicevolution:draconic_energy_core' },
+            { item: 'draconicevolution:energy_pylon' },
+            { item: 'draconicevolution:energy_pylon' },
+            { item: 'draconicevolution:awakened_core' },
+            { item: 'draconicevolution:awakened_core' },
+        ]
+    }).id(`kubejs:fusion_crafting/neutronium_collector`)
+    //===== tools =====//
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
@@ -50,18 +107,13 @@ onEvent('recipes', e => {
                 item: "endless:infinity_ingot"
             },
             B: {
-                item: "extendedcrafting:crystaltine_block"
+                item: 'endless:crystal_matrix_block'
             },
             C: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             }
         },
-        result: {
-            type: "forge:nbt",
-            item: 'endless:infinity_pickaxe',
-            count: 1,
-            nbt: "{Enchantments:[{lvl:100,id:\"minecraft:fortune\"}]}"
-        }
+        result: { item: 'endless:infinity_pickaxe' }
     }).id(`kubejs:avaritia/pickaxe`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
@@ -81,7 +133,7 @@ onEvent('recipes', e => {
                 item: "endless:infinity_ingot"
             },
             B: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             }
         },
         result: {
@@ -106,15 +158,10 @@ onEvent('recipes', e => {
                 item: "endless:infinity_ingot"
             },
             B: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             }
         },
-        result: {
-            type: "forge:nbt",
-            item: 'endless:infinity_shovel',
-            count: 1,
-            nbt: "{Enchantments:[{lvl:100,id:\"minecraft:fortune\"}]}"
-        }
+        result: { item: 'endless:infinity_shovel' }
     }).id(`kubejs:avaritia/shovel`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
@@ -137,10 +184,10 @@ onEvent('recipes', e => {
                 item: "extendedcrafting:crystaltine_ingot"
             },
             C: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             },
             D: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             }
         },
         result: {
@@ -171,15 +218,10 @@ onEvent('recipes', e => {
                 item: "minecraft:white_wool"
             },
             C: {
-                item: "extendedcrafting:crystaltine_block"
+                item: 'endless:crystal_matrix_block'
             }
         },
-        result: {
-            type: "forge:nbt",
-            item: 'endless:infinity_bow',
-            count: 1,
-            nbt: "{Enchantments:[{lvl:1,id:\"minecraft:infinity\"},{lvl:2147483647,id:\"minecraft:power\"}]}"
-        }
+        result: { item: 'endless:infinity_bow' }
     }).id(`kubejs:avaritia/bow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
@@ -196,13 +238,13 @@ onEvent('recipes', e => {
         ],
         key: {
             A: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             },
             B: {
                 item: "endless:infinity_ingot"
             },
             C: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             D: {
                 type: "forge:nbt",
@@ -230,13 +272,13 @@ onEvent('recipes', e => {
         ],
         key: {
             A: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             },
             B: {
                 item: "endless:infinity_ingot"
             },
             C: {
-                item: "extendedcrafting:crystaltine_block"
+                item: 'endless:crystal_matrix_block'
             },
             D: {
                 type: "forge:nbt",
@@ -264,13 +306,13 @@ onEvent('recipes', e => {
         ],
         key: {
             A: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             },
             B: {
                 item: "endless:infinity_ingot"
             },
             C: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             D: {
                 type: "forge:nbt",
@@ -279,7 +321,7 @@ onEvent('recipes', e => {
                 nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
             },
             E: {
-                item: "extendedcrafting:crystaltine_block"
+                item: 'endless:crystal_matrix_block'
             }
         },
         result: {
@@ -301,7 +343,7 @@ onEvent('recipes', e => {
         ],
         key: {
             A: {
-                item: "kubejs:neutronium_ingot"
+                item: 'endless:neutronium_ingot'
             },
             B: {
                 item: "endless:infinity_ingot"
