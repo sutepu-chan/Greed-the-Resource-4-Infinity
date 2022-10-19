@@ -28,7 +28,7 @@ onEvent('recipes', e => {
                 item: 'balancedflight:ascended_flight_anchor'
             },
             E: {
-                item: 'extendedcrafting:ultimate_singularity'
+                item: 'endless:infinity_catalyst'
             },
             F: {
                 item: 'draconicevolution:draconic_flight_module'

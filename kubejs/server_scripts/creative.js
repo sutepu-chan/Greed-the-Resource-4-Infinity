@@ -23,7 +23,7 @@ onEvent('recipes', e => {
                 item: "tconstruct:manyullyn_ingot"
             },
             E: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             }
         },
         result: {
@@ -59,7 +59,7 @@ onEvent('recipes', e => {
                 item: "thermal:gold_plate"
             },
             E: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             }
         },
         result: {
@@ -89,7 +89,7 @@ onEvent('recipes', e => {
                 item: "extendedcrafting:crystaltine_ingot"
             },
             D: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             }
         },
         result: {
@@ -116,7 +116,7 @@ onEvent('recipes', e => {
                 item: "tconstruct:slimesteel_ingot"
             },
             C: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             D: {
                 item: "minecraft:scute"
@@ -146,7 +146,7 @@ onEvent('recipes', e => {
                 item: 'allthecompressed:iron_block_1x'
             },
             C: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             D: {
                 item: "enderioalloys:item_alloy_ingot_crystalline_pink_slime"
@@ -199,7 +199,7 @@ onEvent('recipes', e => {
                 item: "appliedenergistics2:singularity"
             },
             G: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             H: {
                 item: "lazierae2:fluix_steel_ingot"
@@ -255,7 +255,7 @@ onEvent('recipes', e => {
                 item: "pneumaticcraft:safety_tube_module"
             },
             K: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             }
         },
         result: {
@@ -286,7 +286,7 @@ onEvent('recipes', e => {
                 item: "endless:infinity_ingot"
             },
             D: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             E: {
                 item: "mekanism:resistive_heater"
@@ -311,7 +311,7 @@ onEvent('recipes', e => {
                 item: "minecraft:flint"
             },
             B: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             C: {
                 item: "allthecompressed:sand_block_4x"
@@ -347,7 +347,7 @@ onEvent('recipes', e => {
                 item: "thermal:rf_coil"
             },
             D: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             E: {
                 item: "endless:infinity_ingot"
@@ -377,7 +377,7 @@ onEvent('recipes', e => {
                 item: "pneumaticcraft:huge_tank"
             },
             C: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             D: {
                 type: "forge:nbt",
@@ -416,7 +416,7 @@ onEvent('recipes', e => {
                 item: "mekanism:ultimate_induction_cell"
             },
             D: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             E: {
                 item: "endless:infinity_ingot"
@@ -469,7 +469,7 @@ onEvent('recipes', e => {
                 item: "draconicevolution:chaotic_core"
             },
             I: {
-                item: "extendedcrafting:ultimate_singularity"
+                item: 'endless:infinity_catalyst'
             },
             J: {
                 item: "draconicevolution:awakened_draconium_block"

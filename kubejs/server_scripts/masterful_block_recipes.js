@@ -264,7 +264,7 @@ onEvent('recipes', e => {
                 "item": "draconicevolution:chaos_shard"
             },
             "F": {
-                "item": "extendedcrafting:ultimate_singularity"
+                "item": 'endless:infinity_catalyst'
             },
             "G": {
                 "item": "masterfulmachinery:t5_controller"
@@ -305,7 +305,7 @@ onEvent('recipes', e => {
                 "item": "draconicevolution:chaos_shard"
             },
             "F": {
-                "item": "extendedcrafting:ultimate_singularity"
+                "item": 'endless:infinity_catalyst'
             },
             "G": {
                 "item": "masterfulmachinery:t5_t5_item_port_items_output"
@@ -346,7 +346,7 @@ onEvent('recipes', e => {
                 "item": "draconicevolution:chaos_shard"
             },
             "F": {
-                "item": "extendedcrafting:ultimate_singularity"
+                "item": 'endless:infinity_catalyst'
             },
             "G": {
                 "item": "masterfulmachinery:t5_t5_energy_port_energy_input"

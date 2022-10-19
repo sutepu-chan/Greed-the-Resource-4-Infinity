@@ -47,8 +47,7 @@ onEvent('item.modification', e => {
 		'thermal:earth_grenade',
 		'thermal:fire_grenade',
 		'thermal:ice_grenade',
-		'thermal:lightning_grenade',
-		'extendedcrafting:ultimate_singularity'
+		'thermal:lightning_grenade'
 	], 64)
 	modifyStack([
 		'ironchest:iron_to_gold_chest_upgrade',
