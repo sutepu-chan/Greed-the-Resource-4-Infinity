@@ -2,9 +2,6 @@ onEvent("player.tick", e => {
     const { headArmorItem, chestArmorItem, legsArmorItem, feetArmorItem } = e.player;
     //e.player.potionEffects.add(effect, duration(ticks), level, durability)
     if (e.player.level.time%100 == 0) {
-        if (headArmorItem.id === 'endless:infinity_helmet') {
-            e.player.potionEffects.add('night_vision', 400, 0)
-        }
         if (chestArmorItem.id === 'endless:infinity_chestplate') {
             e.player.potionEffects.add('absorption', 400, 9)
         }
