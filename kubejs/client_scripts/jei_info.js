@@ -89,6 +89,12 @@ onEvent('jei.information', e => {
         'Use dye on the colored bars to set the channel.',
         'Use a diamond on the latch to switch to private channel.',
     ])
+    //===== AE2 =====//
+    e.add('appliedenergistics2:quantum_entangled_singularity', [
+        'Throw a AE2 singularity and Ender Pearl on the ground and then subected to an explosion.',
+        'Tiny TNT is recommended due to limited terrain damage.',
+        'Use Ender Pearl instead of Ender Pearl Dust!!!'
+    ])
     //===== misc =====//
     e.add('akashictome:tome', 'RC to open the book and choose the desired guide book. LC in the air will return to akashic tome.')
 })
