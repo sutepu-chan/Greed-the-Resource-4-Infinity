@@ -62,24 +62,6 @@ onEvent('recipes', e => {
         O: 'minecraft:obsidian'
     })
 
-    //====== construction wand =====//
-    modifyShaped(e, 'constructionwand:stone_wand', 1, ['  M', ' S ', 'S  '], {
-        S: '#forge:rods/wooden',
-        M: 'allthecompressed:cobblestone_block_1x'
-    })
-    modifyShaped(e, 'constructionwand:iron_wand', 1, ['  M', ' S ', 'S  '], {
-        S: '#forge:rods/wooden',
-        M: 'minecraft:iron_block'
-    })
-    modifyShaped(e, 'constructionwand:diamond_wand', 1, ['  M', ' S ', 'S  '], {
-        S: '#forge:rods/wooden',
-        M: 'minecraft:diamond_block'
-    })
-    modifyShaped(e, 'constructionwand:infinity_wand', 1, ['  M', ' S ', 'S  '], {
-        S: '#forge:rods/wooden',
-        M: 'allthecompressed:nether_star_block'
-    })
-
     //===== time in a bottle =====//
     e.remove({ output: 'tiab:timeinabottle' })
     e.recipes.thermal.smelter('tiab:timeinabottle', ['64x minecraft:clock', '8x mekanism:alloy_atomic', '32x mekanism:dust_lithium'])
@@ -219,18 +201,5 @@ onEvent('recipes', e => {
         G: '#forge:gears/iron',
         S: '#forge:rods/wooden'
     })
-    
-    //===== better muffling =====//
-    modifyShaped(e, 'bettermuffling:muffling_block', 1, ['MWM', 'WNW', 'MWM'], {
-        W: '#forge:wool',
-        N: 'minecraft:note_block',
-        M: 'mekanism:upgrade_muffling'
-    })
-    modifyShaped(e, 'bettermuffling:upgrade', 1, ['GEG', 'EME', 'GEG'], {
-        M: 'bettermuffling:muffling_block',
-        G: 'allthecompressed:gold_block_1x',
-        E: '#forge:gears/gold'
-    })
-    e.remove({id: 'bettermuffling:muffling_block_advanced'})
-    e.shapeless('bettermuffling:muffling_block_advanced', ['bettermuffling:muffling_block', 'bettermuffling:upgrade']).id(`kubejs:bettermuffling/muffling_block_advanced`)
+
 })
