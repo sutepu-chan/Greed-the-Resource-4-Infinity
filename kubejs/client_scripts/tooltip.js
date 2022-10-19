@@ -274,10 +274,7 @@ onEvent("item.tooltip", e => {
 
     //===== angel ring =====//
     goldTooltip('angelring:itemdiamondring', 'Crafting Ingredient')
-    
-    //===== ae2 =====//
-    whiteTooltip()
-    
+
     //====== space =====//
     grayTooltip('boss_tools:oxygen_loader', 'Convert water into Oxygen.')
     grayTooltip('boss_tools:fuel_refinery', 'Turn oil into rocket fuel.')
@@ -285,20 +282,18 @@ onEvent("item.tooltip", e => {
     grayTooltip('boss_tools_giselle_addon:gravity_normalizer', 'Modify gravitational acceleration to a=9.81ms^-2.')
     grayTooltip('boss_tools:rocket_launch_pad', 'Place into 3x3 structure to allow rocket launching.')
 
-    //===== avaritia armor =====//
+    //===== avaritia =====//
     e.addAdvanced('endless:infinity_helmet', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+            text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for effects.').gold()])
         }
         if (e.isShift()) {
             text.add(1, [Text.of('● Night Vision').gold()])
-            text.add(2, [Text.of('● Creative Flight').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(3, [Text.of('● Strength X').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(4, [Text.of('● Luck V').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(5, [Text.of('● Regeneration').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(6, [Text.of('● Saturation').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(7, [Text.of('● Ignore Damage').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(2, [Text.of('● Satuation').gold()])
+            text.add(3, [Text.of('● Water Breathing').gold()])
+            text.add(4, [Text.of('● Strength X').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(5, [Text.of('● Luck V').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(6, [Text.of('● Regeneration').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
     e.addAdvanced('endless:infinity_chestplate', (item, advanced, text) => {
@@ -307,13 +302,11 @@ onEvent("item.tooltip", e => {
         }
         if (e.isShift()) {
             text.add(1, [Text.of('● Absorption X').gold()])
-            text.add(2, [Text.of('● Creative Flight').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(3, [Text.of('● Strength X').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(4, [Text.of('● Luck V').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(5, [Text.of('● Regeneration').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(6, [Text.of('● Saturation').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(7, [Text.of('● Ignore Damage').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(2, [Text.of('● Immune to Adverse Effect').gold()])
+            text.add(3, [Text.of('● Creative Flight').gold()])
+            text.add(4, [Text.of('● Strength X').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(5, [Text.of('● Luck V').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(6, [Text.of('● Regeneration').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
     e.addAdvanced('endless:infinity_leggings', (item, advanced, text) => {
@@ -321,14 +314,11 @@ onEvent("item.tooltip", e => {
             text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [Text.of('● JumpBoost').gold()])
-            text.add(2, [Text.of('● Creative Flight').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(1, [Text.of('● Jump Boost').gold()])
+            text.add(2, [Text.of('● Fire Resistance').gold()])
             text.add(3, [Text.of('● Strength X').gold(), Text.of(' (Set Bonus)').green()])
             text.add(4, [Text.of('● Luck V').gold(), Text.of(' (Set Bonus)').green()])
             text.add(5, [Text.of('● Regeneration').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(6, [Text.of('● Saturation').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(7, [Text.of('● Ignore Damage').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
     e.addAdvanced('endless:infinity_boots', (item, advanced, text) => {
@@ -337,16 +327,78 @@ onEvent("item.tooltip", e => {
         }
         if (e.isShift()) {
             text.add(1, [Text.of('● Speed II').gold()])
-            text.add(2, [Text.of('● Creative Flight').gold(), Text.of(' (Set Bonus)').green()])
+            text.add(2, [Text.of('● Ignore Falling Damage').gold()])
             text.add(3, [Text.of('● Strength X').gold(), Text.of(' (Set Bonus)').green()])
             text.add(4, [Text.of('● Luck V').gold(), Text.of(' (Set Bonus)').green()])
             text.add(5, [Text.of('● Regeneration').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(6, [Text.of('● Saturation').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(7, [Text.of('● Ignore Damage').gold(), Text.of(' (Set Bonus)').green()])
-            text.add(8, [Text.of('● Ignore Harmful Effects').gold(), Text.of(' (Set Bonus)').green()])
         }
     })
-
+    e.addAdvanced('endless:infinity_pickaxe', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Instant Breaker!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+LC ').yellow(), Text.of('to break ').gray(), Text.of('unbreakable blocks').white(), Text.of('.').gray()])
+            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Hammer').white(), Text.of('.').gray()]),
+            text.add(3, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]),
+            text.add(4, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('in hammer mode to break ').gray(), Text.of('bedrock').white(), Text.of('.').gray()])
+        }
+    })
+    e.addAdvanced('endless:infinity_axe', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Instant Chopper!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('Chop the whole tree down at once. Mining leaves will mine a sphere of 5 blocks radius.').gray()])
+            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to chop all the trees down and turn all the grass block into dirt in').gray(), Text.of('26x26 area').white(), Text.of('.').gray()])
+            text.add(3, [Text.of('The mined logs drop in form of ').gray(), Text.of('Matter Cluster').white()])
+        }
+    })
+    e.addAdvanced('endless:infinity_shovel', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Instant Miner!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Destroyer').white(), Text.of('.').gray()]),
+            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]) 
+        }
+    })
+    e.addAdvanced('endless:infinity_hoe', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Instant Grower!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to grow all the crops in ').gray(), Text.of('7x7 area').white(), Text.of('.').gray()]),
+            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]) 
+        }
+    })
+    e.addAdvanced('endless:infinity_sword', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Instant Kill!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to deal ').gray(), Text.of('50,000 ').white(), Text.of('damage to all creatures in ').gray(), Text.of('16 blocks radius').white(), Text.of('.').gray()]),
+            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]) 
+        }
+    })
+    e.add('endless:neutronium_collector', [
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Pile').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+    ])
+    e.add('endless:dense_neutronium_collector', [
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Nugget').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+    ])
+    e.add('endless:denser_neutronium_collector', [
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Ingot').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+    ])
+    e.add('endless:densest_neutronium_collector', [
+        [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+    ])
+    grayTooltip('endless:endest_pearl', 'What does this pearl cost... Probably the end')
     //===== better muffling =====//
     whiteTooltip('bettermuffling:muffling_block', 'Be Quiet! Shh...')
     yellowTooltip('bettermuffling:muffling_block_advanced', 'Be Silent! Shhhhh....')
