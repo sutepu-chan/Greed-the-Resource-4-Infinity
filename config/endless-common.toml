@@ -23,7 +23,7 @@
 	"No Arrow Damage" = 10
 	#Maximum distance of a chain cutting of the infinity axe.
 	#Range: 16 ~ 1024
-	"Axe Chain Distance" = 32
+	"Axe Chain Distance" = 196
 	#Whether to allow the infinity axe to turn grass block into dirt.
 	"Is Axe Change Grass Block" = true
 	#Food effect time scaling factor
