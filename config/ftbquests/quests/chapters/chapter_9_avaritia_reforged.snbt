@@ -4,7 +4,7 @@
 	order_index: 8
 	filename: "chapter_9_avaritia_reforged"
 	title: "Chapter 9: Avaritia Reforged"
-	icon: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+	icon: "endless:infinity_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -17,7 +17,7 @@
 			tasks: [{
 				id: "040843BAC4C4FF12"
 				type: "item"
-				item: "kubejs:neutron_pile"
+				item: "endless:neutronium_pile"
 			}]
 			rewards: [{
 				id: "1985B9A14ED0809D"
@@ -60,34 +60,14 @@
 		{
 			x: 0.0d
 			y: 4.0d
-			description: ["Ultimate singularity costs a lot, but it worths."]
+			description: ["All for one..."]
 			dependencies: ["5FE2442A80FADC8A"]
 			id: "3E762098F0266ABE"
 			tasks: [{
 				id: "2579AE68E0A7F1D0"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
-			rewards: [
-				{
-					id: "764C1807AB00CEB8"
-					type: "item"
-					item: "kubejs:ultimate_stew"
-					count: 5
-				}
-				{
-					id: "5FF27D2CE638E0AE"
-					type: "item"
-					item: "kubejs:cosmic_meatballs"
-					count: 5
-				}
-				{
-					id: "4EB3344A22320DCE"
-					type: "item"
-					item: "kubejs:endest_pearl"
-					count: 5
-				}
-			]
 		}
 		{
 			x: 0.0d
@@ -98,7 +78,7 @@
 			tasks: [{
 				id: "79051D2C98411D55"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_ingot"
+				item: "endless:infinity_ingot"
 			}]
 			rewards: [{
 				id: "6CFAF6F2239FF502"
@@ -284,7 +264,14 @@
 			tasks: [{
 				id: "6A15964978882F13"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_helmet"
+				item: {
+					id: "endless:infinity_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -314,7 +301,14 @@
 			tasks: [{
 				id: "749813392D09DEC6"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_chestplate"
+				item: {
+					id: "endless:infinity_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -344,7 +338,14 @@
 			tasks: [{
 				id: "78F20A715A4857E9"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_leggings"
+				item: {
+					id: "endless:infinity_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -374,7 +375,14 @@
 			tasks: [{
 				id: "5CEE31EAD5A24D94"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_boots"
+				item: {
+					id: "endless:infinity_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -404,7 +412,14 @@
 			tasks: [{
 				id: "40294EBC3D102D91"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_axe"
+				item: {
+					id: "endless:infinity_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -434,7 +449,14 @@
 			tasks: [{
 				id: "1245B210B54821FD"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_shovel"
+				item: {
+					id: "endless:infinity_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -458,17 +480,20 @@
 		{
 			x: -3.0d
 			y: 11.5d
-			description: [
-				"Bedrock breakable"
-				"Shift+LC is able to break 5x5 area at once (including bedrock)."
-			]
 			hide_dependency_lines: true
 			dependencies: ["4FA75996BA80D649"]
 			id: "28840B900DDBDE31"
 			tasks: [{
 				id: "2C830C34A92C736D"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_pickaxe"
+				item: {
+					id: "endless:infinity_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -498,7 +523,14 @@
 			tasks: [{
 				id: "3718A382EDCA00B2"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_sword"
+				item: {
+					id: "endless:infinity_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -528,7 +560,14 @@
 			tasks: [{
 				id: "2A15A7335FFDDEFB"
 				type: "item"
-				item: "upgradednetherite_creative:creative_upgraded_netherite_bow"
+				item: {
+					id: "endless:infinity_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -799,6 +838,9 @@
 				"4F7E1AE9F4D1BDD3"
 				"77A676C65E25F86E"
 				"160DAA2E679410E7"
+				"07B97451D58A8E56"
+				"07A44041502B9941"
+				"2E5FDF4596017810"
 			]
 			id: "4E620C4C333892B5"
 			tasks: [{
@@ -886,6 +928,117 @@
 				}
 				{
 					id: "0F9B932924D7B242"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 11.5d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "07B97451D58A8E56"
+			tasks: [{
+				id: "7366D50E59DFA747"
+				type: "item"
+				item: {
+					id: "endless:infinity_crossbow"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "60929AF4731B5B8F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "4792A597FDEE2B40"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 13.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "07A44041502B9941"
+			tasks: [{
+				id: "7951D3EA2385DBB4"
+				type: "item"
+				item: {
+					id: "endless:infinity_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2AE354D4C6CD9C16"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "270A3C193453F891"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 13.0d
+			hide_dependency_lines: true
+			dependencies: ["4FA75996BA80D649"]
+			id: "2E5FDF4596017810"
+			tasks: [{
+				id: "7AD7C77B45C11FB0"
+				type: "item"
+				item: {
+					id: "endless:infinity_arrow"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5930CA56D0311398"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "singularity"
+						}
+					}
+				}
+				{
+					id: "08A9B8F4884908BE"
 					type: "xp_levels"
 					xp_levels: 30
 				}

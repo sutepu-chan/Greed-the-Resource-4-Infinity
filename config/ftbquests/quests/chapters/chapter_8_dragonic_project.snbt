@@ -1333,15 +1333,9 @@
 			dependencies: ["753DB2AEA8FE2E70"]
 			id: "5DF6AC1C679C243A"
 			tasks: [{
-				id: "6E46E23D26455F51"
+				id: "3D432E352A621B32"
 				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "custommachinery:neutronium_collector"
-					}
-				}
+				item: "endless:neutronium_collector"
 			}]
 			rewards: [
 				{
