@@ -95,6 +95,8 @@ onEvent('jei.information', e => {
         'Tiny TNT is recommended due to limited terrain damage.',
         'Use Ender Pearl instead of Ender Pearl Dust!!!'
     ])
+    //===== avraitia =====//
+    e.add('endless:matter_cluster', 'Obtained by avaritia tools.')
     //===== misc =====//
     e.add('akashictome:tome', 'RC to open the book and choose the desired guide book. LC in the air will return to akashic tome.')
 })
