@@ -55,7 +55,7 @@ function food_effect_tooltip_line(entry) {
 	line += describe_amplifier(amplifier) + " ";
 	line += (category == "BENEFICIAL") ? "§2" : ((category == "HARMFUL") ? "§4" : "§b");
 	line += displayName.getString() + " ";
-	line += "(" + describe_duration(duration) + ") ";
+	line += "§7(" + describe_duration(duration) + "§7) ";
 	line += describe_chance(chance);
 	return line;
 }
