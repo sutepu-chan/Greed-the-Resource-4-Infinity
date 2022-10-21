@@ -157,7 +157,7 @@ onEvent('jei.hide.items', e => {
 
     //hide chemlib
     e.hide(/chemlib:ingot.+/)
-
+    e.hide(/endless:singularity.+/)
     //other
     utils.listOf([
         //library items
