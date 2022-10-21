@@ -31,7 +31,7 @@ onEvent("item.tooltip", e => {
     let yellowTooltip = (item, tooltip) => formattedTooltip('yellow', item, tooltip)
     let whiteTooltip = (item, tooltip) => formattedTooltip('white', item, tooltip)
     //===== creative =====//
-    let creative = ['pneumaticcraft:creative_upgrade', 'ironjetpacks:creative_cell', 'ironjetpacks:creative_thruster', 'ironjetpacks:creative_capacitor', Item.of('ironjetpacks:creative_jetpack', '{Throttle:1.0d}'), 'buildinggadgets:construction_paste_container_creative', 'littlelogistics:creative_capacitor', 'mysticalagradditions:creative_essence', 'mysticalagriculture:creative_soulium_dagger', 'psi:cad_assembly_creative', 'mekanism:creative_bin', 'mekanism:creative_fluid_tank', 'mekanism:creative_chemical_tank']
+    let creative = ['pneumaticcraft:creative_upgrade', 'buildinggadgets:construction_paste_container_creative', 'littlelogistics:creative_capacitor', 'mysticalagradditions:creative_essence', 'mysticalagriculture:creative_soulium_dagger', 'psi:cad_assembly_creative', 'mekanism:creative_bin', 'mekanism:creative_fluid_tank', 'mekanism:creative_chemical_tank']
     creative.forEach(items => {
         grayTooltip(items, 'Unobtainable!')
     })
