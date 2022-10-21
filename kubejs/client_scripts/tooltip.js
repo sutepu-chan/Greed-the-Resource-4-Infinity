@@ -399,6 +399,25 @@ onEvent("item.tooltip", e => {
         [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
     ])
     grayTooltip('endless:endest_pearl', 'What does this pearl cost... Probably the end')
+    e.add('endless:infinity_chest', [
+        [
+            Text.of('J').red(),
+            Text.of('u').gold(),
+            Text.of('s').yellow(),
+            Text.of('t ').green(),
+            Text.of('a ').darkGreen(),
+            Text.of('F').aqua(),
+            Text.of('a').darkAqua(),
+            Text.of('n').blue(),
+            Text.of('c').blue(),
+            Text.of('y ').darkBlue(),
+            Text.of('C').purple(),
+            Text.of('h').darkPurple(),
+            Text.of('e').gray(),
+            Text.of('s').darkGray(),
+            Text.of('t').black(),
+        ]
+    ])
     //===== better muffling =====//
     whiteTooltip('bettermuffling:muffling_block', 'Be Quiet! Shh...')
     yellowTooltip('bettermuffling:muffling_block_advanced', 'Be Silent! Shhhhh....')
