@@ -186,20 +186,16 @@ onEvent('recipes', e => {
 	])
 	//===== singularity =====//
 	e.custom({
-		"type": "extendedcrafting:compressor",
-		"powerCost": 1000000000,
-		"powerRate": 1000000000,
-		"inputCount": 1,
-		"ingredient": {
-			"item": "mekanism:ultimate_induction_cell"
-		},
-		"catalyst": {
-			"item": 'extendedcrafting:ultimate_catalyst'
-		},
-		"result": {
-			"item": "extendedcrafting:singularity",
-			"nbt": {
-				"Id": "extendedcrafting:forge_energy"
+		type: 'extendedcrafting:compressor',
+		powerCost: 1000000000,
+		powerRate: 1000000000,
+		inputCount: 1,
+		ingredient: { item: 'mekanism:ultimate_induction_cell' },
+		catalyst: { item: 'extendedcrafting:ultimate_catalyst' },
+		result: {
+			item: 'extendedcrafting:singularity',
+			nbt: {
+				Id: 'extendedcrafting:forge_energy'
 			}
 		}
 	})
