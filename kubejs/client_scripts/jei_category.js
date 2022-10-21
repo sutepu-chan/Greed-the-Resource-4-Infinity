@@ -15,7 +15,6 @@ onEvent('jei.remove.categories', e => {
     e.remove('boss_tools:blastingfurnacecategory')
     e.remove('boss_tools:compressorcategory')
     e.remove('boss_tools:generatorcategory')
-    
-    
+    e.remove('endless:extreme_craft')
 
 })
