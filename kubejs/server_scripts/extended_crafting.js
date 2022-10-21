@@ -19,7 +19,7 @@ onEvent('recipes', e => {
 		A: 'extendedcrafting:basic_catalyst',
 		C: 'extendedcrafting:basic_component',
 		B: 'minecraft:iron_block',
-		W: '#forge:workbench',
+		W: 'endless:double_compressed_crafting_table'
 	})
 	//advanced crafting table
 	e.custom({
