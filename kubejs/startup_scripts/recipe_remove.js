@@ -255,6 +255,28 @@ global.recipe_disable = [
     //avaritia
     /endless:singularity_.+/,
     'endless:neutron_compressor',
+    'endless:compressed_chest',
+    'endless:extreme_crafting_table',
+    'endless:skullfire_sword',
+    'endless:infinity_sword',
+    'endless:crystal_matrix_sword',
+    'endless:crystal_matrix_pickaxe',
+    'endless:crystal_matrix_axe',
+    'endless:crystal_matrix_shovel',
+    'endless:crystal_matrix_hoe',
+    'endless:neutronium_sword',
+    'endless:neutronium_pickaxe',
+    'endless:neutronium_axe',
+    'endless:neutronium_shovel',
+    'endless:neutronium_hoe',
+    'endless:crystal_matrix_helmet',
+    'endless:crystal_matrix_chestplate',
+    'endless:crystal_matrix_leggings',
+    'endless:crystal_matrix_boots',
+    'endless:neutronium_helmet',
+    'endless:neutronium_chestplate',
+    'endless:neutronium_leggings',
+    'endless:neutronium_boots',
     //misc
     'upgrade_aquatic:prismarine_rod',
     'pneumaticcraft:manometer',
@@ -263,5 +285,5 @@ global.recipe_disable = [
     'custommachinery:structure_creator',
     'packagedexcrafting:ender_crafter',
     'packagedauto:crafter',
-    
+
 ]

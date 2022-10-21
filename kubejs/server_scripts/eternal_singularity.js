@@ -1,6 +1,7 @@
 onEvent('recipes', e => {
     e.custom({
         type: 'extendedcrafting:shapeless_table',
+        tier: 4,
         ingredients: [
           {
             type: 'forge:nbt',
