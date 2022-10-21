@@ -91,9 +91,8 @@ onEvent('jei.information', e => {
     ])
     //===== AE2 =====//
     e.add('appliedenergistics2:quantum_entangled_singularity', [
-        'Throw a AE2 singularity and Ender Pearl on the ground and then subected to an explosion.',
+        'Drop 1 singularity and 1 Ender Pearl on the ground and then subject to an explosion.',
         'Tiny TNT is recommended due to limited terrain damage.',
-        'Use Ender Pearl instead of Ender Pearl Dust!!!'
     ])
     //===== avraitia =====//
     e.add('endless:matter_cluster', 'Obtained by avaritia tools.')
