@@ -96,6 +96,8 @@ onEvent('jei.information', e => {
     ])
     //===== avraitia =====//
     e.add('endless:matter_cluster', 'Obtained by avaritia tools.')
+    e.add('endless:neutronium_pile', 'Produced by Neutronium Collector')
+    e.add('endless:star_fuel', 'Craft by Coal Singularity. (JEI failed to display correctly.)')
     //===== misc =====//
     e.add('akashictome:tome', 'RC to open the book and choose the desired guide book. LC in the air will return to akashic tome.')
 })
