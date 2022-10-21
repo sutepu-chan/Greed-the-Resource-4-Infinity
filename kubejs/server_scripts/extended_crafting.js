@@ -181,8 +181,8 @@ onEvent('recipes', e => {
 		'draconicevolution:draconic_energy_core',
 		'minecraft:dragon_head',
 		'minecraft:dragon_head',
-		'kubejs:neutron_nugget',
-		'kubejs:neutron_nugget'
+		'endless:neutronium_nugget',
+		'endless:neutronium_nugget'
 	])
 	//===== singularity =====//
 	e.custom({
