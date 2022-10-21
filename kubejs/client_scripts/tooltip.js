@@ -387,16 +387,16 @@ onEvent("item.tooltip", e => {
         }
     })
     e.add('endless:neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('1 Neutronium Pile').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Pile ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
     ])
     e.add('endless:dense_neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('1 Neutronium Nugget').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Nugget ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
     ])
     e.add('endless:denser_neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('1 Neutronium Ingot').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Ingot ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
     ])
     e.add('endless:densest_neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
     ])
     grayTooltip('endless:endest_pearl', 'What does this pearl cost... Probably the end')
     //===== better muffling =====//
