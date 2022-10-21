@@ -33,8 +33,52 @@ onEvent("item.tooltip", e => {
     //===== creative =====//
     let creative = ['pneumaticcraft:creative_upgrade', 'buildinggadgets:construction_paste_container_creative', 'littlelogistics:creative_capacitor', 'mysticalagradditions:creative_essence', 'mysticalagriculture:creative_soulium_dagger', 'psi:cad_assembly_creative', 'mekanism:creative_bin', 'mekanism:creative_fluid_tank', 'mekanism:creative_chemical_tank']
     creative.forEach(items => {
-        grayTooltip(items, 'Unobtainable!')
+        grayTooltip(items, 'Creative, unobtainable!')
     })
+    let unobtain = [
+        'endless:neutron_compressor',
+        'endless:compressed_chest',
+        'endless:extreme_crafting_table',
+        'endless:skullfire_sword',
+        'endless:infinity_sword',
+        'endless:crystal_matrix_sword',
+        'endless:crystal_matrix_pickaxe',
+        'endless:crystal_matrix_axe',
+        'endless:crystal_matrix_shovel',
+        'endless:crystal_matrix_hoe',
+        'endless:neutronium_sword',
+        'endless:neutronium_pickaxe',
+        'endless:neutronium_axe',
+        'endless:neutronium_shovel',
+        'endless:neutronium_hoe',
+        'endless:crystal_matrix_helmet',
+        'endless:crystal_matrix_chestplate',
+        'endless:crystal_matrix_leggings',
+        'endless:crystal_matrix_boots',
+        'endless:neutronium_helmet',
+        'endless:neutronium_chestplate',
+        'endless:neutronium_leggings',
+        'endless:neutronium_boots',
+        'endless:singularity_nickel',
+        'endless:singularity_lead',
+        'endless:singularity_tin',
+        'endless:singularity_draconium',
+        'endless:singularity_awakened_draconium',
+        'endless:singularity_coal',
+        'endless:singularity_iron',
+        'endless:singularity_gold',
+        'endless:singularity_diamond',
+        'endless:singularity_netherite',
+        'endless:singularity_emerald',
+        'endless:singularity_lapis',
+        'endless:singularity_redstone',
+        'endless:singularity_quartz',
+        'endless:singularity_clay'
+    ]
+    unobtain.forEach(items => {
+        grayTooltip(items, 'Disabled, unobtainable!')
+    })    
+    
     darkRedTooltip(Item.of('mekanism:creative_energy_cube', '{mekData:{EnergyContainers:[{Container:0b,stored:"0"}]}}'), 'Deletes energy when empty. Check Quest Book for conversion.')
     //===== pipez =====//
     e.addAdvanced('pipez:item_pipe', (item, advanced, text) => {
@@ -335,55 +379,84 @@ onEvent("item.tooltip", e => {
     })
     e.addAdvanced('endless:infinity_pickaxe', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [Text.of('Instant Breaker!').lightPurple()])
+            text.add(1, [Text.of('World Vanisher!').lightPurple()])
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+LC ').yellow(), Text.of('to break ').gray(), Text.of('unbreakable blocks').white(), Text.of('.').gray()])
             text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Hammer').white(), Text.of('.').gray()]),
-            text.add(3, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]),
-            text.add(4, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('in hammer mode to break ').gray(), Text.of('bedrock').white(), Text.of('.').gray()])
+                text.add(3, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()]),
+                text.add(4, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('in hammer mode to break ').gray(), Text.of('bedrock').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_axe', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [Text.of('Instant Chopper!').lightPurple()])
+            text.add(1, [Text.of('Plant Destroyer!').lightPurple()])
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Chop the whole tree down at once. Mining leaves will mine a sphere of 5 blocks radius.').gray()])
             text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to chop all the trees down and turn all the grass block into dirt in').gray(), Text.of('26x26 area').white(), Text.of('.').gray()])
-            text.add(3, [Text.of('The mined logs drop in form of ').gray(), Text.of('Matter Cluster').white()])
+            text.add(3, [Text.of('The mined logs drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_shovel', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [Text.of('Instant Miner!').lightPurple()])
+            text.add(1, [Text.of('Flattener of Earth!').lightPurple()])
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Destroyer').white(), Text.of('.').gray()]),
-            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]) 
+                text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_hoe', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [Text.of('Instant Grower!').lightPurple()])
+            text.add(1, [Text.of('Reviver!').lightPurple()])
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to grow all the crops in ').gray(), Text.of('7x7 area').white(), Text.of('.').gray()]),
-            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]) 
+                text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_sword', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [Text.of('Instant Kill!').lightPurple()])
+            text.add(1, [Text.of('Infinity in Finity!').lightPurple()])
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to deal ').gray(), Text.of('50,000 ').white(), Text.of('damage to all creatures in ').gray(), Text.of('16 blocks radius').white(), Text.of('.').gray()]),
-            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white()]) 
+                text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
+        }
+    })
+    e.addAdvanced('endless:infinity_bow', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Heaven\'s rain!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('When equipped with ').gray(), Text.of('Space-time Ripper').white(), Text.of(', ').gray(), Text.of('rain of arrows ').white(), Text.of('will be summoned.').gray()]),
+                text.add(2, [Text.of('Every arrow deals ').gray(), Text.of('infinite ').white(), Text.of('damage and cannot be recollected.').gray()])
+        }
+    })
+    e.addAdvanced('endless:infinity_crossbow', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('Inferno\'s arrows!').lightPurple()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('When equipped with ').gray(), Text.of('Space-time Ripper').white(), Text.of(', ').gray(), Text.of('rain of arrows ').white(), Text.of('will be summoned.').gray()]),
+                text.add(2, [Text.of('Every arrow deals ').gray(), Text.of('infinite ').white(), Text.of('damage and cannot be recollected.').gray()])
+        }
+    })
+    e.addAdvanced('endless:infinity_arrow', (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of('To be equiped with Longbow of Heavens').gray()])
+            text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
+        }
+        if (e.isShift()) {
+            text.add(1, [Text.of('Hold ').gray(), Text.of('RC ').yellow(), Text.of(' to dash to the direction you are facing.').gray()])
         }
     })
     e.add('endless:neutronium_collector', [
@@ -398,7 +471,11 @@ onEvent("item.tooltip", e => {
     e.add('endless:densest_neutronium_collector', [
         [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
     ])
-    grayTooltip('endless:endest_pearl', 'What does this pearl cost... Probably the end')
+    grayTooltip('endless:endest_pearl', [
+        'The light of the universe shines everywhere',
+        'What does this pearl cost... Probably the end'
+    ])
+    grayTooltip('endless:star_fuel', 'The long lasting fire')
     e.add('endless:infinity_chest', [
         [
             Text.of('J').red(),
