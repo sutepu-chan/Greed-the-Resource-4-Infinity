@@ -5,6 +5,6 @@
     "0c0c0c"
   ],
   "ingredient": {
-    "tag": "minecraft:coal_block"
+    "tag": "forge:storage_blocks/coal"
   }
 }
