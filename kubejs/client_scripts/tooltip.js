@@ -76,8 +76,8 @@ onEvent("item.tooltip", e => {
     ]
     unobtain.forEach(items => {
         grayTooltip(items, 'Disabled, unobtainable!')
-    })    
-    
+    })
+
     darkRedTooltip(Item.of('mekanism:creative_energy_cube', '{mekData:{EnergyContainers:[{Container:0b,stored:"0"}]}}'), 'Deletes energy when empty. Check Quest Book for conversion.')
     //===== pipez =====//
     e.addAdvanced('pipez:item_pipe', (item, advanced, text) => {
@@ -383,9 +383,9 @@ onEvent("item.tooltip", e => {
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+LC ').yellow(), Text.of('to break ').gray(), Text.of('unbreakable blocks').white(), Text.of('.').gray()])
-            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Hammer').white(), Text.of('.').gray()]),
-                text.add(3, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()]),
-                text.add(4, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('in hammer mode to break ').gray(), Text.of('bedrock').white(), Text.of('.').gray()])
+            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Hammer').white(), Text.of('.').gray()])
+            text.add(3, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
+            text.add(4, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('in hammer mode to break ').gray(), Text.of('bedrock').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_axe', (item, advanced, text) => {
@@ -405,8 +405,8 @@ onEvent("item.tooltip", e => {
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Destroyer').white(), Text.of('.').gray()]),
-                text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
+            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to turn into ').gray(), Text.of('Infinity Destroyer').white(), Text.of('.').gray()])
+            text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_hoe', (item, advanced, text) => {
@@ -415,8 +415,7 @@ onEvent("item.tooltip", e => {
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to grow all the crops in ').gray(), Text.of('7x7 area').white(), Text.of('.').gray()]),
-                text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
+            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to grow all the crops in ').gray(), Text.of('7x7 area').white(), Text.of('.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_sword', (item, advanced, text) => {
@@ -425,8 +424,8 @@ onEvent("item.tooltip", e => {
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to deal ').gray(), Text.of('50,000 ').white(), Text.of('damage to all creatures in ').gray(), Text.of('16 blocks radius').white(), Text.of('.').gray()]),
-                text.add(2, [Text.of('In this mode, ').gray(), Text.of('16x16x9 area ').white(), Text.of('can be mined at once. The mined blocks drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
+            text.add(1, [Text.of('RC ').yellow(), Text.of('to deal ').gray(), Text.of('50,000 ').white(), Text.of('damage to hostile creatures in ').gray(), Text.of('16 blocks radius').white(), Text.of('.').gray()])
+            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').white(), Text.of('to deal damage to all types of creatures.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_bow', (item, advanced, text) => {
@@ -435,8 +434,8 @@ onEvent("item.tooltip", e => {
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [Text.of('When equipped with ').gray(), Text.of('Space-time Ripper').white(), Text.of(', ').gray(), Text.of('rain of arrows ').white(), Text.of('will be summoned.').gray()]),
-                text.add(2, [Text.of('Every arrow deals ').gray(), Text.of('infinite ').white(), Text.of('damage and cannot be recollected.').gray()])
+            text.add(1, [Text.of('When equipped with ').gray(), Text.of('Space-time Ripper').white(), Text.of(', ').gray(), Text.of('rain of arrows ').white(), Text.of('will be summoned.').gray()])
+            text.add(2, [Text.of('Every arrow deals ').gray(), Text.of('infinite ').white(), Text.of('damage and cannot be recollected.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_crossbow', (item, advanced, text) => {
@@ -445,8 +444,8 @@ onEvent("item.tooltip", e => {
             text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('for infos.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [Text.of('When equipped with ').gray(), Text.of('Space-time Ripper').white(), Text.of(', ').gray(), Text.of('rain of arrows ').white(), Text.of('will be summoned.').gray()]),
-                text.add(2, [Text.of('Every arrow deals ').gray(), Text.of('infinite ').white(), Text.of('damage and cannot be recollected.').gray()])
+            text.add(1, [Text.of('When equipped with ').gray(), Text.of('Space-time Ripper').white(), Text.of(', ').gray(), Text.of('rain of arrows ').white(), Text.of('will be summoned.').gray()])
+            text.add(2, [Text.of('Every arrow deals ').gray(), Text.of('infinite ').white(), Text.of('damage and cannot be recollected.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_arrow', (item, advanced, text) => {
@@ -459,20 +458,20 @@ onEvent("item.tooltip", e => {
         }
     })
     e.add('endless:neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('1 Neutronium Pile ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Pile ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()]
     ])
     e.add('endless:dense_neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('1 Neutronium Nugget ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Nugget ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()]
     ])
     e.add('endless:denser_neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('1 Neutronium Ingot ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('1 Neutronium Ingot ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()]
     ])
     e.add('endless:densest_neutronium_collector', [
-        [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()],
+        [Text.of('Produce ').gray(), Text.of('10 Neutronium Ingots ').white(), Text.of('per ').gray(), Text.of('355 ').white(), Text.of('seconds.').gray()]
     ])
     grayTooltip('endless:endest_pearl', [
-        'The light of the universe shines everywhere',
-        'What does this pearl cost... Probably the end'
+        ['The light of the universe shines everywhere'],
+        ['What does this pearl cost... Probably the end']
     ])
     grayTooltip('endless:star_fuel', 'The long lasting fire')
     e.add('endless:infinity_chest', [
