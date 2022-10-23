@@ -40,7 +40,6 @@ onEvent("item.tooltip", e => {
         'endless:compressed_chest',
         'endless:extreme_crafting_table',
         'endless:skullfire_sword',
-        'endless:infinity_sword',
         'endless:crystal_matrix_sword',
         'endless:crystal_matrix_pickaxe',
         'endless:crystal_matrix_axe',
