@@ -395,7 +395,7 @@ onEvent("item.tooltip", e => {
         }
         if (e.isShift()) {
             text.add(1, [Text.of('Chop the whole tree down at once. Mining leaves will mine a sphere of 5 blocks radius.').gray()])
-            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to chop all the trees down and turn all the grass block into dirt in').gray(), Text.of('26x26 area').white(), Text.of('.').gray()])
+            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to chop all the trees down and turn all the grass block into dirt in ').gray(), Text.of('26x26 area').white(), Text.of('.').gray()])
             text.add(3, [Text.of('The mined logs drop in form of ').gray(), Text.of('Matter Cluster').white(), Text.of('.').gray()])
         }
     })
@@ -425,7 +425,7 @@ onEvent("item.tooltip", e => {
         }
         if (e.isShift()) {
             text.add(1, [Text.of('RC ').yellow(), Text.of('to deal ').gray(), Text.of('50,000 ').white(), Text.of('damage to hostile creatures in ').gray(), Text.of('16 blocks radius').white(), Text.of('.').gray()])
-            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').white(), Text.of('to deal damage to all types of creatures.').gray()])
+            text.add(2, [Text.of('Hold ').gray(), Text.of('Shift+RC ').yellow(), Text.of('to deal damage to all types of creatures.').gray()])
         }
     })
     e.addAdvanced('endless:infinity_bow', (item, advanced, text) => {
@@ -474,24 +474,22 @@ onEvent("item.tooltip", e => {
         ['What does this pearl cost... Probably the end']
     ])
     grayTooltip('endless:star_fuel', 'The long lasting fire')
-    e.add('endless:infinity_chest', [
-        [
-            Text.of('J').red(),
-            Text.of('u').gold(),
-            Text.of('s').yellow(),
-            Text.of('t ').green(),
-            Text.of('a ').darkGreen(),
-            Text.of('F').aqua(),
-            Text.of('a').darkAqua(),
-            Text.of('n').blue(),
-            Text.of('c').blue(),
-            Text.of('y ').darkBlue(),
-            Text.of('C').purple(),
-            Text.of('h').darkPurple(),
-            Text.of('e').gray(),
-            Text.of('s').darkGray(),
-            Text.of('t').black(),
-        ]
+    e.add('endless:infinity_chest', [  
+        Text.of('J').red(),
+        Text.of('u').gold(),
+        Text.of('s').yellow(),
+        Text.of('t ').green(),
+        Text.of('a ').darkGreen(),
+        Text.of('F').aqua(),
+        Text.of('a').darkAqua(),
+        Text.of('n').blue(),
+        Text.of('c').blue(),
+        Text.of('y ').darkBlue(),
+        Text.of('C').purple(),
+        Text.of('h').darkPurple(),
+        Text.of('e').gray(),
+        Text.of('s').darkGray(),
+        Text.of('t').black()
     ])
     //===== better muffling =====//
     whiteTooltip('bettermuffling:muffling_block', 'Be Quiet! Shh...')
