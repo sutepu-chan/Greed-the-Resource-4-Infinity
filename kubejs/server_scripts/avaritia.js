@@ -5,7 +5,7 @@ onEvent('recipes', e => {
         'endless:crystal_matrix_ingot',
         'endless:neutronium_gear',
         'endless:star_fuel',
-
+        'endless:record_fragment',
         //blocks
         'endless:infinity_chest',
         'endless:dense_neutronium_collector',
@@ -59,7 +59,7 @@ onEvent('recipes', e => {
             { item: 'kubejs:eternal_singularity' }
         ],
         result: { item: 'endless:infinity_catalyst' }
-    }).id(`kubejs:infinity_catalyst`)
+    }).id(`kubejs:endless/infinity_catalyst`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         tier: 2,
@@ -153,7 +153,7 @@ onEvent('recipes', e => {
             ' A '
         ],
         key: {
-            A: { tag: 'minecraft:music_disc' },
+            A: { tag: 'minecraft:music_discs' },
             B: { item: "minecraft:note_block" }
         },
         result: { item: 'endless:record_fragment' }
@@ -175,6 +175,54 @@ onEvent('recipes', e => {
             count: 8
         }
     }).id(`kubejs:endless/star_fuel`)
+    e.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            "AAAAAAAAA",
+            "ABCDEFGHA",
+            "AIJKLMNOA",
+            "APQQPQQPA",
+            "AQPPQPPQA",
+            "APQQPQQPA",
+            "ARSTUVWXA",
+            "AYZ12345A",
+            "AAAAAAAAA"
+        ],
+        key: {
+            A: { item: "endless:neutronium_ingot" },
+            B: { item: "materialis:fairy_ingot" },
+            C: { item: "allthemodium:unobtainium_allthemodium_alloy_ingot" },
+            D: { item: "allthemodium:unobtainium_vibranium_alloy_ingot" },
+            E: { item: "allthemodium:vibranium_allthemodium_alloy_ingot" },
+            F: { item: "biggerreactors:ludicrite_ingot" },
+            G: { item: "biggerreactors:cyanite_ingot" },
+            H: { item: "enderioalloys:item_alloy_ingot_conductive_iron" },
+            I: { item: "enderioalloys:item_alloy_ingot_crude_steel" },
+            J: { item: "enderioalloys:item_alloy_ingot_crystalline_alloy" },
+            K: { item: "enderioalloys:item_alloy_ingot_crystalline_pink_slime" },
+            L: { item: "enderioalloys:item_alloy_ingot_dark_steel" },
+            M: { item: "enderioalloys:item_alloy_ingot_electrical_steel" },
+            N: { item: "enderioalloys:item_alloy_ingot_end_steel" },
+            O: { item: "enderioalloys:item_alloy_ingot_energetic_alloy" },
+            P: { item: "endless:crystal_matrix_ingot" },
+            Q: { item: "endless:infinity_catalyst" },
+            R: { item: "enderioalloys:item_alloy_ingot_energetic_silver" },
+            S: { item: "enderioalloys:item_alloy_ingot_melodic_alloy" },
+            T: { item: "enderioalloys:item_alloy_ingot_pulsating_iron" },
+            U: { item: "enderioalloys:item_alloy_ingot_redstone_alloy" },
+            V: { item: "enderioalloys:item_alloy_ingot_soularium" },
+            W: { item: "enderioalloys:item_alloy_ingot_stellar_alloy" },
+            X: { item: "enderioalloys:item_alloy_ingot_vibrant_alloy" },
+            Y: { item: "enderioalloys:item_alloy_ingot_vivid_alloy" },
+            Z: { item: "lazierae2:fluix_steel_ingot" },
+            1: { item: "industrialforegoing:pink_slime_ingot" },
+            2: { item: "mysticalagradditions:insanium_ingot" },
+            3: { item: "tdelight:rosenquartz_ingot" },
+            4: { item: "tdelight:gildedfern_ingot" },
+            5: { item: "tdelight:hamletite_ingot" }
+        },
+        result: { item: 'endless:infinity_ingot' }
+    }).id(`kubejs:endless/infinity_ingot`)
     //===== blocks =====//
     e.custom({
         type: 'draconicevolution:fusion_crafting',
@@ -192,7 +240,7 @@ onEvent('recipes', e => {
             { item: 'draconicevolution:awakened_core' },
             { item: 'draconicevolution:awakened_core' },
         ]
-    }).id(`kubejs:fusion_crafting/neutronium_collector`)
+    }).id(`kubejs:endless/neutronium_collector`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         tier: 2,
@@ -211,124 +259,166 @@ onEvent('recipes', e => {
         },
         result: { item: 'endless:infinity_chest' }
     }).id(`kubejs:endless/infinity_chest`)
-    let collectors = [
-        'endless:neutronium_collector',
-        'endless:dense_neutronium_collector',
-        'endless:denser_neutronium_collector',
-        'endless:densest_neutronium_collector'
-    ]
-    for (let i = 1; i < collectors.length; i++) {
-        e.custom({
-            type: 'extendedcrafting:compressor',
-            powerCost: 1000000000 * (2 ^ i),
-            powerRate: 1000000000 * (2 ^ i),
-            inputCount: 18,
-            ingredient: { item: collectors[i - 1] },
-            catalyst: { item: 'endless:neutronium_gear' },
-            result: { item: collectors[i] }
-        }).id(`kubejs:${collectors[i].replace(':', '/')}`)
-    }
+    e.custom({
+        type: 'extendedcrafting:compressor',
+        powerCost: 100000000,
+        powerRate: 100000000,
+        inputCount: 18,
+        ingredient: { item: 'endless:neutronium_collector' },
+        catalyst: { item: 'endless:neutronium_gear' },
+        result: { item: 'endless:dense_neutronium_collector' }
+    }).id(`kubejs:endless/dense_neutronium_collector`)
+    e.custom({
+        type: 'extendedcrafting:compressor',
+        powerCost: 200000000,
+        powerRate: 200000000,
+        inputCount: 18,
+        ingredient: { item: 'endless:dense_neutronium_collector' },
+        catalyst: { item: 'endless:neutronium_gear' },
+        result: { item: 'endless:denser_neutronium_collector' }
+    }).id(`kubejs:endless/denser_neutronium_collector`)
+    e.custom({
+        type: 'extendedcrafting:compressor',
+        powerCost: 400000000,
+        powerRate: 400000000,
+        inputCount: 18,
+        ingredient: { item: 'endless:denser_neutronium_collector' },
+        catalyst: { item: 'endless:neutronium_gear' },
+        result: { item: 'endless:densest_neutronium_collector' }
+    }).id(`kubejs:endless/densest_neutronium_collector`)
     //===== tools =====//
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
             " AAAAAAA ",
             "AAAABAAAA",
-            "AA  C  AA",
-            "    C    ",
-            "    C    ",
+            "AA CDCAAA",
+            "A  CEC  A",
+            "   CFC   ",
             "    C    ",
             "    C    ",
             "    C    ",
             "    C    "
         ],
         key: {
-            A: {
-                item: "endless:infinity_ingot"
-            },
-            B: {
-                item: 'endless:crystal_matrix_block'
-            },
-            C: {
-                item: 'endless:neutronium_ingot'
-            }
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:crystal_matrix_block" },
+            C: { item: "endless:neutronium_ingot" },
+            D: { item: "allthemodium:alloy_pick" },
+            E: { item: "draconicevolution:chaotic_pickaxe" },
+            F: { item: "mekanism:meka_tool" }
         },
-        result: { item: 'endless:infinity_pickaxe' }
-    }).id(`kubejs:avaritia/pickaxe`)
+        result: {
+            type: 'forge:nbt',
+            item: "endless:infinity_pickaxe",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
+        }
+    }).id(`kubejs:endless/pickaxe`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
-            " A       ",
-            "AAAAA    ",
-            "AAAA     ",
-            " AB      ",
-            "  B      ",
-            "  B      ",
-            "  B      ",
-            "  B      ",
-            "  B      "
+            "  A      ",
+            " AAAA    ",
+            "AAAABAAAA",
+            " AACDC   ",
+            "  ACEC   ",
+            "   CFC   ",
+            "    C    ",
+            "    C    ",
+            "    C    "
         ],
         key: {
-            A: {
-                item: "endless:infinity_ingot"
-            },
-            B: {
-                item: 'endless:neutronium_ingot'
-            }
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:crystal_matrix_block" },
+            C: { item: "endless:neutronium_ingot" },
+            D: { item: "draconicevolution:chaotic_axe" },
+            E: { item: "allthemodium:alloy_axe", },
+            F: { item: "mysticaladaptations:insanium_axe" }
         },
         result: {
-            item: 'endless:infinity_axe'
+            type: 'forge:nbt',
+            item: "endless:infinity_axe",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
         }
-    }).id(`kubejs:avaritia/axe`)
+    }).id(`kubejs:endless/axe`)
+    e.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            "     AAAA",
+            "    AAAAA",
+            "     ABAA",
+            "    CDAAA",
+            "   CEC A ",
+            "  CFC    ",
+            "  CC     ",
+            " C       ",
+            "C        "
+        ],
+        key: {
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:crystal_matrix_block" },
+            C: { item: "endless:neutronium_ingot" },
+            D: { item: "allthemodium:alloy_shovel", },
+            E: { item: "draconicevolution:chaotic_shovel" },
+            F: { item: "mysticaladaptations:insanium_shovel" }
+        },
+        result: {
+            type: 'forge:nbt',
+            item: "endless:infinity_shovel",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
+        }
+    }).id(`kubejs:endless/shovel`)
+    e.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            " AAAAAAA ",
+            "AAAAAABAA",
+            " AA  CDC ",
+            " A   CEC ",
+            "     CCC ",
+            "      C  ",
+            "      C  ",
+            "      C  ",
+            "      C  "
+        ],
+        key: {
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:crystal_matrix_block" },
+            C: { item: "endless:neutronium_ingot" },
+            D: { item: "draconicevolution:chaotic_hoe" },
+            E: { item: "mysticaladaptations:insanium_hoe" }
+        },
+        "result": {
+            type: 'forge:nbt',
+            item: "endless:infinity_hoe",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
+        }
+    }).id(`kubejs:endless/hoe`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
             "      AAA",
             "     AAAA",
-            "      AAA",
-            "     B A ",
-            "    B    ",
-            "   B     ",
-            "  B      ",
-            " B       ",
-            "B        "
+            "    AABAA",
+            "   AACAA ",
+            "DDAAEAA  ",
+            " FDGAA   ",
+            " FFDA    ",
+            " FFFD    ",
+            "F   D    "
         ],
         key: {
-            A: {
-                item: "endless:infinity_ingot"
-            },
-            B: {
-                item: 'endless:neutronium_ingot'
-            }
-        },
-        result: { item: 'endless:infinity_shovel' }
-    }).id(`kubejs:avaritia/shovel`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "       AA",
-            "      AAA",
-            "     AAA ",
-            "    AAA  ",
-            " B AAA   ",
-            "  BAA    ",
-            "  CB     ",
-            " C  B    ",
-            "D        "
-        ],
-        key: {
-            A: {
-                item: "endless:infinity_ingot"
-            },
-            B: {
-                item: "extendedcrafting:crystaltine_ingot"
-            },
-            C: {
-                item: 'endless:neutronium_ingot'
-            },
-            D: {
-                item: 'endless:infinity_catalyst'
-            }
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "mysticaladaptations:insanium_paxel" },
+            C: { item: "draconicevolution:chaotic_staff" },
+            D: { item: "endless:crystal_matrix_ingot" },
+            E: { item: "allthemodium:alloy_paxel", },
+            F: { item: "endless:neutronium_ingot" },
+            G: { item: "endless:crystal_matrix_block" }
         },
         result: {
             type: "forge:nbt",
@@ -336,167 +426,185 @@ onEvent('recipes', e => {
             count: 1,
             nbt: "{Enchantments:[{lvl:100,id:\"minecraft:looting\"},{lvl:100,id:\"minecraft:sweeping\"}}"
         }
-    }).id(`kubejs:avaritia/sword`)
+    }).id(`kubejs:endless/sword`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
-            "   AA    ",
-            "  A B    ",
-            " A  B    ",
-            "A   B    ",
-            "C   B    ",
-            "A   B    ",
-            " A  B    ",
-            "  A B    ",
-            "   AA    "
+            "    AAAB ",
+            "   AAA B ",
+            "  AA   B ",
+            " AA    B ",
+            "CD     B ",
+            " AA    B ",
+            "  AA   B ",
+            "   AAA B ",
+            "    AAAB "
         ],
         key: {
-            A: {
-                item: "endless:infinity_ingot"
-            },
-            B: {
-                item: "minecraft:white_wool"
-            },
-            C: {
-                item: 'endless:crystal_matrix_block'
-            }
-        },
-        result: { item: 'endless:infinity_bow' }
-    }).id(`kubejs:avaritia/bow`)
-    e.custom({
-        type: 'extendedcrafting:shaped_table',
-        pattern: [
-            "  AAAAA  ",
-            " ABBBBBA ",
-            " A CBC A ",
-            " ABBDBBA ",
-            " ABBBBBA ",
-            " AB B BA ",
-            "         ",
-            "         ",
-            "         "
-        ],
-        key: {
-            A: {
-                item: 'endless:neutronium_ingot'
-            },
-            B: {
-                item: "endless:infinity_ingot"
-            },
-            C: {
-                item: 'endless:infinity_catalyst'
-            },
-            D: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_helmet",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            }
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:crystal_matrix_ingot" },
+            C: { item: "endless:crystal_matrix_block" },
+            D: { item: "draconicevolution:chaotic_bow" }
         },
         result: {
-            item: 'endless:infinity_helmet'
+            type: 'forge:nbt',
+            item: "endless:infinity_bow",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
         }
-    }).id(`kubejs:avaritia/helmet`)
+    }).id(`kubejs:endless/bow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
-            " AA   AA ",
-            "AAA   AAA",
-            "AAA   AAA",
-            " ABBBBBA ",
-            " ABBCBBA ",
-            " ABBDBBA ",
-            " ABBBBBA ",
-            " ABBBBBA ",
-            "  AAAAA  "
+            "AAAAAAAA ",
+            "AAA   B  ",
+            "AAA  B   ",
+            "A  CB    ",
+            "A  BC    ",
+            "A B  C   ",
+            "AB    CC ",
+            "A     CCC",
+            "       CC"
         ],
         key: {
-            A: {
-                item: 'endless:neutronium_ingot'
-            },
-            B: {
-                item: "endless:infinity_ingot"
-            },
-            C: {
-                item: 'endless:crystal_matrix_block'
-            },
-            D: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_bodyarmor",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            }
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:crystal_matrix_ingot" },
+            C: { item: "endless:neutronium_ingot" }
         },
-        result: {
-            item: 'endless:infinity_chestplate'
+        "result": {
+            type: 'forge:nbt',
+            item: "endless:infinity_crossbow",
+            count: 1,
+            nbt: "{ChargedProjectiles:[],Unbreakable:1b,Damage:0,Charged:0b}"
         }
-    }).id(`kubejs:avaritia/chestplate`)
+    }).id(`kubejs:endless/crossbow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
-            "AAAAAAAAA",
-            "ABBBCBBBA",
-            "ABAADAABA",
-            "ABA   ABA",
-            "AEA   AEA",
-            "ABA   ABA",
-            "ABA   ABA",
-            "ABA   ABA",
-            "ABA   ABA"
+            "     AAAA",
+            "    AAAAA",
+            "      BAA",
+            "     B AA",
+            "    B  A ",
+            "   B     ",
+            "CBB      ",
+            "CCB      ",
+            "CCC      "
         ],
         key: {
-            A: {
-                item: 'endless:neutronium_ingot'
-            },
-            B: {
-                item: "endless:infinity_ingot"
-            },
-            C: {
-                item: 'endless:infinity_catalyst'
-            },
-            D: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_pants",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            },
-            E: {
-                item: 'endless:crystal_matrix_block'
-            }
+            A: { item: "endless:infinity_ingot" },
+            B: { item: "endless:neutronium_ingot" },
+            C: { item: "endless:crystal_matrix_ingot" }
         },
-        result: {
-            item: 'endless:infinity_leggings'
+        "result": {
+            type: 'forge:nbt',
+            item: "endless:infinity_arrow",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
         }
-    }).id(`kubejs:avaritia/leggings`)
+    }).id(`kubejs:endless/arrow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: [
-            " AAA AAA ",
-            " ABA ABA ",
-            " ABA ABA ",
-            "AABA ABAA",
-            "ABBA ABBA",
-            "AAAACAAAA",
-            "         ",
-            "         ",
-            "         "
+            '  AAAAA  ',
+            ' ABBBBBA ',
+            ' A CBC A ',
+            ' ABBDBBA ',
+            ' ABBBBBA ',
+            ' AB B BA ',
+            '         ',
+            '         ',
+            '         '
         ],
         key: {
-            A: {
-                item: 'endless:neutronium_ingot'
-            },
-            B: {
-                item: "endless:infinity_ingot"
-            },
-            C: {
-                type: "forge:nbt",
-                item: "mekanism:mekasuit_boots",
-                count: 1,
-                nbt: "{HideFlags:2,mekData:{EnergyContainers:[{Container:0b,stored:\"16000000\"}]}}"
-            }
+            A: { item: 'endless:neutronium_ingot' },
+            B: { item: "endless:infinity_ingot" },
+            C: { item: 'endless:infinity_catalyst' },
+            D: { item: "mekanism:mekasuit_helmet", }
         },
         result: {
-            item: 'endless:infinity_boots'
+            type: 'forge:nbt',
+            item: "endless:infinity_helmet",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
         }
-    }).id(`kubejs:avaritia/boots`)
+    }).id(`kubejs:endless/helmet`)
+    e.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            ' AA   AA ',
+            'AAA   AAA',
+            'AAA   AAA',
+            ' ABBBBBA ',
+            ' ABBCBBA ',
+            ' ABBDBBA ',
+            ' ABBBBBA ',
+            ' ABBBBBA ',
+            '  AAAAA  '
+        ],
+        key: {
+            A: { item: 'endless:neutronium_ingot' },
+            B: { item: "endless:infinity_ingot" },
+            C: { item: 'draconicevolution:chaotic_chestpiece' },
+            D: { item: "mekanism:mekasuit_bodyarmor", }
+        },
+        result: {
+            type: 'forge:nbt',
+            item: "endless:infinity_chestplate",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
+        }
+    }).id(`kubejs:endless/chestplate`)
+    e.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            'AAAAAAAAA',
+            'ABBBCBBBA',
+            'ABAADAABA',
+            'ABA   ABA',
+            'AEA   AEA',
+            'ABA   ABA',
+            'ABA   ABA',
+            'ABA   ABA',
+            'ABA   ABA'
+        ],
+        key: {
+            A: { item: 'endless:neutronium_ingot' },
+            B: { item: "endless:infinity_ingot" },
+            C: { item: 'endless:infinity_catalyst' },
+            D: { item: "mekanism:mekasuit_pants", },
+            E: { item: 'endless:crystal_matrix_block' }
+        },
+        result: {
+            type: 'forge:nbt',
+            item: "endless:infinity_leggings",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
+        }
+    }).id(`kubejs:endless/leggings`)
+    e.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            ' AAA AAA ',
+            ' ABA ABA ',
+            ' ABA ABA ',
+            'AABA ABAA',
+            'ABBA ABBA',
+            'AAAACAAAA',
+            '         ',
+            '         ',
+            '         '
+        ],
+        key: {
+            A: { item: 'endless:neutronium_ingot' },
+            B: { item: "endless:infinity_ingot" },
+            C: { item: "mekanism:mekasuit_boots", }
+        },
+        result: {
+            type: 'forge:nbt',
+            item: "endless:infinity_boots",
+            count: 1,
+            nbt: "{Damage:0,Unbreakable:1b}"
+        }
+    }).id(`kubejs:endless/boots`)
 })
