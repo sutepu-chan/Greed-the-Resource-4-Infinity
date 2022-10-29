@@ -177,6 +177,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/star_fuel`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "AAAAAAAAA",
             "ABCDEFGHA",
@@ -289,6 +290,7 @@ onEvent('recipes', e => {
     //===== tools =====//
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             " AAAAAAA ",
             "AAAABAAAA",
@@ -317,6 +319,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/pickaxe`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "  A      ",
             " AAAA    ",
@@ -345,6 +348,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/axe`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "     AAAA",
             "    AAAAA",
@@ -373,6 +377,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/shovel`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             " AAAAAAA ",
             "AAAAAABAA",
@@ -400,6 +405,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/hoe`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "      AAA",
             "     AAAA",
@@ -429,6 +435,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/sword`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "    AAAB ",
             "   AAA B ",
@@ -455,6 +462,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/bow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "AAAAAAAA ",
             "AAA   B  ",
@@ -480,6 +488,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/crossbow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             "     AAAA",
             "    AAAAA",
@@ -505,6 +514,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/arrow`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             '  AAAAA  ',
             ' ABBBBBA ',
@@ -531,6 +541,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/helmet`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             ' AA   AA ',
             'AAA   AAA',
@@ -557,6 +568,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/chestplate`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             'AAAAAAAAA',
             'ABBBCBBBA',
@@ -584,6 +596,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:endless/leggings`)
     e.custom({
         type: 'extendedcrafting:shaped_table',
+        tier: 4,
         pattern: [
             ' AAA AAA ',
             ' ABA ABA ',
