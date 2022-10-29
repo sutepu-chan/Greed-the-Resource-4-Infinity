@@ -72,7 +72,9 @@ onEvent("item.tooltip", e => {
         'endless:singularity_lapis',
         'endless:singularity_redstone',
         'endless:singularity_quartz',
-        'endless:singularity_clay'
+        'endless:singularity_clay',
+        'endless:singularity_cobalt',
+        'endless:singularity_manyullyn'
     ]
     unobtain.forEach(items => {
         grayTooltip(items, 'Disabled, unobtainable!')
