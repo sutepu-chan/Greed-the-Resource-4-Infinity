@@ -68,4 +68,12 @@ onEvent('recipes', e => {
     e.shapeless('ae2extras:1m_crafting_storage', ['aeadditions:item_storage_component_1024', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/1m_crafting_storage`)
     e.shapeless('ae2extras:4m_crafting_storage', ['aeadditions:item_storage_component_4096', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/4m_crafting_storage`)
     e.shapeless('ae2extras:16m_crafting_storage', ['aeadditions:item_storage_component_16384', 'appliedenergistics2:crafting_unit']).id(`kubejs:ae2extras/16m_crafting_storage`)
+    e.shaped('inventorystatistics:item_speed_monitor', ['SFS', 'CTC', 'PAP'], {
+        S: 'lazierae2:speculative_processor',
+        C: 'appliedenergistics2:16k_cell_component',
+        P: 'lazierae2:parallel_processor',
+        A: 'appliedenergistics2:annihilation_core',
+        F: 'appliedenergistics2:formation_core',
+        T: 'appliedenergistics2:terminal'
+    }).id(`kubejs:inventorystatistics/item_speed_monitor`)
 })
