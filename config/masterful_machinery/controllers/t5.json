@@ -17,7 +17,7 @@
             "name": "T5 Generator Energy",
             "id": "t5_energy",
             "data": {
-                "capacity": 2500000
+                "capacity": 100000000
             }
         }
     ]
