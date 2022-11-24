@@ -77,7 +77,7 @@ onEvent('recipes', e => {
         'draconicevolution:medium_chaos_frag',
         'minecraft:dragon_egg',
         'draconicevolution:medium_chaos_frag',
-        'endless:endest_pearl',
+        'minecraft:ender_pearl',
         'endless:neutronium_ingot',
         'endless:neutronium_ingot',
         'draconicevolution:draconic_relay_crystal',
