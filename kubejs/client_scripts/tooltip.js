@@ -493,7 +493,6 @@ onEvent("item.tooltip", e => {
         Text.of('s').darkGray(),
         Text.of('t').black()
     ])
-    //===== better muffling =====//
-    whiteTooltip('bettermuffling:muffling_block', 'Be Quiet! Shh...')
-    yellowTooltip('bettermuffling:muffling_block_advanced', 'Be Silent! Shhhhh....')
+    //===== ae2 =====//
+    whiteTooltip('appliedenergistics2:quantum_entangled_singularity', 'Craft using ender pearl, not dust!')
 })

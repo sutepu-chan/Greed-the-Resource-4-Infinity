@@ -56,7 +56,7 @@
 	#Range: 5 ~ 10000
 	"Infinity Firework Damage" = 100
 	#Whether to allow the infinity sword and bow to destroy the guardian crystal in DE(Draconic Evolution).
-	"Is Break DE Crystal" = false
+	"Is Break DE Crystal" = true
 	#Whether to allow the extreme crafting table to use vanilla crafting table recipes.
 	"Is Craft Table" = false
 	#Whether to show feedback when player log into the game.
