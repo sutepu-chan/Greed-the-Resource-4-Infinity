@@ -56,7 +56,7 @@ onEvent('recipes', e => {
             { item: "draconicevolution:awakened_core" },
             { item: "draconicevolution:chaotic_core" },
             { item: "ironfurnaces:million_furnace" },
-            { item: 'kubejs:eternal_singularity' }
+            { item: 'eternal_singularity:eternal_singularity' }
         ],
         result: { item: 'endless:infinity_catalyst' }
     }).id(`kubejs:endless/infinity_catalyst`)

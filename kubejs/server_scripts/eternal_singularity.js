@@ -322,6 +322,6 @@ onEvent('recipes', e => {
             nbt: "{Id:\"extendedcrafting:zinc\"}"
           }
         ],
-        result: { item: 'kubejs:eternal_singularity' }
-      }).id(`kubejs:eternal_singularity`)
+        result: { item: 'eternal_singularity:eternal_singularity' }
+      }).id(`eternal_singularity:eternal_singularity`)
 })
