@@ -273,7 +273,7 @@ customization {
   action = addbutton
   y = 49
   backgroundnormal = config\fancymenu\Assets\di.png
-  value = https://www.discord.gg/pvb4XfYg94
+  value = https://discord.gg/aM3pEC7X7v
   height = 22
 }
 
