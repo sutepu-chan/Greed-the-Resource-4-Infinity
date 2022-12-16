@@ -1,6 +1,6 @@
 // Listen to item registry event
 onEvent('item.registry', e => {
-    e.create('eternal_singularity')
+    e.create('eternal_singularity:eternal_singularity')
         .maxStackSize(64)
         .displayName('§cEternal Singularity')
 })

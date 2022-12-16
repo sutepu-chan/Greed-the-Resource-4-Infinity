@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "kubejs:item/eternal_singularity/eternal_singularity2",
+        "layer1": "kubejs:item/eternal_singularity/eternal_singularity"
+    }
+}
