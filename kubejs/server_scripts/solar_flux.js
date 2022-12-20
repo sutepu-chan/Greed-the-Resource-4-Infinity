@@ -39,7 +39,7 @@ onEvent('recipes', e => {
         M: 'minecraft:diamond_block',
         P: 'solarflux:photovoltaic_cell_4'
     })
-    modifyShaped(e, 'solarflux:photovoltaic_cell_6', 2, ['GGG', 'SMS', 'PQP'], {
+    modifyShaped(e, 'solarflux:photovoltaic_cell_6', 2, ['GGG', 'MSM', 'PQP'], {
         G: 'solarflux:ender_glass',
         Q: 'minecraft:smooth_quartz',
         S: 'mekanism:pellet_antimatter',
