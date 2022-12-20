@@ -39,6 +39,7 @@
 				id: "734683E7DE1C3C38"
 				type: "item"
 				item: "draconicevolution:small_chaos_frag"
+				count: 4
 			}]
 		}
 		{
@@ -53,9 +54,9 @@
 				points: false
 			}]
 			rewards: [{
-				id: "610976ED69C4EC75"
+				id: "3DB57A4E8B95063A"
 				type: "item"
-				item: "draconicevolution:small_chaos_frag"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -70,9 +71,10 @@
 				points: false
 			}]
 			rewards: [{
-				id: "0A05868204636835"
+				id: "50702D149A07B141"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
+				count: 2
 			}]
 		}
 		{
@@ -87,9 +89,10 @@
 				points: false
 			}]
 			rewards: [{
-				id: "18F02E5762E6D925"
+				id: "318E07BBF3A30CA8"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
+				count: 5
 			}]
 		}
 		{
@@ -149,9 +152,9 @@
 				checkItem: false
 			}]
 			rewards: [{
-				id: "00AE4F6007670D7E"
+				id: "42650A6EB60C3DB0"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -189,9 +192,9 @@
 				days: 500
 			}]
 			rewards: [{
-				id: "08AB390EAD97838B"
+				id: "6B18B3C9E5B856C7"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -205,9 +208,9 @@
 				days: 1000
 			}]
 			rewards: [{
-				id: "7443CAD317A35855"
+				id: "363B276799C14D39"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -284,9 +287,9 @@
 				value: 50000
 			}]
 			rewards: [{
-				id: "66F567985F4BEE93"
+				id: "6A3F1192B4838DBC"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -302,9 +305,9 @@
 				value: 50
 			}]
 			rewards: [{
-				id: "19DA66AD8FADF7C9"
+				id: "3B83437C7001F2BA"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -326,9 +329,9 @@
 				value: 100000
 			}]
 			rewards: [{
-				id: "05B975492696CE4B"
+				id: "1F66CD8C70E4940E"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -345,9 +348,9 @@
 				value: 2000000
 			}]
 			rewards: [{
-				id: "687E48D0A362C72C"
+				id: "1D34CA6925C2DE4E"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -609,9 +612,9 @@
 				value: 50
 			}]
 			rewards: [{
-				id: "5987A47086F342D2"
+				id: "1920FF5CD17EE735"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
+				item: "endless:infinity_catalyst"
 			}]
 		}
 		{
@@ -639,10 +642,10 @@
 				value: 20000000
 			}]
 			rewards: [{
-				id: "208C27DC1D2D5E7C"
+				id: "75AF1F69FFE4AA29"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
-				count: 2
+				item: "endless:infinity_catalyst"
+				count: 3
 			}]
 		}
 		{
@@ -659,10 +662,10 @@
 				value: 200000000
 			}]
 			rewards: [{
-				id: "465ADE88947175DC"
+				id: "4FC48277E305AA47"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
-				count: 3
+				item: "endless:infinity_catalyst"
+				count: 5
 			}]
 		}
 		{
@@ -679,10 +682,10 @@
 				value: 2000000000
 			}]
 			rewards: [{
-				id: "0E81B0946AAB3B09"
+				id: "16BDAE5438FA7C96"
 				type: "item"
-				item: "extendedcrafting:ultimate_singularity"
-				count: 4
+				item: "endless:infinity_catalyst"
+				count: 10
 			}]
 		}
 	]
