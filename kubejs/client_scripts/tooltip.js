@@ -476,7 +476,7 @@ onEvent("item.tooltip", e => {
         ['What does this pearl cost... Probably the end']
     ])
     grayTooltip('endless:star_fuel', 'The long lasting fire')
-    e.add('endless:infinity_chest', [  
+    e.add('endless:infinity_chest', [[  
         Text.of('J').red(),
         Text.of('u').gold(),
         Text.of('s').yellow(),
@@ -492,7 +492,7 @@ onEvent("item.tooltip", e => {
         Text.of('e').gray(),
         Text.of('s').darkGray(),
         Text.of('t').black()
-    ])
+    ]])
     //===== ae2 =====//
     whiteTooltip('appliedenergistics2:quantum_entangled_singularity', 'Craft using ender pearl, not dust!')
 })

@@ -285,5 +285,5 @@ global.recipe_disable = [
     'custommachinery:structure_creator',
     'packagedexcrafting:ender_crafter',
     'packagedauto:crafter',
-
+    'upgradednetherite_items:creative_upgraded_netherite_totem'
 ]
