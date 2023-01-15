@@ -1,331 +1,77 @@
 onEvent('recipes', e => {
     //===== ingots and gems =====//
+    const mIO = [
+        //energy, tick, resource output, block output
+        //ingot
+        [8000, 400, 1, 5], //t0
+        [10000, 400, 4, 10], //t1
+        [25000, 200, 8, 10], //t2
+        //block
+        [32400, 100, 2, 20], //t3
+        [76400, 100, 8, 40], //t4
+        [102400, 100, 32, 64], //t5
+        [409600, 20, 64, 64], //t6
+    ];
     //functions
     let oreResourceGenerate = (resource, outputIngot, outputBlock) => {
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_0`,
-            controllerId: 't0',
-            ticks: 400,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 8000
+        for (let i = 0; i<=6; i++) {
+            //define output object
+            if (i<=2) {
+                mOutput = outputIngot;
+            } else {
+                mOutput = outputBlock
+            }
+            e.custom({
+                type: 'masterfulmachinery:machine_process',
+                structureId: `${resource}_${i}`,
+                controllerId: `t${i}`,
+                ticks: mIO[i][1],
+                inputs: [
+                    {
+                        type: 'masterfulmachinery:energy',
+                        data: {
+                            amount: mIO[i][0]
+                        }
                     }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputIngot,
-                        count: 1
+                ],
+                outputs: [
+                    {
+                        type: 'masterfulmachinery:items',
+                        data: {
+                            item: mOutput,
+                            count: mIO[i][2]
+                        }
                     }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t0`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_1`,
-            controllerId: 't1',
-            ticks: 400,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 15000
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputIngot,
-                        count: 2
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t1`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_2`,
-            controllerId: 't2',
-            ticks: 200,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 52400
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputIngot,
-                        count: 4
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t2`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_3`,
-            controllerId: 't3',
-            ticks: 200,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 104200
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 1
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t3`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_4`,
-            controllerId: 't4',
-            ticks: 160,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 409600
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 4
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t4`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_5`,
-            controllerId: 't5',
-            ticks: 100,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 819200
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 8
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t5`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_6`,
-            controllerId: 't6',
-            ticks: 40,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 10560000
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 8
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t6`)
+                ]
+            }).id(`kubejs:masterfulmachinery/${resource}_t${i}`)
+        }
     }
     let blockResourceGenerate = (resource, outputBlock) => {
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_0`,
-            controllerId: 't0',
-            ticks: 400,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 8000
+        for (let i = 0; i<=6; i++) {
+            e.custom({
+                type: 'masterfulmachinery:machine_process',
+                structureId: `${resource}_${i}`,
+                controllerId: `t${i}`,
+                ticks: mIO[i][1],
+                inputs: [
+                    {
+                        type: 'masterfulmachinery:energy',
+                        data: {
+                            amount: mIO[i][0]
+                        }
                     }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 2
+                ],
+                outputs: [
+                    {
+                        type: 'masterfulmachinery:items',
+                        data: {
+                            item: outputBlock,
+                            count: mIO[i][3]
+                        }
                     }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t0`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_1`,
-            controllerId: 't1',
-            ticks: 400,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 15000
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 4
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t1`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_2`,
-            controllerId: 't2',
-            ticks: 300,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 52400
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 4
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t2`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_3`,
-            controllerId: 't3',
-            ticks: 200,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 104200
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 4
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t3`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_4`,
-            controllerId: 't4',
-            ticks: 200,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 409600
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 8
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t4`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_5`,
-            controllerId: 't5',
-            ticks: 100,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 819200
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 16
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t5`)
-        e.custom({
-            type: 'masterfulmachinery:machine_process',
-            structureId: `${resource}_6`,
-            controllerId: 't6',
-            ticks: 20,
-            inputs: [
-                {
-                    type: 'masterfulmachinery:energy',
-                    data: {
-                        amount: 10560000
-                    }
-                }
-            ],
-            outputs: [
-                {
-                    type: 'masterfulmachinery:items',
-                    data: {
-                        item: outputBlock,
-                        count: 64
-                    }
-                }
-            ]
-        }).id(`kubejs:masterfulmachinery/${resource}_t6`)
+                ]
+            }).id(`kubejs:masterfulmachinery/${resource}_t${i}`)
+        }
     }
     let tier0Structure = (resource, baseBlock) => {
         e.custom({
@@ -791,7 +537,7 @@ onEvent('recipes', e => {
         type: 'masterfulmachinery:machine_process',
         structureId: `chaos_5`,
         controllerId: 't5',
-        ticks: 2000,
+        ticks: 1000,
         inputs: [
             {
                 type: 'masterfulmachinery:energy',
@@ -805,7 +551,7 @@ onEvent('recipes', e => {
                 type: 'masterfulmachinery:items',
                 data: {
                     item: 'draconicevolution:small_chaos_frag',
-                    count: 2
+                    count: 8
                 }
             }
         ]
@@ -814,7 +560,7 @@ onEvent('recipes', e => {
         type: 'masterfulmachinery:machine_process',
         structureId: `chaos_6`,
         controllerId: 't6',
-        ticks: 400,
+        ticks: 100,
         inputs: [
             {
                 type: 'masterfulmachinery:energy',
@@ -828,7 +574,7 @@ onEvent('recipes', e => {
                 type: 'masterfulmachinery:items',
                 data: {
                     item: 'draconicevolution:medium_chaos_frag',
-                    count: 2
+                    count: 8
                 }
             }
         ]
