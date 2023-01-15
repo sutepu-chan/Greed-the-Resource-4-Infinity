@@ -362,7 +362,7 @@
 			y: 1.0d
 			description: [
 				"The mod \"Platform\" provides a highly customizable blocks for decorations. You can make decks, bridges, mine shafts, or even wooden coaster supports. The only limit is your imagination!"
-				"{image:kubejs:textures/quest/utility_tools/utility_tools_platform.png width:200 height:100 align:1}"
+				"{image:gr4_quest:textures/utility_tools/utility_tools_platform.png width:200 height:100 align:1}"
 			]
 			id: "7D38F485E919E82E"
 			tasks: [{
@@ -406,7 +406,7 @@
 				"2. Attachment management"
 				"3. Parts Dyeing"
 				"There are soooo much types of guns and all of them are crafted through this workbench. RC to open the GUI and choose your favourite gun! There will be instructions to tells you the required crafting ingredient of that gun."
-				"{image:kubejs:textures/quest/utility_tools/utility_tools_ak47.png width:175 height:100 align:1}"
+				"{image:gr4_quest:textures/utility_tools/utility_tools_ak47.png width:175 height:100 align:1}"
 			]
 			id: "5D69F17A9B71A810"
 			tasks: [{

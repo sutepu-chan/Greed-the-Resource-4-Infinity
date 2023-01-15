@@ -115,7 +115,7 @@
 			description: [
 				"Launch pad provides a space for placing the rocket down."
 				"Place the pad in a 3x3 structure to make it workable."
-				"{image:kubejs:textures/quest/chapter7/chapter7_launch_pad.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter7/chapter7_launch_pad.png width:176 height:100 align:1}"
 			]
 			dependencies: ["6391A7954ED4D488"]
 			id: "2398266E84266B84"
@@ -157,7 +157,7 @@
 			y: 3.5d
 			description: [
 				"It is what it is. To load the fuel into the rocket. Simply place down the block near your launch pad and insert fuel by tanks for pipes."
-				"{image:kubejs:textures/quest/chapter7/chapter7_fuel_loader.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter7/chapter7_fuel_loader.png width:176 height:100 align:1}"
 			]
 			dependencies: ["6391A7954ED4D488"]
 			id: "5F53172B9A1CF309"
@@ -335,7 +335,7 @@
 			description: [
 				"After all the things have been prepared, it's time to go to the moon."
 				"Set up the things prepared as below. After the fuel has loaded to 100%, RC the rocket and press \"Space\" to launch. After launching successfully into the atmospher, you can choose which planet you are going. But for now, due to the fact that we only have tier 1 rocket, we can only go to the moon. Choose the moon option in the GUI session. And final reminder, remember to bring another set of launch pads and fuel loader with energy cubes and fuel!!!"
-				"{image:kubejs:textures/quest/chapter7/chapter7_launching.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter7/chapter7_launching.png width:176 height:100 align:1}"
 			]
 			dependencies: ["6391A7954ED4D488"]
 			id: "54C360954E1B226C"

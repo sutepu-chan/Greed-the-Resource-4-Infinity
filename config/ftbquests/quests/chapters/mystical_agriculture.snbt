@@ -741,7 +741,7 @@
 			subtitle: "Chapter 4"
 			description: [
 				"This pack provides a highly efficient but expensive multiblock resource generators. For all the generators, controllers, energy inputs and item output blocks are required for the multiblock structure. Press \"U\" by default allows you to see how the multiblock structure is built. The button at the bottom right hand corner makes the structure is visible layer by layer."
-				"{image:kubejs:textures/quest/resource/resource_generator_jei.png width:100 height:150 align:1}"
+				"{image:gr4_quest:textures/resource/resource_generator_jei.png width:100 height:150 align:1}"
 			]
 			id: "51B71FDE9D677CC5"
 			tasks: [
@@ -1043,7 +1043,7 @@
 			y: -6.0d
 			description: [
 				"A Tier 3 Netherstar Generator, for your reference."
-				"{image:kubejs:textures/quest/resource/resource_tier3_netherstar.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/resource/resource_tier3_netherstar.png width:100 height:100 align:1}"
 			]
 			dependencies: ["7C44EC057F3EC644"]
 			id: "60D6C008A23DA1EB"

@@ -178,7 +178,7 @@
 				"Here comes the uses of demon's dream fruit. Take the unstale otherworld sampling you got. You will find that it looks exactly the same with oak saplings, except theoneprobe is telling you it is from Occultism."
 				"Let the sapling grow or by bone meal. Don't harvest it first! You will lost your items if you harvest directly."
 				"To get the otherworld wood, you need to ingest demon's dream fruit. It grants you hunger and more importantly, \"Third Eye\" effect. Under the \"Third Eye\" effect, you are finally able to harvest the wood. The effect doesn't last long and remember to harvest the leaves to get more otherworld saplinigs."
-				"{image:kubejs:textures/quest/chapter2/chapter2_otherworld_sapling.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter2/chapter2_otherworld_sapling.png width:176 height:100 align:1}"
 			]
 			dependencies: ["13BE2A368E84143B"]
 			id: "2906E00B892C04DC"
@@ -204,7 +204,7 @@
 				"Bind to andesite -> otherworld stone"
 				"Bind to oak log -> otherworld log"
 				"Bind to netherrack -> Iesnium ore"
-				"{image:kubejs:textures/quest/chapter2/chapter2_divination_rod.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter2/chapter2_divination_rod.png width:176 height:100 align:1}"
 			]
 			dependencies: ["2906E00B892C04DC"]
 			id: "0973B9B12ECEC23F"
@@ -359,7 +359,7 @@
 				"After finish constructing the ritual, RC the golden sacrificial bowl to start summoning. Sit back and watch the animation."
 				"The foliot summoned only has a limited time to stay overworld. Shift+RC can see the decay rate."
 				"To obtain gold dust, just simply throw gold ingots or ores to him. He will do it for you."
-				"{image:kubejs:textures/quest/chapter2/chapter2_crushing_ritual.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter2/chapter2_crushing_ritual.png width:176 height:100 align:1}"
 			]
 			dependencies: ["7C9292C619C69DD7"]
 			id: "7844E593A89426E5"
@@ -411,7 +411,7 @@
 			y: 4.0d
 			description: [
 				"You can simply automate the ritual by a hopper (you have to place some blocks to prevent the dust spreading everywhere)"
-				"{image:kubejs:textures/quest/chapter2/chapter2_automate_crushing.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter2/chapter2_automate_crushing.png width:176 height:100 align:1}"
 			]
 			dependencies: ["7844E593A89426E5"]
 			id: "3D4E2065431A161F"
@@ -549,7 +549,7 @@
 			description: [
 				"Some recipe requires End stone dust. Considering the fact that you may not want to fight the ender dragon in such an early stage. End stone can be obtained by ritual of summoning possessed endermite. Check JEI for how to set up the ritual."
 				"To complete the ritual, you have to throw an egg to the ritual after placing all the items."
-				"{image:kubejs:textures/quest/chapter2/chapter2_possessed_endermite.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter2/chapter2_possessed_endermite.png width:176 height:100 align:1}"
 			]
 			dependencies: ["0FAF87AE031C0E3B"]
 			id: "552320F9152E5DF1"

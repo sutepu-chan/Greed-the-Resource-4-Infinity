@@ -497,7 +497,7 @@
 			description: [
 				"Xnet connectors is used to connect machines to your network. These connectors only allow access through the side from which you are placing the connector. i.e. for a vanilla furnace that would mean that with a normal connector you can only get the melted result by placing a connector at the bottom of the furnace."
 				"There are total 4 colors for connectors which is for distinguishing between adjacent networks. One network only accepts one color of connector."
-				"{image:kubejs:textures/quest/transport/transport_controller.png width:150 height:100 align:1}"
+				"{image:gr4_quest:textures/transport/transport_controller.png width:150 height:100 align:1}"
 			]
 			dependencies: ["19E74FFCFDF5E8AA"]
 			id: "7FF83FB8343C9373"
@@ -589,7 +589,7 @@
 				"Only 32 channels can be published in a single routing network."
 				"There is a bug on errorly displaying the message \"There is too much channels in network\". Just ignore it is fine ;-)."
 				"You need to break the router block and place again in order to refresh the channel list."
-				"{image:kubejs:textures/quest/transport/transport_router.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/transport/transport_router.png width:176 height:100 align:1}"
 			]
 			dependencies: ["19E74FFCFDF5E8AA"]
 			id: "3A4DA20F26FE78B5"
@@ -642,7 +642,7 @@
 			description: [
 				"Xnet also provides a wireless router connection, where you items or other things can be transported wirelessly."
 				"Wireless router requires an antenna on top to function."
-				"{image:kubejs:textures/quest/transport/transport_antenna.png width:100 height:200 align:1}"
+				"{image:gr4_quest:textures/transport/transport_antenna.png width:100 height:200 align:1}"
 			]
 			dependencies: ["3A4DA20F26FE78B5"]
 			id: "6AE0CF4B71A53F16"

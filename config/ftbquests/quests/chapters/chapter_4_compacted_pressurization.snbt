@@ -37,7 +37,7 @@
 			description: [
 				"With the material, you are now going to make a pressure chamber, which is very useful getting resources, and crafting many more items! Besides, with this chamber. you can also get compressed iron easier and cheaper."
 				"Pressure chamber is set up by the above blocks. You can also replace the chamber wall with chamber glass. Pressure chamber is a 3x3x3 - 5x5x5 hollow structure. Edges can only be walls. The picture shows the 5x5x5 pressure chamber."
-				"{image:kubejs:textures/quest/chapter4/chapter4_pressure_chamber.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_pressure_chamber.png width:176 height:100 align:1}"
 			]
 			dependencies: ["09DF4B735BA0BCA5"]
 			id: "404A99E9092B297D"
@@ -73,7 +73,7 @@
 			description: [
 				"You need a specific pressure (bar) in pressurized recipes. Pressure can be increased by compressor. Air compressor is the most basic one. Get one of them. Note that air compressor accepts furnace fuel items except lava. It produces air at a rate of 10mL/tick."
 				"Connect the compressor and pressure chamber by pressure tube. It takes some time to get the pressure level up. More compressor will result in a faster rate and being able to maintain at a higher level of pressure."
-				"{image:kubejs:textures/quest/chapter4/chapter4_air_compressor.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_air_compressor.png width:176 height:100 align:1}"
 			]
 			dependencies: ["404A99E9092B297D"]
 			id: "0010E5D1B6462C0E"
@@ -275,7 +275,7 @@
 				"Setting up refinery allows you to process the crude oil by \"Fractional Distillation\". This process utilizes the boiling point difference of hydrocarbons at different chain length (This is a bit technical. Just mention here. Not used in game)"
 				"Refinery allows you to get at most 4 types of oil by inputting crude oil and supplying with heat."
 				"It is a multiblock structure that the refinery controller is at the bottom and the 2-4 outputs on top. More outputs allow you to get more types of oil. Therefore, I recommend you to get 4 for them directly."
-				"{image:kubejs:textures/quest/chapter4/chapter4_refinery.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_refinery.png width:176 height:100 align:1}"
 			]
 			dependencies: ["4E3E7ABF64B432E4"]
 			id: "7AEB24CF56A24C49"
@@ -307,7 +307,7 @@
 				"As mentioned, it utilizes heat to under the process. You need a certain temperature level. Definitely, you could use torches (slow), or lava (fast, but will solidize) to raise the temperature. The better option is to use a vortex tube. It separates incoming air into the hot and cold sides."
 				"When you place the vortex tube down, hotter side will face to you."
 				"There is a weak thermal connection between the hot and the cold side, and therefore, for better efficiency, place a heat sink on the cold side."
-				"{image:kubejs:textures/quest/chapter4/chapter4_vortex_tube.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_vortex_tube.png width:176 height:100 align:1}"
 			]
 			dependencies: ["7AEB24CF56A24C49"]
 			id: "3459A18D9C30581C"
@@ -337,7 +337,7 @@
 			description: [
 				"By the heat concept, heat loss occurred when the refinery is exposed to the air."
 				"Just simply cover your refinery with materials of high thermal resistance can reduce heat loss."
-				"{image:kubejs:textures/quest/chapter4/chapter4_covered_refinery.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_covered_refinery.png width:176 height:100 align:1}"
 			]
 			dependencies: ["3459A18D9C30581C"]
 			id: "37E24310E50F773C"
@@ -386,7 +386,7 @@
 			y: 9.5d
 			description: [
 				"After everything is ready, you can set up the refinery and you will get the LPG. Transport it to a thermopneumatic processing plant, together with some coal under high temperature and high pressure."
-				"{image:kubejs:textures/quest/chapter4/chapter4_molten_plastic.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_molten_plastic.png width:176 height:100 align:1}"
 			]
 			dependencies: ["37E24310E50F773C"]
 			id: "24FE56560CDF5545"
@@ -528,7 +528,7 @@
 				"Not all the things can be produced by youself. You can get them \"Online\""
 				"Craft a amadron tablet. Shift+RC at a chest and a tank, which is used to store the things you have to paid or purchased."
 				"RC to increase order amount by 1. LC to decrease order amount by 1."
-				"{image:kubejs:textures/quest/chapter4/chapter4_amadron_tablet.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_amadron_tablet.png width:176 height:100 align:1}"
 			]
 			dependencies: ["086BCD84CBB64F06"]
 			id: "765EFF6054CB18F3"
@@ -696,7 +696,7 @@
 				"Time to get the assembly controller and the parts of assembler."
 				"Different recipes requires different set of assembly parts. To set it up, it is recommended that the assmebly platform is placing in the middle to allow access of the assembly arms."
 				"Not that only the import and the export arms can be placed diagonally to the assembly platform. Other assembly arms have to place right next to the platform."
-				"{image:kubejs:textures/quest/chapter4/chapter4_assembler.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_assembler.png width:176 height:100 align:1}"
 			]
 			dependencies: ["43D85631F7DCFE28"]
 			id: "6AC11E8F5232F943"
@@ -834,7 +834,7 @@
 			description: [
 				"Using the assembler, you can now craft the blocks required in combination crafting."
 				"Combination crafting is a new crafting methods in placing the blocks to form a multiblock structure."
-				"{image:kubejs:textures/quest/chapter4/chapter4_combination_crafting.png width:110 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter4/chapter4_combination_crafting.png width:110 height:100 align:1}"
 			]
 			dependencies: ["6AC11E8F5232F943"]
 			id: "4EFC02C1DDB34D6D"

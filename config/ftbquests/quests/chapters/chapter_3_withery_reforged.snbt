@@ -144,7 +144,7 @@
 			description: [
 				"To get soul shard, put two restone dust onto the stone hand and a bone meal onto the brazier. Also, bring a zombie to the ritual nearby. Enchanted ash can be served as an invisible barrier to undead creatures when placed on ground. They cannot pass through the line."
 				"To start the ritual, light up the brazier with flint and steel."
-				"{image:kubejs:textures/quest/chapter3/chapter3_soul_shard.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter3/chapter3_soul_shard.png width:176 height:100 align:1}"
 			]
 			dependencies: ["30DD42F1BEE28C3D"]
 			id: "626AB0E2805EDE70"
@@ -166,7 +166,7 @@
 			y: -1.5d
 			description: [
 				"You can also summon zombies by ritual. However, you need one more block to hold ingredients. Necrotic focus is also required in many other recipes."
-				"{image:kubejs:textures/quest/chapter3/chapter3_summon_zombie.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter3/chapter3_summon_zombie.png width:176 height:100 align:1}"
 			]
 			dependencies: ["626AB0E2805EDE70"]
 			id: "7AE4F0304AB1771C"
@@ -188,7 +188,7 @@
 			description: [
 				"Get a crucible. Crucible is a must-need item for witches, isn't it?"
 				"Crucible has to be set up on top of campfire (or any other heat source). Inset a bucket of water into the crucible by RC. If you have set up correctly, you will see water boiling in the crucible."
-				"{image:kubejs:textures/quest/chapter3/chapter3_eidolon_crucible.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter3/chapter3_eidolon_crucible.png width:176 height:100 align:1}"
 			]
 			dependencies: ["25C86B5828A300B7"]
 			id: "6CE8B398817576BF"
@@ -229,7 +229,7 @@
 			description: [
 				"Eidolon altar is required to perform mystical signs. You still can't perform any signs now but it will be good if you set up first, as it takes a long time to obtain the pray and signs, which has to be done daily."
 				"Tier of altar depends on the items on table. The table can be in any shape. Higher tier altar table will provide higher efficacy of paryers and sacrifices. Check Eidolon guide book for more information."
-				"{image:kubejs:textures/quest/chapter3/chapter3_eidolon_basic_altar.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter3/chapter3_eidolon_basic_altar.png width:176 height:100 align:1}"
 			]
 			dependencies: ["25C86B5828A300B7"]
 			id: "120B4F4E21296310"
@@ -280,7 +280,7 @@
 			y: -4.5d
 			description: [
 				"This is the higher possible tier altar. This can only be obtained in Eidolon late game."
-				"{image:kubejs:textures/quest/chapter3/chapter3_eidolon_advance_altar.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter3/chapter3_eidolon_advance_altar.png width:176 height:100 align:1}"
 			]
 			dependencies: ["120B4F4E21296310"]
 			id: "1EC8C21ECF137025"

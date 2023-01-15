@@ -14,7 +14,7 @@
 			width: 20.0d
 			height: 15.0d
 			rotation: 0.0d
-			image: "kubejs:textures/quest/chapter6/chapter6_mekanism_flowchart.png"
+			image: "gr4_quest:textures/chapter6/chapter6_mekanism_flowchart.png"
 			hover: ["A complete flow chart for Mekanism ore processing system."]
 			click: ""
 			dev: false
@@ -26,7 +26,7 @@
 			width: 1.0d
 			height: 1.0d
 			rotation: 0.0d
-			image: "kubejs:textures/quest/chapter6/chapter6_x3.png"
+			image: "gr4_quest:textures/chapter6/chapter6_x3.png"
 			hover: [ ]
 			click: ""
 			dev: false
@@ -38,7 +38,7 @@
 			width: 1.0d
 			height: 1.0d
 			rotation: 0.0d
-			image: "kubejs:textures/quest/chapter6/chapter6_x4.png"
+			image: "gr4_quest:textures/chapter6/chapter6_x4.png"
 			hover: [ ]
 			click: ""
 			dev: false
@@ -50,7 +50,7 @@
 			width: 1.0d
 			height: 1.0d
 			rotation: 0.0d
-			image: "kubejs:textures/quest/chapter6/chapter6_x5.png"
+			image: "gr4_quest:textures/chapter6/chapter6_x5.png"
 			hover: [ ]
 			click: ""
 			dev: false
@@ -178,7 +178,7 @@
 				"Fluid extractor is used for obtaining latex, which is the fundamental material to produce plastics of Industrial Foregoing."
 				"Place the fluid extractor in front of a tree log. It will start slowing extracting latex from tree logs. Note that the log will disappear after some time."
 				"Fluid extractor can run without power, but in a slower extraction rate."
-				"{image:kubejs:textures/quest/chapter6/chapter6_fluid_extractor.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_fluid_extractor.png width:176 height:100 align:1}"
 			]
 			dependencies: ["513A028D467E33A1"]
 			id: "01CF190392177E44"
@@ -200,7 +200,7 @@
 				"Prepare the chemical compounds prepared and craft a latex processing unit."
 				"This machine can process the latex into tiny dry rubber when water is piped."
 				"Note that this machine requires power."
-				"{image:kubejs:textures/quest/chapter6/chapter6_latex_process.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_latex_process.png width:176 height:100 align:1}"
 			]
 			dependencies: ["513A028D467E33A1"]
 			id: "2681BD255AFF8019"
@@ -256,7 +256,7 @@
 			y: 2.5d
 			description: [
 				"With the rubber crafted, try to get a water condensor. Water condensor will generate water from nearby water source block, which make the latex processing unit easier to run. It will generate water faster with more water source block nearby."
-				"{image:kubejs:textures/quest/chapter6/chapter6_water_condensor.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_water_condensor.png width:176 height:100 align:1}"
 			]
 			dependencies: [
 				"10AACA1FF7128328"
@@ -487,7 +487,7 @@
 			description: [
 				"The machines is pretty hard to obtain in this mobpack. But anyway, you have overcome those crafting recipes and reach here."
 				"Setting up stasis chamber is not difficult. Set up your machines as shown below. Summon a wither between the liquid laser base and laser drill. The distance between liquid laser base and laser drill has to be 2 blocks."
-				"{image:kubejs:textures/quest/chapter6/chapter6_stasis_chamber.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_stasis_chamber.png width:176 height:100 align:1}"
 			]
 			dependencies: [
 				"2660556EF9BC8407"
@@ -529,7 +529,7 @@
 			y: 6.5d
 			description: [
 				"Although the stasis chamber can freeze the wither, it is still pretty dangerous when dealing with it. I suggest that you should set up a 'wither cage' for it, using reinforced obsidian."
-				"{image:kubejs:textures/quest/chapter6/chapter6_wither_cage.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_wither_cage.png width:176 height:100 align:1}"
 			]
 			dependencies: ["2660556EF9BC8407"]
 			id: "4DC87FB69890444B"
@@ -735,7 +735,7 @@
 				"You have to convert the dirty ore dust into ore dust by a enrichment chamber before putting it into the energized smelter."
 				"Now you have finished getting the required machine for ore tripling. Just simply put them together and supply with power, and your system is workable."
 				"Try your first ore tripling process with some ores!"
-				"{image:kubejs:textures/quest/chapter6/chapter6_tripling.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_tripling.png width:176 height:100 align:1}"
 			]
 			dependencies: ["69C4DF21B34008BE"]
 			id: "3250A54150DFD436"
@@ -866,7 +866,7 @@
 			description: [
 				"The second way is through evaporation tower. Evaporation tower can produce brine (concentrated Sodium Chloride / conc. NaCl) from water. "
 				"In this way, you need more machines but this way provides a steady supply of HCl at a cheaper cost."
-				"{image:kubejs:textures/quest/chapter6/chapter6_evaporation_tower.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_evaporation_tower.png width:176 height:100 align:1}"
 			]
 			dependencies: ["72ACAD5162AA76DD"]
 			id: "5F554BD7B443677A"
@@ -1155,7 +1155,7 @@
 			y: 11.0d
 			description: [
 				"Marker is needed for setting areas for quarry. You will need 3 of them placing on the same Y level."
-				"{image:kubejs:textures/quest/chapter6/chapter6_marker.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_marker.png width:176 height:100 align:1}"
 			]
 			dependencies: ["4704B961D665B502"]
 			id: "07B73CE054AA3FB9"
@@ -1200,7 +1200,7 @@
 			y: 15.0d
 			description: [
 				"To increase the speed of quarry, you may use an enchantment mover. Just simply move the \"Efficiency\" enchantment from a diamond / netherite pickaxe to the quarry using this block."
-				"{image:kubejs:textures/quest/chapter6/chapter6_enchantmover.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter6/chapter6_enchantmover.png width:176 height:100 align:1}"
 			]
 			dependencies: ["4704B961D665B502"]
 			id: "339668700B064EEB"

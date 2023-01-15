@@ -251,7 +251,7 @@
 				"Using draconium infused obsidian with the dislocator receptacle is able to create a portal that teleports you to a specific location."
 				"This portal can be in any size. Just make sure you can get into the portal."
 				"To set the teleport location, use a dislocator. Set the locate by Shift+RC by dislocator and RC at the dislocator receptacle."
-				"{image:kubejs:textures/quest/travel/travel_draconic_portal.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_draconic_portal.png width:176 height:100 align:1}"
 			]
 			dependencies: ["099AA3D3D262C7E6"]
 			id: "474CC24B61F1AE76"
@@ -361,7 +361,7 @@
 			description: [
 				"Rail connectors can create rails by RC at two different rail nodes. This item can be used infinitely."
 				"Try to create a short rail first!"
-				"{image:kubejs:textures/quest/travel/travel_rail_connector.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_rail_connector.png width:176 height:100 align:1}"
 			]
 			dependencies: ["74BD962E8D524CDF"]
 			id: "4A00F6C44F31DE21"
@@ -402,7 +402,7 @@
 			y: 4.0d
 			description: [
 				"A train station will definitely need a platform. Craft a platform connector to set up plateform (rails in red). The platform has to be multiples of 25 plus 1 (i.e., 26, 51, 76, 101...), because a cart of train takes 25 blocks long."
-				"{image:kubejs:textures/quest/travel/travel_platform_connector.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_platform_connector.png width:176 height:100 align:1}"
 			]
 			dependencies: ["74BD962E8D524CDF"]
 			id: "11B88F85C908BF3D"
@@ -441,7 +441,7 @@
 			description: [
 				"Sliding rail connect is to define the place where your train starts (the terminal). The rail is in yellow and it should multiples of 25 + 1 blocks long in length (i.e., 26, 51, 76, 101...), and same length with your stations."
 				"When you success, you will see a train spawn on the rail immediately. The train model can be changed afterwards."
-				"{image:kubejs:textures/quest/travel/travel_siding_connector.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_siding_connector.png width:176 height:100 align:1}"
 			]
 			dependencies: ["74BD962E8D524CDF"]
 			id: "238774B05E66A0E0"
@@ -481,7 +481,7 @@
 			description: [
 				"You need some platform blocks to define a platform, so that you can get onto the train."
 				"You can also place some decorating blocks at your platform."
-				"{image:kubejs:textures/quest/travel/travel_platform_blocks.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_platform_blocks.png width:176 height:100 align:1}"
 			]
 			dependencies: [
 				"11B88F85C908BF3D"
@@ -529,8 +529,8 @@
 				"Now, we have finished the rails part. Time to set up how the train works."
 				"RC to open you dashboard. On your left hand side, press the \"Station\" button on top and press \"Add Station\" button at bottom."
 				"On the map right hand side, scroll to zoom in to the station you set up already. Drag to define the size of the station you wish to be (it can be very large or very small). Also rename the station at the box at the bottom left hand corner."
-				"{image:kubejs:textures/quest/travel/travel_station_setup.png width:176 height:100 align:1}"
-				"{image:kubejs:textures/quest/travel/travel_station_setup_complete.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_station_setup.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_station_setup_complete.png width:176 height:100 align:1}"
 			]
 			dependencies: ["2E61CDA8641BF963"]
 			id: "0F8D718B9F999F58"
@@ -566,8 +566,8 @@
 			y: 9.0d
 			description: [
 				"Then, press the \"Routes\" button, then click \"Add Routes\". Zoom your map right hand size larger. There will be a small white pixel (square) indicating the locationg of stations. Click the white pixels to define where your train is going to. Also rename this route at the bottom left hand corner."
-				"{image:kubejs:textures/quest/travel/travel_route_setup.png width:176 height:100 align:1}"
-				"{image:kubejs:textures/quest/travel/travel_route_setup_complete.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_route_setup.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_route_setup_complete.png width:176 height:100 align:1}"
 			]
 			dependencies: ["0F8D718B9F999F58"]
 			id: "062C4D4AE49B2484"
@@ -603,7 +603,7 @@
 			y: 9.0d
 			description: [
 				"Click the \"Depot\" button and \"Add Depot\" button. Set up the depot just like what you did before for platforms."
-				"{image:kubejs:textures/quest/travel/travel_depot_setup.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_depot_setup.png width:176 height:100 align:1}"
 			]
 			dependencies: ["062C4D4AE49B2484"]
 			id: "7C39790E3AEBFE65"
@@ -640,7 +640,7 @@
 			description: [
 				"Put your cursor on the depot setup and click the \"Pen\" button. It leads you to a config interface. On the left hand side, you can set  your train frequency."
 				"On your right hand side, click \"Edit Instruction\" and add your available routes into selected routes. After adding, refresh your path and your simple train system has been set up."
-				"{image:kubejs:textures/quest/travel/travel_train.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/travel/travel_train.png width:176 height:100 align:1}"
 			]
 			dependencies: ["7C39790E3AEBFE65"]
 			id: "3AD535270BDA0B73"
@@ -753,7 +753,7 @@
 			description: [
 				"This workstation allows you to build your own vehicle for travelling in your own factory, or even city!"
 				"RC to open the GUI of the workstation. There will be instructions on the ingredients required to build and vehicles. Of course you need to prepare some other items, such as engines and wheels. Check recipes in JEI."
-				"{image:kubejs:textures/quest/travel/travel_vehicles.png width:180 height:100 align:1 fit:true}"
+				"{image:gr4_quest:textures/travel/travel_vehicles.png width:180 height:100 align:1 fit:true}"
 			]
 			dependencies: ["5D762ED287ECED81"]
 			id: "32780BBFA50EA162"
@@ -776,7 +776,7 @@
 			description: [
 				"Mekanism provides a convenient bi-directional portal, at the cost of energy."
 				"You can set channels at GUI of the teleporter. The destination is chosen by setting designated channels at the two side sof the teleporter."
-				"{image:kubejs:textures/quest/travel/travel_mekanism_teleporter.png width:100 height:150 align:1}"
+				"{image:gr4_quest:textures/travel/travel_mekanism_teleporter.png width:100 height:150 align:1}"
 			]
 			dependencies: ["5D762ED287ECED81"]
 			id: "0DAA694931516521"

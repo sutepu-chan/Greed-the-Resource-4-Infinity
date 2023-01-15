@@ -149,7 +149,7 @@
 				"There are 2 types of coolants, including water and sodium. Sodium has a higher cooling efficiency."
 				"Do ensure a sufficient amount of coolant and fuel to avoid explosion."
 				"Nuclear waste is one of **radioactive** fluid in mekanism. It can be transported by pressurized tube. When you start output the waste, make sure that you set the tube correctly since you cannot break it anymore or radioactive will be exposed (unless you drain it into the waste barrel)."
-				"{image:kubejs:textures/quest/energy/energy_mekanism_fission.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_mekanism_fission.png width:176 height:100 align:1}"
 			]
 			dependencies: ["26CF532FEAF7A291"]
 			id: "0D987F659603212C"
@@ -199,7 +199,7 @@
 				""
 				"[Reminder]"
 				"The boiler comsume water with a high speed. Please ensure that you have a sufficient supply of water."
-				"{image:kubejs:textures/quest/energy/energy_mekanism_boiler.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_mekanism_boiler.png width:176 height:100 align:1}"
 			]
 			dependencies: ["5D9F44F3EB630996"]
 			id: "2C486BA964461050"
@@ -251,7 +251,7 @@
 			y: -4.0d
 			description: [
 				"Industrial turbine is the structure which use steam to produce electricity. After using fission reactor, lots of steam will be produced and input the steam into turbine to provide a large amount of electricity."
-				"{image:kubejs:textures/quest/energy/energy_mekanism_turbine.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_mekanism_turbine.png width:176 height:100 align:1}"
 			]
 			dependencies: ["5D9F44F3EB630996"]
 			id: "59E96E995FA4259B"
@@ -343,7 +343,7 @@
 				"Induction matrix is able to store an enormous amount of energy. Larger size of matrix allows you to store more energy. Maximum size of matrix is 18x18x18."
 				"All edges of the block must be made using Induction Casing. Induction port can be added to any face with either input or output configurations."
 				"The inside of the cube can be filled with either Induction Providers, Induction Cells or air blocks. Higher level of provider increases the transmission speed and higher tier of induction cell increases the energy storage. The providers and cells does not have to match tiers inside the matrix."
-				"{image:kubejs:textures/quest/energy/energy_induction_matrix.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_induction_matrix.png width:176 height:100 align:1}"
 			]
 			dependencies: ["129266054C1A604B"]
 			id: "45F035A0871B5566"
@@ -578,7 +578,7 @@
 			y: 4.0d
 			description: [
 				"Supercritical Phase Shifter is a structure that convert the polonium into antimatter(fluid). It requires a large amount of electricity and polonium."
-				"{image:kubejs:textures/quest/energy/energy_mekanism_sps.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_mekanism_sps.png width:176 height:100 align:1}"
 			]
 			dependencies: ["0F08C52795B87761"]
 			id: "30E0721E620D315C"
@@ -1283,7 +1283,7 @@
 			description: [
 				"Energizing rods are the power supplier for energizing crafting. Higher tier rods will supply power in a higher rate, reducing the time cost in energizing process."
 				"There is no limit in the amount of energizing rod near the energizing orb, which means you can place multiple energizing rod near the orb to increase the speed of energizing process."
-				"{image:kubejs:textures/quest/energy/energy_energizing_rod.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_energizing_rod.png width:176 height:100 align:1}"
 			]
 			dependencies: ["3CCD6859210A1300"]
 			id: "3C8667F4CDB65165"
@@ -1341,7 +1341,7 @@
 			description: [
 				"Reactor is able to produce large amount of energy using uraninite. Inputing redstone, coal and dry ice altogether can increase FE production rate while reduce the rate of uraninite consumption."
 				"Collect 36 reactor blocks and place one on ground. The reactor will consume your all 36 blocks and construct itself."
-				"{image:kubejs:textures/quest/energy/energy_powah_reactor.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_powah_reactor.png width:176 height:100 align:1}"
 			]
 			dependencies: ["3CCD6859210A1300"]
 			id: "4F67329316C7C742"
@@ -2262,7 +2262,7 @@
 			y: 6.0d
 			description: [
 				"For tier 8 energy core, you need advanced energy core stabilizer, which is constructed by placing 9 stabilizer in square. If you place it correctly, it will form a ring-like structure. After placing them at all of the 4 sides, RC the stabilizer and press the \"Activate\" button. Your energy core formed."
-				"{image:kubejs:textures/quest/energy/energy_draconic_stabilizer.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_draconic_stabilizer.png width:176 height:100 align:1}"
 			]
 			dependencies: ["01A6CA5E412685DF"]
 			id: "7DA80DD6CFF191A1"
@@ -2345,7 +2345,7 @@
 			y: 8.0d
 			description: [
 				"To stabilize the reactor, you need reactor stabilizer. You need to place them at least 3 blocks away from the core. If you have placed them correctly, you should be able to access the GUI of the reactor core while RC at the stabilizer. The further you place the stabilizer, the more fuel will be consumed."
-				"{image:kubejs:textures/quest/energy/energy_draconic_reactor_stabilizer.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_draconic_reactor_stabilizer.png width:100 height:100 align:1}"
 			]
 			dependencies: ["5F2D199C891968A9"]
 			id: "6BB1BEF117220526"
@@ -2367,7 +2367,7 @@
 			y: 8.0d
 			description: [
 				"The reactor requires energy to activate. Energy need to be input by an injector. Place the injector in the same distant as you placed your stabilizer. (If you place the stabilizer 3 blocks away from the core, place the injector 3 blocks below the injector."
-				"{image:kubejs:textures/quest/energy/energy_draconic_reactor_injector.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_draconic_reactor_injector.png width:100 height:100 align:1}"
 			]
 			dependencies: ["6BB1BEF117220526"]
 			id: "07F9034EB4C7DA2A"
@@ -2705,7 +2705,7 @@
 				"Reactor terminal is the heart of reactor."
 				"The reactor consumes uranium as fuels and produce cyanite as waste products."
 				"Minimum size of reactor is 3x3x3 cube while maximum size is 32x48x32."
-				"{image:kubejs:textures/quest/energy/energy_bigger_reactor_3x3x3.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_bigger_reactor_3x3x3.png width:100 height:100 align:1}"
 			]
 			dependencies: ["0680850A391D6A82"]
 			id: "43D1DB4C58BF5EBC"
@@ -2753,7 +2753,7 @@
 			description: [
 				"Reactor Fuel Rods are used to store Fuel and Waste, while Control Rods are used to maintain control over the reaction."
 				"Control Rods need to be placed on top of pillars of fuel rods."
-				"{image:kubejs:textures/quest/energy/energy_bigger_reactor_fuel_rod.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_bigger_reactor_fuel_rod.png width:100 height:100 align:1}"
 			]
 			dependencies: ["43D1DB4C58BF5EBC"]
 			id: "30C9CC93F824C61D"

@@ -14,7 +14,7 @@
 			description: [
 				"Draconium Fusion Crafting Injector provides a new crafting method, which is required in most items from Draconic Evolution."
 				"You need to craft 10 of it in order to have success slots for putting items."
-				"{image:kubejs:textures/quest/chapter8/chapter8_draconic_fusion.png width:130 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter8/chapter8_draconic_fusion.png width:130 height:100 align:1}"
 			]
 			dependencies: ["2F3A13047AA2AAC5"]
 			id: "7A228EE428C16171"

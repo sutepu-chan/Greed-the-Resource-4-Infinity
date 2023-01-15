@@ -282,7 +282,7 @@
 			description: [
 				"Storage stabilizer increases storage base in the storage dimension. There are 4 tiers of storage stabilizer, in which each tier adds more storage slots to the network."
 				"Storage stabilizers is requied to place one block higher than the storage actuator and point to the dimensional matrix in a 5 blocks radius."
-				"{image:kubejs:textures/quest/energy/energy_dimensional_storage.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_dimensional_storage.png width:176 height:100 align:1}"
 			]
 			dependencies: ["0B3794180F890D12"]
 			id: "720DA0E612D9B19C"
@@ -578,7 +578,7 @@
 			y: -5.0d
 			description: [
 				"To initiate AE2, you need to look for some certus quartz ore underground. The charged certus quartz ore is a bit rarer and harder to discover. Good Luck!"
-				"{image:kubejs:textures/quest/energy/energy_certus_quartz_ore.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_certus_quartz_ore.png width:176 height:100 align:1}"
 			]
 			dependencies: ["39095537AEEFCEFD"]
 			id: "01881C9492EF51D0"
@@ -662,7 +662,7 @@
 				"The meteorite is a collection of skystones, with a skystone chest in the middle."
 				"There will be inscriber press inside the skystone chest, which is indispensible for you to craft AE2 items."
 				"This step is going to spend much time as you have to find 4 meteorite with different inscriber loot!"
-				"{image:kubejs:textures/quest/energy/energy_meteorite.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_meteorite.png width:176 height:100 align:1}"
 			]
 			dependencies: ["51E0FE328F8892A6"]
 			id: "2C419A41BAE444B5"
@@ -723,7 +723,7 @@
 			description: [
 				"During your trip of finding meteorite, some more ingredients could also be prepared."
 				"Drop a charged certus quartz, a redstone dust and a nether quartz into a pool of water. 2x Fluix crystals will pop out after a short period of time."
-				"{image:kubejs:textures/quest/energy/energy_fluix_crystal.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_fluix_crystal.png width:176 height:100 align:1}"
 			]
 			dependencies: ["01881C9492EF51D0"]
 			id: "68C0CB1021C5015D"
@@ -823,7 +823,7 @@
 			y: -7.0d
 			description: [
 				"Inscriber is used to craft many different circuits and processors in AE2. The inscriber only allows ONE item to be inserted at one time. It is recommended using hoppers or pipes to automate this process."
-				"{image:kubejs:textures/quest/energy/energy_inscriber.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_inscriber.png width:176 height:100 align:1}"
 			]
 			dependencies: [
 				"68C0CB1021C5015D"
@@ -1040,7 +1040,7 @@
 			y: -9.0d
 			description: [
 				"Crystal growth accelerator cis able to accelerate the growth of crystal seeds. They should be placed around the pool of water, which means that you can only use at most 5 of them (one side for throwing the seeds into water)."
-				"{image:kubejs:textures/quest/energy/energy_crystal_growth_accelerator.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_crystal_growth_accelerator.png width:100 height:100 align:1}"
 			]
 			dependencies: ["68C0CB1021C5015D"]
 			id: "032A6B7C83C33401"
@@ -1076,7 +1076,7 @@
 				"Each side of ME controller provides 32 channels, which means a single ME controller block can provide 6x32=192 channels."
 				"Multiple ME controllers in one ME network is possible. This is achieved by creating a multiblock structure consisting out of multiple adjacent ME Controller blocks. The size of this multiblock structure also may not exceed 7x7x7 blocks. The multiblock can be almost any shape. One ME network only accepts ONE controller multiblock. Each ME controller should have at least 3 sides facing airin the multiblock structure. The controller does not work when the two ends is connected to an offline controller also."
 				"When the controller is placed wrong, it appears red in color. When the controller is offline, it appears gray. It shines in rainbow color when it functions properly."
-				"{image:kubejs:textures/quest/energy/energy_me_controller.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_me_controller.png width:100 height:100 align:1}"
 			]
 			dependencies: ["20588E4347F46C1C"]
 			id: "14B16B7DB7B3969C"
@@ -1149,7 +1149,7 @@
 				"3. ME Auto Crafting system."
 				"4. Automated distribution system."
 				"5. Wireless inventory access."
-				"{image:kubejs:textures/quest/energy/energy_me_network.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_me_network.png width:176 height:100 align:1}"
 			]
 			dependencies: ["39095537AEEFCEFD"]
 			id: "6EAD0D75F716D4B4"
@@ -2039,7 +2039,7 @@
 			y: -3.0d
 			description: [
 				"Cable anchors is able to prevent connection of two adjacent cables."
-				"{image:kubejs:textures/quest/energy/energy_cable_anchor.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_cable_anchor.png width:100 height:100 align:1}"
 			]
 			dependencies: ["486CEB9F4A430533"]
 			id: "0D9A371BBBF55940"
@@ -2271,7 +2271,7 @@
 				"It need to be attached to an ME interface to function properly, which means that one ME interface can be attached to at most 6 molecular assembler."
 				"One ME interface act as a CPU core of your auto-crafting system and the molecular assmebler act as a thread of your core. In other words, more molecular assmebler attaching to the ME interface will increase the speed of auto-crafting, and more ME interface allows more items can be crafted at the same time."
 				"Note that the channels used depends on the amount of ME interface. i.e. 1 ME interface + 6 Molecular Assembler uses 1 channel."
-				"{image:kubejs:textures/quest/energy/energy_molecular_assembler.png width:120 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_molecular_assembler.png width:120 height:100 align:1}"
 			]
 			dependencies: ["742005EBE2AE5B91"]
 			id: "3E7FFFE7B5ECEEB2"
@@ -2314,7 +2314,7 @@
 				"Crafting co-processing unit synchronises the crafting jobs from the ME Network with the Crafting Storage and the Molecular Assembler."
 				"Crafting Monitor will display the item of the job being crafted by a Molecular Assembler showing a countdown of the remaining units of the job to be crafted."
 				"The above blocks are interchangable and functionable in the multiblock structure, if you placed them correctly in a rectangular shape."
-				"{image:kubejs:textures/quest/energy/energy_crafting_storage.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_crafting_storage.png width:100 height:100 align:1}"
 			]
 			dependencies: ["3E7FFFE7B5ECEEB2"]
 			id: "5B3BF83365815AFC"
@@ -2482,7 +2482,7 @@
 				"AE2 provides spatial storage also. Spatial pylon is the main block used to construct a Spatial Containment Structure, for containing placed blocks in world."
 				"Spatial pylon need to be placed in straight lines with minimum length of 2 blocks, at x,y,z axis correspondingly."
 				"Spatial IO port need to be placed at the intersection point of the lines of spatial pylon. Redstone signal and AE energy is required for the operation of spatial containment structure."
-				"{image:kubejs:textures/quest/energy/energy_spatial_pylon.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_spatial_pylon.png width:100 height:100 align:1}"
 			]
 			dependencies: ["486CEB9F4A430533"]
 			id: "34D17C1B57ED192E"
@@ -2686,7 +2686,7 @@
 				"Get 8 ME quantum rings and 1 ME quantum link chamber. Place them in a verticle 3x3 multiblock structure, surrounding the ME quantum link chamber by ME quantum ring."
 				"After the multiblock structure formed. Put 1 quantum entangled singularity in the ME quantum link chamber."
 				"On the another side, repeat the above steps. Remember to place the another quantum entangled singularity which is produced in pairs to set up connection. It is recommended that the quantum entangled singularities of the same pair should be renamed using anvils."
-				"{image:kubejs:textures/quest/energy/energy_quantum_ring.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/energy/energy_quantum_ring.png width:100 height:100 align:1}"
 			]
 			dependencies: ["1450594D970A31E4"]
 			secret: true
@@ -3618,7 +3618,7 @@
 			y: -13.0d
 			description: [
 				"A package packs the ingredients of designated recipes into packages, which will be send to auto crafter for further crafting processes."
-				"{image:kubejs:textures/quest/storage/storage_packager.png width:200 height:100 align:1 fit:true}"
+				"{image:gr4_quest:textures/storage/storage_packager.png width:200 height:100 align:1 fit:true}"
 			]
 			dependencies: ["1DA5E91FCAC58049"]
 			id: "35AB27F18D75C8EA"
@@ -3682,7 +3682,7 @@
 			description: [
 				"After having the packages, unpackager is needed to unpacking the ingredients and send to autocrafter."
 				"For convenience, packager and unpackager can be placed together. The packages crafted from package will be delivered to unpackager automatically."
-				"{image:kubejs:textures/quest/storage/storage_unpackager.png width:175 height:100 align:1 fit:true}"
+				"{image:gr4_quest:textures/storage/storage_unpackager.png width:175 height:100 align:1 fit:true}"
 			]
 			dependencies: ["35AB27F18D75C8EA"]
 			id: "58D39606C6113BF3"
@@ -3753,7 +3753,7 @@
 			description: [
 				"Package crafter will definitely help you a lot in easing your game progress by making the repetitive work automaticable."
 				"For the ease of automation and consideration of compacting, package crafter can be placed right next to unpackager so as to deliver the unpacked materials for autocrafting."
-				"{image:kubejs:textures/quest/storage/storage_autocrafter.png width:200 height:100 align:1 fit:true}"
+				"{image:gr4_quest:textures/storage/storage_autocrafter.png width:200 height:100 align:1 fit:true}"
 			]
 			dependencies: ["58D39606C6113BF3"]
 			id: "18B6E63C07E8EA98"

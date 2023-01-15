@@ -36,7 +36,7 @@
 			y: 0.5d
 			description: [
 				"Lava is usually a great energy source. Thermal series provides a easy way in getting lava, by using magma crucible and igneous extruder."
-				"{image:kubejs:textures/quest/chapter5/chapter5_lava_generator.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter5/chapter5_lava_generator.png width:176 height:100 align:1}"
 			]
 			dependencies: ["2A4732086A9382D1"]
 			id: "7C565E1C3EACD3D8"
@@ -372,7 +372,7 @@
 			y: 2.5d
 			description: [
 				"A fission reactor allows you to get elements with a smaller atomic number from a larger atomic number. It is built in a 5x5x5 hollow structure, with a controller attached outside the multiblock structure. Check Alchemistry Guide book for multiblock projections."
-				"{image:kubejs:textures/quest/chapter5/chapter5_fission_reactor.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter5/chapter5_fission_reactor.png width:176 height:100 align:1}"
 			]
 			dependencies: ["5B9BA4CCA1E48896"]
 			id: "1365E9198CC017DF"
@@ -408,7 +408,7 @@
 			y: 4.5d
 			description: [
 				"A fusion reactor allows you to get elements with a larger atomic number from a smaller atomic number. It is built in a 5x5x5 hollow structure, with a controller attached outside the multiblock structure. Check Alchemistry Guide book for multiblock projections."
-				"{image:kubejs:textures/quest/chapter5/chapter5_fusion_reactor.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter5/chapter5_fusion_reactor.png width:176 height:100 align:1}"
 			]
 			dependencies: ["5B9BA4CCA1E48896"]
 			id: "2BBEEA188FE3F8AE"

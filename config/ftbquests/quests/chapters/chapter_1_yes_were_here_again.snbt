@@ -154,7 +154,7 @@
 				"Don't panic. Here is a tutorial on how to craft a certain tool of Tinker Construct."
 				"Firstly, put patterns and materials on Part Builder. Press the buttons in the middle with your required tool parts. (tool rod, tool binding, and pickaxe head for crafting pickaxes). This will produce the tool parts for tool customization."
 				"Try to obtain a flint pickaxe!"
-				"{image:kubejs:textures/quest/chapter1/chapter1_part_builder.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_part_builder.png width:176 height:100 align:1}"
 			]
 			dependencies: ["36F9A8B5AFDFB759"]
 			id: "611834473BFE33AB"
@@ -206,7 +206,7 @@
 			description: [
 				"After getting the tool parts, you have to put them together!"
 				"Open your Tinker Station, and press the pickaxe icon on the left hand side. After that, put the crafting tool parts onto the corresponding slots."
-				"{image:kubejs:textures/quest/chapter1/chapter1_tinkering_table.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_tinkering_table.png width:176 height:100 align:1}"
 			]
 			dependencies: ["611834473BFE33AB"]
 			id: "662FECFB1B8F2F7B"
@@ -279,7 +279,7 @@
 			y: 1.5d
 			description: [
 				"Excess tool parts can be stored at part chest!"
-				"{image:kubejs:textures/quest/chapter1/chapter1_part_chest.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_part_chest.png width:176 height:100 align:1}"
 			]
 			dependencies: ["611834473BFE33AB"]
 			id: "6F2492AD916BE485"
@@ -305,8 +305,8 @@
 			y: 1.5d
 			description: [
 				"Tinker tools can be fixed by Tinker Stations. The tool parts can also be replaced at the leftmost slots of the Tinker Station."
-				"{image:kubejs:textures/quest/chapter1/chapter1_tinker_tool_fix.png width:180 height:100 align:1}"
-				"{image:kubejs:textures/quest/chapter1/chapter1_tinker_replace.png width:180 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_tinker_tool_fix.png width:180 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_tinker_replace.png width:180 height:100 align:1}"
 			]
 			dependencies: ["662FECFB1B8F2F7B"]
 			id: "0EB7F73DF7072D53"
@@ -356,7 +356,7 @@
 			y: -2.0d
 			description: [
 				"Construct the tinker melter as below."
-				"{image:kubejs:textures/quest/chapter1/chapter1_tinker_smeltery.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_tinker_smeltery.png width:100 height:100 align:1}"
 			]
 			dependencies: ["54AE42DEDC1E8B96"]
 			id: "507B17ECC65859FF"
@@ -448,7 +448,7 @@
 			y: -5.5d
 			description: [
 				"Time to get your iron pickaxe head. Smelt some iron ore into the tinker melter. RC the faucet and let the molten iron out onto your pickaxe head cast. Your iron pickaxe head is done!"
-				"{image:kubejs:textures/quest/chapter1/chapter1_iron_tool_parts.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_iron_tool_parts.png width:100 height:100 align:1}"
 			]
 			dependencies: ["78875831C6026B1E"]
 			id: "68B5705509E52CE5"
@@ -617,7 +617,7 @@
 			y: -9.0d
 			description: [
 				"Similar to GR3F, you can roll your sushi here. SushiGoCrafting is a really fun mod."
-				"{image:kubejs:textures/quest/chapter1/chapter1_sushi.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_sushi.png width:176 height:100 align:1}"
 			]
 			dependencies: ["6DC5101C3C203EEE"]
 			id: "78D3102344F34C7A"
@@ -666,7 +666,7 @@
 			y: -9.0d
 			description: [
 				"Farmers' delight is probably my favourite cooking mod. It has new ways of interactive cooking, with tons of new food and items. There are also a lot of decorations for your kitchen. Some addons is added into this pack. Time to grab the seeds can discover new recipes!"
-				"{image:kubejs:textures/quest/chapter1/chapter1_farmers_delight.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/chapter1/chapter1_farmers_delight.png width:176 height:100 align:1}"
 			]
 			dependencies: ["6DC5101C3C203EEE"]
 			id: "37D6AA5CBF0372B4"

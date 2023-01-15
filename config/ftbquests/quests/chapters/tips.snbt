@@ -28,7 +28,7 @@
 			y: 1.0d
 			description: [
 				"FTB ultimine is the most convenient and one of my favourite mod. It allows you to break multiple blocks at once by pressing \" ` \" (the key on the top left corner of your keyboard)"
-				"{image:kubejs:textures/quest/tips/tips_ultimine.png width:176 height:100 align:1}"
+				"{image:gr4_quest:textures/tips/tips_ultimine.png width:176 height:100 align:1}"
 			]
 			id: "78C90A62B3B1A369"
 			tasks: [{
@@ -68,7 +68,7 @@
 			y: 1.0d
 			description: [
 				"You can now access to your armor and tool stats during game play. There is a HUD at the bottom left. The position and the things to be displayed can be configured by yourself."
-				"{image:kubejs:textures/quest/tips/tips_inventory_hud.png width:150 height:100 align:1}"
+				"{image:gr4_quest:textures/tips/tips_inventory_hud.png width:150 height:100 align:1}"
 			]
 			id: "00FBFE2B2ADFF030"
 			tasks: [{
@@ -102,7 +102,7 @@
 			description: [
 				"The one probe is the mod that display the blocks / fluids that your are look at, at the top side of your screen."
 				"You can toggle it on/off by NumPad 1, and toggle liquid visibility by NumPab 2."
-				"{image:kubejs:textures/quest/tips/tips_theoneprobe.png width:200 height:100 align:1}"
+				"{image:gr4_quest:textures/tips/tips_theoneprobe.png width:200 height:100 align:1}"
 			]
 			id: "719EB10B86DCD49C"
 			tasks: [{
@@ -137,7 +137,7 @@
 				"There are two minimaps mod available at this modpack, namely, FTBchunks and Xaero's map."
 				"Xaero's minimap is disabled by defalt. You are using FTB chunks now. You can toggle the on/off at settings."
 				"Pressing \"M\" opens FTB chunks minimap and \"J\" for Xaero's full map. Settings button can be found at the full screen map."
-				"{image:kubejs:textures/quest/tips/tips_ftb_chunk.png width:100 height:120 align:1}"
+				"{image:gr4_quest:textures/tips/tips_ftb_chunk.png width:100 height:120 align:1}"
 			]
 			id: "3C1826CE7F2EC7EB"
 			tasks: [{
@@ -177,7 +177,7 @@
 			description: [
 				"FTB chunks allows you to claim chunks. Open the full screen map. The button for claiming chunks is at your top left corner."
 				"LC to claim chunks. Chift+LC allows you to chunk load the designated area."
-				"{image:kubejs:textures/quest/tips/tips_claim_chunks.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/tips/tips_claim_chunks.png width:100 height:100 align:1}"
 			]
 			id: "3EB4DF7C79349466"
 			tasks: [{
@@ -299,7 +299,7 @@
 				"You have a limited number of force loaded chunks. Having too much chunks loading at the same time may cause severe performance impact on your server or your PC. Try to avoid chunk loading unused chunks."
 				"You may also keep in mind to put multiblock structures within a chunk. This reduces the unnecessary chunks to be loaded and could reduce cpu usage, which improves your server TPS or your own FPS."
 				"Press F3+G will show the chunk grid."
-				"{image:kubejs:textures/quest/tips/tips_chunks.png width:100 height:100 align:1}"
+				"{image:gr4_quest:textures/tips/tips_chunks.png width:100 height:100 align:1}"
 			]
 			id: "539DF0D1407AF0EB"
 			tasks: [{
