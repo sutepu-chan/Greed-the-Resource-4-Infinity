@@ -1,8 +1,10 @@
-# Greed-the-Resource-4-Infinity
-**Greed the Resource 4 - Infinity** aims to bring [SkyFactory 4](https://www.curseforge.com/minecraft/modpacks/skyfactory-4) and [FTB Infinity Evolved](https://www.curseforge.com/minecraft/modpacks/ftb-infinity-evolved) to Minecraft 1.16.5. <br>
+# Introduction
+
+**Greed the Resource 4 - Infinity** aims to bring [SkyFactory 4](https://www.curseforge.com/minecraft/modpacks/skyfactory-4) and [FTB Infinity Evolved](https://www.curseforge.com/minecraft/modpacks/ftb-infinity-evolved) to Minecraft 1.16.5. 
 Try to get the Ultimate Singularity and craft all the creative items.
 
 ## Special Features
+
 - **500+ hours** in development
 - Return of **Avaritia** and **EnderIO** items
 - Handy Picked mods for **Possibility of Automating** all the machines and crafting process
@@ -11,6 +13,7 @@ Try to get the Ultimate Singularity and craft all the creative items.
 - Finly **Tuned** configs
 
 ## Game Contents
+
 - Custom Recipes
 - New Biomes
 - New Dungeons
@@ -19,8 +22,11 @@ Try to get the Ultimate Singularity and craft all the creative items.
 - Decorations
 
 ## FAQ
+
 **Recommended RAM?**
+
 - At least 5GB. Recommended 6GB or above. At most 10GB
 
 **Bugs**
-- PLease report bugs or suggestions in [Discord](https://www.discord.gg/pvb4XfYg94)
+
+- Please report bugs or suggestions in [Discord](https://www.discord.gg/pvb4XfYg94)
